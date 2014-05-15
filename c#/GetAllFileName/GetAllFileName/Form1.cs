@@ -87,14 +87,15 @@ namespace GetAllFileName
             folderName = this.cmbFolder.Text.Trim();
             if (string.IsNullOrEmpty(folderName))
             {
-                MessageBox.Show("Please select direcotry first.");
+                MessageBox.Show("Please select directory first.");
                 return;
             }
+
             try
             {
                 InitFile();
                 DirectoryInfo d = new DirectoryInfo(folderName);
-                FileInfo[] Files = d.GetFiles("*.*"); //Getting Text files
+                FileInfo[] Files = d.GetFiles("*.*"); //Getting all files
 
                 List<string> fileList = new List<string>();
                 foreach (FileInfo file in Files)
