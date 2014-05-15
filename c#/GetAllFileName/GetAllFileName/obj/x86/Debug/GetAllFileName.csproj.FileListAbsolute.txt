@@ -5,3 +5,5 @@ D:\Data\Projects\c#\GetAllFileName\GetAllFileName\bin\Debug\GetAllFileName.exe
 D:\Data\Projects\c#\GetAllFileName\GetAllFileName\bin\Debug\GetAllFileName.pdb
 D:\Data\Projects\c#\GetAllFileName\GetAllFileName\obj\x86\Debug\GetAllFileName.exe
 D:\Data\Projects\c#\GetAllFileName\GetAllFileName\obj\x86\Debug\GetAllFileName.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\GetAllFileName\GetAllFileName\obj\x86\Debug\GetAllFileName.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\GetAllFileName\GetAllFileName\obj\x86\Debug\GetAllFileName.pdb
