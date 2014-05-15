@@ -1,0 +1,7 @@
+D:\Data\Projects\c#\GetAllFileName\GetAllFileName\obj\x86\Debug\GetAllFileName.Form1.resources
+D:\Data\Projects\c#\GetAllFileName\GetAllFileName\obj\x86\Debug\GetAllFileName.Properties.Resources.resources
+D:\Data\Projects\c#\GetAllFileName\GetAllFileName\obj\x86\Debug\GetAllFileName.csproj.GenerateResource.Cache
+D:\Data\Projects\c#\GetAllFileName\GetAllFileName\bin\Debug\GetAllFileName.exe
+D:\Data\Projects\c#\GetAllFileName\GetAllFileName\bin\Debug\GetAllFileName.pdb
+D:\Data\Projects\c#\GetAllFileName\GetAllFileName\obj\x86\Debug\GetAllFileName.exe
+D:\Data\Projects\c#\GetAllFileName\GetAllFileName\obj\x86\Debug\GetAllFileName.pdb

@@ -1,0 +1,8 @@
+D:\Data\Projects\c#\Account\Account\bin\Debug\Account.exe
+D:\Data\Projects\c#\Account\Account\bin\Debug\Account.pdb
+D:\Data\Projects\c#\Account\Account\obj\x86\Debug\Account.Form1.resources
+D:\Data\Projects\c#\Account\Account\obj\x86\Debug\Account.Properties.Resources.resources
+D:\Data\Projects\c#\Account\Account\obj\x86\Debug\Account.csproj.GenerateResource.Cache
+D:\Data\Projects\c#\Account\Account\obj\x86\Debug\Account.exe
+D:\Data\Projects\c#\Account\Account\obj\x86\Debug\Account.pdb
+D:\Data\Projects\c#\Account\Account\bin\Debug\Account.exe.config
