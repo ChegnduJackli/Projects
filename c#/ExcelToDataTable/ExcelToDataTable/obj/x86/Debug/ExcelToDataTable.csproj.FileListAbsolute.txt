@@ -1,0 +1,4 @@
+E:\GitHub\Projects\Projects\c#\ExcelToDataTable\ExcelToDataTable\bin\Debug\ExcelToDataTable.exe
+E:\GitHub\Projects\Projects\c#\ExcelToDataTable\ExcelToDataTable\bin\Debug\ExcelToDataTable.pdb
+E:\GitHub\Projects\Projects\c#\ExcelToDataTable\ExcelToDataTable\obj\x86\Debug\ExcelToDataTable.exe
+E:\GitHub\Projects\Projects\c#\ExcelToDataTable\ExcelToDataTable\obj\x86\Debug\ExcelToDataTable.pdb
