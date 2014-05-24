@@ -72,7 +72,7 @@ namespace ExcelToDataTable
                         IRow r = sheet.GetRow(j);  //读取当前行数据
                         if (r != null)
                         {
-                            for (int k = 1; k < r.LastCellNum; k++)  //LastCellNum 是当前行的总列数
+                            for (int k = 1; k < rType.LastCellNum; k++)  //LastCellNum 是当前行的总列数
                             {
                              
                                 ICell cell = r.GetCell(k);  //当前表格
@@ -88,7 +88,21 @@ namespace ExcelToDataTable
                                     {
                                         sbData.Append(cell.StringCellValue.ToString());
                                     }
-                                 
+
+                                    sbData.Append(",");
+                                }
+                                else
+                                {
+                                    string type = rType.GetCell(k).StringCellValue;
+                                    if (type.Equals("string", StringComparison.OrdinalIgnoreCase))
+                                    {
+                                        sbData.Append(seperator + "" + seperator);
+                                    }
+                                    else if (type.Equals("number", StringComparison.OrdinalIgnoreCase))
+                                    {
+                                        sbData.Append("");
+                                    }
+
                                     sbData.Append(",");
                                 }
                             }
