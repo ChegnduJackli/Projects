@@ -1,0 +1,8 @@
+D:\我的文件\C#\Design Patterns\FacrotyPatter1\FacrotyPatter1\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\我的文件\C#\Design Patterns\FacrotyPatter1\FacrotyPatter1\bin\Debug\FacrotyPatter1.exe
+D:\我的文件\C#\Design Patterns\FacrotyPatter1\FacrotyPatter1\bin\Debug\FacrotyPatter1.pdb
+D:\我的文件\C#\Design Patterns\FacrotyPatter1\FacrotyPatter1\bin\Debug\Log.dll
+D:\我的文件\C#\Design Patterns\FacrotyPatter1\FacrotyPatter1\bin\Debug\Log.pdb
+D:\我的文件\C#\Design Patterns\FacrotyPatter1\FacrotyPatter1\obj\x86\Debug\FacrotyPatter1.exe
+D:\我的文件\C#\Design Patterns\FacrotyPatter1\FacrotyPatter1\obj\x86\Debug\FacrotyPatter1.pdb
+D:\我的文件\C#\Design Patterns\FacrotyPatter1\FacrotyPatter1\bin\Debug\FacrotyPatter1.exe.config

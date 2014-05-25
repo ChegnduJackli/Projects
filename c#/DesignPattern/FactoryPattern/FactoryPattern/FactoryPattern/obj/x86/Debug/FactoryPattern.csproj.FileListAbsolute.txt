@@ -1,0 +1,12 @@
+D:\我的文件\C#\Design Patterns\FactoryPattern\FactoryPattern\FactoryPattern\bin\Debug\FactoryPattern.exe
+D:\我的文件\C#\Design Patterns\FactoryPattern\FactoryPattern\FactoryPattern\bin\Debug\FactoryPattern.pdb
+D:\我的文件\C#\Design Patterns\FactoryPattern\FactoryPattern\FactoryPattern\bin\Debug\AbstractClass.dll
+D:\我的文件\C#\Design Patterns\FactoryPattern\FactoryPattern\FactoryPattern\bin\Debug\AbstractClass.pdb
+D:\我的文件\C#\Design Patterns\FactoryPattern\FactoryPattern\FactoryPattern\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\我的文件\C#\Design Patterns\FactoryPattern\FactoryPattern\FactoryPattern\obj\x86\Debug\FactoryPattern.exe
+D:\我的文件\C#\Design Patterns\FactoryPattern\FactoryPattern\FactoryPattern\obj\x86\Debug\FactoryPattern.pdb
+D:\我的文件\C#\Design Patterns\FactoryPattern\FactoryPattern\FactoryPattern\bin\Debug\ChineseSalary.dll
+D:\我的文件\C#\Design Patterns\FactoryPattern\FactoryPattern\FactoryPattern\bin\Debug\ChineseSalary.pdb
+D:\我的文件\C#\Design Patterns\FactoryPattern\FactoryPattern\FactoryPattern\bin\Debug\AmericalSalary.dll
+D:\我的文件\C#\Design Patterns\FactoryPattern\FactoryPattern\FactoryPattern\bin\Debug\AmericalSalary.pdb
+D:\我的文件\C#\Design Patterns\FactoryPattern\FactoryPattern\FactoryPattern\bin\Debug\FactoryPattern.exe.config

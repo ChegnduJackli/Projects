@@ -1,0 +1,5 @@
+D:\我的文件\C#\Design Patterns\AdapterPattern\AdapterPattern\bin\Debug\AdapterPattern.exe
+D:\我的文件\C#\Design Patterns\AdapterPattern\AdapterPattern\bin\Debug\AdapterPattern.pdb
+D:\我的文件\C#\Design Patterns\AdapterPattern\AdapterPattern\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\我的文件\C#\Design Patterns\AdapterPattern\AdapterPattern\obj\x86\Debug\AdapterPattern.exe
+D:\我的文件\C#\Design Patterns\AdapterPattern\AdapterPattern\obj\x86\Debug\AdapterPattern.pdb

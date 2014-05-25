@@ -1,0 +1,6 @@
+D:\我的文件\C#\Design Patterns\FactoryPattern\AbstractFactory\AbstractFactory\bin\Debug\AbstractFactory.exe.config
+D:\我的文件\C#\Design Patterns\FactoryPattern\AbstractFactory\AbstractFactory\obj\Debug\AbstractFactory.exe
+D:\我的文件\C#\Design Patterns\FactoryPattern\AbstractFactory\AbstractFactory\obj\Debug\AbstractFactory.pdb
+D:\我的文件\C#\Design Patterns\FactoryPattern\AbstractFactory\AbstractFactory\bin\Debug\AbstractFactory.exe
+D:\我的文件\C#\Design Patterns\FactoryPattern\AbstractFactory\AbstractFactory\bin\Debug\AbstractFactory.pdb
+D:\我的文件\C#\Design Patterns\FactoryPattern\AbstractFactory\AbstractFactory\obj\Debug\ResolveAssemblyReference.cache

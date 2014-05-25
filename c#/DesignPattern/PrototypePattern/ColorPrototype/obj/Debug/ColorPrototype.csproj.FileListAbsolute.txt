@@ -1,0 +1,5 @@
+D:\我的文件\C#\Design Patterns\PrototypePattern\ColorPrototype\bin\Debug\ColorPrototype.dll
+D:\我的文件\C#\Design Patterns\PrototypePattern\ColorPrototype\bin\Debug\ColorPrototype.pdb
+D:\我的文件\C#\Design Patterns\PrototypePattern\ColorPrototype\obj\Debug\ResolveAssemblyReference.cache
+D:\我的文件\C#\Design Patterns\PrototypePattern\ColorPrototype\obj\Debug\ColorPrototype.dll
+D:\我的文件\C#\Design Patterns\PrototypePattern\ColorPrototype\obj\Debug\ColorPrototype.pdb

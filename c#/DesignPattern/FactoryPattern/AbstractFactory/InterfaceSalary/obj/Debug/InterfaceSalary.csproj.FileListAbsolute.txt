@@ -1,0 +1,5 @@
+D:\我的文件\C#\Design Patterns\FactoryPattern\AbstractFactory\InterfaceSalary\bin\Debug\InterfaceSalary.exe
+D:\我的文件\C#\Design Patterns\FactoryPattern\AbstractFactory\InterfaceSalary\bin\Debug\InterfaceSalary.pdb
+D:\我的文件\C#\Design Patterns\FactoryPattern\AbstractFactory\InterfaceSalary\obj\Debug\ResolveAssemblyReference.cache
+D:\我的文件\C#\Design Patterns\FactoryPattern\AbstractFactory\InterfaceSalary\obj\Debug\InterfaceSalary.exe
+D:\我的文件\C#\Design Patterns\FactoryPattern\AbstractFactory\InterfaceSalary\obj\Debug\InterfaceSalary.pdb

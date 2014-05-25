@@ -1,0 +1,5 @@
+D:\我的文件\C#\Design Patterns\Decorator\DecoratorClass\bin\Debug\DecoratorClass.dll
+D:\我的文件\C#\Design Patterns\Decorator\DecoratorClass\bin\Debug\DecoratorClass.pdb
+D:\我的文件\C#\Design Patterns\Decorator\DecoratorClass\obj\Debug\ResolveAssemblyReference.cache
+D:\我的文件\C#\Design Patterns\Decorator\DecoratorClass\obj\Debug\DecoratorClass.dll
+D:\我的文件\C#\Design Patterns\Decorator\DecoratorClass\obj\Debug\DecoratorClass.pdb

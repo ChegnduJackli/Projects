@@ -1,0 +1,11 @@
+D:\我的文件\C#\Design Patterns\Factory\EventFactory\obj\Debug\ResolveAssemblyReference.cache
+D:\我的文件\C#\Design Patterns\Factory\EventFactory\bin\Debug\EventFactory.dll
+D:\我的文件\C#\Design Patterns\Factory\EventFactory\bin\Debug\EventFactory.pdb
+D:\我的文件\C#\Design Patterns\Factory\EventFactory\bin\Debug\AbstractLog.dll
+D:\我的文件\C#\Design Patterns\Factory\EventFactory\bin\Debug\Log.dll
+D:\我的文件\C#\Design Patterns\Factory\EventFactory\bin\Debug\AbstractLog.pdb
+D:\我的文件\C#\Design Patterns\Factory\EventFactory\bin\Debug\Log.pdb
+D:\我的文件\C#\Design Patterns\Factory\EventFactory\obj\Debug\EventFactory.dll
+D:\我的文件\C#\Design Patterns\Factory\EventFactory\obj\Debug\EventFactory.pdb
+D:\我的文件\C#\Design Patterns\Factory\EventFactory\bin\Debug\LogFactory.dll
+D:\我的文件\C#\Design Patterns\Factory\EventFactory\bin\Debug\LogFactory.pdb

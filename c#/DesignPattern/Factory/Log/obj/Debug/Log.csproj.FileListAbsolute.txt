@@ -1,0 +1,5 @@
+D:\我的文件\C#\Design Patterns\Factory\Log\bin\Debug\Log.dll
+D:\我的文件\C#\Design Patterns\Factory\Log\bin\Debug\Log.pdb
+D:\我的文件\C#\Design Patterns\Factory\Log\obj\Debug\ResolveAssemblyReference.cache
+D:\我的文件\C#\Design Patterns\Factory\Log\obj\Debug\Log.dll
+D:\我的文件\C#\Design Patterns\Factory\Log\obj\Debug\Log.pdb

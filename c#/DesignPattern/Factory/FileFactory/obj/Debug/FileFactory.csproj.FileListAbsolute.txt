@@ -1,0 +1,11 @@
+D:\我的文件\C#\Design Patterns\Factory\FileFactory\bin\Debug\FileFactory.dll
+D:\我的文件\C#\Design Patterns\Factory\FileFactory\bin\Debug\FileFactory.pdb
+D:\我的文件\C#\Design Patterns\Factory\FileFactory\bin\Debug\FileLog.dll
+D:\我的文件\C#\Design Patterns\Factory\FileFactory\bin\Debug\Log.dll
+D:\我的文件\C#\Design Patterns\Factory\FileFactory\bin\Debug\FileLog.pdb
+D:\我的文件\C#\Design Patterns\Factory\FileFactory\bin\Debug\Log.pdb
+D:\我的文件\C#\Design Patterns\Factory\FileFactory\obj\Debug\ResolveAssemblyReference.cache
+D:\我的文件\C#\Design Patterns\Factory\FileFactory\obj\Debug\FileFactory.dll
+D:\我的文件\C#\Design Patterns\Factory\FileFactory\obj\Debug\FileFactory.pdb
+D:\我的文件\C#\Design Patterns\Factory\FileFactory\bin\Debug\LogFactory.dll
+D:\我的文件\C#\Design Patterns\Factory\FileFactory\bin\Debug\LogFactory.pdb

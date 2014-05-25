@@ -1,0 +1,7 @@
+D:\我的文件\C#\Design Patterns\PrototypePattern\PrototypePattern\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\我的文件\C#\Design Patterns\PrototypePattern\PrototypePattern\bin\Debug\PrototypePattern.exe
+D:\我的文件\C#\Design Patterns\PrototypePattern\PrototypePattern\bin\Debug\PrototypePattern.pdb
+D:\我的文件\C#\Design Patterns\PrototypePattern\PrototypePattern\bin\Debug\ColorPrototype.dll
+D:\我的文件\C#\Design Patterns\PrototypePattern\PrototypePattern\bin\Debug\ColorPrototype.pdb
+D:\我的文件\C#\Design Patterns\PrototypePattern\PrototypePattern\obj\x86\Debug\PrototypePattern.exe
+D:\我的文件\C#\Design Patterns\PrototypePattern\PrototypePattern\obj\x86\Debug\PrototypePattern.pdb

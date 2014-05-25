@@ -1,0 +1,5 @@
+D:\我的文件\C#\Design Patterns\FactoryPattern\AbstractFactory\AmericanSalary\bin\Debug\AmericanSalary.exe
+D:\我的文件\C#\Design Patterns\FactoryPattern\AbstractFactory\AmericanSalary\bin\Debug\AmericanSalary.pdb
+D:\我的文件\C#\Design Patterns\FactoryPattern\AbstractFactory\AmericanSalary\obj\Debug\ResolveAssemblyReference.cache
+D:\我的文件\C#\Design Patterns\FactoryPattern\AbstractFactory\AmericanSalary\obj\Debug\AmericanSalary.exe
+D:\我的文件\C#\Design Patterns\FactoryPattern\AbstractFactory\AmericanSalary\obj\Debug\AmericanSalary.pdb
