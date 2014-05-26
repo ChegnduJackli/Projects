@@ -88,7 +88,15 @@ namespace GenerateScript
                        else
                        {
                            //type is string
-                           sb.Append(seperator + dt.Rows[i][j] + seperator);
+                           if (dt.Rows[i][j].ToString().IndexOf("'") > -1)
+                           {
+                               sb.Append(seperator + dt.Rows[i][j].ToString().Replace("'", PubConstant.FieldSingleQuote) + seperator);
+                           }
+                           else
+                           {
+                               sb.Append(seperator + dt.Rows[i][j].ToString() + seperator);
+                           }
+                           
                        }
                        sb.Append(",");
                    }
@@ -128,7 +136,7 @@ namespace GenerateScript
                template = template.Replace("@TableName", TableName).Replace("@TableColumns", headerColumn);
                foreach (string item in dataList)
                {
-                   string eachItem = item.Replace(seperator, "'");
+                   string eachItem = item.Replace(seperator, "'").Replace(PubConstant.FieldSingleQuote,"''");
                    string stemplate = template.Replace("@TableData", eachItem);
                    sb.AppendLine(stemplate);
                }

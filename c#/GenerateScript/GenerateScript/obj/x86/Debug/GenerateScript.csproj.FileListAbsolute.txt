@@ -3,3 +3,8 @@ D:\Data\Projects\c#\GenerateScript\GenerateScript\bin\Debug\GenerateScript.pdb
 D:\Data\Projects\c#\GenerateScript\GenerateScript\obj\x86\Debug\GenerateScript.exe
 D:\Data\Projects\c#\GenerateScript\GenerateScript\obj\x86\Debug\GenerateScript.pdb
 D:\Data\Projects\c#\GenerateScript\GenerateScript\bin\Debug\GenerateScript.exe.config
+C:\Users\lideng\Desktop\GIT\Project\c#\GenerateScript\GenerateScript\bin\Debug\GenerateScript.exe.config
+C:\Users\lideng\Desktop\GIT\Project\c#\GenerateScript\GenerateScript\obj\x86\Debug\GenerateScript.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\GenerateScript\GenerateScript\obj\x86\Debug\GenerateScript.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\GenerateScript\GenerateScript\bin\Debug\GenerateScript.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\GenerateScript\GenerateScript\bin\Debug\GenerateScript.pdb

@@ -12,6 +12,7 @@ namespace GenerateScript
        public static readonly string FilePath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
        public static readonly string FileExtension = "*.xls";
        public static readonly string FieldSeperator = "@#@";
+       public static readonly string FieldSingleQuote = "#&#";
        
     }
 }
