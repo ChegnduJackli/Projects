@@ -7,3 +7,5 @@ E:\GitHub\Projects\Projects\c#\DesignPattern\StrategyPattern\Strategy\obj\x86\De
 E:\GitHub\Projects\Projects\c#\DesignPattern\StrategyPattern\Strategy\obj\x86\Debug\Strategy.pdb
 E:\GitHub\Projects\Projects\c#\DesignPattern\StrategyPattern\Strategy\bin\Debug\Strategy.exe
 E:\GitHub\Projects\Projects\c#\DesignPattern\StrategyPattern\Strategy\bin\Debug\Strategy.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\DesignPattern\StrategyPattern\Strategy\obj\x86\Debug\Strategy.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\DesignPattern\StrategyPattern\Strategy\obj\x86\Debug\Strategy.pdb

@@ -9,9 +9,37 @@ namespace GenerateScript
 {
     class Program
     {
-
         static void Main(string[] args)
         {
+            Console.WriteLine("Generating script,Please hold on........");
+            try
+            {
+
+                FileOpers fileOper = new FileOpers();
+                Context menu = new Context();
+
+                menu.SetStrategy();
+
+                List<string> files = fileOper.GetFiles();
+                if (files.Count == 0)
+                {
+                    Console.WriteLine("No file");
+                }
+                else
+                {
+                    foreach (string file in files)
+                    {
+                        FileInfo fileinfo = new FileInfo(file);
+                        menu.GenereateScript(fileinfo.Name);
+                        Console.WriteLine("Generate script successfully.");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            /*
             Console.WriteLine("Generating script,Please hold on........");
             FileOpers fileOper = new FileOpers();
             TableOper to = new TableOper();
@@ -39,6 +67,8 @@ namespace GenerateScript
             {
                 Console.WriteLine(ex.Message);
             }
+             * */
+            Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
         }
     }

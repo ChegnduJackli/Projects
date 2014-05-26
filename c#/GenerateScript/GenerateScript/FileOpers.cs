@@ -34,7 +34,7 @@ namespace GenerateScript
             }
         }
 
-        public void WriteFile(string fileName,string scripts)
+        public virtual void WriteFile(string fileName,string scripts)
         {
             try
             {
