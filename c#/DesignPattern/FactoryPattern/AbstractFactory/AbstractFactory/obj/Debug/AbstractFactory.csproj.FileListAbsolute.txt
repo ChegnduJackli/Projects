@@ -4,3 +4,8 @@ D:\我的文件\C#\Design Patterns\FactoryPattern\AbstractFactory\AbstractFactor
 D:\我的文件\C#\Design Patterns\FactoryPattern\AbstractFactory\AbstractFactory\bin\Debug\AbstractFactory.exe
 D:\我的文件\C#\Design Patterns\FactoryPattern\AbstractFactory\AbstractFactory\bin\Debug\AbstractFactory.pdb
 D:\我的文件\C#\Design Patterns\FactoryPattern\AbstractFactory\AbstractFactory\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\lideng\Desktop\GIT\Project\c#\DesignPattern\FactoryPattern\AbstractFactory\AbstractFactory\bin\Debug\AbstractFactory.exe.config
+C:\Users\lideng\Desktop\GIT\Project\c#\DesignPattern\FactoryPattern\AbstractFactory\AbstractFactory\obj\Debug\AbstractFactory.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\DesignPattern\FactoryPattern\AbstractFactory\AbstractFactory\obj\Debug\AbstractFactory.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\DesignPattern\FactoryPattern\AbstractFactory\AbstractFactory\bin\Debug\AbstractFactory.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\DesignPattern\FactoryPattern\AbstractFactory\AbstractFactory\bin\Debug\AbstractFactory.pdb

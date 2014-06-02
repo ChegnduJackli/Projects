@@ -23,21 +23,21 @@ namespace AbstractFactory
 
             return instance;
         }
-        /*
-		public  AbstractFactory GetInstance()
-		{
-			string factoryName = Constant.STR_FACTORYNAME.ToString();
 
-			AbstractFactory instance;
+        //public AbstractFactory GetInstance()
+        //{
+        //    string factoryName = Constant.STR_FACTORYNAME.ToString();
 
-			if(factoryName != "")
-				instance = (AbstractFactory)Assembly.Load(factoryName).CreateInstance(factoryName);
-			else
-				instance = null;
+        //    AbstractFactory instance;
 
-			return instance;
-		}
-        */
+        //    if (factoryName != "")
+        //        instance = (AbstractFactory)Assembly.Load(factoryName).CreateInstance(factoryName);
+        //    else
+        //        instance = null;
+
+        //    return instance;
+        //}
+        
 
 		public abstract Tax CreateTax();
 

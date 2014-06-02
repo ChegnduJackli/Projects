@@ -16,3 +16,6 @@ D:\我的文件\C#\Design Patterns\Factory\FactoryPattern\obj\x86\Debug\ResolveA
 D:\我的文件\C#\Design Patterns\Factory\FactoryPattern\obj\x86\Debug\FactoryPattern.exe
 D:\我的文件\C#\Design Patterns\Factory\FactoryPattern\obj\x86\Debug\FactoryPattern.pdb
 D:\我的文件\C#\Design Patterns\Factory\FactoryPattern\bin\Debug\FactoryPattern.exe.config
+C:\Users\lideng\Desktop\GIT\Project\c#\DesignPattern\Factory\FactoryPattern\bin\Debug\FactoryPattern.exe.config
+C:\Users\lideng\Desktop\GIT\Project\c#\DesignPattern\Factory\FactoryPattern\obj\x86\Debug\FactoryPattern.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\DesignPattern\Factory\FactoryPattern\obj\x86\Debug\FactoryPattern.pdb
