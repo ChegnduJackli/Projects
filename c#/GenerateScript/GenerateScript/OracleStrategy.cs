@@ -16,7 +16,7 @@ namespace GenerateScript
 
         public override void GenerateScripts(string filePath)
         {
-            Console.WriteLine("generate Oracle scripts");
+            //Console.WriteLine("generate Oracle scripts");
             WorkbookOper work = new WorkbookOper();
             string sqlScripts = string.Empty;
 
@@ -89,21 +89,27 @@ namespace GenerateScript
                 {
                     for (int j = 1; j < dt.Columns.Count; j++)
                     {
-                        if (dt.Rows[1][j].ToString().Equals(Type_Number, StringComparison.OrdinalIgnoreCase))  //judge type
+                        string fieldValue = dt.Rows[i][j].ToString();
+
+                        if(fieldValue.ToString().ToUpper()=="NULL")
                         {
-                            sb.Append(dt.Rows[i][j]);
+                            sb.Append("NULL");
+                        }
+                        else if (dt.Rows[1][j].ToString().Equals(Type_Number, StringComparison.OrdinalIgnoreCase))  //judge type
+                        {
+                            sb.Append(fieldValue);
                         }
                         else if (dt.Rows[1][j].ToString().Equals(Type_Date, StringComparison.OrdinalIgnoreCase))
                         {
-                            if (dt.Rows[i][j].ToString().Equals("sysdate", StringComparison.OrdinalIgnoreCase))
+                            if (fieldValue.ToString().Equals("sysdate", StringComparison.OrdinalIgnoreCase))
                             {
-                                sb.Append(dt.Rows[i][j]);
+                                sb.Append(fieldValue);
                             }
                             else
                             {
-                                if (IsDateTime(dt.Rows[i][j].ToString()))
+                                if (IsDateTime(fieldValue.ToString()))
                                 {
-                                    sb.Append("to_date(" + seperator + Convert.ToDateTime(dt.Rows[i][j]).ToString("yyyy/MM/dd HH:mm") + seperator + "," + seperator + ("yyyy/MM/dd hh24:mi") + seperator + ")");
+                                    sb.Append("to_date(" + seperator + Convert.ToDateTime(fieldValue).ToString("yyyy/MM/dd HH:mm") + seperator + "," + seperator + ("yyyy/MM/dd hh24:mi") + seperator + ")");
                                 }
                                 else
                                 {
@@ -113,14 +119,14 @@ namespace GenerateScript
                         }
                         else
                         {
-                            //type is string
-                            if (dt.Rows[i][j].ToString().IndexOf("'") > -1)
+                            //type is string,field contails special chars "'"
+                            if (fieldValue.ToString().IndexOf("'") > -1)
                             {
-                                sb.Append(seperator + dt.Rows[i][j].ToString().Replace("'", PubConstant.FieldSingleQuote) + seperator);
+                                sb.Append(seperator + fieldValue.ToString().Replace("'", PubConstant.FieldSingleQuote) + seperator);
                             }
                             else
                             {
-                                sb.Append(seperator + dt.Rows[i][j].ToString() + seperator);
+                                sb.Append(seperator + fieldValue.ToString() + seperator);
                             }
 
                         }
@@ -153,7 +159,7 @@ namespace GenerateScript
             try
             {
 
-                TableName = dt.Rows[0][1].ToString();
+                TableName = dt.Rows[0][1].ToString().ToUpper();
                 headerColumn = PopulateHeader(dt);
 
                 List<string> dataList = PopulateData(dt);

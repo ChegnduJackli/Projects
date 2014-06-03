@@ -12,12 +12,11 @@ namespace GenerateScript
         static void Main(string[] args)
         {
             Console.WriteLine("Generating script,Please hold on........");
+
             try
             {
-
                 FileOpers fileOper = new FileOpers();
                 Context menu = new Context();
-
                 menu.SetStrategy();
 
                 List<string> files = fileOper.GetFiles();
@@ -31,7 +30,7 @@ namespace GenerateScript
                     {
                         FileInfo fileinfo = new FileInfo(file);
                         menu.GenereateScript(fileinfo.Name);
-                        Console.WriteLine("Generate script successfully.");
+                        Console.WriteLine("File {0} Generate script successfully.", fileinfo.Name);
                     }
                 }
             }
@@ -39,37 +38,8 @@ namespace GenerateScript
             {
                 Console.WriteLine(ex.Message);
             }
-            /*
-            Console.WriteLine("Generating script,Please hold on........");
-            FileOpers fileOper = new FileOpers();
-            TableOper to = new TableOper();
-            WorkbookOper work = new WorkbookOper();
-            try
-            {
-                List<string> files = fileOper.GetFiles();
-                foreach (string file in files)
-                {
-                    FileInfo fileinfo = new FileInfo(file);
-                    
-                    string fileName = fileinfo.Name;
-                    // DataTable dt = WorkbookOper.exceldata(fileName);
-                    DataSet ds = work.Parse(fileName);
-                    if (ds == null)
-                    {
-                        throw new ApplicationException("File is locked");
-                    }
-                    string scripts = to.PopulateScript(ds.Tables[0]);
-                    fileOper.WriteFile(fileName, scripts);
-                    Console.WriteLine("Generate script successfully.");
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-             * */
-            Console.WriteLine("Press any key to continue...");
-            Console.ReadKey();
+            Console.WriteLine("Waiting 5 seconds will auto exit...");
+            System.Threading.Thread.Sleep(5000);
         }
     }
 }

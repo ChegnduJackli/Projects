@@ -122,7 +122,7 @@ namespace GenerateScript
            string headerColumn = string.Empty;
            string dataColumn = string.Empty;
            string seperator = PubConstant.FieldSeperator;
-           string template = ConfigurationManager.AppSettings["ScriptTemplate"];
+           string template = PubConstant.Script_Template;
            StringBuilder sb = new StringBuilder();
            string TableName = "";
 

@@ -38,11 +38,16 @@ namespace GenerateScript
         {
             try
             {
-                fileName = Path.GetFileNameWithoutExtension(fileName)+".txt";
+                fileName = Path.GetFileNameWithoutExtension(fileName) + PubConstant.ScriptExtension;
                 string filePath = Path.Combine(PubConstant.FilePath, fileName);
-                using (StreamWriter sw = new StreamWriter(filePath))
+
+                using (FileStream fs = new FileStream(filePath, FileMode.OpenOrCreate))
                 {
-                    sw.WriteLine(scripts);
+                    using (StreamWriter sw = new StreamWriter(fs))
+                    {
+                        sw.WriteLine(scripts);
+                        sw.Close();
+                    }
                 }
             }
             catch (Exception ex)
