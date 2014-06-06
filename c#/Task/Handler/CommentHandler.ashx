@@ -21,6 +21,7 @@ public class CommentHandler : IHttpHandler, System.Web.SessionState.IRequiresSes
             string type = context.Request.QueryString["Type"];
             string taskID = context.Request.QueryString["taskID"];
             string content = context.Request.QueryString["Content"];
+            string commentID = context.Request.QueryString["ID"];
             string userID = "lideng"; //context.Session["User"].ToString();
             if (!string.IsNullOrEmpty(type) && type == "LastComment")
             {
@@ -44,6 +45,17 @@ public class CommentHandler : IHttpHandler, System.Web.SessionState.IRequiresSes
                 context.Response.ContentType = "text/json";
                 context.Response.Write(responseText);
             }
+            else if (!string.IsNullOrEmpty(type) && type == "DeleteComment")
+            {
+                if (DeleteAttachment(commentID))
+                {
+                    context.Response.Write("true");
+                }
+                else
+                {
+                    context.Response.Write("false");
+                }
+            }
             
             HttpContext.Current.ApplicationInstance.CompleteRequest();
             
@@ -53,6 +65,11 @@ public class CommentHandler : IHttpHandler, System.Web.SessionState.IRequiresSes
             context.Response.Write("");
         }
     }
+    private bool DeleteAttachment(string id)
+    {
+        Comment cmt = new Comment();
+        return cmt.DeleteComment(Convert.ToInt32(id)); 
+    }
     private List<CommentEntity> GetLastComment(string taskID)
     {
         Comment cmt = new Comment();
@@ -61,8 +78,9 @@ public class CommentHandler : IHttpHandler, System.Web.SessionState.IRequiresSes
         CommentEntity en = new CommentEntity();
 
         DataTable dt = cmt.GetLastCommentByTaskID(Convert.ToInt32(taskID));
-       
         DataRow dr = dt.Rows[0];
+        //en.RowID = Convert.ToInt32(dr["RowID"]);
+        en.ID = Convert.ToInt32(dr["ID"]);
         en.TaskID = taskID;
         en.ReplyTime = Convert.ToDateTime(dr["ReplyTime"]);
         en.Content = dr["Content"].ToString();
@@ -79,6 +97,8 @@ public class CommentHandler : IHttpHandler, System.Web.SessionState.IRequiresSes
         foreach (DataRow dr in dt.Rows)
         {
             CommentEntity en = new CommentEntity();
+            en.ID = Convert.ToInt32(dr["ID"]);
+            en.RowID = Convert.ToInt32(dr["RowID"]);
             en.TaskID = taskID;
             en.ReplyTime = Convert.ToDateTime(dr["ReplyTime"]);
             en.Content = dr["Content"].ToString();

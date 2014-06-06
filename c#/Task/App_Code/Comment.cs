@@ -36,7 +36,7 @@ public class Comment
     {
         try
         {
-            string sql = @"select * from Comment where TaskID=@taskid order by id Asc";
+            string sql = @"select ROW_NUMBER() OVER(ORDER BY id DESC) AS rowid,* from Comment where TaskID=@taskid order by id Asc";
             SqlParameter[] par = new SqlParameter[1];
             par[0] = new SqlParameter("@taskid", taskid);
             DataSet ds = SqlHelper.Query(sql, par);
@@ -99,6 +99,8 @@ public class Comment
 }
 public class CommentEntity
 {
+    public int RowID { get; set; }
+    public int ID { get; set; }
     public string TaskID { get; set; }
     public string Content { get; set; }
     public string userID { get; set; }

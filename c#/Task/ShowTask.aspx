@@ -31,7 +31,7 @@
                 }
                 // var tab = '<table width="100%" cellpadding="1" cellspacing="0" border="0">';
                 var tabHeader = '<tr style="background-color: #ddd; padding-top: 5px;">';
-                var tabCont = '<tr style="height: 20px; overflow: auto;">';
+                var tabCont = '<tr style="height: 30px; overflow: auto;">';
                 var trEnd = '</tr>';
                 var tdEnd = '</td>';
                 //   var tabEnd = '</table>'
@@ -48,8 +48,9 @@
 
                         $.each(data, function (i, d) {
                             var datePar = new Date(parseInt(d.ReplyTime.replace(/\/+Date\(([\d+-]+)\)\/+/, '$1')));
-                            var header = tabHeader + '<td align="left">' + d.userID + '</td><td align="right">' + datePar + '</td>' + trEnd;
+                            var header = tabHeader + '<td align="left">'+ d.userID + '</td><td align="right">' + datePar + '</td>' + trEnd;
                             var cont = tabCont + '<td colspan="2">' + d.Content + '</td>' + trEnd;
+                            cont += tabCont + '<td colspan="2" align="right"><a href="#" onclick="return deleteRow(' + d.ID + ')">delete</a></td>' + trEnd;
                             tabHtml += header + cont;
                         });
                         //tabHtml = tabHtml + tabEnd;
@@ -68,6 +69,22 @@
     </script>
     <script type="text/javascript">
 
+        function deleteRow(ID) {
+        
+            if (parseInt(ID) <= 0) return false;
+
+            $.ajax({
+                url: "Handler/CommentHandler.ashx",
+                type: "Get",
+                async: true,
+                dataType: "json",
+                data: { "Type": "DeleteComment", "ID": ID },
+                success: function (data) {
+                    LoadComment();
+                }
+            });
+            return false;
+        }
         function NotRefresh() {
             var fileValue = document.getElementById("<%=linkAttachment.ClientID%>").innerHTML;
             if (fileValue.trim() === "No Attachment") {
@@ -96,13 +113,13 @@
                 success: function (data) {
                     $.each(data, function (i, d) {
                         var datePar = new Date(parseInt(d.ReplyTime.replace(/\/+Date\(([\d+-]+)\)\/+/, '$1')));
-                        var header = tabHeader + '<td align="left">' + d.userID + '</td><td align="right">' + datePar + '</td>' + trEnd;
+                        var header = tabHeader + '<td align="left">'+ d.userID + '</td><td align="right">' + datePar + '</td>' + trEnd;
                         var cont = tabCont + '<td colspan="2">' + d.Content + '</td>' + trEnd;
-
+                        cont += tabCont + '<td colspan="2" align="right"><a href="#" onclick="return deleteRow('+d.ID+')">delete</a></td>' + trEnd;
                         tabHtml += header + cont;
                     });
                     tabHtml = tabHtml + tabEnd;
-                    $('#Maincontent').append(tabHtml);
+                    $('#Maincontent').html(tabHtml);
                 },
                 failure: function (data) {
                     $('#cmtMsg').html("Server is busy,hold on.");
