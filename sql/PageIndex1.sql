@@ -49,7 +49,7 @@ begin
 end;
 else
 begin
-	set @strTmp = '<(select max ';
+	set @strTmp = '>(select max ';
 	set @strOrder = ' order by [' + @fldName +'] asc' ;
 end;
 

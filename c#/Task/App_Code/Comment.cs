@@ -10,7 +10,10 @@ using System.Data.SqlClient;
 /// </summary>
 public class Comment
 {
-
+    public static readonly string TableName = "Comment";
+    public static readonly int PageSize = 10;
+    public static readonly int OrderType = 0; //0 means asc, 1 meand desc.
+    public static readonly string SP_PageIndex = "PageIndex";
 	public Comment()
 	{
 		//
@@ -46,6 +49,20 @@ public class Comment
         {
             throw ex;
         }
+    }
+    public DataTable GetCommentByID(int taskID, int pageIndex)
+    {
+        string SP = SP_PageIndex;
+        SqlParameter[] par = new SqlParameter[7];
+        par[0] = new SqlParameter("@tblName", Comment.TableName);
+        par[1] = new SqlParameter("@PageSize", Comment.PageSize);
+        par[2] = new SqlParameter("@PageIndex", pageIndex);
+        par[3] = new SqlParameter("@strGetFields", "*");
+        par[4] = new SqlParameter("@OrderType", Comment.OrderType);
+        par[5] = new SqlParameter("@fldName", "id");
+        par[6] = new SqlParameter("@strWhere", " TaskID = "+taskID);
+        DataSet ds = SqlHelper.RunProcedure(SP, par, "Comment");
+        return ds.Tables[0];
     }
 
     public DataTable GetLastCommentByTaskID(int taskid)

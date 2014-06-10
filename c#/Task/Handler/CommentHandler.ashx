@@ -93,13 +93,14 @@ public class CommentHandler : IHttpHandler, System.Web.SessionState.IRequiresSes
     private List<CommentEntity> GetComment(string taskID)
     {
         Comment cmt = new Comment();
-        DataTable dt = cmt.GetCommentByTaskID(Convert.ToInt32(taskID));
+       // DataTable dt = cmt.GetCommentByTaskID(Convert.ToInt32(taskID));
+        DataTable dt = cmt.GetCommentByID(Convert.ToInt32(taskID),2); //the second page.
         List<CommentEntity> cmtEntityList = new List<CommentEntity>();
         foreach (DataRow dr in dt.Rows)
         {
             CommentEntity en = new CommentEntity();
             en.ID = Convert.ToInt32(dr["ID"]);
-            en.RowID = Convert.ToInt32(dr["RowID"]);
+           // en.RowID = Convert.ToInt32(dr["RowID"]);
             en.TaskID = taskID;
             en.ReplyTime = Convert.ToDateTime(dr["ReplyTime"]);
             en.Content = dr["Content"].ToString();

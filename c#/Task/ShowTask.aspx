@@ -48,7 +48,7 @@
 
                         $.each(data, function (i, d) {
                             var datePar = new Date(parseInt(d.ReplyTime.replace(/\/+Date\(([\d+-]+)\)\/+/, '$1')));
-                            var header = tabHeader + '<td align="left">'+ d.userID + '</td><td align="right">' + datePar + '</td>' + trEnd;
+                            var header = tabHeader + '<td align="left">'+'#'+d.ID+' '+ d.userID + '</td><td align="right">' + datePar + '</td>' + trEnd;
                             var cont = tabCont + '<td colspan="2">' + d.Content + '</td>' + trEnd;
                             cont += tabCont + '<td colspan="2" align="right"><a href="#" onclick="return deleteRow(' + d.ID + ')">delete</a></td>' + trEnd;
                             tabHtml += header + cont;
@@ -113,7 +113,7 @@
                 success: function (data) {
                     $.each(data, function (i, d) {
                         var datePar = new Date(parseInt(d.ReplyTime.replace(/\/+Date\(([\d+-]+)\)\/+/, '$1')));
-                        var header = tabHeader + '<td align="left">' + d.userID + '</td><td align="right">' + datePar + '</td>' + trEnd;
+                        var header = tabHeader + '<td align="left">' +'#'+d.ID+' '+ d.userID + '</td><td align="right">' + datePar + '</td>' + trEnd;
                         var cont = tabCont + '<td colspan="2">' + d.Content + '</td>' + trEnd;
                         cont += tabCont + '<td colspan="2" align="right"><a href="#" onclick="return deleteRow(' + d.ID + ')">delete</a></td>' + trEnd;
                         tabHtml += header + cont;
@@ -206,7 +206,7 @@
         <br />
         <br />
         <div style="float: left;">
-            <b>Commet list:</b>
+            <b>Commet list:</b><br />
         </div>
         <br />
         <div id="Maincontent">
