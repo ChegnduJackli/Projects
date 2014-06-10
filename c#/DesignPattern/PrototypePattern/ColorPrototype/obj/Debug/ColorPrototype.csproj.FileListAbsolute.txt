@@ -3,3 +3,7 @@ D:\我的文件\C#\Design Patterns\PrototypePattern\ColorPrototype\bin\Debug\Col
 D:\我的文件\C#\Design Patterns\PrototypePattern\ColorPrototype\obj\Debug\ResolveAssemblyReference.cache
 D:\我的文件\C#\Design Patterns\PrototypePattern\ColorPrototype\obj\Debug\ColorPrototype.dll
 D:\我的文件\C#\Design Patterns\PrototypePattern\ColorPrototype\obj\Debug\ColorPrototype.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\DesignPattern\PrototypePattern\ColorPrototype\bin\Debug\ColorPrototype.dll
+C:\Users\lideng\Desktop\GIT\Project\c#\DesignPattern\PrototypePattern\ColorPrototype\bin\Debug\ColorPrototype.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\DesignPattern\PrototypePattern\ColorPrototype\obj\Debug\ColorPrototype.dll
+C:\Users\lideng\Desktop\GIT\Project\c#\DesignPattern\PrototypePattern\ColorPrototype\obj\Debug\ColorPrototype.pdb

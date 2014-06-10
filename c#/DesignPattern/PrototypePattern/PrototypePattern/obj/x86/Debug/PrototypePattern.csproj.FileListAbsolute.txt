@@ -5,3 +5,10 @@ D:\我的文件\C#\Design Patterns\PrototypePattern\PrototypePattern\bin\Debug\C
 D:\我的文件\C#\Design Patterns\PrototypePattern\PrototypePattern\bin\Debug\ColorPrototype.pdb
 D:\我的文件\C#\Design Patterns\PrototypePattern\PrototypePattern\obj\x86\Debug\PrototypePattern.exe
 D:\我的文件\C#\Design Patterns\PrototypePattern\PrototypePattern\obj\x86\Debug\PrototypePattern.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\DesignPattern\PrototypePattern\PrototypePattern\obj\x86\Debug\PrototypePattern.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\DesignPattern\PrototypePattern\PrototypePattern\obj\x86\Debug\PrototypePattern.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\DesignPattern\PrototypePattern\PrototypePattern\bin\Debug\PrototypePattern.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\DesignPattern\PrototypePattern\PrototypePattern\bin\Debug\PrototypePattern.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\DesignPattern\PrototypePattern\PrototypePattern\bin\Debug\ColorPrototype.dll
+C:\Users\lideng\Desktop\GIT\Project\c#\DesignPattern\PrototypePattern\PrototypePattern\bin\Debug\ColorPrototype.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\DesignPattern\PrototypePattern\PrototypePattern\obj\x86\Debug\PrototypePattern.csprojResolveAssemblyReference.cache
