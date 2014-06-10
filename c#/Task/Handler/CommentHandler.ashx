@@ -4,13 +4,16 @@ using System;
 using System.Web;
 using System.Collections.Generic;
 using System.Data;
-using     System.Web.Script.Serialization;
+using System.Web.Script.Serialization;
+using System.Text;
+
 public class CommentHandler : IHttpHandler, System.Web.SessionState.IRequiresSessionState
 {
-    
-    public void ProcessRequest (HttpContext context) {
-       // context.Response.ContentType = "text/plain";
-//        context.Response.Write("Hello World");
+
+    public void ProcessRequest(HttpContext context)
+    {
+        // context.Response.ContentType = "text/plain";
+        //        context.Response.Write("Hello World");
         //if (context.Session["User"] == null)
         //{
         //    context.Response.Redirect("../Default.aspx", true); 
@@ -56,14 +59,12 @@ public class CommentHandler : IHttpHandler, System.Web.SessionState.IRequiresSes
                     context.Response.Write("false");
                 }
             }
-            
-            HttpContext.Current.ApplicationInstance.CompleteRequest();
-            
         }
         catch
         {
             context.Response.Write("");
         }
+        HttpContext.Current.ApplicationInstance.CompleteRequest();
     }
     private bool DeleteAttachment(string id)
     {
@@ -104,9 +105,16 @@ public class CommentHandler : IHttpHandler, System.Web.SessionState.IRequiresSes
             en.Content = dr["Content"].ToString();
             en.userID = dr["userID"].ToString();
             cmtEntityList.Add(en);
+           
         }
         return cmtEntityList;
-
+    }
+    private string PopulateComment(string taskID)
+    {
+        StringBuilder sb = new StringBuilder();
+        //if(comment userid== login id) can edit ,delete
+        //else only can see.
+        return sb.ToString(); 
     }
     private bool AddComment(string taskID, string content, string userID)
     {

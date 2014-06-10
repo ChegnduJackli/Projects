@@ -101,6 +101,7 @@ public partial class ShowTask : System.Web.UI.Page
     private void InitBindControl()
     {
         if (!IsCurrentUser(this.hidTaskUser.Value) || hidTypeID.Value !="1") //not a task
+        // if (!IsCurrentUser(this.hidTaskUser.Value) ) //not a task
         {
             this.Panel1.Visible = false;
         }

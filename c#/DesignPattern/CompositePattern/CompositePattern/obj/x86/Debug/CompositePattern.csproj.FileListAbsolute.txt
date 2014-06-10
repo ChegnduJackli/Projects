@@ -1,0 +1,4 @@
+C:\Users\lideng\Desktop\GIT\Project\c#\DesignPattern\CompositePattern\CompositePattern\bin\Debug\CompositePattern.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\DesignPattern\CompositePattern\CompositePattern\bin\Debug\CompositePattern.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\DesignPattern\CompositePattern\CompositePattern\obj\x86\Debug\CompositePattern.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\DesignPattern\CompositePattern\CompositePattern\obj\x86\Debug\CompositePattern.pdb
