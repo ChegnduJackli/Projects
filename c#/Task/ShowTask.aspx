@@ -16,11 +16,8 @@
 
 
         $(function () {
-            //to submit commet
 
             LoadComment();
-
-
 
             // $('#btnSubmit').click(function () {
             $('#<%=btnSubmit.ClientID %>').click(function () {
@@ -110,6 +107,7 @@
                 data: { "Type": "AllComment", "taskID": taskID },
                 dataType: "html",//server side return html 
                 async: true,
+                cache:false ,// this is important,otherwise, IE not working normally.
                 success: function (htmlData) {
                     $('#Maincontent').html(htmlData);
                     $('#loadComment').hide();
