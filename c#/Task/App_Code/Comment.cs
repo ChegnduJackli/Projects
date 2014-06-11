@@ -11,7 +11,7 @@ using System.Data.SqlClient;
 public class Comment
 {
     public static readonly string TableName = "Comment";
-    public static readonly int PageSize = 10;
+    public static readonly int PageSize = 20;
     public static readonly int OrderType = 0; //0 means asc, 1 meand desc.
     public static readonly string SP_PageIndex = "PageIndex";
 	public Comment()
@@ -59,7 +59,7 @@ public class Comment
         par[2] = new SqlParameter("@PageIndex", pageIndex);
         par[3] = new SqlParameter("@strGetFields", "*");
         par[4] = new SqlParameter("@OrderType", Comment.OrderType);
-        par[5] = new SqlParameter("@fldName", "id");
+        par[5] = new SqlParameter("@fldName", "ReplyTime");
         par[6] = new SqlParameter("@strWhere", " TaskID = "+taskID);
         DataSet ds = SqlHelper.RunProcedure(SP, par, "Comment");
         return ds.Tables[0];

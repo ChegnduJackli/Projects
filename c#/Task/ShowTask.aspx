@@ -20,6 +20,8 @@
 
             LoadComment();
 
+
+
             // $('#btnSubmit').click(function () {
             $('#<%=btnSubmit.ClientID %>').click(function () {
                 var taskID = $('#<%=hidID.ClientID %>').val();
@@ -39,22 +41,27 @@
                 $.ajax({
                     url: "Handler/CommentHandler.ashx",
                     type: "Get",
-                    data: { "Type": "LastComment", "taskID": taskID, "Content": content },
-                    dataType: "json",
+                    data: { "Type": "AddComment", "taskID": taskID, "Content": content },
+                    dataType: "html", //server side return html 
                     async: true,
-                    success: function (data) {
+                    success: function (htmlData) {
+                        if (htmlData =='false') {
+                            $('#cmtMsg').css('color', 'red').html('Login in first').show();
+                            return false;
+                        }
                         $('#<%=txtComment.ClientID %>').val('').focus();
-                        $('#cmtMsg').css("color", "blue").html("submit successfully").show().fadeOut(1200);
+                        $('#cmtMsg').css("color", "blue").html("submit successfully").show().fadeOut(1800);
 
-                        $.each(data, function (i, d) {
-                            var datePar = new Date(parseInt(d.ReplyTime.replace(/\/+Date\(([\d+-]+)\)\/+/, '$1')));
-                            var header = tabHeader + '<td align="left">'+'#'+d.ID+' '+ d.userID + '</td><td align="right">' + datePar + '</td>' + trEnd;
-                            var cont = tabCont + '<td colspan="2">' + d.Content + '</td>' + trEnd;
-                            cont += tabCont + '<td colspan="2" align="right"><a href="#" onclick="return deleteRow(' + d.ID + ')">delete</a></td>' + trEnd;
-                            tabHtml += header + cont;
-                        });
-                        //tabHtml = tabHtml + tabEnd;
-                        $('#content').append(tabHtml);
+                        //                        $.each(data, function (i, d) {
+                        //                            var datePar = new Date(parseInt(d.ReplyTime.replace(/\/+Date\(([\d+-]+)\)\/+/, '$1')));
+                        //                            var header = tabHeader + '<td align="left">'+'#'+d.ID+' '+ d.userID + '</td><td align="right">' + datePar + '</td>' + trEnd;
+                        //                            var cont = tabCont + '<td colspan="2">' + d.Content + '</td>' + trEnd;
+                        //                            cont += tabCont + '<td colspan="2" align="right"><a href="#" onclick="return deleteRow(' + d.ID + ')">delete</a></td>' + trEnd;
+                        //                            tabHtml += header + cont;
+                        //                        });
+                        //                        //tabHtml = tabHtml + tabEnd;
+                        //                        $('#content').append(tabHtml);
+                        $('#Maincontent').html(htmlData);
                     },
                     failure: function (data) {
                         $('#cmtMsg').html("Server is busy,hold on.");
@@ -68,16 +75,14 @@
         });
     </script>
     <script type="text/javascript">
-
         function deleteRow(ID) {
-        
             if (parseInt(ID) <= 0) return false;
 
             $.ajax({
                 url: "Handler/CommentHandler.ashx",
                 type: "Get",
                 async: true,
-                dataType: "json",
+                dataType: "json", //server side return html 
                 data: { "Type": "DeleteComment", "ID": ID },
                 success: function (data) {
                     LoadComment();
@@ -85,6 +90,7 @@
             });
             return false;
         }
+      
         function NotRefresh() {
             var fileValue = document.getElementById("<%=linkAttachment.ClientID%>").innerHTML;
             if (fileValue.trim() === "No Attachment") {
@@ -97,29 +103,16 @@
         }
         function LoadComment() {
             var taskID = $('#<%=hidID.ClientID %>').val();
-            var tab = '<table width="100%" cellpadding="1" cellspacing="0" border="0" id="content">';
-            var tabHeader = '<tr style="background-color: #ddd; padding-top: 5px;">';
-            var tabCont = '<tr style="height: 30px; overflow: auto;">';
-            var trEnd = '</tr>';
-            var tdEnd = '</td>';
-            var tabEnd = '</table>'
-            var tabHtml = tab;
+            $('#loadComment').show();
             $.ajax({
                 url: "Handler/CommentHandler.ashx",
                 type: "Get",
                 data: { "Type": "AllComment", "taskID": taskID },
-                dataType: "json",
+                dataType: "html",//server side return html 
                 async: true,
-                success: function (data) {
-                    $.each(data, function (i, d) {
-                        var datePar = new Date(parseInt(d.ReplyTime.replace(/\/+Date\(([\d+-]+)\)\/+/, '$1')));
-                        var header = tabHeader + '<td align="left">' +'#'+d.ID+' '+ d.userID + '</td><td align="right">' + datePar + '</td>' + trEnd;
-                        var cont = tabCont + '<td colspan="2">' + d.Content + '</td>' + trEnd;
-                        cont += tabCont + '<td colspan="2" align="right"><a href="#" onclick="return deleteRow(' + d.ID + ')">delete</a></td>' + trEnd;
-                        tabHtml += header + cont;
-                    });
-                    tabHtml = tabHtml + tabEnd;
-                    $('#Maincontent').html(tabHtml);
+                success: function (htmlData) {
+                    $('#Maincontent').html(htmlData);
+                    $('#loadComment').hide();
                 },
                 failure: function (data) {
                     $('#cmtMsg').html("Server is busy,hold on.");
@@ -207,8 +200,11 @@
         <br />
         <div style="float: left;">
             <b>Commet list:</b><br />
+       
         </div>
-        <br />
+           <br />
+             <span id="loadComment" style="display:none">Load Comment,hold on...</span>
+    
         <div id="Maincontent">
             <%--  <asp:Repeater ID="Repeater1" runat="server" OnItemCommand="Repeater1_ItemCommand"
                 OnItemDataBound="Repeater1_ItemDataBound">

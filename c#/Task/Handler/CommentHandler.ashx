@@ -14,39 +14,46 @@ public class CommentHandler : IHttpHandler, System.Web.SessionState.IRequiresSes
     {
         // context.Response.ContentType = "text/plain";
         //        context.Response.Write("Hello World");
-        //if (context.Session["User"] == null)
-        //{
-        //    context.Response.Redirect("../Default.aspx", true); 
-        //    return;
-        //}
+        string loginUserID = "";
+        if (context.Session["User"] != null)
+        {
+            loginUserID = context.Session["User"].ToString();
+        }
         try
         {
             string type = context.Request.QueryString["Type"];
             string taskID = context.Request.QueryString["taskID"];
             string content = context.Request.QueryString["Content"];
             string commentID = context.Request.QueryString["ID"];
-            string userID = "lideng"; //context.Session["User"].ToString();
-            if (!string.IsNullOrEmpty(type) && type == "LastComment")
+            if (!string.IsNullOrEmpty(type) && type == "AddComment")
             {
-                if (!string.IsNullOrEmpty(taskID) && !string.IsNullOrEmpty(content))
+                if (context.Session["User"] == null)
                 {
-                    if (AddComment(taskID, content, userID))
+                    context.Response.Write("false");
+                    return;
+                }
+                else if (!string.IsNullOrEmpty(taskID) && !string.IsNullOrEmpty(content))
+                {
+                    if (AddComment(taskID, content, loginUserID))
                     {
                         //after insert successfully. need return comment. 
-                        JavaScriptSerializer javaScriptSerializer = new JavaScriptSerializer();
-                        string responseText = javaScriptSerializer.Serialize(GetLastComment(taskID));
-                        context.Response.ContentType = "text/json";
-                        context.Response.Write(responseText);
-
+                        //JavaScriptSerializer javaScriptSerializer = new JavaScriptSerializer();
+                        //string responseText = javaScriptSerializer.Serialize(GetLastComment(taskID));
+                        //context.Response.ContentType = "text/json";
+                        //context.Response.Write(responseText);
+                        string htmlCode = PopulateComment(taskID, loginUserID);
+                        context.Response.ContentType = "text/html";
+                        context.Response.Write(htmlCode);
                     }
                 }
             }
-            else if (!string.IsNullOrEmpty(type) && type == "AllComment")
+            if (!string.IsNullOrEmpty(type) && type == "AllComment")
             {
-                JavaScriptSerializer javaScriptSerializer = new JavaScriptSerializer();
-                string responseText = javaScriptSerializer.Serialize(GetComment(taskID));
-                context.Response.ContentType = "text/json";
-                context.Response.Write(responseText);
+                string htmlCode = PopulateComment(taskID, loginUserID);
+                //JavaScriptSerializer javaScriptSerializer = new JavaScriptSerializer();
+                //string responseText = javaScriptSerializer.Serialize(GetComment(taskID));
+                context.Response.ContentType = "text/html";
+                context.Response.Write(htmlCode);
             }
             else if (!string.IsNullOrEmpty(type) && type == "DeleteComment")
             {
@@ -94,7 +101,7 @@ public class CommentHandler : IHttpHandler, System.Web.SessionState.IRequiresSes
     {
         Comment cmt = new Comment();
        // DataTable dt = cmt.GetCommentByTaskID(Convert.ToInt32(taskID));
-        DataTable dt = cmt.GetCommentByID(Convert.ToInt32(taskID),2); //the second page.
+        DataTable dt = cmt.GetCommentByID(Convert.ToInt32(taskID),1); //the first page.
         List<CommentEntity> cmtEntityList = new List<CommentEntity>();
         foreach (DataRow dr in dt.Rows)
         {
@@ -110,11 +117,41 @@ public class CommentHandler : IHttpHandler, System.Web.SessionState.IRequiresSes
         }
         return cmtEntityList;
     }
-    private string PopulateComment(string taskID)
+    private string PopulateComment(string taskID,string loginUser)
     {
         StringBuilder sb = new StringBuilder();
         //if(comment userid== login id) can edit ,delete
         //else only can see.
+        string loginID = loginUser;
+        var tab = "<table width='100%' cellpadding='1' cellspacing='0' border='0' id='content'>";
+        var trHeader = "<tr style='background-color: #ddd; padding-top: 5px;'>";
+        var trBegin = "<tr style='height: 30px; overflow: auto;'>";
+        var trEnd = "</tr>";
+        var tabEnd = "</table>";
+        sb.Append(tab);
+        List<CommentEntity> cmtList = GetComment(taskID);
+        foreach (CommentEntity entity in cmtList)
+        {
+            if (loginUser.Length > 0 && entity.userID == loginUser)
+            {
+                sb.Append(trHeader);
+                sb.Append("<td align='left'>" + "#" + entity.ID + " " + entity.userID + "</td>");
+                sb.Append("<td align='right'>" + entity.ReplyTime + "</td>");
+                sb.Append(trBegin + "<td colspan='2'>" + entity.Content + "</td>" + trEnd);
+                sb.Append(trBegin + "<td colspan='2'  align='right'><a href='javascript:void(0)' onclick='javascript:EditRow( " + entity.ID + ");'>Edit</a> | <a href='javascript:void(0)' onclick='javascript:deleteRow( " + entity.ID + ");'>delete</a></td>" + trEnd);
+                sb.Append(trEnd);
+            }
+            else
+            {
+                sb.Append(trHeader);
+                sb.Append("<td align='left'>" + "#" + entity.ID + " " + entity.userID + "</td>");
+                sb.Append("<td align='right'>" + entity.ReplyTime + "</td>");
+                sb.Append(trBegin + "<td colspan='2'>" + entity.Content + "</td>" + trEnd);
+                sb.Append(trBegin + "<td colspan='2'></td>" + trEnd);
+                sb.Append(trEnd);
+            }
+        }
+        sb.Append(tabEnd);
         return sb.ToString(); 
     }
     private bool AddComment(string taskID, string content, string userID)
