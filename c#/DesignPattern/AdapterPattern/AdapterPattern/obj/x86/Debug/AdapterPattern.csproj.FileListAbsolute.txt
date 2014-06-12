@@ -3,3 +3,5 @@ D:\我的文件\C#\Design Patterns\AdapterPattern\AdapterPattern\bin\Debug\Adapt
 D:\我的文件\C#\Design Patterns\AdapterPattern\AdapterPattern\obj\x86\Debug\ResolveAssemblyReference.cache
 D:\我的文件\C#\Design Patterns\AdapterPattern\AdapterPattern\obj\x86\Debug\AdapterPattern.exe
 D:\我的文件\C#\Design Patterns\AdapterPattern\AdapterPattern\obj\x86\Debug\AdapterPattern.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\DesignPattern\AdapterPattern\AdapterPattern\obj\x86\Debug\AdapterPattern.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\DesignPattern\AdapterPattern\AdapterPattern\obj\x86\Debug\AdapterPattern.pdb

@@ -1,0 +1,8 @@
+C:\Users\lideng\Desktop\GIT\Project\c#\Log\Log\bin\Debug\Log.exe.config
+C:\Users\lideng\Desktop\GIT\Project\c#\Log\Log\bin\Debug\Log.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\Log\Log\bin\Debug\Log.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\Log\Log\bin\Debug\Log4.dll
+C:\Users\lideng\Desktop\GIT\Project\c#\Log\Log\bin\Debug\Log4.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\Log\Log\obj\x86\Debug\LogSample.csprojResolveAssemblyReference.cache
+C:\Users\lideng\Desktop\GIT\Project\c#\Log\Log\obj\x86\Debug\Log.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\Log\Log\obj\x86\Debug\Log.pdb

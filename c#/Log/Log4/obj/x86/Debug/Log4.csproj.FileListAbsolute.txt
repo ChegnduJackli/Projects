@@ -1,0 +1,4 @@
+C:\Users\lideng\Desktop\GIT\Project\c#\Log\Log4\bin\Debug\Log4.dll
+C:\Users\lideng\Desktop\GIT\Project\c#\Log\Log4\bin\Debug\Log4.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\Log\Log4\obj\x86\Debug\Log4.dll
+C:\Users\lideng\Desktop\GIT\Project\c#\Log\Log4\obj\x86\Debug\Log4.pdb

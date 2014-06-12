@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Data.SqlClient;
 
 namespace AdapterPattern
 {
@@ -18,6 +19,7 @@ namespace AdapterPattern
             LogAdaptee fileLog1 = new FileLog();
             fileLog1.WriteLog();
             Console.ReadLine();
+
         }
     }
 }
