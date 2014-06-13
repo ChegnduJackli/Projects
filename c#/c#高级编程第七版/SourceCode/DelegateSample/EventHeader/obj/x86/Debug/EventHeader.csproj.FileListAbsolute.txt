@@ -1,0 +1,4 @@
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\DelegateSample\EventHeader\bin\Debug\EventHeader.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\DelegateSample\EventHeader\bin\Debug\EventHeader.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\DelegateSample\EventHeader\obj\x86\Debug\EventHeader.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\DelegateSample\EventHeader\obj\x86\Debug\EventHeader.pdb

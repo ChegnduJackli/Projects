@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Log4
 {
-    internal class FileLog : ILog
+    public class FileLog : ILog
     {
         public enum LogLevel
         {
@@ -15,6 +15,14 @@ namespace Log4
         };
         public LogLevel LogLevels = LogLevel.Normal;
 
+        //FileDAL _fileDAL;
+        //public FileLog()
+        //{
+        //    if (_fileDAL == null)
+        //    {
+        //        _fileDAL = new FileDAL();
+        //    }
+        //}
     
         public void WriteLog(string message)
         {
@@ -24,8 +32,8 @@ namespace Log4
 
         public void ErrorLog(string message)
         {
-            FileDAL fileDAL = new FileDAL(LogLevel.Error);
-            fileDAL.Write(message);
+           FileDAL fileDAL = new FileDAL(LogLevel.Error);
+           fileDAL.Write(message);
         }
     }
 }

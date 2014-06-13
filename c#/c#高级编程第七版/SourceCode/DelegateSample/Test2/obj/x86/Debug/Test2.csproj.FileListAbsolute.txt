@@ -1,0 +1,8 @@
+C:\Users\lideng\Desktop\GIT\Project\c#\DelegateSample\Test2\bin\Debug\Test2.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\DelegateSample\Test2\bin\Debug\Test2.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\DelegateSample\Test2\obj\x86\Debug\Test2.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\DelegateSample\Test2\obj\x86\Debug\Test2.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\DelegateSample\Test2\bin\Debug\Test2.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\DelegateSample\Test2\bin\Debug\Test2.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\DelegateSample\Test2\obj\x86\Debug\Test2.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\DelegateSample\Test2\obj\x86\Debug\Test2.pdb

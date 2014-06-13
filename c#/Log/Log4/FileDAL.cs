@@ -48,9 +48,17 @@ namespace Log4
                 string filePath = this._fileName;
                 lock (obj)
                 {
-                    using (StreamWriter sw = new StreamWriter(filePath, true, Encoding.UTF8))
+                    using (FileStream fs = new FileStream(filePath, FileMode.Append, FileAccess.Write, FileShare.Delete | FileShare.ReadWrite))
                     {
-                        sw.WriteLine(DateTimeFormat.LongTimeFormat + " : " + message);
+                        using (StreamWriter sw = new StreamWriter(fs))
+                        {
+                            sw.WriteLine(DateTimeFormat.LongTimeFormat + " : " + message);
+                            //sw.Flush();
+                            sw.Close();
+                            fs.Close();
+                            sw.Dispose();
+                            fs.Dispose();
+                        }
                     }
                 }
             }
@@ -67,6 +75,9 @@ namespace Log4
             {
                 Directory.CreateDirectory(dirPath);
             }
+            String ym = DateTime.Now.ToString("yyyyMM", DateTimeFormatInfo.InvariantInfo);
+            dirPath += ym + "/";
+
             String ymd = DateTime.Now.ToString("yyyyMMdd", DateTimeFormatInfo.InvariantInfo);
             dirPath += ymd + "/";
 
@@ -84,6 +95,7 @@ namespace Log4
                 Directory.CreateDirectory(dirPath);
             }
 
+    
             String newFileName = DateTime.Now.ToString("yyyyMMdd", DateTimeFormatInfo.InvariantInfo) + LogFileExit;
             String filePath = dirPath + newFileName;
             return filePath;

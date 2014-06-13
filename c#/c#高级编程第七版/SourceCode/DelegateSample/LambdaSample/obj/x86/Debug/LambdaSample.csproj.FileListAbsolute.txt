@@ -1,0 +1,8 @@
+C:\Users\lideng\Desktop\GIT\Project\c#\DelegateSample\LambdaSample\bin\Debug\LambdaSample.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\DelegateSample\LambdaSample\bin\Debug\LambdaSample.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\DelegateSample\LambdaSample\obj\x86\Debug\LambdaSample.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\DelegateSample\LambdaSample\obj\x86\Debug\LambdaSample.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\DelegateSample\LambdaSample\obj\x86\Debug\LambdaSample.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\DelegateSample\LambdaSample\obj\x86\Debug\LambdaSample.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\DelegateSample\LambdaSample\bin\Debug\LambdaSample.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\DelegateSample\LambdaSample\bin\Debug\LambdaSample.pdb
