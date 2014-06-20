@@ -69,6 +69,9 @@
                                 Type<asp:LinkButton ID="linkStatus" CommandName="Sort" CommandArgument="Status"
                                     runat="server" Font-Size="12px" ForeColor="blue">(Sort)</asp:LinkButton>
                             </td>
+                            <td width="200px">
+                            Delete|Edit
+                            </td>
                         </tr>
                 </HeaderTemplate>
                 <ItemTemplate>
@@ -82,6 +85,14 @@
                         </td>
                         <td width="200px">
                             <asp:Label runat="server" ID="Label1" Text='<%# Eval("TypeName") %>' />
+                        </td>
+                        <td width="200px">
+                        <asp:LinkButton ID="linkDelete" CommandName="Delete" CommandArgument='<%# Eval("ID") %>'
+                                    runat="server" Font-Size="12px"  OnClientClick="javascript:return confirm('Are you sure to delete this?');">Delete</asp:LinkButton>
+                                    &nbsp;|&nbsp;
+<%--                                     <asp:LinkButton ID="linkEdit" CommandName="Edit" CommandArgument='<%# Eval("ID") %>' PostBackUrl='~/TaskDetails.aspx?TaskID='<%#Eval("ID") %>''
+                                    runat="server" Font-Size="12px" ForeColor="blue" >Edit</asp:LinkButton>--%>
+                                    <a href ="TaskDetails.aspx?TaskID=<%#Eval("ID") %>">Edit</a>
                         </td>
                     </tr>
                 </ItemTemplate>

@@ -38,7 +38,7 @@ public class ProcessType
         {
             ProcessStatus = Process_Status.Processing;
         }
-        else if (typeID == "2")
+        else if (typeID == "3")
         {
             ProcessStatus = Process_Status.Compeleted;
         }

@@ -7,6 +7,14 @@ using System.Web.UI.WebControls;
 
 public partial class UserControl_UserControlProcessType : System.Web.UI.UserControl
 {
+    //protected override void OnLoad(EventArgs e)
+    //{
+    //    this.ddlStatus.Items.Clear();
+    //    this.ddlStatus.DataSource = ProcessType.GetAllProcessType();
+    //    this.ddlStatus.DataTextField = "ProcessTypeName";
+    //    this.ddlStatus.DataValueField = "ID";
+    //    this.ddlStatus.DataBind();
+    //}
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!IsPostBack)

@@ -12,12 +12,12 @@ public partial class UserLogin : System.Web.UI.Page
     {
         if (!IsPostBack)
         {
-            //if (Request.Cookies["UserName"] != null)
-            //{
-            //    Session["User"] = Request.Cookies["UserName"].Value;
-            //    UserDAL.LoginUserID = Session["User"].ToString();
-            //    Response.Redirect("Default.aspx");
-            //}
+            if (Request.Cookies["UserName"] != null)
+            {
+                Session["User"] = Request.Cookies["UserName"].Value;
+                UserDAL.LoginUserID = Session["User"].ToString();
+                Response.Redirect("Default.aspx");
+            }
         }
     }
     protected void btnSubmit_Click(object sender, EventArgs e)

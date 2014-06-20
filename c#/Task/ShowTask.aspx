@@ -181,7 +181,8 @@
         <div style="float: right">
             <asp:Panel ID="Panel1" runat="server">
                 Mark to:&nbsp;
-                <ucProcess:ProcessType ID="ddlProcessType" runat="server" />
+                  <asp:DropDownList ID="ddlProcessType" runat="server"></asp:DropDownList>
+            <%--    <ucProcess:ProcessType ID="ddlProcessType" runat="server" />--%>
                 <asp:LinkButton runat="server" ID="linkConfirm" OnClientClick="javascript:return confirm('Are you sure to change status?');"
                     OnClick="linkConfirm_Click">Confirm</asp:LinkButton>
                 &nbsp; &nbsp;

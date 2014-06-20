@@ -141,14 +141,22 @@ public class TaskDAL
         }
     }
     //update processid to some other status
-    public bool UpdateStatus(int id,string status)
+    public bool UpdateStatus(int id, string processValue)
     {
         try
         {
             string sql = @"update task set ProcessID=@ProcessID, CompleteTime=@CompleteTime where id=@id";
             SqlParameter[] par = new SqlParameter[3];
-            par[0] = new SqlParameter("@ProcessID", status);
-            par[1] = new SqlParameter("@CompleteTime", DateTime.Now);
+            par[0] = new SqlParameter("@ProcessID", processValue);
+            ProcessType p = new ProcessType(processValue);
+            if (p.ProcessStatus == ProcessType.Process_Status.Compeleted)
+            {
+                par[1] = new SqlParameter("@CompleteTime", DateTime.Now);
+            }
+            else
+            {
+                par[1] = new SqlParameter("@CompleteTime", DBNull.Value);
+            }
             par[2] = new SqlParameter("@id", id);
             int result = SqlHelper.ExecuteSql(sql, par);
             return result > 0;
@@ -197,8 +205,8 @@ public class TaskDAL
             ProcessType p = new ProcessType(entity.ProcessID);
 
             string sql = @"update task set status=@status, CompleteTime=@CompleteTime,
-                           Title=@Title,Content=@Content,Attachment=@Attachment,FileName=@FileName,ProcessID=@ProcessID where id=@id";
-            SqlParameter[] par = new SqlParameter[8];
+                           Title=@Title,Content=@Content,Attachment=@Attachment,FileName=@FileName,ProcessID=@ProcessID,TypeID=@TypeID where id=@id";
+            SqlParameter[] par = new SqlParameter[9];
             par[0] = new SqlParameter("@status", entity.Status);
             if (p.ProcessStatus == ProcessType.Process_Status.Compeleted)
             {
@@ -213,7 +221,8 @@ public class TaskDAL
             par[4] = new SqlParameter("@Attachment", entity.Attachment);
             par[5] = new SqlParameter("@FileName", entity.FileName);
             par[6] = new SqlParameter("@ProcessID", entity.ProcessID);
-            par[7] = new SqlParameter("@id", entity.ID);
+            par[7] = new SqlParameter("@TypeID", entity.TypeID);
+            par[8] = new SqlParameter("@id", entity.ID);
             int result = SqlHelper.ExecuteSql(sql, par);
             return result > 0;
         }

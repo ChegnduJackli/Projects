@@ -1,0 +1,4 @@
+C:\Users\lideng\Desktop\GIT\Project\c#\StringClass\RegularExpress\bin\Debug\RegularExpress.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\StringClass\RegularExpress\bin\Debug\RegularExpress.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\StringClass\RegularExpress\obj\x86\Debug\RegularExpress.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\StringClass\RegularExpress\obj\x86\Debug\RegularExpress.pdb

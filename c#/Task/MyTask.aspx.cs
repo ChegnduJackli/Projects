@@ -116,9 +116,20 @@ public partial class MyTask : System.Web.UI.Page
                         }
                     }
                 }
-                BindData();
-
             }
+            if (e.Item.ItemType == ListItemType.Item)
+            {
+                if (e.CommandName.Equals("Delete"))
+                {
+                    int taskID = Convert.ToInt32(e.CommandArgument.ToString());
+                    if (taskDal.DeleteTask(Convert.ToInt32(taskID)))
+                    {
+                        MessageBox.Show(this, "delete task successfully.");
+                        //Response.Redirect("Default.aspx");
+                    }
+                }
+            }
+            BindData();
         }
         catch (Exception ex)
         {

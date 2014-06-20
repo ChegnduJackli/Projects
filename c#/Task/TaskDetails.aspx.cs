@@ -16,8 +16,23 @@ public partial class TaskDetails : System.Web.UI.Page
     {
         if (!IsPostBack)
         {
+            InitDDL();
             FillControl();
         }
+    }
+    private void InitDDL()
+    {
+        this.ddlTaskType.Items.Clear();
+        this.ddlTaskType.DataSource = TaskType.GetAllTaskType();
+        this.ddlTaskType.DataTextField = "TypeName";
+        this.ddlTaskType.DataValueField = "ID";
+        this.ddlTaskType.DataBind();
+
+        this.ddlProcessType.Items.Clear();
+        this.ddlProcessType.DataSource = ProcessType.GetAllProcessType();
+        this.ddlProcessType.DataTextField = "ProcessTypeName";
+        this.ddlProcessType.DataValueField = "ID";
+        this.ddlProcessType.DataBind();
     }
     private void FillControl()
     {
@@ -32,6 +47,7 @@ public partial class TaskDetails : System.Web.UI.Page
             this.lblComTime.Text = row["CompleteTime"] == DBNull.Value ? "" : row["CompleteTime"].ToString();
             string status = row["status"].ToString();
             string processID = row["ProcessID"].ToString();
+            string typeID = row["TypeID"].ToString();
             string attachment = row["FileName"] == DBNull.Value ? "" : row["FileName"].ToString();
             if (attachment.Length > 0)
             {
@@ -48,16 +64,40 @@ public partial class TaskDetails : System.Web.UI.Page
                     break;
                 }
             }
+            foreach (ListItem il in this.ddlTaskType.Items)
+            {
+                if (il.Value == typeID)
+                {
+                    il.Selected = true;
+                    break;
+                }
+            }
         }
 
     }
     protected void btnOK_Click(object sender, EventArgs e)
     {
         string id = this.hidID.Value;
-        string status = this.ddlProcessType.ProcessingID;
+        string status = this.ddlProcessType.SelectedValue;
         string content = this.txtDetails.Text;
         string title = this.txtTitle.Text;
+        string TypeID = this.ddlTaskType.SelectedValue;
 
+        if (TypeID == "0")
+        {
+            MessageBox.Show(this, "Please select type.");
+            return;
+        }
+        if (TypeID == "1" && status == "0")
+        {
+            MessageBox.Show(this, "Please select Process.");
+            return;
+        }
+        if ((TypeID != "1" || TypeID == "0") && status != "0")
+        {
+            MessageBox.Show(this, "Please select Process.");
+            return;
+        }
 
         try
         {
@@ -102,11 +142,11 @@ public partial class TaskDetails : System.Web.UI.Page
             tt.ID = Convert.ToInt32(id);
             tt.Status = status;
             tt.Content = content;
-            tt.Status = status;
             tt.Title = title;
             tt.Attachment = fileFullPath;
             tt.FileName = fileName;
             tt.ProcessID = status;
+            tt.TypeID = TypeID;
             if (taskDal.UpdateTask(tt))
             {
                 MessageBox.Show(this, "update task successfully.");

@@ -101,7 +101,7 @@ public class UserDAL
 
     public bool IsCurrentUser(string useID)
     {
-        return UserDAL.LoginUserID == useID;
+        return UserDAL.LoginUserID.Equals(useID, StringComparison.OrdinalIgnoreCase);
     }
     public bool IsAdmin(string userID)
     {

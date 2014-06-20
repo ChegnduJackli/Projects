@@ -1,0 +1,14 @@
+C:\Books\Pro C# 4.0\code\Collections\CollectionsSamples\ConcurrentSample\bin\Debug\ConcurrentSample.exe
+C:\Books\Pro C# 4.0\code\Collections\CollectionsSamples\ConcurrentSample\bin\Debug\ConcurrentSample.pdb
+C:\Books\Pro C# 4.0\code\Collections\CollectionsSamples\ConcurrentSample\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Books\Pro C# 4.0\code\Collections\CollectionsSamples\ConcurrentSample\obj\x86\Debug\ConcurrentSample.exe
+C:\Books\Pro C# 4.0\code\Collections\CollectionsSamples\ConcurrentSample\obj\x86\Debug\ConcurrentSample.pdb
+K:\ProC# 4.0\code\Collections\CollectionsSamples\ConcurrentSample\obj\x86\Debug\ConcurrentSample.exe
+K:\ProC# 4.0\code\Collections\CollectionsSamples\ConcurrentSample\obj\x86\Debug\ConcurrentSample.pdb
+K:\ProC# 4.0\code\Collections\CollectionsSamples\ConcurrentSample\bin\Debug\ConcurrentSample.exe
+K:\ProC# 4.0\code\Collections\CollectionsSamples\ConcurrentSample\bin\Debug\ConcurrentSample.pdb
+K:\ProC# 4.0\code\Collections\CollectionsSamples\ConcurrentSample\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\lideng\Desktop\GIT\C#高级编程(中文第七版)\9780470502259_Complete_Code_Download\502259 Code CH10\CollectionsSamples\ConcurrentSample\bin\Debug\ConcurrentSample.exe
+C:\Users\lideng\Desktop\GIT\C#高级编程(中文第七版)\9780470502259_Complete_Code_Download\502259 Code CH10\CollectionsSamples\ConcurrentSample\bin\Debug\ConcurrentSample.pdb
+C:\Users\lideng\Desktop\GIT\C#高级编程(中文第七版)\9780470502259_Complete_Code_Download\502259 Code CH10\CollectionsSamples\ConcurrentSample\obj\x86\Debug\ConcurrentSample.exe
+C:\Users\lideng\Desktop\GIT\C#高级编程(中文第七版)\9780470502259_Complete_Code_Download\502259 Code CH10\CollectionsSamples\ConcurrentSample\obj\x86\Debug\ConcurrentSample.pdb

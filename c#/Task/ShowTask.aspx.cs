@@ -26,11 +26,20 @@ public partial class ShowTask : System.Web.UI.Page
 
         if (!IsPostBack)
         {
+            InitDDL();
             FillControl();
             BindComment();
 
             InitBindControl();
         }
+    }
+    private void InitDDL()
+    {
+        this.ddlProcessType.Items.Clear();
+        this.ddlProcessType.DataSource = ProcessType.GetAllProcessType();
+        this.ddlProcessType.DataTextField = "ProcessTypeName";
+        this.ddlProcessType.DataValueField = "ID";
+        this.ddlProcessType.DataBind();
     }
     private void BindComment()
     {
@@ -38,6 +47,8 @@ public partial class ShowTask : System.Web.UI.Page
         DataTable dt = comDAL.GetCommentByTaskID(Convert.ToInt32(postID));
         //this.Repeater1.DataSource = dt;
        // this.Repeater1.DataBind();
+
+   
     }
 
     private void FillControl()
@@ -61,7 +72,8 @@ public partial class ShowTask : System.Web.UI.Page
                 string status = row["status"].ToString();
                 string typeID = hidTypeID.Value = row["TypeID"] == DBNull.Value ? "0" : row["TypeID"].ToString();
                 string processID = row["ProcessID"].ToString();
-                lblStatus.Text = status;
+                string processName = row["ProcessTypeName"].ToString();
+                lblStatus.Text = processName;
                 hidID.Value = postID;
                 // ddlProcessType.ProcessingID = status;
                 lblAuthor.Text = hidTaskUser.Value;
@@ -178,14 +190,14 @@ public partial class ShowTask : System.Web.UI.Page
 
             postID = Request.QueryString["TaskID"];
             int id = Convert.ToInt32(postID);
-            string status = ddlProcessType.ProcessingName;
-            string processValue = ddlProcessType.ProcessingID;
+            string status = ddlProcessType.SelectedItem.Text;
+            string processValue = ddlProcessType.SelectedValue;
             if (processValue == "0")
             {
                 MessageBox.Show(this, "Please select process status");
                 return;
             }
-            if (taskDal.UpdateStatus(id, status))
+            if (taskDal.UpdateStatus(id, processValue))
             {
                 string mesg = string.Format("Update status to {0} successfully.", status);
                 MessageBox.Show(this, mesg);
@@ -267,7 +279,7 @@ public partial class ShowTask : System.Web.UI.Page
     private bool IsCurrentUser(string taskUser)
     {
         UserDAL u = new UserDAL();
-        if ((taskUser ==userID) || u.IsAdmin(userID))
+        if ((taskUser.Equals(userID,StringComparison.OrdinalIgnoreCase)) || u.IsAdmin(userID))
             return true;
         return false;
         //return new UserDAL().IsCurrentUser(taskUser) || new UserDAL().IsAdmin(userID);

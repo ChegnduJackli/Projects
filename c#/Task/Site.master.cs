@@ -14,6 +14,10 @@ public partial class SiteMaster : System.Web.UI.MasterPage
         Response.ExpiresAbsolute = DateTime.Now.AddDays(-1d);
         Response.Expires = -1500;
         Response.CacheControl = "no-cache";
+        if (Request.Cookies["UserName"] != null)
+        {
+            Session["User"] = Request.Cookies["UserName"].Value;
+        }
         // Check for your SessionID
         if (Session["User"] != null)
         {

@@ -1,0 +1,4 @@
+C:\Users\lideng\Desktop\GIT\Project\c#\StringClass\StringClass\bin\Debug\StringClass.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\StringClass\StringClass\bin\Debug\StringClass.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\StringClass\StringClass\obj\x86\Debug\StringClass.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\StringClass\StringClass\obj\x86\Debug\StringClass.pdb

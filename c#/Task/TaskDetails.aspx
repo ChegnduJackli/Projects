@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true"
     ValidateRequest="false" CodeFile="TaskDetails.aspx.cs" Inherits="TaskDetails" %>
     <%@ Register TagPrefix="ucProcess" TagName="ProcessType" Src="UserControl/UserControlProcessType.ascx" %>
+    <%@ Register TagPrefix="uc" TagName="TaskType" Src="UserControl/UserControlTaskType.ascx" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="Server">
@@ -93,12 +94,26 @@
                     <asp:Label ID="lblComTime" runat="server" Text="Label"></asp:Label>
                 </td>
             </tr>
-            <tr>
+             <tr>
                 <td class="style1">
-                    Status:
+                    Type:
                 </td>
                 <td>
-                      <ucProcess:ProcessType ID="ddlProcessType" runat="server" />
+                  <%--    <uc:TaskType ID="ddlTaskType" runat="server" />--%>
+                  <asp:DropDownList ID="ddlTaskType"
+                      runat="server">
+                  </asp:DropDownList>
+                </td>
+            </tr>
+            <tr>
+                <td class="style1">
+                    Process:
+                </td>
+                <td>
+                   <%--   <ucProcess:ProcessType ID="ddlProcessType" runat="server" />--%>
+                          <asp:DropDownList ID="ddlProcessType"
+                      runat="server">
+                  </asp:DropDownList>
                 </td>
             </tr>
             <tr>

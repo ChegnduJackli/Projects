@@ -85,8 +85,8 @@ public class CommentHandler : IHttpHandler, System.Web.SessionState.IRequiresSes
         List<CommentEntity> cmtEntityList = new List<CommentEntity>();
         CommentEntity en = new CommentEntity();
 
-        DataTable dt = cmt.GetLastCommentByTaskID(Convert.ToInt32(taskID));
-        DataRow dr = dt.Rows[0];
+        DataTable dt = cmt.GetLastCommentByTaskID(Convert.ToInt32(taskID)); 
+        DataRow dr = dt.Rows[0];=
         //en.RowID = Convert.ToInt32(dr["RowID"]);
         en.ID = Convert.ToInt32(dr["ID"]);
         en.TaskID = taskID;
