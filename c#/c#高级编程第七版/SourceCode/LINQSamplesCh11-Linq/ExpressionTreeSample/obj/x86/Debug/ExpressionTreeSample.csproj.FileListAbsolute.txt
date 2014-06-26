@@ -1,0 +1,23 @@
+C:\Books\Pro C# 4.0\code\LINQ\LINQSamples\ExpressionTreeSample\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Books\Pro C# 4.0\code\LINQ\LINQSamples\ExpressionTreeSample\bin\Debug\ExpressionTreeSample.exe
+C:\Books\Pro C# 4.0\code\LINQ\LINQSamples\ExpressionTreeSample\bin\Debug\ExpressionTreeSample.pdb
+C:\Books\Pro C# 4.0\code\LINQ\LINQSamples\ExpressionTreeSample\bin\Debug\DataLib.dll
+C:\Books\Pro C# 4.0\code\LINQ\LINQSamples\ExpressionTreeSample\bin\Debug\DataLib.pdb
+C:\Books\Pro C# 4.0\code\LINQ\LINQSamples\ExpressionTreeSample\obj\x86\Debug\ExpressionTreeSample.exe
+C:\Books\Pro C# 4.0\code\LINQ\LINQSamples\ExpressionTreeSample\obj\x86\Debug\ExpressionTreeSample.pdb
+K:\ProC# 4.0\code\LINQ\LINQSamples\ExpressionTreeSample\obj\x86\Debug\ExpressionTreeSample.exe
+K:\ProC# 4.0\code\LINQ\LINQSamples\ExpressionTreeSample\obj\x86\Debug\ExpressionTreeSample.pdb
+K:\ProC# 4.0\code\LINQ\LINQSamples\ExpressionTreeSample\bin\Debug\ExpressionTreeSample.Contracts.dll
+K:\ProC# 4.0\code\LINQ\LINQSamples\ExpressionTreeSample\bin\Debug\ExpressionTreeSample.Contracts.pdb
+K:\ProC# 4.0\code\LINQ\LINQSamples\ExpressionTreeSample\bin\Debug\ExpressionTreeSample.exe
+K:\ProC# 4.0\code\LINQ\LINQSamples\ExpressionTreeSample\bin\Debug\ExpressionTreeSample.pdb
+K:\ProC# 4.0\code\LINQ\LINQSamples\ExpressionTreeSample\bin\Debug\DataLib.dll
+K:\ProC# 4.0\code\LINQ\LINQSamples\ExpressionTreeSample\bin\Debug\DataLib.pdb
+K:\ProC# 4.0\code\LINQ\LINQSamples\ExpressionTreeSample\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\LINQSamplesCh11-Linq\ExpressionTreeSample\obj\x86\Debug\ExpressionTreeSample.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\LINQSamplesCh11-Linq\ExpressionTreeSample\obj\x86\Debug\ExpressionTreeSample.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\LINQSamplesCh11-Linq\ExpressionTreeSample\bin\Debug\ExpressionTreeSample.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\LINQSamplesCh11-Linq\ExpressionTreeSample\bin\Debug\ExpressionTreeSample.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\LINQSamplesCh11-Linq\ExpressionTreeSample\bin\Debug\DataLib.dll
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\LINQSamplesCh11-Linq\ExpressionTreeSample\bin\Debug\DataLib.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\LINQSamplesCh11-Linq\ExpressionTreeSample\obj\x86\Debug\ExpressionTreeSample.csprojResolveAssemblyReference.cache

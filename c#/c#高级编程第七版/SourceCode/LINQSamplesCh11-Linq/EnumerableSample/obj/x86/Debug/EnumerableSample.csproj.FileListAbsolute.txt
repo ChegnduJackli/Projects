@@ -1,0 +1,25 @@
+C:\Books\Pro C# 4.0\code\LINQ\LINQSamples\EnumerableSample\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Books\Pro C# 4.0\code\LINQ\LINQSamples\EnumerableSample\bin\Debug\EnumerableSample.exe
+C:\Books\Pro C# 4.0\code\LINQ\LINQSamples\EnumerableSample\bin\Debug\EnumerableSample.pdb
+C:\Books\Pro C# 4.0\code\LINQ\LINQSamples\EnumerableSample\bin\Debug\DataLib.dll
+C:\Books\Pro C# 4.0\code\LINQ\LINQSamples\EnumerableSample\bin\Debug\DataLib.pdb
+C:\Books\Pro C# 4.0\code\LINQ\LINQSamples\EnumerableSample\obj\x86\Debug\EnumerableSample.exe
+C:\Books\Pro C# 4.0\code\LINQ\LINQSamples\EnumerableSample\obj\x86\Debug\EnumerableSample.pdb
+K:\ProC# 4.0\code\LINQ\LINQSamples\EnumerableSample\bin\Debug\EnumerableSample.Contracts.dll
+K:\ProC# 4.0\code\LINQ\LINQSamples\EnumerableSample\bin\Debug\EnumerableSample.Contracts.pdb
+K:\ProC# 4.0\code\LINQ\LINQSamples\EnumerableSample\bin\Debug\EnumerableSample.exe
+K:\ProC# 4.0\code\LINQ\LINQSamples\EnumerableSample\bin\Debug\EnumerableSample.pdb
+K:\ProC# 4.0\code\LINQ\LINQSamples\EnumerableSample\bin\Debug\DataLib.dll
+K:\ProC# 4.0\code\LINQ\LINQSamples\EnumerableSample\bin\Debug\DataLib.pdb
+K:\ProC# 4.0\code\LINQ\LINQSamples\EnumerableSample\obj\x86\Debug\ResolveAssemblyReference.cache
+K:\ProC# 4.0\code\LINQ\LINQSamples\EnumerableSample\obj\x86\Debug\EnumerableSample.exe
+K:\ProC# 4.0\code\LINQ\LINQSamples\EnumerableSample\obj\x86\Debug\EnumerableSample.pdb
+K:\ProC# 4.0\code\LINQ\LINQSamples\EnumerableSample\bin\Debug\EnumerableSample.exe.config
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\LINQSamplesCh11-Linq\EnumerableSample\bin\Debug\EnumerableSample.exe.config
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\LINQSamplesCh11-Linq\EnumerableSample\bin\Debug\EnumerableSample.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\LINQSamplesCh11-Linq\EnumerableSample\bin\Debug\EnumerableSample.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\LINQSamplesCh11-Linq\EnumerableSample\bin\Debug\DataLib.dll
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\LINQSamplesCh11-Linq\EnumerableSample\bin\Debug\DataLib.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\LINQSamplesCh11-Linq\EnumerableSample\obj\x86\Debug\EnumerableSample.csprojResolveAssemblyReference.cache
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\LINQSamplesCh11-Linq\EnumerableSample\obj\x86\Debug\EnumerableSample.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\LINQSamplesCh11-Linq\EnumerableSample\obj\x86\Debug\EnumerableSample.pdb

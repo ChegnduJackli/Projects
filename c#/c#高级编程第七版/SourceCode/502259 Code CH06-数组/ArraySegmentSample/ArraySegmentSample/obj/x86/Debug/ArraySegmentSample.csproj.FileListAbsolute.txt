@@ -1,0 +1,14 @@
+C:\Books\Pro C# 4.0\code\Arrays\ArraySegmentSample\ArraySegmentSample\bin\Debug\ArraySegmentSample.exe
+C:\Books\Pro C# 4.0\code\Arrays\ArraySegmentSample\ArraySegmentSample\bin\Debug\ArraySegmentSample.pdb
+C:\Books\Pro C# 4.0\code\Arrays\ArraySegmentSample\ArraySegmentSample\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Books\Pro C# 4.0\code\Arrays\ArraySegmentSample\ArraySegmentSample\obj\x86\Debug\ArraySegmentSample.exe
+C:\Books\Pro C# 4.0\code\Arrays\ArraySegmentSample\ArraySegmentSample\obj\x86\Debug\ArraySegmentSample.pdb
+K:\ProC# 4.0\code\Arrays\ArraySegmentSample\ArraySegmentSample\bin\Debug\ArraySegmentSample.exe
+K:\ProC# 4.0\code\Arrays\ArraySegmentSample\ArraySegmentSample\bin\Debug\ArraySegmentSample.pdb
+K:\ProC# 4.0\code\Arrays\ArraySegmentSample\ArraySegmentSample\obj\x86\Debug\ResolveAssemblyReference.cache
+K:\ProC# 4.0\code\Arrays\ArraySegmentSample\ArraySegmentSample\obj\x86\Debug\ArraySegmentSample.exe
+K:\ProC# 4.0\code\Arrays\ArraySegmentSample\ArraySegmentSample\obj\x86\Debug\ArraySegmentSample.pdb
+C:\Users\lideng\Desktop\GIT\C#高级编程(中文第七版)\9780470502259_Complete_Code_Download\502259 Code CH06\ArraySegmentSample\ArraySegmentSample\bin\Debug\ArraySegmentSample.exe
+C:\Users\lideng\Desktop\GIT\C#高级编程(中文第七版)\9780470502259_Complete_Code_Download\502259 Code CH06\ArraySegmentSample\ArraySegmentSample\bin\Debug\ArraySegmentSample.pdb
+C:\Users\lideng\Desktop\GIT\C#高级编程(中文第七版)\9780470502259_Complete_Code_Download\502259 Code CH06\ArraySegmentSample\ArraySegmentSample\obj\x86\Debug\ArraySegmentSample.exe
+C:\Users\lideng\Desktop\GIT\C#高级编程(中文第七版)\9780470502259_Complete_Code_Download\502259 Code CH06\ArraySegmentSample\ArraySegmentSample\obj\x86\Debug\ArraySegmentSample.pdb

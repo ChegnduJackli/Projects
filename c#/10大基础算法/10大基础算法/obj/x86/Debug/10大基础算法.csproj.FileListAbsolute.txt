@@ -1,0 +1,4 @@
+C:\Users\lideng\Desktop\GIT\Project\c#\10大基础算法\10大基础算法\bin\Debug\10大基础算法.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\10大基础算法\10大基础算法\bin\Debug\10大基础算法.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\10大基础算法\10大基础算法\obj\x86\Debug\10大基础算法.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\10大基础算法\10大基础算法\obj\x86\Debug\10大基础算法.pdb

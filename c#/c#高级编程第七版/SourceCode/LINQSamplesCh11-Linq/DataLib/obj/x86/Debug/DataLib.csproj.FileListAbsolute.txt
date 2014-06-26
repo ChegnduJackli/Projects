@@ -1,0 +1,16 @@
+C:\Books\Pro C# 4.0\code\LINQ\LINQSamples\DataLib\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Books\Pro C# 4.0\code\LINQ\LINQSamples\DataLib\bin\Debug\DataLib.dll
+C:\Books\Pro C# 4.0\code\LINQ\LINQSamples\DataLib\bin\Debug\DataLib.pdb
+C:\Books\Pro C# 4.0\code\LINQ\LINQSamples\DataLib\obj\x86\Debug\DataLib.dll
+C:\Books\Pro C# 4.0\code\LINQ\LINQSamples\DataLib\obj\x86\Debug\DataLib.pdb
+K:\ProC# 4.0\code\LINQ\LINQSamples\DataLib\bin\Debug\DataLib.Contracts.dll
+K:\ProC# 4.0\code\LINQ\LINQSamples\DataLib\bin\Debug\DataLib.Contracts.pdb
+K:\ProC# 4.0\code\LINQ\LINQSamples\DataLib\bin\Debug\DataLib.dll
+K:\ProC# 4.0\code\LINQ\LINQSamples\DataLib\bin\Debug\DataLib.pdb
+K:\ProC# 4.0\code\LINQ\LINQSamples\DataLib\obj\x86\Debug\ResolveAssemblyReference.cache
+K:\ProC# 4.0\code\LINQ\LINQSamples\DataLib\obj\x86\Debug\DataLib.dll
+K:\ProC# 4.0\code\LINQ\LINQSamples\DataLib\obj\x86\Debug\DataLib.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\LINQSamplesCh11-Linq\DataLib\bin\Debug\DataLib.dll
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\LINQSamplesCh11-Linq\DataLib\bin\Debug\DataLib.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\LINQSamplesCh11-Linq\DataLib\obj\x86\Debug\DataLib.dll
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\LINQSamplesCh11-Linq\DataLib\obj\x86\Debug\DataLib.pdb

@@ -1,0 +1,4 @@
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\LINQSamplesCh11-Linq\ExtensionMethod\bin\Debug\ExtensionMethod.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\LINQSamplesCh11-Linq\ExtensionMethod\bin\Debug\ExtensionMethod.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\LINQSamplesCh11-Linq\ExtensionMethod\obj\x86\Debug\ExtensionMethod.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\LINQSamplesCh11-Linq\ExtensionMethod\obj\x86\Debug\ExtensionMethod.pdb

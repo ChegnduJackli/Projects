@@ -1,0 +1,4 @@
+D:\Data\Projects\c#\ConsoleApplication1\RequestQuerystring\RequestQuerystring\bin\RequestQuerystring.dll
+D:\Data\Projects\c#\ConsoleApplication1\RequestQuerystring\RequestQuerystring\bin\RequestQuerystring.pdb
+D:\Data\Projects\c#\ConsoleApplication1\RequestQuerystring\RequestQuerystring\obj\Debug\RequestQuerystring.dll
+D:\Data\Projects\c#\ConsoleApplication1\RequestQuerystring\RequestQuerystring\obj\Debug\RequestQuerystring.pdb
