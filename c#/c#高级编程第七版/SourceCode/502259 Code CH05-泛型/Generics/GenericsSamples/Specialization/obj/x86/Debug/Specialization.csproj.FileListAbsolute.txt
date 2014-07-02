@@ -1,0 +1,22 @@
+C:\Books\Pro C# 4.0\code\Generics\GenericsSamples\Specialization\bin\Debug\Specialization.exe
+C:\Books\Pro C# 4.0\code\Generics\GenericsSamples\Specialization\bin\Debug\Specialization.pdb
+C:\Books\Pro C# 4.0\code\Generics\GenericsSamples\Specialization\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Books\Pro C# 4.0\code\Generics\GenericsSamples\Specialization\obj\x86\Debug\Specialization.exe
+C:\Books\Pro C# 4.0\code\Generics\GenericsSamples\Specialization\obj\x86\Debug\Specialization.pdb
+C:\Books\Pro C# 4.0\code\Generics\GenericsSamples\Specialization\bin\Debug\Specialization.exe.config
+K:\ProC# 4.0\code\Generics\GenericsSamples\Specialization\bin\Debug\Specialization.exe.config
+K:\ProC# 4.0\code\Generics\GenericsSamples\Specialization\bin\Debug\Specialization.exe
+K:\ProC# 4.0\code\Generics\GenericsSamples\Specialization\bin\Debug\Specialization.pdb
+K:\ProC# 4.0\code\Generics\GenericsSamples\Specialization\obj\x86\Debug\ResolveAssemblyReference.cache
+K:\ProC# 4.0\code\Generics\GenericsSamples\Specialization\obj\x86\Debug\Specialization.exe
+K:\ProC# 4.0\code\Generics\GenericsSamples\Specialization\obj\x86\Debug\Specialization.pdb
+C:\Users\lideng\Desktop\GIT\C#高级编程(中文第七版)\9780470502259_Complete_Code_Download\502259 Code CH05\Generics\GenericsSamples\Specialization\bin\Debug\Specialization.exe.config
+C:\Users\lideng\Desktop\GIT\C#高级编程(中文第七版)\9780470502259_Complete_Code_Download\502259 Code CH05\Generics\GenericsSamples\Specialization\bin\Debug\Specialization.exe
+C:\Users\lideng\Desktop\GIT\C#高级编程(中文第七版)\9780470502259_Complete_Code_Download\502259 Code CH05\Generics\GenericsSamples\Specialization\bin\Debug\Specialization.pdb
+C:\Users\lideng\Desktop\GIT\C#高级编程(中文第七版)\9780470502259_Complete_Code_Download\502259 Code CH05\Generics\GenericsSamples\Specialization\obj\x86\Debug\Specialization.exe
+C:\Users\lideng\Desktop\GIT\C#高级编程(中文第七版)\9780470502259_Complete_Code_Download\502259 Code CH05\Generics\GenericsSamples\Specialization\obj\x86\Debug\Specialization.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\502259 Code CH05-泛型\Generics\GenericsSamples\Specialization\bin\Debug\Specialization.exe.config
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\502259 Code CH05-泛型\Generics\GenericsSamples\Specialization\obj\x86\Debug\Specialization.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\502259 Code CH05-泛型\Generics\GenericsSamples\Specialization\obj\x86\Debug\Specialization.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\502259 Code CH05-泛型\Generics\GenericsSamples\Specialization\bin\Debug\Specialization.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\502259 Code CH05-泛型\Generics\GenericsSamples\Specialization\bin\Debug\Specialization.pdb

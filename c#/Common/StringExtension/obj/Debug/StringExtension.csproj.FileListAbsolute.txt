@@ -1,0 +1,4 @@
+C:\Users\lideng\Desktop\GIT\Project\c#\Common\StringExtension\bin\Debug\StringExtension.dll
+C:\Users\lideng\Desktop\GIT\Project\c#\Common\StringExtension\bin\Debug\StringExtension.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\Common\StringExtension\obj\Debug\StringExtension.dll
+C:\Users\lideng\Desktop\GIT\Project\c#\Common\StringExtension\obj\Debug\StringExtension.pdb

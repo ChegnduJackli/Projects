@@ -1,0 +1,4 @@
+C:\Users\lideng\Desktop\GIT\Project\c#\Common\FileUtil\bin\Debug\FileUtil.dll
+C:\Users\lideng\Desktop\GIT\Project\c#\Common\FileUtil\bin\Debug\FileUtil.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\Common\FileUtil\obj\Debug\FileUtil.dll
+C:\Users\lideng\Desktop\GIT\Project\c#\Common\FileUtil\obj\Debug\FileUtil.pdb

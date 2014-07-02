@@ -1,0 +1,4 @@
+C:\Users\lideng\Desktop\GIT\Project\c#\Common\SqlHelper\bin\Debug\SqlHelper.dll
+C:\Users\lideng\Desktop\GIT\Project\c#\Common\SqlHelper\bin\Debug\SqlHelper.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\Common\SqlHelper\obj\Debug\SqlHelper.dll
+C:\Users\lideng\Desktop\GIT\Project\c#\Common\SqlHelper\obj\Debug\SqlHelper.pdb

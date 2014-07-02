@@ -1,0 +1,13 @@
+C:\Users\lideng\Desktop\GIT\Project\c#\Common\Common\bin\Debug\Common.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\Common\Common\bin\Debug\Common.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\Common\Common\bin\Debug\FileUtil.dll
+C:\Users\lideng\Desktop\GIT\Project\c#\Common\Common\bin\Debug\FileUtil.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\Common\Common\obj\x86\Debug\Common.csprojResolveAssemblyReference.cache
+C:\Users\lideng\Desktop\GIT\Project\c#\Common\Common\obj\x86\Debug\Common.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\Common\Common\obj\x86\Debug\Common.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\Common\Common\bin\Debug\MD5Util.dll
+C:\Users\lideng\Desktop\GIT\Project\c#\Common\Common\bin\Debug\MD5Util.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\Common\Common\bin\Debug\ConvertType.dll
+C:\Users\lideng\Desktop\GIT\Project\c#\Common\Common\bin\Debug\ConvertType.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\Common\Common\bin\Debug\StringExtension.dll
+C:\Users\lideng\Desktop\GIT\Project\c#\Common\Common\bin\Debug\StringExtension.pdb

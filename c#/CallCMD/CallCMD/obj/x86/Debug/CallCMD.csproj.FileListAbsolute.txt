@@ -1,0 +1,8 @@
+D:\Data\Projects\c#\ConsoleApplication1\CallCMD\CallCMD\bin\Debug\CallCMD.exe.config
+D:\Data\Projects\c#\ConsoleApplication1\CallCMD\CallCMD\bin\Debug\CallCMD.exe
+D:\Data\Projects\c#\ConsoleApplication1\CallCMD\CallCMD\bin\Debug\CallCMD.pdb
+D:\Data\Projects\c#\ConsoleApplication1\CallCMD\CallCMD\obj\x86\Debug\CallCMD.Form1.resources
+D:\Data\Projects\c#\ConsoleApplication1\CallCMD\CallCMD\obj\x86\Debug\CallCMD.Properties.Resources.resources
+D:\Data\Projects\c#\ConsoleApplication1\CallCMD\CallCMD\obj\x86\Debug\CallCMD.csproj.GenerateResource.Cache
+D:\Data\Projects\c#\ConsoleApplication1\CallCMD\CallCMD\obj\x86\Debug\CallCMD.exe
+D:\Data\Projects\c#\ConsoleApplication1\CallCMD\CallCMD\obj\x86\Debug\CallCMD.pdb

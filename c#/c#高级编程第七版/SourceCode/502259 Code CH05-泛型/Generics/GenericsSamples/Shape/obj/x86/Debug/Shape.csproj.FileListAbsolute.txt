@@ -1,0 +1,4 @@
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\502259 Code CH05-泛型\Generics\GenericsSamples\Shape\bin\Debug\Shape.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\502259 Code CH05-泛型\Generics\GenericsSamples\Shape\bin\Debug\Shape.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\502259 Code CH05-泛型\Generics\GenericsSamples\Shape\obj\x86\Debug\Shape.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\502259 Code CH05-泛型\Generics\GenericsSamples\Shape\obj\x86\Debug\Shape.pdb
