@@ -1,0 +1,8 @@
+C:\Users\lideng\Desktop\GIT\Project\c#\StudentRandom\StudentRandom\bin\Debug\StudentRandom.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\StudentRandom\StudentRandom\bin\Debug\StudentRandom.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\StudentRandom\StudentRandom\obj\x86\Debug\StudentRandom.Properties.Resources.resources
+C:\Users\lideng\Desktop\GIT\Project\c#\StudentRandom\StudentRandom\obj\x86\Debug\StudentRandom.csproj.GenerateResource.Cache
+C:\Users\lideng\Desktop\GIT\Project\c#\StudentRandom\StudentRandom\obj\x86\Debug\StudentRandom.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\StudentRandom\StudentRandom\obj\x86\Debug\StudentRandom.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\StudentRandom\StudentRandom\obj\x86\Debug\StudentRandom.csprojResolveAssemblyReference.cache
+C:\Users\lideng\Desktop\GIT\Project\c#\StudentRandom\StudentRandom\obj\x86\Debug\StudentRandom.Student.resources
