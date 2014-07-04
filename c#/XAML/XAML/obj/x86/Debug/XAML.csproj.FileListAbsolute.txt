@@ -1,0 +1,14 @@
+C:\Users\lideng\Desktop\GIT\Project\c#\XAML\XAML\bin\Debug\XAML.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\XAML\XAML\bin\Debug\XAML.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\XAML\XAML\obj\x86\Debug\MainWindow.baml
+C:\Users\lideng\Desktop\GIT\Project\c#\XAML\XAML\obj\x86\Debug\MainWindow.g.cs
+C:\Users\lideng\Desktop\GIT\Project\c#\XAML\XAML\obj\x86\Debug\App.g.cs
+C:\Users\lideng\Desktop\GIT\Project\c#\XAML\XAML\obj\x86\Debug\XAML_MarkupCompile.cache
+C:\Users\lideng\Desktop\GIT\Project\c#\XAML\XAML\obj\x86\Debug\XAML.g.resources
+C:\Users\lideng\Desktop\GIT\Project\c#\XAML\XAML\obj\x86\Debug\XAML.Properties.Resources.resources
+C:\Users\lideng\Desktop\GIT\Project\c#\XAML\XAML\obj\x86\Debug\XAML.csproj.GenerateResource.Cache
+C:\Users\lideng\Desktop\GIT\Project\c#\XAML\XAML\obj\x86\Debug\XAML.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\XAML\XAML\obj\x86\Debug\XAML.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\XAML\XAML\bin\Debug\Person.dll
+C:\Users\lideng\Desktop\GIT\Project\c#\XAML\XAML\bin\Debug\Person.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\XAML\XAML\obj\x86\Debug\XAML.csprojResolveAssemblyReference.cache

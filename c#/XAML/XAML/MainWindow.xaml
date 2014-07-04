@@ -1,0 +1,29 @@
+﻿<Window x:Class="XAML.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="http://www.wrox.com/Schemas/2010" 
+        Title="XMAL Demo" Height="350" Width="525">
+        
+    <StackPanel>
+            <Button Content="Click me!" Click="Button_Click" Background="LightGoldenrodYellow"></Button>
+        <Button Click="Button_Click">
+                Click me again
+                <Button.Background>
+            <LinearGradientBrush StartPoint="0.5,0.0" EndPoint="0.5,1.0">
+                <GradientStop Offset="0" Color="Yellow" />
+                <GradientStop Offset="0.3" Color="Orange" />
+                <GradientStop Offset="0.7" Color="Red" />
+                <GradientStop Offset="1" Color="DarkRed" />
+                
+            </LinearGradientBrush>
+        </Button.Background>
+        </Button>
+        <ListBox>
+            <local:Person FirstName="Good" LastName="Nage" />
+            <local:Person FirstName="Angw" LastName="Schol" />
+            
+        </ListBox>
+        
+        </StackPanel>
+    
+</Window>

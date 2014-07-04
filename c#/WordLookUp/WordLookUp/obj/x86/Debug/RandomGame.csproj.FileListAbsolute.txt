@@ -1,0 +1,13 @@
+C:\Users\lideng\Desktop\GIT\Project\c#\WordLookUp\WordLookUp\bin\Debug\RandomGame.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\WordLookUp\WordLookUp\bin\Debug\RandomGame.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\WordLookUp\WordLookUp\obj\x86\Debug\RandomGame.csprojResolveAssemblyReference.cache
+C:\Users\lideng\Desktop\GIT\Project\c#\WordLookUp\WordLookUp\obj\x86\Debug\MainWindow.baml
+C:\Users\lideng\Desktop\GIT\Project\c#\WordLookUp\WordLookUp\obj\x86\Debug\MainWindow.g.cs
+C:\Users\lideng\Desktop\GIT\Project\c#\WordLookUp\WordLookUp\obj\x86\Debug\App.g.cs
+C:\Users\lideng\Desktop\GIT\Project\c#\WordLookUp\WordLookUp\obj\x86\Debug\RandomGame_MarkupCompile.cache
+C:\Users\lideng\Desktop\GIT\Project\c#\WordLookUp\WordLookUp\obj\x86\Debug\RandomGame.g.resources
+C:\Users\lideng\Desktop\GIT\Project\c#\WordLookUp\WordLookUp\obj\x86\Debug\RandomGame.Properties.Resources.resources
+C:\Users\lideng\Desktop\GIT\Project\c#\WordLookUp\WordLookUp\obj\x86\Debug\RandomGame.csproj.GenerateResource.Cache
+C:\Users\lideng\Desktop\GIT\Project\c#\WordLookUp\WordLookUp\obj\x86\Debug\RandomGame.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\WordLookUp\WordLookUp\obj\x86\Debug\RandomGame.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\WordLookUp\WordLookUp\bin\Debug\RandomGame.exe.config

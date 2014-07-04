@@ -1,0 +1,4 @@
+C:\Users\lideng\Desktop\GIT\Project\c#\XAML\Person\bin\Debug\Person.dll
+C:\Users\lideng\Desktop\GIT\Project\c#\XAML\Person\bin\Debug\Person.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\XAML\Person\obj\Debug\Person.dll
+C:\Users\lideng\Desktop\GIT\Project\c#\XAML\Person\obj\Debug\Person.pdb
