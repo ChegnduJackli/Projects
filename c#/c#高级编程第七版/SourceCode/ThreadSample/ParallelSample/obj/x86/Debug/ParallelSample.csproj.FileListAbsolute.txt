@@ -1,0 +1,4 @@
+C:\Users\lideng\Desktop\GIT\Project\c#\ThreadSample\ParallelSample\bin\Debug\ParallelSample.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\ThreadSample\ParallelSample\bin\Debug\ParallelSample.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\ThreadSample\ParallelSample\obj\x86\Debug\ParallelSample.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\ThreadSample\ParallelSample\obj\x86\Debug\ParallelSample.pdb

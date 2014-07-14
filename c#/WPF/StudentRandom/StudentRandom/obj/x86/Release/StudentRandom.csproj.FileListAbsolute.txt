@@ -8,3 +8,6 @@ C:\Users\lideng\Desktop\GIT\Project\c#\StudentRandom\StudentRandom\obj\x86\Relea
 C:\Users\lideng\Desktop\GIT\Project\c#\StudentRandom\StudentRandom\obj\x86\Release\StudentRandom.exe
 C:\Users\lideng\Desktop\GIT\Project\c#\StudentRandom\StudentRandom\obj\x86\Release\StudentRandom.pdb
 C:\Users\lideng\Desktop\GIT\Project\c#\StudentRandom\StudentRandom\bin\Release\StudentRandom.exe.config
+C:\Users\lideng\Desktop\GIT\Project\c#\WPF\StudentRandom\StudentRandom\bin\Release\StudentRandom.exe.config
+C:\Users\lideng\Desktop\GIT\Project\c#\WPF\StudentRandom\StudentRandom\obj\x86\Release\StudentRandom.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\WPF\StudentRandom\StudentRandom\obj\x86\Release\StudentRandom.pdb

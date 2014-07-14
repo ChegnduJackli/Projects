@@ -7,21 +7,45 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Diagnostics;
+using Microsoft.Win32;
+using System.Reflection;
 
 namespace CallCMD
 {
     public partial class Form1 : Form
     {
+        string KeyName = "CMD Manager";
+        string AssemblyLocation = Assembly.GetExecutingAssembly().Location;  // Or the EXE path.
+
         public Form1()
         {
             InitializeComponent();
-            this.labMessage.Text = "";
-            this.rbChrome.Checked = true;
             BindData();
+            InitBox();
+        }
+        private void InitBox()
+        {
+
+            if (Util.IsAutoStartEnabled(KeyName, AssemblyLocation))
+            {
+                this.chkAutoStart.Checked = true;
+            }
+            else
+            {
+                this.chkAutoStart.Checked = false;
+            }
         }
         private void BindData()
         {
+            this.labMessage.Text = "";
+
             this.listBoxURL.DataSource = FileDAL.GetURL();
+            this.chkListAllBrowsers.DataSource = Browsers.GetBrowserList();
+
+            chkListAllBrowsers.DisplayMember = "BrowserName";
+            chkListAllBrowsers.ValueMember = "BrowserPath";
+            chkListAllBrowsers.SetItemCheckState(0, CheckState.Checked);
+         
         }
         private void btnEnableProxy_Click(object sender, EventArgs e)
         {
@@ -120,29 +144,67 @@ namespace CallCMD
         {
             try
             {
-                string url = this.listBoxURL.SelectedItem.ToString();
-                string browserPath = GetBrowser();
-                RunCMD(browserPath,url );
-                //ProcessStartInfo sInfo = new ProcessStartInfo(browserPath, url);
-                //Process.Start(sInfo);
+               // string url = this.listBoxURL.SelectedItem.ToString();
+               List<string> browserList = GetBrowser();
+               foreach (string weburl in this.listBoxURL.SelectedItems)
+               {
+                   foreach (string browserPath in browserList)
+                   {
+                       RunCMD(browserPath, weburl);
+                   }
+               }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Exception"); ;
             }
         }
-        private string GetBrowser()
+        private List<string> GetBrowser()
         {
-            string browserURL = Browsers.IEPath;
-            if (rbChrome.Checked)
+
+            List<string> browserList = new List<string>();
+            foreach (var item in this.chkListAllBrowsers.CheckedItems)
             {
-                browserURL = Browsers.ChromePath;
+                var browser = (BrowserInfo)item;
+                browserList.Add(browser.BrowserPath);
             }
-            else if (rbFireFox.Checked)
+            if (browserList.Count == 0)
             {
-                browserURL = Browsers.FireFoxPath;
+                throw new ApplicationException("At least select one browser.");
             }
-            return browserURL;
+            return browserList;
+        }
+
+
+        private void AutoStart(bool autoStart = true)
+        {
+
+            if (!autoStart)
+            {
+                // if has same keyName ,then delete
+                if (Util.IsAutoStartEnabled(KeyName, AssemblyLocation))
+                    Util.UnSetAutoStart(KeyName);
+            }
+            else
+            {
+                //delete first
+                if (Util.IsAutoStartEnabled(KeyName, AssemblyLocation))
+                    Util.UnSetAutoStart(KeyName);
+                // Set Auto-start.
+                Util.SetAutoStart(KeyName, AssemblyLocation);
+            }
+        }
+
+        private void chkAutoStart_CheckedChanged_1(object sender, EventArgs e)
+        {
+            if (chkAutoStart.Checked)
+            {
+                AutoStart(true);
+            }
+            else
+            {
+                AutoStart(false);
+            }
         }
     }
 }
