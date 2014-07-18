@@ -14,3 +14,4 @@ C:\Users\lideng\Desktop\GIT\Project\c#\CallCMD\CallCMD\bin\Debug\CallCMD.pdb
 C:\Users\lideng\Desktop\GIT\Project\c#\CallCMD\CallCMD\obj\x86\Debug\CallCMD.Form1.resources
 C:\Users\lideng\Desktop\GIT\Project\c#\CallCMD\CallCMD\obj\x86\Debug\CallCMD.Properties.Resources.resources
 C:\Users\lideng\Desktop\GIT\Project\c#\CallCMD\CallCMD\obj\x86\Debug\CallCMD.csproj.GenerateResource.Cache
+C:\Users\lideng\Desktop\GIT\Project\c#\CallCMD\CallCMD\obj\x86\Debug\CallCMD.csprojResolveAssemblyReference.cache

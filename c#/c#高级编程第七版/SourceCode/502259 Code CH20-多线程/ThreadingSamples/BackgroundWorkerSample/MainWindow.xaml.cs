@@ -10,6 +10,7 @@ namespace Wrox.ProCSharp.Threading
     /// </summary>
     public partial class BackgroundWorkerWindow : Window
     {
+        //异步事件模式的一种方案
         private BackgroundWorker backgroundWorker;
 
         public BackgroundWorkerWindow()
@@ -28,7 +29,7 @@ namespace Wrox.ProCSharp.Threading
             this.textResult.Text = String.Empty;
             this.buttonCancel.IsEnabled = true;
             this.progressBar.Value = 0;
-
+            //需要传递参数到OnDoWork方法中
             backgroundWorker.RunWorkerAsync(Tuple.Create(int.Parse(textX.Text), int.Parse(textY.Text)));
            
         
@@ -41,8 +42,8 @@ namespace Wrox.ProCSharp.Threading
             for (int i = 0; i < 10; i++)
             {
                 Thread.Sleep(500);
-                backgroundWorker.ReportProgress(i * 10);
-                if (backgroundWorker.CancellationPending)
+                backgroundWorker.ReportProgress((i+1) * 10);
+                if (backgroundWorker.CancellationPending) //判断是否取消任务
                 {
                     e.Cancel = true;
                     return;
@@ -50,7 +51,8 @@ namespace Wrox.ProCSharp.Threading
             }
             e.Result = t.Item1 + t.Item2;
         }
-
+        //工作完成后自动触发这个事件
+        //如果取消了任务，不能访问e.Result属性，会不抛出异常。所以必须判断是否有取消操作
         private void OnWorkCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             if (e.Cancelled)
@@ -70,6 +72,7 @@ namespace Wrox.ProCSharp.Threading
         private void OnProgessChanged(object sender, ProgressChangedEventArgs e)
         {
             this.progressBar.Value = e.ProgressPercentage;
+            lblPercent.Content = this.progressBar.Value  +"%";
         }
 
         private void OnCancel(object sender, RoutedEventArgs e)

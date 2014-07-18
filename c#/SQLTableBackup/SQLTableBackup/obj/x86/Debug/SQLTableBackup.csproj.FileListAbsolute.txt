@@ -1,0 +1,13 @@
+C:\Users\lideng\Desktop\GIT\Project\c#\SQLTableBackup\SQLTableBackup\bin\Debug\SQLTableBackup.exe.config
+C:\Users\lideng\Desktop\GIT\Project\c#\SQLTableBackup\SQLTableBackup\bin\Debug\SQLTableBackup.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\SQLTableBackup\SQLTableBackup\bin\Debug\SQLTableBackup.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\SQLTableBackup\SQLTableBackup\bin\Debug\DAL.dll
+C:\Users\lideng\Desktop\GIT\Project\c#\SQLTableBackup\SQLTableBackup\bin\Debug\SqlHelper.dll
+C:\Users\lideng\Desktop\GIT\Project\c#\SQLTableBackup\SQLTableBackup\bin\Debug\DAL.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\SQLTableBackup\SQLTableBackup\bin\Debug\SqlHelper.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\SQLTableBackup\SQLTableBackup\obj\x86\Debug\SQLTableBackup.csprojResolveAssemblyReference.cache
+C:\Users\lideng\Desktop\GIT\Project\c#\SQLTableBackup\SQLTableBackup\obj\x86\Debug\SQLTableBackup.Form1.resources
+C:\Users\lideng\Desktop\GIT\Project\c#\SQLTableBackup\SQLTableBackup\obj\x86\Debug\SQLTableBackup.Properties.Resources.resources
+C:\Users\lideng\Desktop\GIT\Project\c#\SQLTableBackup\SQLTableBackup\obj\x86\Debug\SQLTableBackup.csproj.GenerateResource.Cache
+C:\Users\lideng\Desktop\GIT\Project\c#\SQLTableBackup\SQLTableBackup\obj\x86\Debug\SQLTableBackup.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\SQLTableBackup\SQLTableBackup\obj\x86\Debug\SQLTableBackup.pdb

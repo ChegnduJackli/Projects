@@ -68,6 +68,11 @@ namespace SocketServer
             var client = socket.EndAccept(ar);
             //给客户端发送一个欢迎消息
             client.Send(Encoding.Unicode.GetBytes("Hi there,I accept your request at " + DateTime.Now.ToString()));
+
+            var message = "Hi there,I accept your request at " + DateTime.Now.ToString();
+            var outputBuffer = Encoding.Unicode.GetBytes(message);
+            client.BeginSend(outputBuffer, 0, outputBuffer.Length, SocketFlags.None, null, null);
+
             var timer = new System.Timers.Timer();
             timer.Interval = 2000;
             timer.Enabled = true;

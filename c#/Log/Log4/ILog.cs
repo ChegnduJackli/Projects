@@ -9,5 +9,6 @@ namespace Log4
     {
         void WriteLog(string message);
         void ErrorLog(string message);
+        void ErrorLog(Exception ex);
     }
 }

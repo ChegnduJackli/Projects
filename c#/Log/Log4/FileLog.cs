@@ -35,5 +35,11 @@ namespace Log4
            FileDAL fileDAL = new FileDAL(LogLevel.Error);
            fileDAL.Write(message);
         }
+
+        public void ErrorLog(Exception ex)
+        {
+            FileDAL fileDAL = new FileDAL(LogLevel.Error);
+            fileDAL.Write(ex);
+        }
     }
 }

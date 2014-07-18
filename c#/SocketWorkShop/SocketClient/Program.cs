@@ -55,7 +55,6 @@ namespace SocketClient
             {
                 Console.WriteLine(ex.Message);
             }
-
         }
     }
 }

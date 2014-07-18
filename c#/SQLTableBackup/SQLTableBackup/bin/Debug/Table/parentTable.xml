@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <ds>
+    <ID>1</ID>
+    <Title>test1</Title>
+  </ds>
+  <ds>
+    <ID>2</ID>
+    <Title>test2</Title>
+  </ds>
+  <ds>
+    <ID>3</ID>
+    <Title>test3</Title>
+  </ds>
+  <ds>
+    <ID>4</ID>
+    <Title>test4</Title>
+  </ds>
+</NewDataSet>

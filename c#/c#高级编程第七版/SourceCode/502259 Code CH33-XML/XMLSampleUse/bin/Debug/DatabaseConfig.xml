@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Database>
+<DatabaseName>AGD</DatabaseName>
+  <TableName>app</TableName>
+  <TableName>abb</TableName>
+  <TableName>acc</TableName>
+  <TableName>add</TableName>
+  <TableName>aee</TableName>
+  <TableName>afff</TableName>
+  <TableName>bgg</TableName>
+  <TableName>ada</TableName>
+  <TableName>user</TableName>
+  <TableName>config</TableName>
+  <TableName>menu</TableName>
+  <TableName>role</TableName>
+  <TableName>user_role2</TableName>
+  <TableName>user_role3</TableName>
+  <TableName>user_role4</TableName>
+  <TableName>user_role5</TableName>
+  <TableName>user_role6</TableName>
+  <TableName>user_role7</TableName>
+  <TableName>user_role9</TableName>
+  <TableName>user_role10</TableName>
+</Database>

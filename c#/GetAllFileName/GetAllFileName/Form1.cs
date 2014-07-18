@@ -128,6 +128,7 @@ namespace GetAllFileName
             }
         }
 
+
         private void btnOpenFile_Click(object sender, EventArgs e)
         {
             if (FileName.Length == 0)
