@@ -1,27 +1,23 @@
 <?xml version="1.0" standalone="yes"?>
 <NewDataSet>
   <ds>
-    <ID>1</ID>
+    <ID>5</ID>
     <Title>test1</Title>
   </ds>
   <ds>
-    <ID>2</ID>
+    <ID>4</ID>
     <Title>test2</Title>
   </ds>
   <ds>
-    <ID>3</ID>
+    <ID>6</ID>
     <Title>test3</Title>
   </ds>
   <ds>
-    <ID>4</ID>
+    <ID>7</ID>
     <Title>test4</Title>
   </ds>
   <ds>
-    <ID>5</ID>
+    <ID>8</ID>
     <Title>test5</Title>
-  </ds>
-  <ds>
-    <ID>6</ID>
-    <Title>test6</Title>
   </ds>
 </NewDataSet>

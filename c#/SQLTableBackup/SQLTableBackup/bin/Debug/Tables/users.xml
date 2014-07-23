@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <ds>
+    <id>2</id>
+    <userName>Adi</userName>
+    <NickName>Aditi</NickName>
+    <password>Adi1234</password>
+    <RoleID>2</RoleID>
+    <EmailAddr>Adi@ncs.com.sg</EmailAddr>
+  </ds>
+  <ds>
+    <id>3</id>
+    <userName>Admin</userName>
+    <NickName>Administrator</NickName>
+    <password>Admin1234</password>
+    <RoleID>1</RoleID>
+    <EmailAddr>lideng@ncs.com.sg</EmailAddr>
+  </ds>
+  <ds>
+    <id>1</id>
+    <userName>lideng</userName>
+    <NickName>Jack</NickName>
+    <password>lideng1234</password>
+    <RoleID>2</RoleID>
+    <EmailAddr>lideng@ncs.com.sg</EmailAddr>
+  </ds>
+</NewDataSet>

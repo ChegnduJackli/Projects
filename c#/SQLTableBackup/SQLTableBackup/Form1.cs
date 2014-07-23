@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace SQLTableBackup
 {
@@ -26,6 +27,8 @@ namespace SQLTableBackup
         //back up table
         private void btnBackup_Click(object sender, EventArgs e)
         {
+            List<string> tableNameList = new List<string>();
+
             try
             {
                 if (this.listTargetTable.Items.Count == 0)
@@ -38,48 +41,28 @@ namespace SQLTableBackup
                 {
                     return;
                 }
-                int success = 0;
-                int error = 0;
-                Log4.LogInstance.FileLogInstance().WriteLog("Begin to back up tables.");
+
+                
                 foreach (string tb in this.listTargetTable.Items)
                 {
-                    try
+                    if (!tableNameList.Contains(tb))
                     {
-                        DataSet ds = tableDAL.GetTableData(tb);
-                        string fileName = "Table/" + tb + ".xml";
-                        ds.WriteXml(fileName, XmlWriteMode.IgnoreSchema);
-                        Log4.LogInstance.FileLogInstance().WriteLog(tb);
-                        success++;
-                    }
-                    catch(Exception ex)
-                    {
-                        Log4.LogInstance.FileLogInstance().ErrorLog(tb+" table back up failed");
-                        Log4.LogInstance.FileLogInstance().ErrorLog(ex);
-                        error++;
+                        tableNameList.Add(tb);
                     }
                 }
-                Log4.LogInstance.FileLogInstance().WriteLog("Success:" + success +"  "+ "Failed:" + error);
-
-                if (error == 0)
-                {
-                    MessageBox.Show("Back up all tables successfully.");
-                }
-                else
-                {
-                    MessageBox.Show(string.Format("Have {0} tables back up failed,Please check error log",error));
-                }
+                tableDAL.BackUpTableList(tableNameList);
+                MessageBox.Show("back up table successfully.");
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message,"Error");
+                MessageBox.Show(ex.Message, "Error");
             }
         }
         //restore table
         private void btnRestore_Click(object sender, EventArgs e)
         {
-            bool result = false;
-            int success = 0;
-            int error = 0;
+
+            List<string> tableNameList = new List<string>();
 
             try
             {
@@ -95,52 +78,17 @@ namespace SQLTableBackup
                     return;
                 }
 
-                Log4.LogInstance.FileLogInstance().WriteLog("Begin to Restore tables.");
-
                 foreach (string table in this.listTargetTable.Items)
                 {
-                    //DataSet ds = tableDAL.GetTableData(tb);
-                    try
+                    if (!tableNameList.Contains(table))
                     {
-                        DataSet ds = new DataSet(table);
-
-                        string fileName = "Table/" + table + ".xml";
-                        ds.ReadXml(fileName);
-                        if (ds != null && ds.Tables.Count > 0)
-                        {
-                            result = tableDAL.RetoreDataTable(table, ds.Tables[0]);
-                        }
-                        else
-                        {
-                            result = tableDAL.RetoreDataTable(table);
-                        }
-                        if (!result)
-                        {
-                            error++;
-                            Log4.LogInstance.FileLogInstance().ErrorLog(table + "table restore failed");
-                        }
-                        else
-                        {
-                            success++;
-                            Log4.LogInstance.FileLogInstance().WriteLog(table);
-                        }
-                    }
-                    catch(Exception ex)
-                    {
-                        Log4.LogInstance.FileLogInstance().ErrorLog(table + "table restore failed");
-                        Log4.LogInstance.FileLogInstance().ErrorLog(ex);
-                        error++;
+                        tableNameList.Add(table);
                     }
                 }
 
-                if (error == 0)
-                {
-                    MessageBox.Show("Restore all tables successfully.");
-                }
-                else
-                {
-                    MessageBox.Show(string.Format("Have {0} tables Restore failed,Please check error log", error));
-                }
+                tableDAL.RetoreDataTableList(tableNameList);
+
+                MessageBox.Show("Restore tables successfully.");
 
             }
             catch (Exception ex)

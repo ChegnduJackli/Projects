@@ -24,4 +24,12 @@
     <ID>6</ID>
     <Title>test6</Title>
   </ds>
+  <ds>
+    <ID>7</ID>
+    <Title>test7</Title>
+  </ds>
+  <ds>
+    <ID>9</ID>
+    <Title>test8</Title>
+  </ds>
 </NewDataSet>

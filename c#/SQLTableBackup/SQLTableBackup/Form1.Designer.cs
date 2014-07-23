@@ -162,7 +162,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(597, 370);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(520, 370);
             this.Controls.Add(this.btnAddAll);
             this.Controls.Add(this.btnRemoveAll);
             this.Controls.Add(this.label3);
@@ -175,9 +177,13 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listSourceTable);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Table Management";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Tables Backup And Restore Tool";
             this.ResumeLayout(false);
             this.PerformLayout();
 

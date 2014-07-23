@@ -5,3 +5,4 @@ C:\Users\lideng\Desktop\GIT\Project\c#\SQLTableBackup\DAL\bin\Debug\SqlHelper.pd
 C:\Users\lideng\Desktop\GIT\Project\c#\SQLTableBackup\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\Users\lideng\Desktop\GIT\Project\c#\SQLTableBackup\DAL\obj\Debug\DAL.dll
 C:\Users\lideng\Desktop\GIT\Project\c#\SQLTableBackup\DAL\obj\Debug\DAL.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\SQLTableBackup\DAL\bin\Debug\Log4.dll
