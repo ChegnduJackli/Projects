@@ -6,3 +6,4 @@ C:\Users\lideng\Desktop\GIT\Project\c#\SQLTableBackup\SqlHelper\bin\Debug\SqlHel
 C:\Users\lideng\Desktop\GIT\Project\c#\SQLTableBackup\SqlHelper\bin\Debug\SqlHelper.pdb
 C:\Users\lideng\Desktop\GIT\Project\c#\SQLTableBackup\SqlHelper\obj\Debug\SqlHelper.dll
 C:\Users\lideng\Desktop\GIT\Project\c#\SQLTableBackup\SqlHelper\obj\Debug\SqlHelper.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\SQLTableBackup\SqlHelper\obj\Debug\SqlHelper.csprojResolveAssemblyReference.cache

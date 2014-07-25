@@ -1,5 +1,5 @@
 <?xml version="1.0" standalone="yes"?>
-<NewDataSet>
+<users>
   <ds>
     <id>2</id>
     <userName>Adi</userName>
@@ -24,4 +24,4 @@
     <RoleID>2</RoleID>
     <EmailAddr>lideng@ncs.com.sg</EmailAddr>
   </ds>
-</NewDataSet>
+</users>

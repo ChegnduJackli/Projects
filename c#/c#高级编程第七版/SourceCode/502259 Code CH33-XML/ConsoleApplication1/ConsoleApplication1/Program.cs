@@ -81,13 +81,13 @@ namespace ConsoleApplication1
 
             // writing to the xml document
 
-                //XDocument xdoc = XDocument.Load(@"C:\hamlet.xml");
+                XDocument xdoc = XDocument.Load(@"C:\hamlet.xml");
 
-                //xdoc.Element("PLAY").Element("PERSONAE").
-                //   Element("PERSONA").SetValue("Bill Evjen, king of Denmark");
+                xdoc.Element("PLAY").Element("PERSONAE").
+                   Element("PERSONA").SetValue("Bill Evjen, king of Denmark");
 
-                //Console.WriteLine(xdoc.Element("PLAY").
-                //   Element("PERSONAE").Element("PERSONA").Value);
+                Console.WriteLine(xdoc.Element("PLAY").
+                   Element("PERSONAE").Element("PERSONA").Value);
 
                 //Console.ReadLine();
 

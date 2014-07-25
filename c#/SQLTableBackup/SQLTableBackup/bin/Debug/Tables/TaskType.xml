@@ -1,5 +1,5 @@
 <?xml version="1.0" standalone="yes"?>
-<NewDataSet>
+<TaskType>
   <ds>
     <ID>0</ID>
     <TypeName>--Please Select Type--</TypeName>
@@ -16,4 +16,4 @@
     <ID>3</ID>
     <TypeName>Course</TypeName>
   </ds>
-</NewDataSet>
+</TaskType>

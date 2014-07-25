@@ -1,5 +1,5 @@
 <?xml version="1.0" standalone="yes"?>
-<NewDataSet>
+<task>
   <ds>
     <ID>36</ID>
     <Title>test</Title>
@@ -1765,4 +1765,4 @@ configure it use other way
     <TypeID>1</TypeID>
     <ProcessID>1</ProcessID>
   </ds>
-</NewDataSet>
+</task>

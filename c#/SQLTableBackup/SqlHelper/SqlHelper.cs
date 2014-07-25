@@ -110,7 +110,7 @@ namespace FileUtil
                 {
                     connection.Open();
                     SqlDataAdapter command = new SqlDataAdapter(SQLString, connection);
-                    command.Fill(ds, "ds");
+                    command.Fill(ds);
                 }
                 catch (System.Data.SqlClient.SqlException ex)
                 {

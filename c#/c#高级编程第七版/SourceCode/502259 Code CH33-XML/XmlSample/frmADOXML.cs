@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -68,12 +68,13 @@ namespace XmlSample
 			//connect to the northwind database and 
 			//select all of the rows from products table
 			SqlConnection conn = new SqlConnection(_connectString);
-            SqlDataAdapter da = new SqlDataAdapter("SELECT Name, StandardCost FROM SalesLT.Product", conn);
+            SqlDataAdapter da = new SqlDataAdapter("SELECT Title,userid,content FROM task", conn);
 			//fill the dataset
 			da.Fill(ds, "Products");
 			ds.WriteXml("sample.xml", XmlWriteMode.WriteSchema);
 			//load data into grid
 			dataGridView1.DataSource = ds.Tables[0];
+            //XmlDataDocument专门为DataSet而设计
 			doc = new XmlDataDocument(ds);
 			//get all of the products elements
 			XmlNodeList nodeLst = doc.GetElementsByTagName("Products");
@@ -90,7 +91,7 @@ namespace XmlSample
             XmlDocument doc = new XmlDocument();
 			//create a dataset
 			DataSet ds = new DataSet("XMLProducts");
-			//connect to the northwind database and 
+			//connect to the northwind database and
 			//select all of the rows from products table and from suppliers table
 			//make sure you connect string matches you server configuration
 
@@ -124,7 +125,7 @@ namespace XmlSample
 			//create the DataSet
 			DataSet ds = new DataSet("XMLProducts");
 			//read in the xml document
-			ds.ReadXml("Products.xml");
+            ds.ReadXml("sample.xml");
 
 			//load data into grid
 			dataGridView1.DataSource = ds.Tables[0];

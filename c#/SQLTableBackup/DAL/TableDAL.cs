@@ -31,12 +31,14 @@ namespace DAL
                 throw ex;
             }
         }
+        //如果表的数据太大。可以分段取数据存在不同的文件中，在做还原的时候需要dataset的合并。再写入数据库。
         public DataSet GetTableData(string tableName)
         {
             try
             {
                 string sql = string.Format("select * from {0}", tableName);
                 DataSet ds = SqlHelper.Query(sql);
+                ds.DataSetName = tableName;
                 return ds;
             }
             catch (Exception ex)
@@ -49,10 +51,11 @@ namespace DAL
             foreach (string tableName in tableNameList)
             {
                 WriteTableToFile(tableName);
-                Log4.LogInstance.FileLogInstance().WriteLog("table: " + tableName + " back up successfully");
+                Log4.LogInstance.FileLogInstance().WriteLog("back up table " + tableName + " successfully");
             }
         }
-        //递归存含有外键的表
+
+        #region 递归存含有外键的表
         private void BackUpTableWithForeignKey(string parentTable)
         {
             string sql = string.Empty;
@@ -72,8 +75,9 @@ namespace DAL
                     BackUpTableWithForeignKey(sonTable);
                 }
             }
-
         }
+        #endregion
+
         /// <summary>
         /// store table data to xml file
         /// </summary>
@@ -84,14 +88,8 @@ namespace DAL
             DataSet ds = GetTableData(tableName);
             ds.WriteXml(fileName, XmlWriteMode.IgnoreSchema);
         }
-        //the restore file don't have data to back up.
-        //so,just delete the data in DB
-        public bool RetoreDataTable(string tableName)
-        {
-            string sql = string.Format("truncate table {0}", tableName);
-            int i = SqlHelper.ExecuteSql(sql);
-            return true;
-        }
+
+        #region for single table
         //insert datatable to DB
         public bool RetoreDataTable(string tableName, DataTable dataTable)
         {
@@ -137,6 +135,7 @@ namespace DAL
             }
             return isSuccuss;
         }
+        #endregion
 
         public bool RetoreDataTableList(List<string> tableNameList)
         {
@@ -179,8 +178,7 @@ namespace DAL
                             SqlBulkCopy bulkCopy = new SqlBulkCopy(conn, SqlBulkCopyOptions.TableLock | SqlBulkCopyOptions.KeepIdentity | SqlBulkCopyOptions.FireTriggers, transaction);
                             bulkCopy.DestinationTableName = tableName;
                             bulkCopy.WriteToServer(ds.Tables[0]);
-                            Log4.LogInstance.FileLogInstance().WriteLog("table: "+tableName+" restore successfully");
-                            
+                            Log4.LogInstance.FileLogInstance().WriteLog("restore table " + tableName + " successfully");   
                         }
 
                         sql = string.Format("EXEC sp_msforeachtable 'ALTER TABLE ? WITH CHECK CHECK CONSTRAINT all'");
@@ -194,6 +192,7 @@ namespace DAL
                     catch (Exception ex)
                     {
                         transaction.Rollback();
+                  
                         throw ex;
                     }
                 }
@@ -201,6 +200,7 @@ namespace DAL
             catch (Exception ex)
             {
                 isSuccuss = false;
+                Log4.LogInstance.FileLogInstance().WriteLog("restore table failed" + ex.Message);
                 throw ex;
             }
             return isSuccuss;

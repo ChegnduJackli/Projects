@@ -1,0 +1,4 @@
+C:\Users\lideng\Desktop\GIT\Project\c#\GenerateHtmlNews\GenerateHtmlNews\bin\GenerateHtmlNews.dll
+C:\Users\lideng\Desktop\GIT\Project\c#\GenerateHtmlNews\GenerateHtmlNews\bin\GenerateHtmlNews.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\GenerateHtmlNews\GenerateHtmlNews\obj\Debug\GenerateHtmlNews.dll
+C:\Users\lideng\Desktop\GIT\Project\c#\GenerateHtmlNews\GenerateHtmlNews\obj\Debug\GenerateHtmlNews.pdb

@@ -1,5 +1,5 @@
 <?xml version="1.0" standalone="yes"?>
-<NewDataSet>
+<parentTable>
   <ds>
     <ID>5</ID>
     <Title>test1</Title>
@@ -20,4 +20,4 @@
     <ID>8</ID>
     <Title>test5</Title>
   </ds>
-</NewDataSet>
+</parentTable>

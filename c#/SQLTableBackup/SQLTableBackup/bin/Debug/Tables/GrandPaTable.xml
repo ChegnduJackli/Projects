@@ -1,5 +1,5 @@
 <?xml version="1.0" standalone="yes"?>
-<NewDataSet>
+<GrandPaTable>
   <ds>
     <ID>1</ID>
     <Title>test1</Title>
@@ -32,4 +32,4 @@
     <ID>2</ID>
     <Title>test8</Title>
   </ds>
-</NewDataSet>
+</GrandPaTable>

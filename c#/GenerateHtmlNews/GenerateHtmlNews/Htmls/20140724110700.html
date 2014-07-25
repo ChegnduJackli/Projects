@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        body
+        {
+            font-family: Arial;
+            margin: auto;
+        }
+        #Title
+        {
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        #property
+        {
+            font-size: 14px;
+            text-align: center;
+        }
+        #content
+        {
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <table width="80%" align="center">
+        <tr>
+            <td id="Title">
+                I am a good man
+            </td>
+        </tr>
+        <tr>
+            <td id="property">
+                Author:&nbsp;Jack&nbsp;&nbsp; published Date:&nbsp;24/7/2014 11:32:00 AM
+            </td>
+        </tr>
+    </table>
+    <hr />
+    <table width="80%" align="center">
+        <tr>
+            <td>
+                A webservice will not be able to redirect on the page level since it's not a webpage.
+                            The solution I have provided by using XSLT should work for your client. 
+                            It's basically 2 URLs, one is the GetData.asmx as you described, 
+                            the other one would be something like GetHtml.ashx?record=ABC, 
+                            the handler is responsible to retrieve the XML data and transform into HTML string,
+                            once it's done, it will create the HTML file type for your client to download. 
+                            In this way you don't even need to save any static HTML files on your server.<img src='../Images/01.jpg'/>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,5 +1,5 @@
 <?xml version="1.0" standalone="yes"?>
-<NewDataSet>
+<Role>
   <ds>
     <ID>1</ID>
     <RoleName>Admin</RoleName>
@@ -8,4 +8,4 @@
     <ID>2</ID>
     <RoleName>Member</RoleName>
   </ds>
-</NewDataSet>
+</Role>

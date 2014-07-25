@@ -1,0 +1,8 @@
+C:\Users\lideng\Desktop\GIT\Project\c#\XMLSerial\XMLSerial\bin\Debug\XMLSerial.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\XMLSerial\XMLSerial\bin\Debug\XMLSerial.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\XMLSerial\XMLSerial\obj\x86\Debug\XMLSerial.Form1.resources
+C:\Users\lideng\Desktop\GIT\Project\c#\XMLSerial\XMLSerial\obj\x86\Debug\XMLSerial.Properties.Resources.resources
+C:\Users\lideng\Desktop\GIT\Project\c#\XMLSerial\XMLSerial\obj\x86\Debug\XMLSerial.csproj.GenerateResource.Cache
+C:\Users\lideng\Desktop\GIT\Project\c#\XMLSerial\XMLSerial\obj\x86\Debug\XMLSerial.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\XMLSerial\XMLSerial\obj\x86\Debug\XMLSerial.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\XMLSerial\XMLSerial\obj\x86\Debug\XMLSerial.csprojResolveAssemblyReference.cache

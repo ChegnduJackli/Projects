@@ -26,3 +26,4 @@ C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\502259
 C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\502259 Code CH33-XML\XmlSample\obj\Debug\XmlSample.frmXMLDOM.resources
 C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\502259 Code CH33-XML\XmlSample\obj\Debug\XmlSample.Properties.Resources.resources
 C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\502259 Code CH33-XML\XmlSample\obj\Debug\XmlSample.csproj.GenerateResource.Cache
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\502259 Code CH33-XML\XmlSample\obj\Debug\XmlSample.csprojResolveAssemblyReference.cache

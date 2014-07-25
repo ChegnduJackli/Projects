@@ -1,5 +1,5 @@
 <?xml version="1.0" standalone="yes"?>
-<NewDataSet>
+<ProcessType>
   <ds>
     <ID>0</ID>
     <ProcessTypeName>--Please Select Status--</ProcessTypeName>
@@ -16,4 +16,4 @@
     <ID>3</ID>
     <ProcessTypeName>Completed</ProcessTypeName>
   </ds>
-</NewDataSet>
+</ProcessType>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Inventory xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <InventoryItems>
+    <Prod Discount="0" ProductID="100" ProductName="Product Thing" SupplierID="10" CategoryID="0" UnitPrice="0" UnitsInStock="0" UnitsOnOrder="0" ReorderLevel="0" Discontinued="false" />
+    <Book Discount="0" ProductID="101" ProductName="How to Use Your New Product Thing" SupplierID="10" CategoryID="0" UnitPrice="0" UnitsInStock="0" UnitsOnOrder="0" ReorderLevel="0" Discontinued="false">
+      <ISBN>123456789</ISBN>
+    </Book>
+  </InventoryItems>
+</Inventory>
