@@ -33,21 +33,21 @@
             this.btnDisableProxy = new System.Windows.Forms.Button();
             this.btnEnableProxy = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnCancelShutdown = new System.Windows.Forms.Button();
             this.btnRestartPC = new System.Windows.Forms.Button();
             this.btnShutdownPC = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.labMessage = new System.Windows.Forms.Label();
-            this.btnCancelShutdown = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.listBoxURL = new System.Windows.Forms.ListBox();
             this.btnOpenURL = new System.Windows.Forms.Button();
-            this.rbChrome = new System.Windows.Forms.RadioButton();
-            this.rbFireFox = new System.Windows.Forms.RadioButton();
-            this.rbIE = new System.Windows.Forms.RadioButton();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.chkListAllBrowsers = new System.Windows.Forms.CheckedListBox();
+            this.chkAutoStart = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -93,6 +93,16 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Shutdown";
             // 
+            // btnCancelShutdown
+            // 
+            this.btnCancelShutdown.Location = new System.Drawing.Point(181, 41);
+            this.btnCancelShutdown.Name = "btnCancelShutdown";
+            this.btnCancelShutdown.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelShutdown.TabIndex = 2;
+            this.btnCancelShutdown.Text = "Cancel";
+            this.btnCancelShutdown.UseVisualStyleBackColor = true;
+            this.btnCancelShutdown.Click += new System.EventHandler(this.btnCancelShutdown_Click);
+            // 
             // btnRestartPC
             // 
             this.btnRestartPC.Location = new System.Drawing.Point(94, 41);
@@ -133,16 +143,6 @@
             this.labMessage.TabIndex = 3;
             this.labMessage.Text = "show";
             // 
-            // btnCancelShutdown
-            // 
-            this.btnCancelShutdown.Location = new System.Drawing.Point(181, 41);
-            this.btnCancelShutdown.Name = "btnCancelShutdown";
-            this.btnCancelShutdown.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelShutdown.TabIndex = 2;
-            this.btnCancelShutdown.Text = "Cancel";
-            this.btnCancelShutdown.UseVisualStyleBackColor = true;
-            this.btnCancelShutdown.Click += new System.EventHandler(this.btnCancelShutdown_Click);
-            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.listBoxURL);
@@ -156,8 +156,10 @@
             // listBoxURL
             // 
             this.listBoxURL.FormattingEnabled = true;
+            this.listBoxURL.HorizontalScrollbar = true;
             this.listBoxURL.Location = new System.Drawing.Point(7, 20);
             this.listBoxURL.Name = "listBoxURL";
+            this.listBoxURL.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
             this.listBoxURL.Size = new System.Drawing.Size(370, 173);
             this.listBoxURL.TabIndex = 0;
             // 
@@ -171,56 +173,44 @@
             this.btnOpenURL.UseVisualStyleBackColor = true;
             this.btnOpenURL.Click += new System.EventHandler(this.btnOpenURL_Click);
             // 
-            // rbChrome
-            // 
-            this.rbChrome.AutoSize = true;
-            this.rbChrome.Location = new System.Drawing.Point(436, 175);
-            this.rbChrome.Name = "rbChrome";
-            this.rbChrome.Size = new System.Drawing.Size(61, 17);
-            this.rbChrome.TabIndex = 6;
-            this.rbChrome.TabStop = true;
-            this.rbChrome.Text = "Chrome";
-            this.rbChrome.UseVisualStyleBackColor = true;
-            // 
-            // rbFireFox
-            // 
-            this.rbFireFox.AutoSize = true;
-            this.rbFireFox.Location = new System.Drawing.Point(436, 207);
-            this.rbFireFox.Name = "rbFireFox";
-            this.rbFireFox.Size = new System.Drawing.Size(59, 17);
-            this.rbFireFox.TabIndex = 7;
-            this.rbFireFox.TabStop = true;
-            this.rbFireFox.Text = "FireFox";
-            this.rbFireFox.UseVisualStyleBackColor = true;
-            // 
-            // rbIE
-            // 
-            this.rbIE.AutoSize = true;
-            this.rbIE.Location = new System.Drawing.Point(436, 239);
-            this.rbIE.Name = "rbIE";
-            this.rbIE.Size = new System.Drawing.Size(35, 17);
-            this.rbIE.TabIndex = 8;
-            this.rbIE.TabStop = true;
-            this.rbIE.Text = "IE";
-            this.rbIE.UseVisualStyleBackColor = true;
-            // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.chkListAllBrowsers);
             this.groupBox5.Location = new System.Drawing.Point(430, 155);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(112, 147);
+            this.groupBox5.Size = new System.Drawing.Size(116, 164);
             this.groupBox5.TabIndex = 3;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Browser";
+            // 
+            // chkListAllBrowsers
+            // 
+            this.chkListAllBrowsers.CausesValidation = false;
+            this.chkListAllBrowsers.CheckOnClick = true;
+            this.chkListAllBrowsers.FormattingEnabled = true;
+            this.chkListAllBrowsers.HorizontalScrollbar = true;
+            this.chkListAllBrowsers.Location = new System.Drawing.Point(0, 20);
+            this.chkListAllBrowsers.Name = "chkListAllBrowsers";
+            this.chkListAllBrowsers.Size = new System.Drawing.Size(116, 124);
+            this.chkListAllBrowsers.TabIndex = 0;
+            // 
+            // chkAutoStart
+            // 
+            this.chkAutoStart.AutoSize = true;
+            this.chkAutoStart.Location = new System.Drawing.Point(456, 9);
+            this.chkAutoStart.Name = "chkAutoStart";
+            this.chkAutoStart.Size = new System.Drawing.Size(73, 17);
+            this.chkAutoStart.TabIndex = 6;
+            this.chkAutoStart.Text = "Auto Start";
+            this.chkAutoStart.UseVisualStyleBackColor = true;
+            this.chkAutoStart.CheckedChanged += new System.EventHandler(this.chkAutoStart_CheckedChanged_1);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(546, 377);
-            this.Controls.Add(this.rbIE);
-            this.Controls.Add(this.rbFireFox);
-            this.Controls.Add(this.rbChrome);
+            this.ClientSize = new System.Drawing.Size(574, 379);
+            this.Controls.Add(this.chkAutoStart);
             this.Controls.Add(this.btnOpenURL);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.labMessage);
@@ -237,6 +227,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -256,10 +247,9 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.ListBox listBoxURL;
         private System.Windows.Forms.Button btnOpenURL;
-        private System.Windows.Forms.RadioButton rbChrome;
-        private System.Windows.Forms.RadioButton rbFireFox;
-        private System.Windows.Forms.RadioButton rbIE;
         private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.CheckedListBox chkListAllBrowsers;
+        private System.Windows.Forms.CheckBox chkAutoStart;
     }
 }
 

@@ -1,0 +1,48 @@
+D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\BackgroundWorkerSample\bin\Release\BackgroundWorkerSample.exe
+D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\BackgroundWorkerSample\bin\Release\BackgroundWorkerSample.pdb
+D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\Window1.baml
+D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\Window1.g.cs
+D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\App.g.cs
+D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\BackgroundWorkerSample_MarkupCompile.cache
+D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\BackgroundWorkerSample.g.resources
+D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\Wrox.ProCSharp.Threading.Properties.Resources.resources
+D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\GenerateResource.read.1.tlog
+D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\GenerateResource.write.1.tlog
+D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\BackgroundWorkerSample.exe
+D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\BackgroundWorkerSample.pdb
+K:\ProC# 4.0\code\Threading\ThreadingSamples\BackgroundWorkerSample\bin\Release\BackgroundWorkerSample.exe
+K:\ProC# 4.0\code\Threading\ThreadingSamples\BackgroundWorkerSample\bin\Release\BackgroundWorkerSample.pdb
+K:\ProC# 4.0\code\Threading\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\ResolveAssemblyReference.cache
+K:\ProC# 4.0\code\Threading\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\App.g.cs
+K:\ProC# 4.0\code\Threading\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\BackgroundWorkerSample_MarkupCompile.cache
+K:\ProC# 4.0\code\Threading\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\BackgroundWorkerSample.g.resources
+K:\ProC# 4.0\code\Threading\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\Wrox.ProCSharp.Threading.Properties.Resources.resources
+K:\ProC# 4.0\code\Threading\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\GenerateResource.read.1.tlog
+K:\ProC# 4.0\code\Threading\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\GenerateResource.write.1.tlog
+K:\ProC# 4.0\code\Threading\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\BackgroundWorkerSample.exe
+K:\ProC# 4.0\code\Threading\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\BackgroundWorkerSample.pdb
+K:\ProC# 4.0\code\Threading\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\MainWindow.baml
+K:\ProC# 4.0\code\Threading\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\MainWindow.g.cs
+C:\Users\lideng\Desktop\GIT\C#高级编程(中文第七版)\9780470502259_Complete_Code_Download\502259 Code CH20\ThreadingSamples\BackgroundWorkerSample\bin\Release\BackgroundWorkerSample.exe
+C:\Users\lideng\Desktop\GIT\C#高级编程(中文第七版)\9780470502259_Complete_Code_Download\502259 Code CH20\ThreadingSamples\BackgroundWorkerSample\bin\Release\BackgroundWorkerSample.pdb
+C:\Users\lideng\Desktop\GIT\C#高级编程(中文第七版)\9780470502259_Complete_Code_Download\502259 Code CH20\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\MainWindow.baml
+C:\Users\lideng\Desktop\GIT\C#高级编程(中文第七版)\9780470502259_Complete_Code_Download\502259 Code CH20\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\MainWindow.g.cs
+C:\Users\lideng\Desktop\GIT\C#高级编程(中文第七版)\9780470502259_Complete_Code_Download\502259 Code CH20\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\App.g.cs
+C:\Users\lideng\Desktop\GIT\C#高级编程(中文第七版)\9780470502259_Complete_Code_Download\502259 Code CH20\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\BackgroundWorkerSample_MarkupCompile.cache
+C:\Users\lideng\Desktop\GIT\C#高级编程(中文第七版)\9780470502259_Complete_Code_Download\502259 Code CH20\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\BackgroundWorkerSample.g.resources
+C:\Users\lideng\Desktop\GIT\C#高级编程(中文第七版)\9780470502259_Complete_Code_Download\502259 Code CH20\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\Wrox.ProCSharp.Threading.Properties.Resources.resources
+C:\Users\lideng\Desktop\GIT\C#高级编程(中文第七版)\9780470502259_Complete_Code_Download\502259 Code CH20\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\BackgroundWorkerSample.csproj.GenerateResource.Cache
+C:\Users\lideng\Desktop\GIT\C#高级编程(中文第七版)\9780470502259_Complete_Code_Download\502259 Code CH20\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\BackgroundWorkerSample.exe
+C:\Users\lideng\Desktop\GIT\C#高级编程(中文第七版)\9780470502259_Complete_Code_Download\502259 Code CH20\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\BackgroundWorkerSample.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\BackgroundWorkerSample\bin\Release\BackgroundWorkerSample.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\BackgroundWorkerSample\bin\Release\BackgroundWorkerSample.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\MainWindow.baml
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\MainWindow.g.cs
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\App.g.cs
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\BackgroundWorkerSample_MarkupCompile.cache
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\BackgroundWorkerSample.g.resources
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\Wrox.ProCSharp.Threading.Properties.Resources.resources
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\BackgroundWorkerSample.csproj.GenerateResource.Cache
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\BackgroundWorkerSample.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\BackgroundWorkerSample\obj\x86\Release\BackgroundWorkerSample.pdb

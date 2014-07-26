@@ -1,0 +1,12 @@
+C:\Users\lideng\Desktop\GIT\Project\c#\WordLookUp\WordFind\bin\Debug\WordFind.exe.config
+C:\Users\lideng\Desktop\GIT\Project\c#\WordLookUp\WordFind\bin\Debug\WordFind.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\WordLookUp\WordFind\bin\Debug\WordFind.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\WordLookUp\WordFind\obj\x86\Debug\MainWindow.baml
+C:\Users\lideng\Desktop\GIT\Project\c#\WordLookUp\WordFind\obj\x86\Debug\MainWindow.g.cs
+C:\Users\lideng\Desktop\GIT\Project\c#\WordLookUp\WordFind\obj\x86\Debug\App.g.cs
+C:\Users\lideng\Desktop\GIT\Project\c#\WordLookUp\WordFind\obj\x86\Debug\WordFind_MarkupCompile.cache
+C:\Users\lideng\Desktop\GIT\Project\c#\WordLookUp\WordFind\obj\x86\Debug\WordFind.g.resources
+C:\Users\lideng\Desktop\GIT\Project\c#\WordLookUp\WordFind\obj\x86\Debug\WordFind.Properties.Resources.resources
+C:\Users\lideng\Desktop\GIT\Project\c#\WordLookUp\WordFind\obj\x86\Debug\WordFind.csproj.GenerateResource.Cache
+C:\Users\lideng\Desktop\GIT\Project\c#\WordLookUp\WordFind\obj\x86\Debug\WordFind.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\WordLookUp\WordFind\obj\x86\Debug\WordFind.pdb

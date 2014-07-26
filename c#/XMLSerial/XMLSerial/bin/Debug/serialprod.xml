@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Product xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Discount="0" ProductID="200" ProductName="Serialize Objects" SupplierID="1" CategoryID="100" QuantityPerUnit="6" UnitPrice="1000" UnitsInStock="10" UnitsOnOrder="0" ReorderLevel="1" Discontinued="false" />

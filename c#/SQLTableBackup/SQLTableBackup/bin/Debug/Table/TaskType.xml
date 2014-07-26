@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <ds>
+    <ID>0</ID>
+    <TypeName>--Please Select Type--</TypeName>
+  </ds>
+  <ds>
+    <ID>1</ID>
+    <TypeName>Task</TypeName>
+  </ds>
+  <ds>
+    <ID>2</ID>
+    <TypeName>Meeting</TypeName>
+  </ds>
+  <ds>
+    <ID>3</ID>
+    <TypeName>Course</TypeName>
+  </ds>
+</NewDataSet>

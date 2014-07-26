@@ -1,0 +1,7 @@
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\502259 Code CH33-XML\XMLSampleUse\bin\Debug\XMLSampleUse.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\502259 Code CH33-XML\XMLSampleUse\bin\Debug\XMLSampleUse.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\502259 Code CH33-XML\XMLSampleUse\obj\x86\Debug\XMLSampleUse.Form1.resources
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\502259 Code CH33-XML\XMLSampleUse\obj\x86\Debug\XMLSampleUse.Properties.Resources.resources
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\502259 Code CH33-XML\XMLSampleUse\obj\x86\Debug\XMLSampleUse.csproj.GenerateResource.Cache
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\502259 Code CH33-XML\XMLSampleUse\obj\x86\Debug\XMLSampleUse.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\c#高级编程第七版\SourceCode\502259 Code CH33-XML\XMLSampleUse\obj\x86\Debug\XMLSampleUse.pdb

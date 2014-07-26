@@ -1,0 +1,7 @@
+C:\Users\lideng\Desktop\GIT\Project\c#\ThreadSample\ProgressBar\bin\Debug\ProgressBar.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\ThreadSample\ProgressBar\bin\Debug\ProgressBar.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\ThreadSample\ProgressBar\obj\x86\Debug\ProgressBar.Form1.resources
+C:\Users\lideng\Desktop\GIT\Project\c#\ThreadSample\ProgressBar\obj\x86\Debug\ProgressBar.Properties.Resources.resources
+C:\Users\lideng\Desktop\GIT\Project\c#\ThreadSample\ProgressBar\obj\x86\Debug\ProgressBar.csproj.GenerateResource.Cache
+C:\Users\lideng\Desktop\GIT\Project\c#\ThreadSample\ProgressBar\obj\x86\Debug\ProgressBar.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\ThreadSample\ProgressBar\obj\x86\Debug\ProgressBar.pdb

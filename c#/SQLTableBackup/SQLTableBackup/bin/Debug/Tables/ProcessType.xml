@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="yes"?>
+<ProcessType>
+  <ds>
+    <ID>0</ID>
+    <ProcessTypeName>--Please Select Status--</ProcessTypeName>
+  </ds>
+  <ds>
+    <ID>1</ID>
+    <ProcessTypeName>Not Started</ProcessTypeName>
+  </ds>
+  <ds>
+    <ID>2</ID>
+    <ProcessTypeName>Processing</ProcessTypeName>
+  </ds>
+  <ds>
+    <ID>3</ID>
+    <ProcessTypeName>Completed</ProcessTypeName>
+  </ds>
+</ProcessType>

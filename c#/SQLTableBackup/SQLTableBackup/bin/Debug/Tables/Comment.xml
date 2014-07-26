@@ -1,0 +1,438 @@
+<?xml version="1.0" standalone="yes"?>
+<Comment>
+  <ds>
+    <ID>17</ID>
+    <TaskID>14</TaskID>
+    <replyTime>2014-03-25T18:39:07.257+08:00</replyTime>
+    <Content>&lt;p&gt;
+	&lt;strong&gt;Wait a meeting to review the code&lt;/strong&gt;
+&lt;/p&gt;</Content>
+    <userId>Admin</userId>
+  </ds>
+  <ds>
+    <ID>27</ID>
+    <TaskID>13</TaskID>
+    <replyTime>2014-03-26T17:13:20.413+08:00</replyTime>
+    <Content>Add two pages, one is &lt;strong&gt;NewVendorPrint&lt;/strong&gt;.aspx
+&lt;p&gt;
+	one is &lt;strong&gt;NewVendorInfo&lt;/strong&gt;.aspx
+&lt;/p&gt;</Content>
+    <userId>Admin</userId>
+  </ds>
+  <ds>
+    <ID>20</ID>
+    <TaskID>9</TaskID>
+    <replyTime>2014-03-26T14:38:46.53+08:00</replyTime>
+    <Content>&lt;strong&gt;Done&lt;/strong&gt;&lt;strong&gt;&lt;/strong&gt;</Content>
+    <userId>Admin</userId>
+  </ds>
+  <ds>
+    <ID>10</ID>
+    <TaskID>13</TaskID>
+    <replyTime>2014-03-25T18:32:48.637+08:00</replyTime>
+    <Content>&lt;strong&gt;Done&lt;/strong&gt;</Content>
+    <userId>Admin</userId>
+  </ds>
+  <ds>
+    <ID>16</ID>
+    <TaskID>8</TaskID>
+    <replyTime>2014-03-25T18:36:34.057+08:00</replyTime>
+    <Content>&lt;strong&gt;Done already&lt;/strong&gt;</Content>
+    <userId>Admin</userId>
+  </ds>
+  <ds>
+    <ID>28</ID>
+    <TaskID>12</TaskID>
+    <replyTime>2014-03-26T18:40:54.247+08:00</replyTime>
+    <Content>&lt;p&gt;
+	User no reply.
+&lt;/p&gt;
+&lt;p&gt;
+	maybe not understand
+&lt;/p&gt;</Content>
+    <userId>Admin</userId>
+  </ds>
+  <ds>
+    <ID>29</ID>
+    <TaskID>13</TaskID>
+    <replyTime>2014-03-27T11:44:18.66+08:00</replyTime>
+    <Content>fff</Content>
+    <userId>Admin</userId>
+  </ds>
+  <ds>
+    <ID>30</ID>
+    <TaskID>13</TaskID>
+    <replyTime>2014-03-27T11:44:56.847+08:00</replyTime>
+    <Content>fff</Content>
+    <userId>Admin</userId>
+  </ds>
+  <ds>
+    <ID>31</ID>
+    <TaskID>16</TaskID>
+    <replyTime>2014-03-27T13:48:50.98+08:00</replyTime>
+    <Content>The steps to raise request</Content>
+    <userId>Admin</userId>
+  </ds>
+  <ds>
+    <ID>32</ID>
+    <TaskID>14</TaskID>
+    <replyTime>2014-03-27T17:37:06.527+08:00</replyTime>
+    <Content>Done</Content>
+    <userId>Admin</userId>
+  </ds>
+  <ds>
+    <ID>40</ID>
+    <TaskID>35</TaskID>
+    <replyTime>2014-04-01T14:46:55.4+08:00</replyTime>
+    <Content>Nice</Content>
+    <userId>Admin</userId>
+  </ds>
+  <ds>
+    <ID>37</ID>
+    <TaskID>34</TaskID>
+    <replyTime>2014-03-28T11:16:14.357+08:00</replyTime>
+    <Content>Coding finished already</Content>
+    <userId>Admin</userId>
+  </ds>
+  <ds>
+    <ID>38</ID>
+    <TaskID>34</TaskID>
+    <replyTime>2014-03-28T17:38:21.03+08:00</replyTime>
+    <Content>&lt;strong&gt;immigrate to staging already.&lt;/strong&gt;</Content>
+    <userId>Admin</userId>
+  </ds>
+  <ds>
+    <ID>39</ID>
+    <TaskID>35</TaskID>
+    <replyTime>2014-03-31T14:34:13.243+08:00</replyTime>
+    <Content>&lt;p&gt;
+	after run batch job, please remember to reset (cp GetInvoiceBlank.sh GetInvoice.sh) then put to server.
+&lt;/p&gt;
+&lt;p&gt;
+	to prevent job run again.
+&lt;/p&gt;</Content>
+    <userId>Admin</userId>
+  </ds>
+  <ds>
+    <ID>60</ID>
+    <TaskID>36</TaskID>
+    <replyTime>2014-04-02T19:09:39.193+08:00</replyTime>
+    <Content>done</Content>
+    <userId>Adi</userId>
+  </ds>
+  <ds>
+    <ID>42</ID>
+    <TaskID>36</TaskID>
+    <replyTime>2014-04-01T16:22:48.527+08:00</replyTime>
+    <Content>dfasdf</Content>
+    <userId>Adi</userId>
+  </ds>
+  <ds>
+    <ID>43</ID>
+    <TaskID>4</TaskID>
+    <replyTime>2014-04-01T16:33:06.327+08:00</replyTime>
+    <Content>&lt;p&gt;
+	afasasdfasdfasdfasdfasdfasdf
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;span&gt;afasasdfasdfasdfasdfasdfasdf&lt;span&gt;afasasdfasdfasdfasdfasdfasdf&lt;span&gt;afasasdfasdfasdfasdfasdfasdf&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;span&gt;&lt;span&gt;&lt;span&gt;afasasdfasdfasdfasdfasdfasdf&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/p&gt;</Content>
+    <userId>Adi</userId>
+  </ds>
+  <ds>
+    <ID>44</ID>
+    <TaskID>4</TaskID>
+    <replyTime>2014-04-01T16:33:44.673+08:00</replyTime>
+    <Content>&lt;p&gt;
+	afasasdfasdfasdfasdfasdfasdf
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;span&gt;afasasdfasdfasdfasdfasdfasdf&lt;span&gt;afasasdfasdfasdfasdfasdfasdf&lt;span&gt;afasasdfasdfasdfasdfasdfasdf&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;span&gt;&lt;span&gt;&lt;span&gt;afasasdfasdfasdfasdfasdfasdf&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/p&gt;</Content>
+    <userId>Adi</userId>
+  </ds>
+  <ds>
+    <ID>61</ID>
+    <TaskID>36</TaskID>
+    <replyTime>2014-04-02T19:09:54.103+08:00</replyTime>
+    <Content>good job</Content>
+    <userId>lideng</userId>
+  </ds>
+  <ds>
+    <ID>51</ID>
+    <TaskID>16</TaskID>
+    <replyTime>2014-04-02T16:45:42.667+08:00</replyTime>
+    <Content>OSS is not shine.</Content>
+    <userId>lideng</userId>
+  </ds>
+  <ds>
+    <ID>52</ID>
+    <TaskID>4</TaskID>
+    <replyTime>2014-04-02T16:46:57.29+08:00</replyTime>
+    <Content>Come on ,do it</Content>
+    <userId>lideng</userId>
+  </ds>
+  <ds>
+    <ID>63</ID>
+    <TaskID>48</TaskID>
+    <replyTime>2014-04-07T10:33:59.793+08:00</replyTime>
+    <Content>Has changed ,waiting to verify then migrate to production</Content>
+    <userId>lideng</userId>
+  </ds>
+  <ds>
+    <ID>65</ID>
+    <TaskID>48</TaskID>
+    <replyTime>2014-04-07T10:54:31.02+08:00</replyTime>
+    <Content>&lt;p&gt;
+	VendorsGOV\Invoice\UploadAttachment.aspx
+&lt;/p&gt;
+&lt;p&gt;
+	VendorsGOV\Invoice\CreateInvoice.aspx
+&lt;/p&gt;
+&lt;p&gt;
+	VendorsGOV\BatchInvoice\BatchAttachementUpload.aspx
+&lt;/p&gt;
+&lt;p&gt;
+	VendorsGOV\Bin\VendorsBLL.dll
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	Need to migrate these files to production.
+&lt;/p&gt;</Content>
+    <userId>lideng</userId>
+  </ds>
+  <ds>
+    <ID>67</ID>
+    <TaskID>48</TaskID>
+    <replyTime>2014-04-08T19:14:21.817+08:00</replyTime>
+    <Content>&lt;p&gt;
+	VendorsGOV\Scripts\InvoiceJS.js
+&lt;/p&gt;
+&lt;p&gt;
+	VendorsGOV\Scripts\jquery.autocomplete.js
+&lt;/p&gt;
+&lt;p&gt;
+	VendorsGOV\Invoice\UploadAttachment.aspx
+&lt;/p&gt;
+&lt;p&gt;
+	VendorsGOV\Invoice\CreateInvoice.aspx
+&lt;/p&gt;
+&lt;p&gt;
+	VendorsGOV\BatchInvoice\BatchAttachementUpload.aspx
+&lt;/p&gt;
+&lt;p&gt;
+	VendorsGOV\Bin\VendorsBLL.dll
+&lt;/p&gt;</Content>
+    <userId>lideng</userId>
+  </ds>
+  <ds>
+    <ID>69</ID>
+    <TaskID>40</TaskID>
+    <replyTime>2014-04-10T11:41:42.397+08:00</replyTime>
+    <Content>&lt;p&gt;
+	sftp 10.250.24.70 to nfs
+&lt;/p&gt;
+&lt;p&gt;
+	Here have to folder: In and Out.
+&lt;/p&gt;
+&lt;p&gt;
+	In: from &lt;a href="mailto:vendors@gov"&gt;vendors@gov&lt;/a&gt; to NFS
+&lt;/p&gt;
+&lt;p&gt;
+	Out:From NFS to &lt;a href="mailto:Vendors@gov"&gt;Vendors@gov&lt;/a&gt;.
+&lt;/p&gt;</Content>
+    <userId>lideng</userId>
+  </ds>
+  <ds>
+    <ID>71</ID>
+    <TaskID>48</TaskID>
+    <replyTime>2014-04-11T10:48:23.363+08:00</replyTime>
+    <Content>Go to production already</Content>
+    <userId>lideng</userId>
+  </ds>
+  <ds>
+    <ID>75</ID>
+    <TaskID>52</TaskID>
+    <replyTime>2014-04-14T12:15:45.62+08:00</replyTime>
+    <Content>Delete invoice also delete attachment</Content>
+    <userId>lideng</userId>
+  </ds>
+  <ds>
+    <ID>355</ID>
+    <TaskID>50</TaskID>
+    <replyTime>2014-06-06T18:27:23.627+08:00</replyTime>
+    <Content>sdfgh</Content>
+    <userId>lideng</userId>
+  </ds>
+  <ds>
+    <ID>77</ID>
+    <TaskID>52</TaskID>
+    <replyTime>2014-04-15T09:41:38.4+08:00</replyTime>
+    <Content>&lt;p&gt;
+	Change SP InvoicePackage also?
+&lt;/p&gt;
+&lt;p&gt;
+	Just change SP script to promote the performance
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;</Content>
+    <userId>lideng</userId>
+  </ds>
+  <ds>
+    <ID>78</ID>
+    <TaskID>55</TaskID>
+    <replyTime>2014-04-15T14:52:55.393+08:00</replyTime>
+    <Content>198804611D&lt;br /&gt;
+test1234</Content>
+    <userId>lideng</userId>
+  </ds>
+  <ds>
+    <ID>356</ID>
+    <TaskID>50</TaskID>
+    <replyTime>2014-06-06T18:27:25.33+08:00</replyTime>
+    <Content>sdfgh</Content>
+    <userId>lideng</userId>
+  </ds>
+  <ds>
+    <ID>357</ID>
+    <TaskID>50</TaskID>
+    <replyTime>2014-06-06T18:27:26.147+08:00</replyTime>
+    <Content>sdfgh</Content>
+    <userId>lideng</userId>
+  </ds>
+  <ds>
+    <ID>358</ID>
+    <TaskID>50</TaskID>
+    <replyTime>2014-06-06T18:27:26.61+08:00</replyTime>
+    <Content>sdfgh</Content>
+    <userId>lideng</userId>
+  </ds>
+  <ds>
+    <ID>359</ID>
+    <TaskID>50</TaskID>
+    <replyTime>2014-06-06T18:28:08.597+08:00</replyTime>
+    <Content>asdf</Content>
+    <userId>lideng</userId>
+  </ds>
+  <ds>
+    <ID>360</ID>
+    <TaskID>50</TaskID>
+    <replyTime>2014-06-06T18:28:12.483+08:00</replyTime>
+    <Content>asdfas</Content>
+    <userId>lideng</userId>
+  </ds>
+  <ds>
+    <ID>361</ID>
+    <TaskID>50</TaskID>
+    <replyTime>2014-06-06T18:28:14.617+08:00</replyTime>
+    <Content>asdf</Content>
+    <userId>lideng</userId>
+  </ds>
+  <ds>
+    <ID>362</ID>
+    <TaskID>50</TaskID>
+    <replyTime>2014-06-06T18:28:16.64+08:00</replyTime>
+    <Content>asdfsf</Content>
+    <userId>lideng</userId>
+  </ds>
+  <ds>
+    <ID>363</ID>
+    <TaskID>50</TaskID>
+    <replyTime>2014-06-06T18:28:18.55+08:00</replyTime>
+    <Content>asdfasf</Content>
+    <userId>lideng</userId>
+  </ds>
+  <ds>
+    <ID>364</ID>
+    <TaskID>50</TaskID>
+    <replyTime>2014-06-06T18:28:20+08:00</replyTime>
+    <Content>asdfasdf</Content>
+    <userId>lideng</userId>
+  </ds>
+  <ds>
+    <ID>416</ID>
+    <TaskID>59</TaskID>
+    <replyTime>2014-06-11T12:29:21.22+08:00</replyTime>
+    <Content>asdfas</Content>
+    <userId>lideng</userId>
+  </ds>
+  <ds>
+    <ID>375</ID>
+    <TaskID>57</TaskID>
+    <replyTime>2014-06-09T12:11:10.66+08:00</replyTime>
+    <Content>asdfds</Content>
+    <userId>lideng</userId>
+  </ds>
+  <ds>
+    <ID>382</ID>
+    <TaskID>40</TaskID>
+    <replyTime>2014-06-11T09:45:02.27+08:00</replyTime>
+    <Content>dd</Content>
+    <userId>lideng</userId>
+  </ds>
+  <ds>
+    <ID>417</ID>
+    <TaskID>59</TaskID>
+    <replyTime>2014-06-11T12:29:23.903+08:00</replyTime>
+    <Content>asdfasd</Content>
+    <userId>lideng</userId>
+  </ds>
+  <ds>
+    <ID>381</ID>
+    <TaskID>40</TaskID>
+    <replyTime>2014-06-11T09:44:54.117+08:00</replyTime>
+    <Content>gg</Content>
+    <userId>lideng</userId>
+  </ds>
+  <ds>
+    <ID>86</ID>
+    <TaskID>59</TaskID>
+    <replyTime>2014-06-06T14:25:50.363+08:00</replyTime>
+    <Content>good job</Content>
+    <userId>lideng</userId>
+  </ds>
+  <ds>
+    <ID>302</ID>
+    <TaskID>50</TaskID>
+    <replyTime>2014-06-06T17:25:55.143+08:00</replyTime>
+    <Content>asp.net&lt;br /&gt;</Content>
+    <userId>lideng</userId>
+  </ds>
+  <ds>
+    <ID>303</ID>
+    <TaskID>50</TaskID>
+    <replyTime>2014-06-06T17:26:05.647+08:00</replyTime>
+    <Content>sdfghjk&lt;br /&gt;sdfgh</Content>
+    <userId>lideng</userId>
+  </ds>
+  <ds>
+    <ID>365</ID>
+    <TaskID>50</TaskID>
+    <replyTime>2014-06-06T18:28:22.273+08:00</replyTime>
+    <Content>asdfasf</Content>
+    <userId>lideng</userId>
+  </ds>
+  <ds>
+    <ID>366</ID>
+    <TaskID>50</TaskID>
+    <replyTime>2014-06-06T18:28:24.143+08:00</replyTime>
+    <Content>asdfas</Content>
+    <userId>lideng</userId>
+  </ds>
+  <ds>
+    <ID>367</ID>
+    <TaskID>50</TaskID>
+    <replyTime>2014-06-06T18:28:26.093+08:00</replyTime>
+    <Content>asdfasdf</Content>
+    <userId>lideng</userId>
+  </ds>
+</Comment>

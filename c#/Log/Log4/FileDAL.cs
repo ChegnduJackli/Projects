@@ -41,6 +41,33 @@ namespace Log4
                 return _LogRootPath;
             }
         }
+        public void Write(Exception ex)
+        {
+            try
+            {
+                string filePath = this._fileName;
+                lock (obj)
+                {
+                    using (FileStream fs = new FileStream(filePath, FileMode.Append, FileAccess.Write, FileShare.Delete | FileShare.ReadWrite))
+                    {
+                        using (StreamWriter sw = new StreamWriter(fs))
+                        {
+                            sw.WriteLine(DateTimeFormat.LongTimeFormat + " : " + ex);
+                            //sw.Flush();
+                            sw.Close();
+                            fs.Close();
+                            sw.Dispose();
+                            fs.Dispose();
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+
         public void Write(string message)
         {
             try

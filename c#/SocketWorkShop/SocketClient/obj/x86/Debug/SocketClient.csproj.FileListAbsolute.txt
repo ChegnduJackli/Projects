@@ -1,0 +1,4 @@
+C:\Users\lideng\Desktop\GIT\Project\c#\SocketWorkShop\SocketClient\bin\Debug\SocketClient.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\SocketWorkShop\SocketClient\bin\Debug\SocketClient.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\SocketWorkShop\SocketClient\obj\x86\Debug\SocketClient.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\SocketWorkShop\SocketClient\obj\x86\Debug\SocketClient.pdb

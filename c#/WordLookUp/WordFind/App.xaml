@@ -1,0 +1,12 @@
+﻿<Application x:Class="WordFind.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <!--<x:Array x:Key="LanguageList" Type="WordFind:Services"/>
+        <WordFind:LanguageList ValueString = "Red" />
+        <WordFind:LanguageList ValueString = "Green"/>
+        <WordFind:LanguageList ValueString = "Blue"/>
+        </x:Array>-->
+    </Application.Resources>
+</Application>

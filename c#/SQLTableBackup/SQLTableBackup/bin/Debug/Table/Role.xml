@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <ds>
+    <ID>1</ID>
+    <RoleName>Admin</RoleName>
+  </ds>
+  <ds>
+    <ID>2</ID>
+    <RoleName>Member</RoleName>
+  </ds>
+</NewDataSet>

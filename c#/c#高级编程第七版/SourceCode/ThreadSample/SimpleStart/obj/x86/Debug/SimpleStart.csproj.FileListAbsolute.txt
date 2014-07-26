@@ -1,0 +1,4 @@
+C:\Users\lideng\Desktop\GIT\Project\c#\ThreadSample\SimpleStart\bin\Debug\SimpleStart.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\ThreadSample\SimpleStart\bin\Debug\SimpleStart.pdb
+C:\Users\lideng\Desktop\GIT\Project\c#\ThreadSample\SimpleStart\obj\x86\Debug\SimpleStart.exe
+C:\Users\lideng\Desktop\GIT\Project\c#\ThreadSample\SimpleStart\obj\x86\Debug\SimpleStart.pdb

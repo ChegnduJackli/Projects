@@ -16,5 +16,7 @@ namespace Log4
         {
 
         }
+        public void ErrorLog(Exception ex)
+        { }
     }
 }

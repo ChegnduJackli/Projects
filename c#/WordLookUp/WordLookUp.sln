@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomGame", "WordLookUp\RandomGame.csproj", "{15799733-8466-48D8-AF37-FBA8EE6DA544}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordFind", "WordFind\WordFind.csproj", "{77E1502D-0364-4CAC-9ED0-B9FAA571F7D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,6 +15,10 @@ Global
 		{15799733-8466-48D8-AF37-FBA8EE6DA544}.Debug|x86.Build.0 = Debug|x86
 		{15799733-8466-48D8-AF37-FBA8EE6DA544}.Release|x86.ActiveCfg = Release|x86
 		{15799733-8466-48D8-AF37-FBA8EE6DA544}.Release|x86.Build.0 = Release|x86
+		{77E1502D-0364-4CAC-9ED0-B9FAA571F7D8}.Debug|x86.ActiveCfg = Debug|x86
+		{77E1502D-0364-4CAC-9ED0-B9FAA571F7D8}.Debug|x86.Build.0 = Debug|x86
+		{77E1502D-0364-4CAC-9ED0-B9FAA571F7D8}.Release|x86.ActiveCfg = Release|x86
+		{77E1502D-0364-4CAC-9ED0-B9FAA571F7D8}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
