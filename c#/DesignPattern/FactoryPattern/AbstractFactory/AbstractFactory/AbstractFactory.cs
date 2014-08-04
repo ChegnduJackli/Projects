@@ -8,35 +8,36 @@ namespace AbstractFactory
 	/// </summary>
 	public abstract class AbstractFactory
 	{
-        public AbstractFactory GetInstance()
-        {
-            string factoryName = Constant.STR_FACTORYNAME.ToString();
-
-            AbstractFactory instance;
-
-            if (factoryName == "ChineseFactory")
-                instance = new ChineseFactory();
-            else if (factoryName == "AmericanFactory")
-                instance = new AmericanFactory();
-            else
-                instance = null;
-
-            return instance;
-        }
-
         //public AbstractFactory GetInstance()
         //{
         //    string factoryName = Constant.STR_FACTORYNAME.ToString();
 
         //    AbstractFactory instance;
 
-        //    if (factoryName != "")
-        //        instance = (AbstractFactory)Assembly.Load(factoryName).CreateInstance(factoryName);
+        //    if (factoryName == "ChineseFactory")
+        //        instance = new ChineseFactory();
+        //    else if (factoryName == "AmericanFactory")
+        //        instance = new AmericanFactory();
         //    else
         //        instance = null;
 
         //    return instance;
         //}
+
+        public AbstractFactory GetInstance()
+        {
+            string factoryName = Constant.STR_FACTORYNAME.ToString();
+
+            AbstractFactory instance;
+
+            if (factoryName != "")
+                //instance = (AbstractFactory)Assembly.Load(factoryName).CreateInstance(factoryName);
+                instance = (AbstractFactory)Assembly.Load("AbstractFactory").CreateInstance(factoryName);
+            else
+                instance = null;
+
+            return instance;
+        }
         
 
 		public abstract Tax CreateTax();

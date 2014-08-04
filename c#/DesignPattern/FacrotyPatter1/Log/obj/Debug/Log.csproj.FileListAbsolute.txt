@@ -3,3 +3,7 @@ D:\我的文件\C#\Design Patterns\FacrotyPatter1\Log\bin\Debug\Log.pdb
 D:\我的文件\C#\Design Patterns\FacrotyPatter1\Log\obj\Debug\ResolveAssemblyReference.cache
 D:\我的文件\C#\Design Patterns\FacrotyPatter1\Log\obj\Debug\Log.dll
 D:\我的文件\C#\Design Patterns\FacrotyPatter1\Log\obj\Debug\Log.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\FacrotyPatter1\Log\bin\Debug\Log.dll
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\FacrotyPatter1\Log\bin\Debug\Log.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\FacrotyPatter1\Log\obj\Debug\Log.dll
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\FacrotyPatter1\Log\obj\Debug\Log.pdb

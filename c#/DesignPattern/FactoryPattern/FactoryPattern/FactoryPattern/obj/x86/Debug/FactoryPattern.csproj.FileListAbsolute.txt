@@ -10,3 +10,15 @@ D:\我的文件\C#\Design Patterns\FactoryPattern\FactoryPattern\FactoryPattern\
 D:\我的文件\C#\Design Patterns\FactoryPattern\FactoryPattern\FactoryPattern\bin\Debug\AmericalSalary.dll
 D:\我的文件\C#\Design Patterns\FactoryPattern\FactoryPattern\FactoryPattern\bin\Debug\AmericalSalary.pdb
 D:\我的文件\C#\Design Patterns\FactoryPattern\FactoryPattern\FactoryPattern\bin\Debug\FactoryPattern.exe.config
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\FactoryPattern\FactoryPattern\FactoryPattern\bin\Debug\FactoryPattern.exe.config
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\FactoryPattern\FactoryPattern\FactoryPattern\obj\x86\Debug\FactoryPattern.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\FactoryPattern\FactoryPattern\FactoryPattern\obj\x86\Debug\FactoryPattern.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\FactoryPattern\FactoryPattern\FactoryPattern\bin\Debug\FactoryPattern.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\FactoryPattern\FactoryPattern\FactoryPattern\bin\Debug\FactoryPattern.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\FactoryPattern\FactoryPattern\FactoryPattern\bin\Debug\AbstractClass.dll
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\FactoryPattern\FactoryPattern\FactoryPattern\bin\Debug\AmericalSalary.dll
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\FactoryPattern\FactoryPattern\FactoryPattern\bin\Debug\ChineseSalary.dll
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\FactoryPattern\FactoryPattern\FactoryPattern\bin\Debug\AbstractClass.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\FactoryPattern\FactoryPattern\FactoryPattern\bin\Debug\AmericalSalary.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\FactoryPattern\FactoryPattern\FactoryPattern\bin\Debug\ChineseSalary.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\FactoryPattern\FactoryPattern\FactoryPattern\obj\x86\Debug\FactoryPattern.csprojResolveAssemblyReference.cache

@@ -9,3 +9,8 @@ C:\Users\lideng\Desktop\GIT\Project\c#\DesignPattern\FactoryPattern\AbstractFact
 C:\Users\lideng\Desktop\GIT\Project\c#\DesignPattern\FactoryPattern\AbstractFactory\AbstractFactory\obj\Debug\AbstractFactory.pdb
 C:\Users\lideng\Desktop\GIT\Project\c#\DesignPattern\FactoryPattern\AbstractFactory\AbstractFactory\bin\Debug\AbstractFactory.exe
 C:\Users\lideng\Desktop\GIT\Project\c#\DesignPattern\FactoryPattern\AbstractFactory\AbstractFactory\bin\Debug\AbstractFactory.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\FactoryPattern\AbstractFactory\AbstractFactory\bin\Debug\AbstractFactory.exe.config
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\FactoryPattern\AbstractFactory\AbstractFactory\obj\Debug\AbstractFactory.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\FactoryPattern\AbstractFactory\AbstractFactory\obj\Debug\AbstractFactory.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\FactoryPattern\AbstractFactory\AbstractFactory\bin\Debug\AbstractFactory.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\FactoryPattern\AbstractFactory\AbstractFactory\bin\Debug\AbstractFactory.pdb

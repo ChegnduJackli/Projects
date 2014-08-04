@@ -6,3 +6,11 @@ D:\我的文件\C#\Design Patterns\FacrotyPatter1\FacrotyPatter1\bin\Debug\Log.p
 D:\我的文件\C#\Design Patterns\FacrotyPatter1\FacrotyPatter1\obj\x86\Debug\FacrotyPatter1.exe
 D:\我的文件\C#\Design Patterns\FacrotyPatter1\FacrotyPatter1\obj\x86\Debug\FacrotyPatter1.pdb
 D:\我的文件\C#\Design Patterns\FacrotyPatter1\FacrotyPatter1\bin\Debug\FacrotyPatter1.exe.config
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\FacrotyPatter1\FacrotyPatter1\bin\Debug\FacrotyPatter1.exe.config
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\FacrotyPatter1\FacrotyPatter1\bin\Debug\FacrotyPatter1.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\FacrotyPatter1\FacrotyPatter1\bin\Debug\FacrotyPatter1.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\FacrotyPatter1\FacrotyPatter1\bin\Debug\Log.dll
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\FacrotyPatter1\FacrotyPatter1\bin\Debug\Log.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\FacrotyPatter1\FacrotyPatter1\obj\x86\Debug\FacrotyPatter1.csprojResolveAssemblyReference.cache
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\FacrotyPatter1\FacrotyPatter1\obj\x86\Debug\FacrotyPatter1.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\FacrotyPatter1\FacrotyPatter1\obj\x86\Debug\FacrotyPatter1.pdb

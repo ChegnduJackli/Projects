@@ -1,0 +1,8 @@
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\CreateDirOrFile\CreateDirOrFile\bin\Debug\CreateDirOrFile.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\CreateDirOrFile\CreateDirOrFile\bin\Debug\CreateDirOrFile.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\CreateDirOrFile\CreateDirOrFile\obj\x86\Debug\CreateDirOrFile.Form1.resources
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\CreateDirOrFile\CreateDirOrFile\obj\x86\Debug\CreateDirOrFile.Properties.Resources.resources
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\CreateDirOrFile\CreateDirOrFile\obj\x86\Debug\CreateDirOrFile.csproj.GenerateResource.Cache
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\CreateDirOrFile\CreateDirOrFile\obj\x86\Debug\CreateDirOrFile.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\CreateDirOrFile\CreateDirOrFile\obj\x86\Debug\CreateDirOrFile.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\CreateDirOrFile\CreateDirOrFile\obj\x86\Debug\CreateDirOrFile.csprojResolveAssemblyReference.cache

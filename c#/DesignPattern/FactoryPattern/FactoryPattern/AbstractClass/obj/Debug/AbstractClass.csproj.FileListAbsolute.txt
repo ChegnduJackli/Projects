@@ -3,3 +3,7 @@ D:\我的文件\C#\Design Patterns\FactoryPattern\FactoryPattern\AbstractClass\b
 D:\我的文件\C#\Design Patterns\FactoryPattern\FactoryPattern\AbstractClass\obj\Debug\ResolveAssemblyReference.cache
 D:\我的文件\C#\Design Patterns\FactoryPattern\FactoryPattern\AbstractClass\obj\Debug\AbstractClass.dll
 D:\我的文件\C#\Design Patterns\FactoryPattern\FactoryPattern\AbstractClass\obj\Debug\AbstractClass.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\FactoryPattern\FactoryPattern\AbstractClass\bin\Debug\AbstractClass.dll
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\FactoryPattern\FactoryPattern\AbstractClass\bin\Debug\AbstractClass.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\FactoryPattern\FactoryPattern\AbstractClass\obj\Debug\AbstractClass.dll
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\FactoryPattern\FactoryPattern\AbstractClass\obj\Debug\AbstractClass.pdb
