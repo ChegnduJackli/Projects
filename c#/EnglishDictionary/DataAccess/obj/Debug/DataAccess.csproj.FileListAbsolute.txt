@@ -1,0 +1,9 @@
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\EnglishDictionary\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\EnglishDictionary\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\EnglishDictionary\DataAccess\bin\Debug\Entity.dll
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\EnglishDictionary\DataAccess\bin\Debug\SqlHelper.dll
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\EnglishDictionary\DataAccess\bin\Debug\Entity.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\EnglishDictionary\DataAccess\bin\Debug\SqlHelper.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\EnglishDictionary\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\EnglishDictionary\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\EnglishDictionary\DataAccess\obj\Debug\DataAccess.pdb

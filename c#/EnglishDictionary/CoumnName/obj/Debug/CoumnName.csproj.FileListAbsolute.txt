@@ -1,0 +1,4 @@
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\EnglishDictionary\CoumnName\bin\Debug\CoumnName.dll
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\EnglishDictionary\CoumnName\bin\Debug\CoumnName.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\EnglishDictionary\CoumnName\obj\Debug\CoumnName.dll
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\EnglishDictionary\CoumnName\obj\Debug\CoumnName.pdb

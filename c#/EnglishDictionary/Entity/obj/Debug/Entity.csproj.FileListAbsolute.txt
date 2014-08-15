@@ -1,0 +1,4 @@
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\EnglishDictionary\Entity\bin\Debug\Entity.dll
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\EnglishDictionary\Entity\bin\Debug\Entity.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\EnglishDictionary\Entity\obj\Debug\Entity.dll
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\EnglishDictionary\Entity\obj\Debug\Entity.pdb

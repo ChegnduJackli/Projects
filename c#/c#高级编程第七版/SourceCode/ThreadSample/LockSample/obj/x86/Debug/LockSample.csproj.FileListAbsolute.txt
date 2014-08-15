@@ -2,3 +2,7 @@ C:\Users\lideng\Desktop\GIT\Project\c#\ThreadSample\LockSample\bin\Debug\LockSam
 C:\Users\lideng\Desktop\GIT\Project\c#\ThreadSample\LockSample\bin\Debug\LockSample.pdb
 C:\Users\lideng\Desktop\GIT\Project\c#\ThreadSample\LockSample\obj\x86\Debug\LockSample.exe
 C:\Users\lideng\Desktop\GIT\Project\c#\ThreadSample\LockSample\obj\x86\Debug\LockSample.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\ThreadSample\LockSample\obj\x86\Debug\LockSample.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\ThreadSample\LockSample\obj\x86\Debug\LockSample.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\ThreadSample\LockSample\bin\Debug\LockSample.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\ThreadSample\LockSample\bin\Debug\LockSample.pdb

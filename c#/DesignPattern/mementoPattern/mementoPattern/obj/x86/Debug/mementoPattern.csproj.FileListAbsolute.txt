@@ -1,0 +1,4 @@
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\mementoPattern\mementoPattern\bin\Debug\mementoPattern.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\mementoPattern\mementoPattern\bin\Debug\mementoPattern.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\mementoPattern\mementoPattern\obj\x86\Debug\mementoPattern.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\mementoPattern\mementoPattern\obj\x86\Debug\mementoPattern.pdb

@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallelSample", "ParallelS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LockSample", "LockSample\LockSample.csproj", "{0638E762-8B2F-4809-8E8F-3C102EAC5A6B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskContinue", "TaskContinue\TaskContinue.csproj", "{0C4BB04A-E620-41FE-91B7-7C150DAD4FBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Product", "Product\Product.csproj", "{5BB4A9AE-194D-45F4-91A0-FFF5E13C2303}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -49,6 +53,14 @@ Global
 		{0638E762-8B2F-4809-8E8F-3C102EAC5A6B}.Debug|x86.Build.0 = Debug|x86
 		{0638E762-8B2F-4809-8E8F-3C102EAC5A6B}.Release|x86.ActiveCfg = Release|x86
 		{0638E762-8B2F-4809-8E8F-3C102EAC5A6B}.Release|x86.Build.0 = Release|x86
+		{0C4BB04A-E620-41FE-91B7-7C150DAD4FBE}.Debug|x86.ActiveCfg = Debug|x86
+		{0C4BB04A-E620-41FE-91B7-7C150DAD4FBE}.Debug|x86.Build.0 = Debug|x86
+		{0C4BB04A-E620-41FE-91B7-7C150DAD4FBE}.Release|x86.ActiveCfg = Release|x86
+		{0C4BB04A-E620-41FE-91B7-7C150DAD4FBE}.Release|x86.Build.0 = Release|x86
+		{5BB4A9AE-194D-45F4-91A0-FFF5E13C2303}.Debug|x86.ActiveCfg = Debug|x86
+		{5BB4A9AE-194D-45F4-91A0-FFF5E13C2303}.Debug|x86.Build.0 = Debug|x86
+		{5BB4A9AE-194D-45F4-91A0-FFF5E13C2303}.Release|x86.ActiveCfg = Release|x86
+		{5BB4A9AE-194D-45F4-91A0-FFF5E13C2303}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

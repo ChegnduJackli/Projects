@@ -5,3 +5,5 @@ C:\Users\lideng\Desktop\GIT\Project\c#\ThreadSample\ProgressBar\obj\x86\Debug\Pr
 C:\Users\lideng\Desktop\GIT\Project\c#\ThreadSample\ProgressBar\obj\x86\Debug\ProgressBar.csproj.GenerateResource.Cache
 C:\Users\lideng\Desktop\GIT\Project\c#\ThreadSample\ProgressBar\obj\x86\Debug\ProgressBar.exe
 C:\Users\lideng\Desktop\GIT\Project\c#\ThreadSample\ProgressBar\obj\x86\Debug\ProgressBar.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\ThreadSample\ProgressBar\obj\x86\Debug\ProgressBar.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\ThreadSample\ProgressBar\obj\x86\Debug\ProgressBar.pdb
