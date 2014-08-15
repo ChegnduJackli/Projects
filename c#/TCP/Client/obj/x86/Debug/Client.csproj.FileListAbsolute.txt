@@ -1,0 +1,4 @@
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\TCP\Client\bin\Debug\Client.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\TCP\Client\bin\Debug\Client.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\TCP\Client\obj\x86\Debug\Client.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\TCP\Client\obj\x86\Debug\Client.pdb

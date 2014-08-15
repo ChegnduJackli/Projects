@@ -1,0 +1,4 @@
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\ThreadSample\TaskContinue\bin\Debug\TaskContinue.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\ThreadSample\TaskContinue\bin\Debug\TaskContinue.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\ThreadSample\TaskContinue\obj\x86\Debug\TaskContinue.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\ThreadSample\TaskContinue\obj\x86\Debug\TaskContinue.pdb

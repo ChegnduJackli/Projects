@@ -1,0 +1,7 @@
+C:\Users\lideng\Desktop\GitHub\Projects\9780470502259_Complete_Code_Download\502259 Code CH24\502259 Code CH24\Browser\Browser\bin\Debug\Browser.exe
+C:\Users\lideng\Desktop\GitHub\Projects\9780470502259_Complete_Code_Download\502259 Code CH24\502259 Code CH24\Browser\Browser\bin\Debug\Browser.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\9780470502259_Complete_Code_Download\502259 Code CH24\502259 Code CH24\Browser\Browser\obj\Debug\Browser.Form1.resources
+C:\Users\lideng\Desktop\GitHub\Projects\9780470502259_Complete_Code_Download\502259 Code CH24\502259 Code CH24\Browser\Browser\obj\Debug\Browser.Properties.Resources.resources
+C:\Users\lideng\Desktop\GitHub\Projects\9780470502259_Complete_Code_Download\502259 Code CH24\502259 Code CH24\Browser\Browser\obj\Debug\Browser.csproj.GenerateResource.Cache
+C:\Users\lideng\Desktop\GitHub\Projects\9780470502259_Complete_Code_Download\502259 Code CH24\502259 Code CH24\Browser\Browser\obj\Debug\Browser.exe
+C:\Users\lideng\Desktop\GitHub\Projects\9780470502259_Complete_Code_Download\502259 Code CH24\502259 Code CH24\Browser\Browser\obj\Debug\Browser.pdb

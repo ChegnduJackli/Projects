@@ -1,0 +1,4 @@
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\ThreadSample\Product\bin\Debug\Product.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\ThreadSample\Product\bin\Debug\Product.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\ThreadSample\Product\obj\x86\Debug\Product.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\ThreadSample\Product\obj\x86\Debug\Product.pdb

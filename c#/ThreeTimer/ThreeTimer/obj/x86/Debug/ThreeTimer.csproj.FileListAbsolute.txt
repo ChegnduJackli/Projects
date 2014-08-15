@@ -1,0 +1,7 @@
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\ThreeTimer\ThreeTimer\bin\Debug\ThreeTimer.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\ThreeTimer\ThreeTimer\bin\Debug\ThreeTimer.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\ThreeTimer\ThreeTimer\obj\x86\Debug\ThreeTimer.Form1.resources
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\ThreeTimer\ThreeTimer\obj\x86\Debug\ThreeTimer.Properties.Resources.resources
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\ThreeTimer\ThreeTimer\obj\x86\Debug\ThreeTimer.csproj.GenerateResource.Cache
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\ThreeTimer\ThreeTimer\obj\x86\Debug\ThreeTimer.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\ThreeTimer\ThreeTimer\obj\x86\Debug\ThreeTimer.pdb

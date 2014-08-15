@@ -1,0 +1,8 @@
+C:\Users\lideng\Desktop\GitHub\Projects\9780470502259_Complete_Code_Download\502259 Code CH24\502259 Code CH24\BasicWebClient\BasicWebClient\bin\Debug\BasicWebClient.exe
+C:\Users\lideng\Desktop\GitHub\Projects\9780470502259_Complete_Code_Download\502259 Code CH24\502259 Code CH24\BasicWebClient\BasicWebClient\bin\Debug\BasicWebClient.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\9780470502259_Complete_Code_Download\502259 Code CH24\502259 Code CH24\BasicWebClient\BasicWebClient\obj\Debug\BasicWebClient.Form1.resources
+C:\Users\lideng\Desktop\GitHub\Projects\9780470502259_Complete_Code_Download\502259 Code CH24\502259 Code CH24\BasicWebClient\BasicWebClient\obj\Debug\BasicWebClient.Properties.Resources.resources
+C:\Users\lideng\Desktop\GitHub\Projects\9780470502259_Complete_Code_Download\502259 Code CH24\502259 Code CH24\BasicWebClient\BasicWebClient\obj\Debug\BasicWebClient.csproj.GenerateResource.Cache
+C:\Users\lideng\Desktop\GitHub\Projects\9780470502259_Complete_Code_Download\502259 Code CH24\502259 Code CH24\BasicWebClient\BasicWebClient\obj\Debug\BasicWebClient.exe
+C:\Users\lideng\Desktop\GitHub\Projects\9780470502259_Complete_Code_Download\502259 Code CH24\502259 Code CH24\BasicWebClient\BasicWebClient\obj\Debug\BasicWebClient.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\9780470502259_Complete_Code_Download\502259 Code CH24\502259 Code CH24\BasicWebClient\BasicWebClient\obj\Debug\BasicWebClient.csprojResolveAssemblyReference.cache

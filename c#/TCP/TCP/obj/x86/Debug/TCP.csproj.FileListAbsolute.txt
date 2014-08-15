@@ -1,0 +1,7 @@
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\TCP\TCP\bin\Debug\TCP.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\TCP\TCP\bin\Debug\TCP.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\TCP\TCP\obj\x86\Debug\TCP.Properties.Resources.resources
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\TCP\TCP\obj\x86\Debug\TCP.TCPSender.resources
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\TCP\TCP\obj\x86\Debug\TCP.csproj.GenerateResource.Cache
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\TCP\TCP\obj\x86\Debug\TCP.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\TCP\TCP\obj\x86\Debug\TCP.pdb

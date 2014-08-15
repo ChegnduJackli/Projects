@@ -1,0 +1,6 @@
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\SocketProgram\SocketProgram\bin\Debug\SocketProgram.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\SocketProgram\SocketProgram\bin\Debug\SocketProgram.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\SocketProgram\SocketProgram\obj\x86\Debug\SocketProgram.Properties.Resources.resources
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\SocketProgram\SocketProgram\obj\x86\Debug\SocketProgram.csproj.GenerateResource.Cache
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\SocketProgram\SocketProgram\obj\x86\Debug\SocketProgram.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\SocketProgram\SocketProgram\obj\x86\Debug\SocketProgram.pdb
