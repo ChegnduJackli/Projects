@@ -8,3 +8,7 @@ D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\SynchronizationSamples\bin\D
 D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\SynchronizationSamples\obj\x86\Debug\ResolveAssemblyReference.cache
 D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\SynchronizationSamples\obj\x86\Debug\SynchronizationSamples.exe
 D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\SynchronizationSamples\obj\x86\Debug\SynchronizationSamples.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\SynchronizationSamples\bin\Debug\SynchronizationSamples.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\SynchronizationSamples\bin\Debug\SynchronizationSamples.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\SynchronizationSamples\obj\x86\Debug\SynchronizationSamples.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\SynchronizationSamples\obj\x86\Debug\SynchronizationSamples.pdb

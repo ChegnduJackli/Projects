@@ -8,3 +8,7 @@ D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\AsyncDelegate\bin\Debug\Asyn
 D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\AsyncDelegate\obj\x86\Debug\ResolveAssemblyReference.cache
 D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\AsyncDelegate\obj\x86\Debug\AsyncDelegate.exe
 D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\AsyncDelegate\obj\x86\Debug\AsyncDelegate.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\AsyncDelegate\bin\Debug\AsyncDelegate.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\AsyncDelegate\bin\Debug\AsyncDelegate.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\AsyncDelegate\obj\x86\Debug\AsyncDelegate.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\AsyncDelegate\obj\x86\Debug\AsyncDelegate.pdb

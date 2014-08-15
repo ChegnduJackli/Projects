@@ -23,3 +23,14 @@ D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\BackgroundWorkerSample\obj\x
 D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\BackgroundWorkerSample\obj\x86\Debug\BackgroundWorkerSample.pdb
 D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\BackgroundWorkerSample\bin\Debug\BackgroundWorkerSample.exe
 D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\BackgroundWorkerSample\bin\Debug\BackgroundWorkerSample.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\BackgroundWorkerSample\bin\Debug\BackgroundWorkerSample.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\BackgroundWorkerSample\bin\Debug\BackgroundWorkerSample.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\BackgroundWorkerSample\obj\x86\Debug\MainWindow.baml
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\BackgroundWorkerSample\obj\x86\Debug\MainWindow.g.cs
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\BackgroundWorkerSample\obj\x86\Debug\App.g.cs
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\BackgroundWorkerSample\obj\x86\Debug\BackgroundWorkerSample_MarkupCompile.cache
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\BackgroundWorkerSample\obj\x86\Debug\BackgroundWorkerSample.g.resources
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\BackgroundWorkerSample\obj\x86\Debug\Wrox.ProCSharp.Threading.Properties.Resources.resources
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\BackgroundWorkerSample\obj\x86\Debug\BackgroundWorkerSample.csproj.GenerateResource.Cache
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\BackgroundWorkerSample\obj\x86\Debug\BackgroundWorkerSample.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\BackgroundWorkerSample\obj\x86\Debug\BackgroundWorkerSample.pdb

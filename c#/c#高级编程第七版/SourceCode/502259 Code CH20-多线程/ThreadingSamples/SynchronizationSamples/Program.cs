@@ -12,7 +12,7 @@ namespace Wrox.ProCSharp.Threading
             //lock语句会解析成使用Monitor类
             object obj = new object();
             bool lockTaken = false;
-            Monitor.TryEnter(obj, 500, ref lockTaken);//500 miliseconds。设置超时
+            Monitor.TryEnter(obj, 500, ref lockTaken);//500 milliseconds。设置超时
             if (lockTaken) //如果被锁定
             {
                 try

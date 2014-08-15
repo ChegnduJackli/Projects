@@ -14,6 +14,7 @@ namespace Wrox.ProCSharp.Threading
             ParallelFor();
             // ParallelForeach();
              ParallelInvoke();
+             Console.ReadLine();
         }
 
         static void ParallelInvoke()
@@ -63,16 +64,18 @@ namespace Wrox.ProCSharp.Threading
             //        });
             //Console.WriteLine(result.IsCompleted);
 
-            //ParallelLoopResult result =
-            //    Parallel.For(10, 40, (int i, ParallelLoopState pls) =>
-            //        {
-            //            Console.WriteLine("i: {0} task {1}", i, Task.CurrentId);
-            //            Thread.Sleep(10);
-            //            if (i > 15)
-            //                pls.Break();
-            //        });
-            //Console.WriteLine(result.IsCompleted);
-            //Console.WriteLine("lowest break iteration: {0}", result.LowestBreakIteration);
+            ParallelLoopResult result =
+                Parallel.For(10, 40, (int i, ParallelLoopState pls) =>
+                    {
+                        Console.WriteLine("i: {0} task {1}", i, Task.CurrentId);
+                        //Thread.Sleep(10);
+                        if (i > 15)
+                            pls.Break();
+
+                        Console.WriteLine("i:{0}:fuck", i);
+                    });
+            Console.WriteLine(result.IsCompleted);
+            Console.WriteLine("lowest break iteration: {0}", result.LowestBreakIteration);
 
 
             Parallel.For<string>(0, 20,

@@ -17,3 +17,7 @@ C:\Users\lideng\Desktop\GIT\C#高级编程(中文第七版)\9780470502259_Comple
 C:\Users\lideng\Desktop\GIT\C#高级编程(中文第七版)\9780470502259_Complete_Code_Download\502259 Code CH20\ThreadingSamples\ThreadPoolSamples\bin\Release\ThreadPoolSamples.pdb
 C:\Users\lideng\Desktop\GIT\C#高级编程(中文第七版)\9780470502259_Complete_Code_Download\502259 Code CH20\ThreadingSamples\ThreadPoolSamples\obj\x86\Release\ThreadPoolSamples.exe
 C:\Users\lideng\Desktop\GIT\C#高级编程(中文第七版)\9780470502259_Complete_Code_Download\502259 Code CH20\ThreadingSamples\ThreadPoolSamples\obj\x86\Release\ThreadPoolSamples.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\ThreadPoolSamples\bin\Release\ThreadPoolSamples.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\ThreadPoolSamples\bin\Release\ThreadPoolSamples.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\ThreadPoolSamples\obj\x86\Release\ThreadPoolSamples.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\ThreadPoolSamples\obj\x86\Release\ThreadPoolSamples.pdb

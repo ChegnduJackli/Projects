@@ -8,3 +8,7 @@ D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\ParallelSamples\obj\x86\Debu
 D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\ParallelSamples\bin\Debug\ParallelSamples.exe
 D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\ParallelSamples\bin\Debug\ParallelSamples.pdb
 D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\ParallelSamples\obj\x86\Debug\ParallelSamples.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\ParallelSamples\bin\Debug\ParallelSamples.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\ParallelSamples\bin\Debug\ParallelSamples.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\ParallelSamples\obj\x86\Debug\ParallelSamples.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\ParallelSamples\obj\x86\Debug\ParallelSamples.pdb

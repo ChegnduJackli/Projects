@@ -8,3 +8,7 @@ D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\AsyncComponent\obj\x86\Debug
 D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\AsyncComponent\bin\Debug\AsyncComponent.exe
 D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\AsyncComponent\bin\Debug\AsyncComponent.pdb
 D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\AsyncComponent\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\AsyncComponent\bin\Debug\AsyncComponent.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\AsyncComponent\bin\Debug\AsyncComponent.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\AsyncComponent\obj\x86\Debug\AsyncComponent.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\AsyncComponent\obj\x86\Debug\AsyncComponent.pdb

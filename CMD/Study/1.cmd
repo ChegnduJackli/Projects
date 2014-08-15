@@ -1,9 +1,9 @@
-Set LogPath=C:/Users/lideng/Desktop/CMD/log/1.log
+Set LogPath=C:\Users\lideng\Desktop\GitHub\Projects\Projects\CMD\log\1.txt
 echo LogPath
 echo 
 echo start >>%LogPath%
-echo end >>C:\Users\lideng\Desktop\CMD\log\1.log
-echo %date% %time% >> C:\Users\lideng\Desktop\CMD\log\1.log
+echo end >>%LogPath%
+echo %date% %time% >> %LogPath%
 
 D:
 cd D:\FTP\
@@ -14,7 +14,7 @@ echo new disks
 echo.
 
 c:
-cd C:\Users\lideng\Desktop\CMD\
+cd C:\Users\lideng\Desktop\GitHub\Projects\Projects\CMD
 Set TDate=%date:~10,4%%date:~4,2%%date:~7,2% 
 copy "3.bat" "log\3_%TDate%.bat"
 @echo off 

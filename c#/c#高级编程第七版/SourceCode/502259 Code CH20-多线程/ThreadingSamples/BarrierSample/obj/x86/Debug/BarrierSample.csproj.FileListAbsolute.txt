@@ -8,3 +8,7 @@ D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\BarrierSample\obj\x86\Debug\
 D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\BarrierSample\bin\Debug\BarrierSample.exe
 D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\BarrierSample\bin\Debug\BarrierSample.pdb
 D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\BarrierSample\obj\x86\Debug\BarrierSample.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\BarrierSample\bin\Debug\BarrierSample.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\BarrierSample\bin\Debug\BarrierSample.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\BarrierSample\obj\x86\Debug\BarrierSample.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\BarrierSample\obj\x86\Debug\BarrierSample.pdb

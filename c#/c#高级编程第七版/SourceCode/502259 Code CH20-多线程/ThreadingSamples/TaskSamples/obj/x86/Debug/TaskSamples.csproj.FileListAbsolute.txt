@@ -8,3 +8,7 @@ D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\TaskSamples\obj\x86\Debug\Ta
 D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\TaskSamples\bin\Debug\TaskSamples.exe
 D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\TaskSamples\bin\Debug\TaskSamples.pdb
 D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\TaskSamples\obj\x86\Debug\TaskSamples.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\TaskSamples\bin\Debug\TaskSamples.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\TaskSamples\bin\Debug\TaskSamples.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\TaskSamples\obj\x86\Debug\TaskSamples.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\TaskSamples\obj\x86\Debug\TaskSamples.pdb

@@ -8,3 +8,7 @@ D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\SemaphoreSample\bin\Debug\Se
 D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\SemaphoreSample\obj\x86\Debug\ResolveAssemblyReference.cache
 D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\SemaphoreSample\obj\x86\Debug\SemaphoreSample.exe
 D:\Books\Pro C# 4.0\code\Threading\ThreadingSamples\SemaphoreSample\obj\x86\Debug\SemaphoreSample.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\SemaphoreSample\bin\Debug\SemaphoreSample.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\SemaphoreSample\bin\Debug\SemaphoreSample.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\SemaphoreSample\obj\x86\Debug\SemaphoreSample.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\c#高级编程第七版\SourceCode\502259 Code CH20-多线程\ThreadingSamples\SemaphoreSample\obj\x86\Debug\SemaphoreSample.pdb

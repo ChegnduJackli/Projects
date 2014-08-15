@@ -11,8 +11,8 @@ namespace Wrox.ProCSharp.Threading
    {
       static void Main()
       {
-          RaceConditions();
-          // Deadlock();
+         // RaceConditions();
+           Deadlock();
           Console.ReadLine();
 
       }
@@ -33,7 +33,7 @@ namespace Wrox.ProCSharp.Threading
           new Task(new SampleTask(s1, s2).Deadlock1).Start();
           new Task(new SampleTask(s1, s2).Deadlock2).Start();
 
-          Thread.Sleep(100000);
+          Thread.Sleep(10);
       }
    }
 }

@@ -2,3 +2,8 @@ C:\Users\lideng\Desktop\GIT\Project\c#\SocketWorkShop\SocketServer\bin\Debug\Soc
 C:\Users\lideng\Desktop\GIT\Project\c#\SocketWorkShop\SocketServer\bin\Debug\SocketServer.pdb
 C:\Users\lideng\Desktop\GIT\Project\c#\SocketWorkShop\SocketServer\obj\x86\Debug\SocketServer.exe
 C:\Users\lideng\Desktop\GIT\Project\c#\SocketWorkShop\SocketServer\obj\x86\Debug\SocketServer.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\SocketWorkShop\SocketServer\obj\x86\Debug\SocketServer.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\SocketWorkShop\SocketServer\obj\x86\Debug\SocketServer.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\SocketWorkShop\SocketServer\bin\Debug\SocketServer.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\SocketWorkShop\SocketServer\bin\Debug\SocketServer.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\SocketWorkShop\SocketServer\obj\x86\Debug\SocketServer.csprojResolveAssemblyReference.cache
