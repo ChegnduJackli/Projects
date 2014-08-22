@@ -1,0 +1,9 @@
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\ProxyPattern\ProxyPattern\bin\Debug\ProxyPattern.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\ProxyPattern\ProxyPattern\bin\Debug\ProxyPattern.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\ProxyPattern\ProxyPattern\bin\Debug\IMath.dll
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\ProxyPattern\ProxyPattern\bin\Debug\Math.dll
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\ProxyPattern\ProxyPattern\bin\Debug\IMath.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\ProxyPattern\ProxyPattern\bin\Debug\Math.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\ProxyPattern\ProxyPattern\obj\x86\Debug\ProxyPattern.csprojResolveAssemblyReference.cache
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\ProxyPattern\ProxyPattern\obj\x86\Debug\ProxyPattern.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\ProxyPattern\ProxyPattern\obj\x86\Debug\ProxyPattern.pdb

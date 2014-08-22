@@ -12,7 +12,7 @@ namespace DecoratorClass
         public LogWrapper(Log log)
         {
             this._log = log;
-            Console.WriteLine("LogWrapper 构造函数调用");
+            Console.WriteLine("LogWrapper Constructor call");
         }
         public override void Write(string logMessage)
         {

@@ -9,7 +9,7 @@ namespace DecoratorClass
     {
         public LogErrorWrapper(Log _log):base(_log)
         {
-            Console.WriteLine("LogError 构造函数调用");
+            Console.WriteLine("LogError Constructor call");
         }
         public override void Write(string logMessage)
         {
@@ -19,7 +19,7 @@ namespace DecoratorClass
         }
         public void SetError()
         {
-            Console.WriteLine("错误级别");
+            Console.WriteLine("Error level");
             //......实现了记录错误严重级别
         }
     }

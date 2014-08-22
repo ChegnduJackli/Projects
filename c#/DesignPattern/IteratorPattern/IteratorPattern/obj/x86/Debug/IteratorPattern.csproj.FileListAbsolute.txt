@@ -1,0 +1,4 @@
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\IteratorPattern\IteratorPattern\bin\Debug\IteratorPattern.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\IteratorPattern\IteratorPattern\bin\Debug\IteratorPattern.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\IteratorPattern\IteratorPattern\obj\x86\Debug\IteratorPattern.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\IteratorPattern\IteratorPattern\obj\x86\Debug\IteratorPattern.pdb

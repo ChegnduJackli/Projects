@@ -5,3 +5,10 @@ D:\我的文件\C#\Design Patterns\Decorator\Decorator\bin\Debug\DecoratorClass.
 D:\我的文件\C#\Design Patterns\Decorator\Decorator\obj\x86\Debug\ResolveAssemblyReference.cache
 D:\我的文件\C#\Design Patterns\Decorator\Decorator\obj\x86\Debug\Decorator.exe
 D:\我的文件\C#\Design Patterns\Decorator\Decorator\obj\x86\Debug\Decorator.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\Decorator\Decorator\obj\x86\Debug\Decorator.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\Decorator\Decorator\obj\x86\Debug\Decorator.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\Decorator\Decorator\bin\Debug\Decorator.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\Decorator\Decorator\bin\Debug\Decorator.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\Decorator\Decorator\bin\Debug\DecoratorClass.dll
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\Decorator\Decorator\bin\Debug\DecoratorClass.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\Decorator\Decorator\obj\x86\Debug\Decorator.csprojResolveAssemblyReference.cache

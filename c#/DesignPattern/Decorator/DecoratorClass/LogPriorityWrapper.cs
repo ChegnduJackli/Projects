@@ -10,7 +10,7 @@ namespace DecoratorClass
       public LogPriorityWrapper(Log _log)
           : base(_log)
       {
-        Console.WriteLine("Priority 构造函数调用");
+        Console.WriteLine("Priority Constructor call");
       }
 
       public override void Write(string logMessage)
@@ -20,7 +20,7 @@ namespace DecoratorClass
       }
       public void SetPriority()
       {
-          Console.WriteLine("优先级别");
+          Console.WriteLine("Priority level");
       }
     }
 
