@@ -1,0 +1,7 @@
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\MVC\MvcHelloword\MvcHelloword\bin\MvcHelloword.dll
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\MVC\MvcHelloword\MvcHelloword\bin\MvcHelloword.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\MVC\MvcHelloword\MvcHelloword\bin\EntityFramework.dll
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\MVC\MvcHelloword\MvcHelloword\bin\EntityFramework.xml
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\MVC\MvcHelloword\MvcHelloword\obj\Debug\MvcHelloword.csprojResolveAssemblyReference.cache
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\MVC\MvcHelloword\MvcHelloword\obj\Debug\MvcHelloword.dll
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\MVC\MvcHelloword\MvcHelloword\obj\Debug\MvcHelloword.pdb

@@ -9,3 +9,10 @@ C:\Users\lideng\Desktop\GIT\Project\c#\GetAllFileName\GetAllFileName\obj\x86\Deb
 C:\Users\lideng\Desktop\GIT\Project\c#\GetAllFileName\GetAllFileName\obj\x86\Debug\GetAllFileName.pdb
 E:\GitHub\Projects\Projects\c#\GetAllFileName\GetAllFileName\obj\x86\Debug\GetAllFileName.exe
 E:\GitHub\Projects\Projects\c#\GetAllFileName\GetAllFileName\obj\x86\Debug\GetAllFileName.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\GetAllFileName\GetAllFileName\obj\x86\Debug\GetAllFileName.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\GetAllFileName\GetAllFileName\obj\x86\Debug\GetAllFileName.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\GetAllFileName\GetAllFileName\bin\Debug\GetAllFileName.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\GetAllFileName\GetAllFileName\bin\Debug\GetAllFileName.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\GetAllFileName\GetAllFileName\obj\x86\Debug\GetAllFileName.Form1.resources
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\GetAllFileName\GetAllFileName\obj\x86\Debug\GetAllFileName.Properties.Resources.resources
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\GetAllFileName\GetAllFileName\obj\x86\Debug\GetAllFileName.csproj.GenerateResource.Cache

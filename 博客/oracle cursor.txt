@@ -1,0 +1,111 @@
+drop table customer;
+create table customer
+(
+name varchar(100) primary key,
+age int,
+address varchar(100),
+salary decimal
+);
+delete from customer;
+insert into customer values ('jack',22,'Singapore',5000.00);
+insert into customer values ('rose',22,'Japan',2000.00);
+insert into customer values ('Jet',32,'HongKong',7000.00);
+insert into customer values ('John',30,'American',5000.00);
+insert into customer values ('Merry',25,'Singapore',3000.00);
+insert into customer values ('Peter',26,'China',1000.00);
+insert into customer values ('Adi',27,'India',2400.00);
+
+select * from customer;
+
+select * from customer where salary <3000;
+
+
+--Implicit Cursors
+set serveroutput on;
+DECLARE 
+   total_rows number(2);
+BEGIN
+   UPDATE customer
+   SET salary = salary + 500
+   where salary < 3000;
+   IF sql%notfound THEN
+      dbms_output.put_line('no customers selected');
+   ELSIF sql%found THEN
+      total_rows := sql%rowcount;
+      dbms_output.put_line( total_rows || ' customers selected ');
+   END IF; 
+END;
+/
+
+--Explicit CURSOR
+set serveroutput on;
+DECLARE 
+   c_salary customer.salary%TYPE;
+   c_name customer.name%TYPE;
+   CURSOR c1 is
+   select name,salary from customer;
+BEGIN
+  open c1;
+  loop
+  fetch c1 into c_name,c_salary;
+  exit when c1%notfound ;
+   dbms_output.put_line(c_name||' '||c_salary);
+  end loop;
+  close c1;
+END;
+/
+
+--CURSOR for loop
+set serveroutput on;
+DECLARE 
+   c_salary customer.salary%TYPE;
+   c_name customer.name%TYPE;
+   CURSOR c1 is
+   select name,salary from customer;
+BEGIN
+ for f in c1
+  loop
+   dbms_output.put_line(f.name||' '||f.salary);
+  end loop;
+END;
+/
+
+--cursor with parameter
+set serveroutput on;
+DECLARE 
+   c_salary customer.salary%TYPE;
+   c_name customer.name%TYPE;
+   CURSOR c1(p_salary decimal default 3000) is
+   select name,salary from customer where salary >= p_salary;
+BEGIN
+  --open c1(p_salary=>5000);
+  open c1(5000); 
+  loop
+  fetch c1 into c_name,c_salary;
+  exit when c1%notfound ;
+   dbms_output.put_line(c_name||' '||c_salary);
+  end loop;
+  close c1;
+END;
+/
+
+--select for update
+set serveroutput on;
+DECLARE 
+   c_salary customer.salary%TYPE;
+   c_name customer.name%TYPE;
+   CURSOR c1(p_salary customer.salary%TYPE)
+   is
+   select name,salary from customer where salary >= p_salary
+   for update of salary;
+BEGIN
+  open c1(5000);
+  loop
+  fetch c1 into c_name,c_salary;  
+  exit when c1%notfound ;
+   dbms_output.put_line(c_name||' '||c_salary);
+   update customer set salary=salary+100 where current of c1; --更新当前游标行对应的数据行
+  end loop;
+  close c1;
+END;
+/

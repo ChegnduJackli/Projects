@@ -6,6 +6,7 @@ using System.Text;
 namespace DecoratorClass
 {
   public class LogPriorityWrapper:LogWrapper
+    //public class LogPriorityWrapper : Log
     {
       public LogPriorityWrapper(Log _log)
           : base(_log)

@@ -1,0 +1,4 @@
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\BridgePattern\BridgePattern1\bin\Debug\BridgePattern1.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\BridgePattern\BridgePattern1\bin\Debug\BridgePattern1.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\BridgePattern\BridgePattern1\obj\x86\Debug\BridgePattern1.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\BridgePattern\BridgePattern1\obj\x86\Debug\BridgePattern1.pdb

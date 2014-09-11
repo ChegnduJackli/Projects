@@ -1,0 +1,4 @@
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\SendEmail\SendEmail\bin\Debug\SendEmail.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\SendEmail\SendEmail\bin\Debug\SendEmail.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\SendEmail\SendEmail\obj\x86\Debug\SendEmail.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\SendEmail\SendEmail\obj\x86\Debug\SendEmail.pdb

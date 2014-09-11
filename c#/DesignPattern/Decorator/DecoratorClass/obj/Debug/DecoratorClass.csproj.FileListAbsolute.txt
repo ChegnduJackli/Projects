@@ -7,3 +7,4 @@ C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\Decorator\Deco
 C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\Decorator\DecoratorClass\bin\Debug\DecoratorClass.pdb
 C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\Decorator\DecoratorClass\obj\Debug\DecoratorClass.dll
 C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\Decorator\DecoratorClass\obj\Debug\DecoratorClass.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\Decorator\DecoratorClass\obj\Debug\DecoratorClass.csprojResolveAssemblyReference.cache

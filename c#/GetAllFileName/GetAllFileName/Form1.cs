@@ -18,8 +18,11 @@ namespace GetAllFileName
 
         private string FilePath = GetAppFolder();
         private string FileName = string.Empty;
-        private string Order_Asc = "Ascending ";
-        private string Order_Desc = "Descending ";
+        private string Recursion_Y = "Yes";
+        private string Recursion_N = "No";
+        private List<string> fileList = new List<string>();
+        private int FileCount = 0;
+        private int DirCount = 1; //current directory is 1
 
         public Form1()
         {
@@ -29,10 +32,10 @@ namespace GetAllFileName
 
         private void InitControl()
         {
-            this.cmbOrder.Items.Clear();
-            this.cmbOrder.Items.Add(Order_Asc);
-            this.cmbOrder.Items.Add(Order_Desc);
-            this.cmbOrder.SelectedIndex = 0;
+            this.cmbRecursion.Items.Clear();
+            this.cmbRecursion.Items.Add(Recursion_N);
+            this.cmbRecursion.Items.Add(Recursion_Y);
+            this.cmbRecursion.SelectedIndex = 0;
         }
         private void InitFile()
         {
@@ -84,6 +87,10 @@ namespace GetAllFileName
             this.lblMsg.Text = "";
             this.txtPath.Text = "";
 
+            FileCount = 0;
+            DirCount = 1;
+            fileList.Clear();
+
             folderName = this.cmbFolder.Text.Trim();
             if (string.IsNullOrEmpty(folderName))
             {
@@ -94,28 +101,34 @@ namespace GetAllFileName
             try
             {
                 InitFile();
-                DirectoryInfo d = new DirectoryInfo(folderName);
-                FileInfo[] Files = d.GetFiles("*.*"); //Getting all files
+                //DirectoryInfo d = new DirectoryInfo(folderName);
+                //FileInfo[] Files = d.GetFiles("*.*"); //Getting all files
+        
+                //foreach (FileInfo file in Files)
+                //{
+                //    fileList.Add(file.Name);
+                //}
+                //List<string> list = new List<string>();
 
-                List<string> fileList = new List<string>();
-                foreach (FileInfo file in Files)
+                if (cmbRecursion.Text == Recursion_Y)
                 {
-                    fileList.Add(file.Name);
-                }
-                List<string> list = new List<string>();
-                if (cmbOrder.Text == Order_Asc)
-                {
-                    list = fileList.OrderBy(p => p).ToList();
+                    GetFileNameByRecursion(folderName);
                 }
                 else
                 {
-                    list = fileList.OrderByDescending(p => p).ToList();
+                    GetFileNameByFolder(folderName);
                 }
 
-                WriteList(list);
+                WriteList(fileList);
 
-                lblMsg.Text = "Total "+list.Count+" filenames generate successfully.";
-                if (list.Count > 0)
+                lblMsg.Text = "Total " + FileCount + " filenames generate successfully.";
+
+                if (DirCount > 0)
+                {
+                    lblMsg.Text += "\n" + "Total " + DirCount + " directories generate successfully";
+                }
+
+                if (fileList.Count > 0)
                 {
                     txtPath.Text = FileName;
                 }
@@ -138,6 +151,53 @@ namespace GetAllFileName
             }
 
             Process.Start("notepad.exe", FileName);
+        }
+
+        private void GetFileNameByFolder(string path)
+        {
+            DirectoryInfo d = new DirectoryInfo(folderName);
+            FileInfo[] Files = d.GetFiles("*.*"); //Getting all files
+
+            foreach (FileInfo file in Files)
+            {
+                fileList.Add(file.Name);
+                FileCount++;
+            }
+        }
+
+        private void GetFileNameByRecursion(string path)
+        {
+
+            if (Directory.Exists(path) == false) return ;
+
+            DirectoryInfo d = new DirectoryInfo(path);
+            FileInfo[] Files = d.GetFiles("*.*"); //Getting all files
+
+            foreach (FileInfo file in Files)
+            {
+                fileList.Add(file.Name);
+                FileCount++;
+            }
+            foreach (DirectoryInfo folder in d.GetDirectories())
+            {
+                fileList.Add(Environment.NewLine + folder.FullName.Replace(this.cmbFolder.Text.Trim(), ""));
+                DirCount++;
+                GetFileNameByRecursion(folder.FullName);
+            }
+
+
+            //string[] strFileNames = Directory.GetFiles(path);
+            //string[] strDirectories = Directory.GetDirectories(path);
+
+            //foreach (string filename in strFileNames)
+            //{
+            //    fileList.Add(filename);
+            //}
+            //foreach (string dir in strDirectories)
+            //{
+            //    fileList.Add(Environment.NewLine + dir.Replace(path,"\\"));
+            //    GetFileNameByRecursion(dir);
+            //}
         }
     }
 }
