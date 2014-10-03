@@ -20,6 +20,7 @@ namespace GetAllFileName
         private string FileName = string.Empty;
         private string Recursion_Y = "Yes";
         private string Recursion_N = "No";
+
         private List<string> fileList = new List<string>();
         private int FileCount = 0;
         private int DirCount = 1; //current directory is 1
@@ -67,11 +68,11 @@ namespace GetAllFileName
                 MessageBox.Show(ex.Message);
             }
         }
-        private void WriteList(List<string> list)
+        private void WriteList(List<string> list,string prefix)
         {
             foreach (string s in list)
             {
-                WriteFile(s);
+                WriteFile(prefix + s);
             }
         }
         private void WriteFile(string str)
@@ -81,12 +82,11 @@ namespace GetAllFileName
                 sw.WriteLine(str);
             }
         }
-
         private void btnGenerate_Click(object sender, EventArgs e)
         {
             this.lblMsg.Text = "";
             this.txtPath.Text = "";
-
+            string prefix = this.txtPrefix.Text.Trim();
             FileCount = 0;
             DirCount = 1;
             fileList.Clear();
@@ -118,8 +118,13 @@ namespace GetAllFileName
                 {
                     GetFileNameByFolder(folderName);
                 }
-
-                WriteList(fileList);
+                if (fileList.Count == 0)
+                {
+                    MessageBox.Show("No files generated.");
+                    return;
+                }
+                 WriteList(fileList, prefix);
+                
 
                 lblMsg.Text = "Total " + FileCount + " filenames generate successfully.";
 
@@ -175,12 +180,13 @@ namespace GetAllFileName
 
             foreach (FileInfo file in Files)
             {
-                fileList.Add(file.Name);
+                //fileList.Add(file.Name);
+                fileList.Add(file.FullName.Replace(this.cmbFolder.Text.Trim(), ""));
                 FileCount++;
             }
             foreach (DirectoryInfo folder in d.GetDirectories())
             {
-                fileList.Add(Environment.NewLine + folder.FullName.Replace(this.cmbFolder.Text.Trim(), ""));
+               // fileList.Add(Environment.NewLine + folder.FullName.Replace(this.cmbFolder.Text.Trim(), ""));
                 DirCount++;
                 GetFileNameByRecursion(folder.FullName);
             }

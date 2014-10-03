@@ -40,6 +40,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.cmbRecursion = new System.Windows.Forms.ComboBox();
             this.btnOpenFile = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtPrefix = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -67,7 +69,7 @@
             // 
             // btnGenerate
             // 
-            this.btnGenerate.Location = new System.Drawing.Point(304, 92);
+            this.btnGenerate.Location = new System.Drawing.Point(304, 121);
             this.btnGenerate.Name = "btnGenerate";
             this.btnGenerate.Size = new System.Drawing.Size(94, 23);
             this.btnGenerate.TabIndex = 3;
@@ -78,7 +80,7 @@
             // lblMsg
             // 
             this.lblMsg.AutoSize = true;
-            this.lblMsg.Location = new System.Drawing.Point(12, 198);
+            this.lblMsg.Location = new System.Drawing.Point(12, 216);
             this.lblMsg.Name = "lblMsg";
             this.lblMsg.Size = new System.Drawing.Size(40, 13);
             this.lblMsg.TabIndex = 4;
@@ -87,7 +89,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 155);
+            this.label2.Location = new System.Drawing.Point(12, 173);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(48, 13);
             this.label2.TabIndex = 5;
@@ -95,7 +97,7 @@
             // 
             // txtPath
             // 
-            this.txtPath.Location = new System.Drawing.Point(67, 152);
+            this.txtPath.Location = new System.Drawing.Point(67, 170);
             this.txtPath.Name = "txtPath";
             this.txtPath.Size = new System.Drawing.Size(331, 20);
             this.txtPath.TabIndex = 6;
@@ -105,15 +107,15 @@
             this.cmbFolder.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbFolder.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystemDirectories;
             this.cmbFolder.FormattingEnabled = true;
-            this.cmbFolder.Location = new System.Drawing.Point(57, 27);
+            this.cmbFolder.Location = new System.Drawing.Point(67, 27);
             this.cmbFolder.Name = "cmbFolder";
-            this.cmbFolder.Size = new System.Drawing.Size(241, 21);
+            this.cmbFolder.Size = new System.Drawing.Size(231, 21);
             this.cmbFolder.TabIndex = 7;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 97);
+            this.label3.Location = new System.Drawing.Point(12, 121);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 13);
             this.label3.TabIndex = 8;
@@ -122,14 +124,14 @@
             // cmbRecursion
             // 
             this.cmbRecursion.FormattingEnabled = true;
-            this.cmbRecursion.Location = new System.Drawing.Point(68, 89);
+            this.cmbRecursion.Location = new System.Drawing.Point(68, 118);
             this.cmbRecursion.Name = "cmbRecursion";
-            this.cmbRecursion.Size = new System.Drawing.Size(121, 21);
+            this.cmbRecursion.Size = new System.Drawing.Size(105, 21);
             this.cmbRecursion.TabIndex = 9;
             // 
             // btnOpenFile
             // 
-            this.btnOpenFile.Location = new System.Drawing.Point(304, 193);
+            this.btnOpenFile.Location = new System.Drawing.Point(304, 211);
             this.btnOpenFile.Name = "btnOpenFile";
             this.btnOpenFile.Size = new System.Drawing.Size(94, 23);
             this.btnOpenFile.TabIndex = 10;
@@ -137,11 +139,29 @@
             this.btnOpenFile.UseVisualStyleBackColor = true;
             this.btnOpenFile.Click += new System.EventHandler(this.btnOpenFile_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(12, 76);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(36, 13);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Prefix:";
+            // 
+            // txtPrefix
+            // 
+            this.txtPrefix.Location = new System.Drawing.Point(68, 73);
+            this.txtPrefix.Name = "txtPrefix";
+            this.txtPrefix.Size = new System.Drawing.Size(105, 20);
+            this.txtPrefix.TabIndex = 12;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(423, 269);
+            this.ClientSize = new System.Drawing.Size(423, 267);
+            this.Controls.Add(this.txtPrefix);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.btnOpenFile);
             this.Controls.Add(this.cmbRecursion);
             this.Controls.Add(this.label3);
@@ -177,6 +197,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cmbRecursion;
         private System.Windows.Forms.Button btnOpenFile;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtPrefix;
 
     }
 }

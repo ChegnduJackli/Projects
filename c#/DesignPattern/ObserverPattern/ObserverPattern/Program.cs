@@ -10,10 +10,10 @@ namespace ObserverPattern
         static void Main(string[] args)
         {
             Stock ms = new Microsoft("Microsoft", 120.00);
-            Investor inv1=new Investor("Jom", ms);
+            Email_Investor inv1=new Email_Investor("Jom", ms);
             //添加投资者
             ms.AddObserver(inv1);
-            Investor inv2=new Investor("TerryLee", ms);
+            Email_Investor inv2=new Email_Investor("TerryLee", ms);
             //添加投资者
             ms.AddObserver(inv2);
 
@@ -26,11 +26,17 @@ namespace ObserverPattern
             Console.WriteLine("添加谷歌公司的股票");
 
             Stock google = new Google("Google", 230.00);
-            inv1 = new Investor("Jom", google);
+            inv1 = new Email_Investor("Jom", google);
             //添加投资者
             ms.AddObserver(inv1);
-            inv2 = new Investor("TerryLee", google);
+            inv2 = new Email_Investor("TerryLee", google);
             ms.AddObserver(inv2);
+            ms.Update();
+
+            Console.WriteLine("use mobile to send notification");
+            //手机观察者
+            Mobile_Investor mobile = new Mobile_Investor("138808456", google);
+            ms.AddObserver(mobile);
             ms.Update();
             Console.ReadLine();
         }

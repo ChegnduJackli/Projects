@@ -3,3 +3,7 @@ D:\我的文件\C#\Design Patterns\ObserverPattern\ObserverPattern\bin\Debug\Obs
 D:\我的文件\C#\Design Patterns\ObserverPattern\ObserverPattern\obj\x86\Debug\ResolveAssemblyReference.cache
 D:\我的文件\C#\Design Patterns\ObserverPattern\ObserverPattern\obj\x86\Debug\ObserverPattern.exe
 D:\我的文件\C#\Design Patterns\ObserverPattern\ObserverPattern\obj\x86\Debug\ObserverPattern.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\ObserverPattern\ObserverPattern\obj\x86\Debug\ObserverPattern.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\ObserverPattern\ObserverPattern\obj\x86\Debug\ObserverPattern.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\ObserverPattern\ObserverPattern\bin\Debug\ObserverPattern.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\ObserverPattern\ObserverPattern\bin\Debug\ObserverPattern.pdb

@@ -45,7 +45,7 @@ Echo file does not exist.
 
 IF NOT EXIST 3.CMD ECHO 3.CMD does not exist.
 :: after in have to space ,otherwise has error
-For %%i in (C:\Users\lideng\Desktop\GIT\Project\CMD\log\*.txt) do echo %%i
+For %%i in (C:\Users\lideng\Desktop\GitHub\Projects\Projects\CMD\log\*.txt) do echo %%i
 :: from start to end by step number series
 ::FOR /L %variable IN (start,step,end) DO command [command-parameters]
 for /l %%i in (1,1,5) do @echo %%i
@@ -62,5 +62,5 @@ echo Get all *.exe file from C:windows folder(include sub folder)
 echo Get all folder name from current folder
 for /d %%i in (c:\*) do echo %%i
 :: show contains one to three characters folder name
-echo get one to three characters 
+echo get one to three characters folder
 for /d %%i in (C:\???) do echo %%i

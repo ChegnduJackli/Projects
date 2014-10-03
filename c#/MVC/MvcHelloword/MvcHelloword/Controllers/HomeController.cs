@@ -11,14 +11,14 @@ namespace MvcHelloword.Controllers
         //
         // GET: /Home/
 
-        //public ActionResult Index()
-        //{
-        //    return View();
-        //}
-        public string Index()
+        public ActionResult Index()
         {
-            return "hello world mvc.";
+            return View();
         }
+        //public string Index()
+        //{
+        //    return "hello world mvc.";
+        //}
         public ActionResult Welcome(string name="")
         {
             ViewBag.name = name;

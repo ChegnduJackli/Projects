@@ -16,6 +16,7 @@ echo.
 c:
 cd C:\Users\lideng\Desktop\GitHub\Projects\Projects\CMD
 Set TDate=%date:~10,4%%date:~4,2%%date:~7,2% 
+ECho %TDate%
 copy "3.bat" "log\3_%TDate%.bat"
 @echo off 
 rem This batch program formats and checks new disks. 
