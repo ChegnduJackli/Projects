@@ -1,0 +1,5 @@
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\GenereateTableDictionary\GenereateTableDictionary\bin\Release\GenereateTableDictionary.exe.config
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\GenereateTableDictionary\GenereateTableDictionary\bin\Release\GenereateTableDictionary.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\GenereateTableDictionary\GenereateTableDictionary\bin\Release\GenereateTableDictionary.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\GenereateTableDictionary\GenereateTableDictionary\obj\x86\Release\GenereateTableDictionary.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\GenereateTableDictionary\GenereateTableDictionary\obj\x86\Release\GenereateTableDictionary.pdb

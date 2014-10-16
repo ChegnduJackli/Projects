@@ -1,0 +1,17 @@
+[10/14/2014 4:40:07 PM]:System.Runtime.InteropServices.COMException (0x800A03EC): Excel cannot open the file 'MBSData.xlsx' because the file format or file extension is not valid. Verify that the file has not been corrupted and that the file extension matches the format of the file.
+   at Microsoft.Office.Interop.Excel.Workbooks.Open(String Filename, Object UpdateLinks, Object ReadOnly, Object Format, Object Password, Object WriteResPassword, Object IgnoreReadOnlyRecommended, Object Origin, Object Delimiter, Object Editable, Object Notify, Object Converter, Object AddToMru, Object Local, Object CorruptLoad)
+   at GenereateTableDictionary.ExcelHelper.ExportDataSetToExcel(DataSet ds) in C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\GenereateTableDictionary\GenereateTableDictionary\ExcelHelper.cs:line 36
+   at GenereateTableDictionary.ExcelHelper.GenerateExcel(DataSet ds) in C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\GenereateTableDictionary\GenereateTableDictionary\ExcelHelper.cs:line 25
+   at GenereateTableDictionary.DAL.GenerateExcel() in C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\GenereateTableDictionary\GenereateTableDictionary\DAL.cs:line 97
+   at GenereateTableDictionary.Program.Main(String[] args) in C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\GenereateTableDictionary\GenereateTableDictionary\Program.cs:line 17
+[10/14/2014 6:13:12 PM]:System.Data.DuplicateNameException: A DataTable named 'Index List' already belongs to this DataSet.
+   at System.Data.DataTableCollection.RegisterName(String name, String tbNamespace)
+   at System.Data.DataTableCollection.BaseAdd(DataTable table)
+   at System.Data.DataTableCollection.Add(DataTable table)
+   at GenereateTableDictionary.GenerateIndex.GenerateExcel() in C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\GenereateTableDictionary\GenereateTableDictionary\GenerateIndex.cs:line 58
+   at GenereateTableDictionary.Program.Main(String[] args) in C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\GenereateTableDictionary\GenereateTableDictionary\Program.cs:line 21
+[10/14/2014 6:32:22 PM]:System.ArgumentException: DataTable already belongs to another DataSet.
+   at System.Data.DataTableCollection.BaseAdd(DataTable table)
+   at System.Data.DataTableCollection.Add(DataTable table)
+   at GenereateTableDictionary.GenerateTrigger.GenerateExcel() in C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\GenereateTableDictionary\GenereateTableDictionary\GenerateTrigger.cs:line 19
+   at GenereateTableDictionary.Program.Main(String[] args) in C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\GenereateTableDictionary\GenereateTableDictionary\Program.cs:line 24

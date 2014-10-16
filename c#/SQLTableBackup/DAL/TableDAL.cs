@@ -180,7 +180,7 @@ namespace DAL
                             bulkCopy.WriteToServer(ds.Tables[0]);
                             Log4.LogInstance.FileLogInstance().WriteLog("restore table " + tableName + " successfully");   
                         }
-
+						//enable all contraints
                         sql = string.Format("EXEC sp_msforeachtable 'ALTER TABLE ? WITH CHECK CHECK CONSTRAINT all'");
                         cmd.CommandText = sql;
                         cmd.ExecuteNonQuery();

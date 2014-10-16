@@ -1,0 +1,16 @@
+[10/15/2014 11:20:02 AM]:System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at GenereateTableDictionary.ExcelHelper.GenerateExcel(DataSet ds, String filePath) in C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\GenereateTableDictionary\GenereateTableDictionary\ExcelHelper.cs:line 17
+   at GenereateTableDictionary.GenerateSP.GenerateExcel() in C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\GenereateTableDictionary\GenereateTableDictionary\GenerateSP.cs:line 38
+   at GenereateTableDictionary.Program.Main(String[] args) in C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\GenereateTableDictionary\GenereateTableDictionary\Program.cs:line 38
+[10/15/2014 2:11:19 PM]:System.IndexOutOfRangeException: Cannot find table 0.
+   at GenereateTableDictionary.GenerateSP.GenerateExcel() in C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\GenereateTableDictionary\GenereateTableDictionary\GenerateSP.cs:line 44
+   at GenereateTableDictionary.Program.Main(String[] args) in C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\GenereateTableDictionary\GenereateTableDictionary\Program.cs:line 39
+[10/15/2014 3:23:42 PM]:System.Data.OracleClient.OracleException (0x80131938): ORA-01791: not a SELECTed expression
+
+   at GenereateTableDictionary.GenerateIndex.GenerateExcel() in C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\GenereateTableDictionary\GenereateTableDictionary\GenerateIndex.cs:line 68
+   at GenereateTableDictionary.Program.Main(String[] args) in C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\GenereateTableDictionary\GenereateTableDictionary\Program.cs:line 25
+[10/15/2014 3:26:01 PM]:System.Data.OracleClient.OracleException (0x80131938): ORA-01791: not a SELECTed expression
+
+   at GenereateTableDictionary.GenerateIndex.GenerateExcel() in C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\GenereateTableDictionary\GenereateTableDictionary\GenerateIndex.cs:line 68
+   at GenereateTableDictionary.Program.Main(String[] args) in C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\GenereateTableDictionary\GenereateTableDictionary\Program.cs:line 25
