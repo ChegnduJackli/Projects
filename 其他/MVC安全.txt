@@ -6,5 +6,3 @@
    download AntiXSS
    code
    
-   jacklideng
-   lideng1234!
