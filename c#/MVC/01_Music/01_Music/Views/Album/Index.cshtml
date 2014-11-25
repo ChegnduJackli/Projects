@@ -1,0 +1,19 @@
+﻿@using _01_Music.Models
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>The Album List</h2>
+
+@foreach(Album a  in(ViewBag.Album  as IEnumerable<Album>))
+    {
+    <li>@a.Title</li>
+    }
+    <h3>Menu</h3>
+@*
+   @{Html.RenderAction("GenreMenu");}*@
+  @Html.Action("GenreMenu")
+
+
+@section Footer{This is the <strong>footer</striong>. }

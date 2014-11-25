@@ -14,6 +14,7 @@ namespace GenereateTableDictionary
     {
         public void GenerateExcel(DataSet ds,string filePath)
         {
+            if (ds.Tables.Count == 0) return;
             if (ds.Tables[0].Rows.Count == 0) return;
 
             if (File.Exists(filePath))
@@ -61,7 +62,34 @@ namespace GenereateTableDictionary
             excelWorkBook.Close();
             excelApp.Quit();
         }
+        public void WriteToFile(DataSet ds, string filePath)
+        {
+            if (File.Exists(filePath))
+            {
+                File.Delete(filePath);
+            }
 
+            StringBuilder sb = new StringBuilder();
+            foreach (DataTable table in ds.Tables)
+            {
+                sb.AppendLine(string.Format("-------------------------------------{0}-----------------------------------------------", table.TableName));
+                for (int i = 1; i < table.Columns.Count + 1; i++)
+                {
+                    sb.Append(table.Columns[i - 1].ColumnName.PadRight(30));
+                }
+                sb.AppendLine();
+                for (int j = 0; j < table.Rows.Count; j++)
+                {
+                    for (int k = 0; k < table.Columns.Count; k++)
+                    {
+                        sb.Append(table.Rows[j][k].ToString().PadRight(30));
+                    }
+                    sb.AppendLine();
+                }
+                FileHelper.WriteFile(sb.ToString(), filePath);
+                sb.Length = 0;
+            }
+        }
         protected virtual bool IsFileLocked(string filePath)
         {
             FileStream stream = null;

@@ -81,6 +81,7 @@ namespace GenereateTableDictionary
                     dsExcel.Tables.Add(dtHeader);
                 }
                 excelHeler.GenerateExcel(dsExcel, PubConstant.TableColumnFilePath);
+                excelHeler.WriteToFile(dsExcel, PubConstant.TableTxtFilePath);
             }
             catch (Exception ex)
             {

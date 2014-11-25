@@ -46,6 +46,25 @@ namespace GenereateTableDictionary
                 throw ex;
             }
         }
+        public static void WriteFile(object obj,string fileName)
+        {
+            try
+            {
+                using (FileStream fs = new FileStream(fileName, FileMode.Append))
+                {
+                    using (StreamWriter sw = new StreamWriter(fs))
+                    {
+                        sw.WriteLine(obj);
+                        sw.Close();
+                    }
+                    fs.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
         class DateTimeFormat
         {
             internal static string LongTimeFormat

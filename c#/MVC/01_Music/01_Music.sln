@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Music", "01_Music\01_Music.csproj", "{EF65ADFA-9397-4364-92B3-20170BD49122}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Music.Tests", "01_Music.Tests\01_Music.Tests.csproj", "{FFD811DF-9409-4346-BDAE-B4807BE7EC11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF65ADFA-9397-4364-92B3-20170BD49122}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF65ADFA-9397-4364-92B3-20170BD49122}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF65ADFA-9397-4364-92B3-20170BD49122}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF65ADFA-9397-4364-92B3-20170BD49122}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFD811DF-9409-4346-BDAE-B4807BE7EC11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFD811DF-9409-4346-BDAE-B4807BE7EC11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFD811DF-9409-4346-BDAE-B4807BE7EC11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFD811DF-9409-4346-BDAE-B4807BE7EC11}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

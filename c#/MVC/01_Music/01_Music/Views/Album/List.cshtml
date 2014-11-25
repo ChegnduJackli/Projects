@@ -1,0 +1,17 @@
+﻿@using _01_Music.Models
+@model IEnumerable<AlbumModel>
+
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>The Album List</h2>
+
+@foreach (AlbumModel a in Model)
+{
+       <li>@a.Title</li>
+}
+
+@*
+this is the comment;
+*@

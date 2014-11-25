@@ -187,6 +187,8 @@ namespace GetAllFileName
             foreach (DirectoryInfo folder in d.GetDirectories())
             {
                // fileList.Add(Environment.NewLine + folder.FullName.Replace(this.cmbFolder.Text.Trim(), ""));
+                //add folder name to list
+                fileList.Add(folder.FullName.Replace(this.cmbFolder.Text.Trim(), ""));
                 DirCount++;
                 GetFileNameByRecursion(folder.FullName);
             }

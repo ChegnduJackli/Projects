@@ -26,7 +26,7 @@ namespace GenereateTableDictionary
 
                 DataSet ds = OracleHelper.ExecuteDataset(CommandType.Text, SQL_SP_PackageName);
 
-                if (ds.Tables[0].Rows.Count == 0) return;
+               // if (ds.Tables[0].Rows.Count == 0) return;
 
                 foreach (DataRow dr in ds.Tables[0].Rows)
                 {

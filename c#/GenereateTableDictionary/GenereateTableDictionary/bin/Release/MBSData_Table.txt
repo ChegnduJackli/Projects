@@ -1,0 +1,726 @@
+-----------------------------Table List-----------------------------------------------------
+Table Name                    Data Count                    
+MOF_ALUMNI_EMAIL              5                             
+MOF_ALUMNI_FORUM_ANS          0                             
+MOF_ALUMNI_FORUM_QTN          0                             
+MOF_ALUMNI_MGMT_USER          3                             
+MOF_ALUMNI_PAPER              0                             
+SB_UPDATE_STATUS              2                             
+SETID_TBL                     84                            
+STATE_TBL                     1081                          
+TMPVENDORRECORD               35861                         
+USERROLE_ACCESS               36                            
+VENDOR_ADDRESS                471345                        
+VENDOR_ADDRESS_TMP            1                             
+VENDOR_ASST                   44                            
+VENDOR_ASST_AUDIT             1042                          
+VENDOR_DCA_TBL                436939                        
+VENDOR_DCA_TMP                2                             
+VENDOR_MAILING                3                             
+VENDOR_MASTER                 472135                        
+VENDOR_NEW_TMP                0                             
+VENDOR_PASSWORD               3495                          
+VENDOR_PAYMENT                62308                         
+VENDOR_RELATION               1                             
+AUDIT_TRAIL_TBL               17                            
+CLAIM_AUDIT_TRAIL_TBL         58                            
+CLAIM_SETTLEMENT_TMP          125                           
+COUNTRY_TBL                   239                           
+CURRENCY_CD_TBL               37                            
+DEPT_MIN_TBL                  1154                          
+EMAIL_GP_TMP                  0                             
+FACTORY_COMPANY_TBL           9                             
+GST_PERCENTAGE_TBL            3                             
+INVOICE_AUDIT                 1652                          
+SUB_CLINIC                    33                            
+SURVEY                        8                             
+TBADMIN                       4                             
+TMPMAPPINGMBS                 641                           
+MOF_ALUMNI_PREF               4                             
+MOF_ALUMNI_REGUSR             22                            
+MOF_ALUMNI_USR                1                             
+REGISTER_GP                   2                             
+BANK_TBL                      43                            
+BRANCH_BANK_TBL               618                           
+BUS_UNIT_TBL_AP               429                           
+BU_DEPT_TBL                   34                            
+BU_UNIT_TEST                  0                             
+CLAIM_CONSUMED                0                             
+CLAIM_CONSUMED_TMP            0                             
+CLAIM_DEPENDANT               0                             
+CLAIM_GP_LIST                 63                            
+CLAIM_GP_LIST_BACKUP          153                           
+CLAIM_GP_LIST_TMP             1                             
+CLAIM_SETTLEMENT              89                            
+CLAIM_SETTLEMENT_AUDIT        17919                         
+
+-----------------------------MOF_ALUMNI_EMAIL-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+EMAIL_ID                      NUMBER                        22                                                          
+EMAIL_USR_ID                  NUMBER                        22                                                          
+EMAIL_ALUMNI_ADDRS            VARCHAR2                      10                                                          
+EMAIL_DSTN_ADDRS              VARCHAR2                      100                                                         
+
+-----------------------------MOF_ALUMNI_FORUM_ANS-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+ANS_ID                        NUMBER                        22                            Y                             
+ANS_QTN_ID                    NUMBER                        22                                                          
+ANS_DESC                      VARCHAR2                      2000                                                        
+ANS_CREATED_BY                NUMBER                        22                                                          
+ANS_CREATED_ON                DATE                          7                                                           
+ANS_ACTIVE_STATUS             CHAR                          1                                                           
+
+-----------------------------MOF_ALUMNI_FORUM_QTN-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+QTN_ID                        NUMBER                        22                            Y                             
+QTN_DESC                      VARCHAR2                      2000                                                        
+QTN_CREATED_BY                NUMBER                        22                                                          
+QTN_CREATED_ON                DATE                          7                                                           
+QTN_ACTIVE_STATUS             CHAR                          1                                                           
+
+-----------------------------MOF_ALUMNI_MGMT_USER-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+ID                            NUMBER                        22                            Y                             
+FIRST_NAME                    VARCHAR2                      100                                                         
+FAMILY_NAME                   VARCHAR2                      100                                                         
+USER_ID                       VARCHAR2                      50                                                          
+SUFFIX                        VARCHAR2                      5                                                           
+PASSWORD                      VARCHAR2                      15                                                          
+CREATION_DATE                 DATE                          7                                                           
+CREATED_BY                    VARCHAR2                      9                                                           
+LAST_MOD_DATE                 DATE                          7                                                           
+
+-----------------------------MOF_ALUMNI_PAPER-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+PAPER_ID                      NUMBER                        22                            Y                             
+PAPER_NAME                    VARCHAR2                      500                                                         
+PAPER_DESC                    VARCHAR2                      1000                                                        
+PAPER_DATE                    VARCHAR2                      100                                                         
+PAPER_LINK                    VARCHAR2                      250                                                         
+
+-----------------------------SB_UPDATE_STATUS-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+INVOICE_ID                    VARCHAR2                      50                            Y                             
+INVOICE_DATE                  DATE                          7                             Y                             
+VENDOR_ID                     VARCHAR2                      10                            Y                             
+BUSINESS_UNIT                 VARCHAR2                      10                            Y                             
+INVOICE_STATUS                VARCHAR2                      1                                                           
+UPDATEB_BY                    VARCHAR2                      20                                                          
+UPDATED_ON                    DATE                          7                                                           
+EXTRACTED_ON                  DATE                          7                                                           
+REMARKS                       VARCHAR2                      254                                                         
+AMOUNT_DUE                    NUMBER                        22                                                          
+IS_EXTRACTED                  VARCHAR2                      1                                                           
+
+-----------------------------SETID_TBL-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+SETID                         VARCHAR2                      5                                                           
+DESCR                         VARCHAR2                      30                                                          
+
+-----------------------------STATE_TBL-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+COUNTRY                       VARCHAR2                      3                                                           
+STATE                         VARCHAR2                      6                                                           
+DESCR                         VARCHAR2                      30                                                          
+
+-----------------------------TMPVENDORRECORD-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+INVOICE_ID                    VARCHAR2                      30                                                          
+INVOICE_DATE                  DATE                          7                                                           
+VENDOR_ID                     VARCHAR2                      30                                                          
+BU                            VARCHAR2                      30                                                          
+
+-----------------------------USERROLE_ACCESS-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+USERROLE_ID                   VARCHAR2                      2                                                           
+CAN_ACCESS                    VARCHAR2                      1                                                           
+URL                           VARCHAR2                      128                                                         
+FUNCTION_ID                   NUMBER                        22                                                          
+
+-----------------------------VENDOR_ADDRESS-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+SETID                         VARCHAR2                      5                                                           
+VENDOR_ID                     VARCHAR2                      10                                                          
+ADDRESS_SEQ_NUM               NUMBER                        22                                                          
+ADDRESS1                      VARCHAR2                      55                                                          
+ADDRESS2                      VARCHAR2                      55                                                          
+ADDRESS3                      VARCHAR2                      55                                                          
+ADDRESS4                      VARCHAR2                      55                                                          
+CITY                          VARCHAR2                      30                                                          
+POSTAL                        VARCHAR2                      12                                                          
+COUNTY                        VARCHAR2                      30                                                          
+STATE                         VARCHAR2                      6                                                           
+COUNTRY                       VARCHAR2                      3                                                           
+EMAILID                       VARCHAR2                      70                                                          
+PHONE                         VARCHAR2                      24                                                          
+FAX                           VARCHAR2                      24                                                          
+
+-----------------------------VENDOR_ADDRESS_TMP-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+USER_ID                       VARCHAR2                      10                                                          
+CHANGED_DATE                  DATE                          7                                                           
+SETID                         VARCHAR2                      5                                                           
+VENDOR_ID                     VARCHAR2                      10                                                          
+ADDRESS_SEQ_NUM               NUMBER                        22                                                          
+ADDRESS1                      VARCHAR2                      55                                                          
+ADDRESS2                      VARCHAR2                      55                                                          
+ADDRESS3                      VARCHAR2                      55                                                          
+ADDRESS4                      VARCHAR2                      55                                                          
+CITY                          VARCHAR2                      30                                                          
+POSTAL                        VARCHAR2                      12                                                          
+COUNTY                        VARCHAR2                      30                                                          
+STATE                         VARCHAR2                      6                                                           
+COUNTRY                       VARCHAR2                      3                                                           
+EMAILID                       VARCHAR2                      70                                                          
+PHONE                         VARCHAR2                      24                                                          
+FAX                           VARCHAR2                      24                                                          
+IS_EXTRACTED                  VARCHAR2                      1                                                           
+
+-----------------------------VENDOR_ASST-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+VENDOR_ID                     VARCHAR2                      10                            Y                             
+VENDOR_ID_ASST                VARCHAR2                      10                            Y                             
+ASST_NAME                     VARCHAR2                      33                                                          
+ASST_EMAIL                    VARCHAR2                      80                                                          
+LAST_UPDATED_BY               VARCHAR2                      10                                                          
+LAST_UPDATED_DATE             DATE                          7                                                           
+EMAIL_SENT                    CHAR                          1                                                           
+EMAIL_SENT_DATETIME           DATE                          7                                                           
+
+-----------------------------VENDOR_ASST_AUDIT-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+VENDOR_ID                     VARCHAR2                      10                            Y                             
+VENDOR_ID_ASST                VARCHAR2                      10                            Y                             
+ASST_NAME                     VARCHAR2                      33                                                          
+ASST_EMAIL                    VARCHAR2                      80                                                          
+LAST_UPDATED_BY               VARCHAR2                      10                                                          
+LAST_UPDATED_DATE             DATE                          7                             Y                             
+EMAIL_SENT                    CHAR                          1                                                           
+EMAIL_SENT_DATETIME           DATE                          7                                                           
+ACTION                        CHAR                          1                             Y                             
+
+-----------------------------VENDOR_DCA_TBL-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+VENDOR_ID                     VARCHAR2                      10                            Y                             
+SET_ID                        VARCHAR2                      5                             Y                             
+SEQ_NUMBER                    NUMBER                        22                                                          
+VENDOR_LOC                    VARCHAR2                      10                            Y                             
+BANK_NO                       VARCHAR2                      20                                                          
+BRANCH_NO                     VARCHAR2                      10                                                          
+ACCOUNT_NO                    VARCHAR2                      17                                                          
+LAST_UPDATE_DATE              DATE                          7                                                           
+STATUS                        VARCHAR2                      1                                                           
+REJECTED_MSG                  VARCHAR2                      40                                                          
+EFFECTIVE_DATE                DATE                          7                                                           
+NAME_1                        VARCHAR2                      40                                                          
+NAME_2                        VARCHAR2                      40                                                          
+NAME_STATUS                   VARCHAR2                      1                                                           
+NAME_REJECT_REASON            VARCHAR2                      1                                                           
+VENDOR_STATUS                 VARCHAR2                      1                                                           
+GST_REGISTRATION_NO           VARCHAR2                      13                                                          
+GST_REGISTERED                VARCHAR2                      1                                                           
+
+-----------------------------VENDOR_DCA_TMP-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+USER_ID                       VARCHAR2                      10                                                          
+GST_REGISTRATION_NO           VARCHAR2                      13                                                          
+GST_REGISTERED                VARCHAR2                      1                                                           
+VENDOR_ID                     VARCHAR2                      10                            Y                             
+SET_ID                        VARCHAR2                      5                             Y                             
+SEQ_NUMBER                    NUMBER                        22                                                          
+VENDOR_LOC                    VARCHAR2                      10                            Y                             
+BANK_NO                       VARCHAR2                      20                                                          
+BRANCH_NO                     VARCHAR2                      10                                                          
+ACCOUNT_NO                    VARCHAR2                      17                                                          
+LAST_UPDATE_DATE              DATE                          7                                                           
+STATUS                        NUMBER                        22                                                          
+IS_EXTRACTED                  VARCHAR2                      1                                                           
+EFFECTIVE_DATE                DATE                          7                                                           
+NAME_1                        VARCHAR2                      40                                                          
+NAME_2                        VARCHAR2                      40                                                          
+BANK_STATUS                   VARCHAR2                      1                                                           
+NAME_STATUS                   VARCHAR2                      1                                                           
+REJECTED_MSG                  VARCHAR2                      40                                                          
+NAME_REJECT_REASON            VARCHAR2                      1                                                           
+
+-----------------------------VENDOR_MAILING-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+VENDOR_ID                     VARCHAR2                      10                                                          
+PASSWORD                      VARCHAR2                      32                                                          
+REF_NO                        VARCHAR2                      20                                                          
+SALUTATION                    VARCHAR2                      4                                                           
+NAME                          VARCHAR2                      40                                                          
+TITLE                         VARCHAR2                      50                                                          
+COMPANY_NAME                  VARCHAR2                      80                                                          
+DATE_APPLY                    DATE                          7                                                           
+ADDRESS1                      VARCHAR2                      55                                                          
+ADDRESS2                      VARCHAR2                      55                                                          
+ADDRESS3                      VARCHAR2                      55                                                          
+ADDRESS4                      VARCHAR2                      55                                                          
+CITY                          VARCHAR2                      30                                                          
+POSTAL                        VARCHAR2                      12                                                          
+COUNTY                        VARCHAR2                      30                                                          
+STATE                         VARCHAR2                      6                                                           
+COUNTRY                       VARCHAR2                      3                                                           
+STATUS                        VARCHAR2                      1                                                           
+DATE_CREATED                  DATE                          7                                                           
+TYPE                          VARCHAR2                      1                                                           
+
+-----------------------------VENDOR_MASTER-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+NAME2                         VARCHAR2                      40                                                          
+VENDOR_STATUS                 VARCHAR2                      1                                                           
+VENDOR_CLASS                  VARCHAR2                      1                                                           
+LAST_UPDATE_DT                DATE                          7                                                           
+AGD_VND_NAME_ST               VARCHAR2                      1                                                           
+AGD_NAME_REJECT_CD            VARCHAR2                      1                                                           
+SETID                         VARCHAR2                      5                             Y                             
+VENDOR_ID                     VARCHAR2                      10                            Y                             
+NAME1                         VARCHAR2                      40                                                          
+
+-----------------------------VENDOR_NEW_TMP-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+VENDOR_ID                     VARCHAR2                      10                            Y                             
+VENDOR_CLASS                  VARCHAR2                      1                                                           
+GST_REGISTERED                VARCHAR2                      1                                                           
+ADDRESS1                      VARCHAR2                      55                                                          
+ADDRESS2                      VARCHAR2                      55                                                          
+ADDRESS3                      VARCHAR2                      55                                                          
+ADDRESS4                      VARCHAR2                      55                                                          
+POSTAL                        NUMBER                        22                                                          
+COUNTRY                       VARCHAR2                      3                                                           
+EMAILID                       VARCHAR2                      70                                                          
+PHONE                         NUMBER                        22                                                          
+FAX                           NUMBER                        22                                                          
+BANK_NO                       VARCHAR2                      20                                                          
+BRANCH_NO                     VARCHAR2                      10                                                          
+ACCOUNT_NO                    VARCHAR2                      17                                                          
+LAST_UPDATE_DATE              DATE                          7                                                           
+STATUS                        NUMBER                        22                                                          
+IS_EXTRACTED                  VARCHAR2                      1                                                           
+VENDOR_NAME_2                 VARCHAR2                      40                                                          
+VENDOR_NAME_1                 VARCHAR2                      40                                                          
+USER_ID                       VARCHAR2                      10                                                          
+ACCT_OWNER_ID                 VARCHAR2                      20                                                          
+LICENCE_NO                    VARCHAR2                      20                                                          
+DT_EFFECTIVE                  DATE                          7                                                           
+DT_END                        DATE                          7                                                           
+PWD_ISSUED_DT                 DATE                          7                                                           
+MCR_ID                        VARCHAR2                      6                                                           
+GST_REGISTRATION_NO           VARCHAR2                      13                                                          
+
+-----------------------------VENDOR_PASSWORD-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+VENDOR_ID                     VARCHAR2                      10                            Y                             
+PASSWORD                      VARCHAR2                      32                                                          
+SESSION_ID                    NUMBER                        22                                                          
+LAST_ACCESSED_DATE            DATE                          7                                                           
+
+-----------------------------VENDOR_PAYMENT-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+VENDOR_ID                     VARCHAR2                      10                                                          
+VENDOR_NAME                   VARCHAR2                      80                                                          
+INVOICE_ID                    VARCHAR2                      30                                                          
+INVOICE_DATE                  DATE                          7                                                           
+NET_AMOUNT                    NUMBER                        22                                                          
+CURRENCY_CD                   VARCHAR2                      3                                                           
+DEPARTMENT                    VARCHAR2                      30                                                          
+TEL_NO                        VARCHAR2                      24                                                          
+BUSINESS_UNIT                 VARCHAR2                      5                                                           
+VOUCHER_ID                    VARCHAR2                      8                                                           
+PAYMENT_STATUS                VARCHAR2                      7                                                           
+PAYMENT_DATE                  DATE                          7                                                           
+PAYMENT_TYPE                  VARCHAR2                      20                                                          
+BANK_CODE                     VARCHAR2                      5                                                           
+PAYMENT_ID_REF                VARCHAR2                      10                                                          
+VENDOR_BANK_ID                VARCHAR2                      4                                                           
+VENDOR_ACCOUNT                VARCHAR2                      17                                                          
+PAYMENT_MESSAGE               VARCHAR2                      70                                                          
+PYMNT_AMT                     NUMBER                        22                                                          
+
+-----------------------------VENDOR_RELATION-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+VENDOR_ID                     VARCHAR2                      10                            Y                             
+LAST_UPDATED_BY               VARCHAR2                      10                                                          
+LAST_UPDATED_DATE             DATE                          7                                                           
+
+-----------------------------AUDIT_TRAIL_TBL-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+USER_ID                       VARCHAR2                      9                                                           
+VENDOR_ID                     VARCHAR2                      10                                                          
+DATE_CHANGED                  DATE                          7                                                           
+ACTION_ID                     VARCHAR2                      6                                                           
+DETAILS                       VARCHAR2                      600                                                         
+
+-----------------------------CLAIM_AUDIT_TRAIL_TBL-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+USER_ID                       VARCHAR2                      9                                                           
+VENDOR_ID                     VARCHAR2                      10                                                          
+DATE_CHANGED                  DATE                          7                                                           
+ACTION_ID                     VARCHAR2                      6                                                           
+DETAILS                       VARCHAR2                      600                                                         
+
+-----------------------------CLAIM_SETTLEMENT_TMP-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+VOUCHER_NO                    VARCHAR2                      8                                                           
+INVOICE_NO                    VARCHAR2                      16                                                          
+GP_NAME                       VARCHAR2                      40                                                          
+GP_CODE                       VARCHAR2                      20                                                          
+PAYMENT_DATE                  DATE                          7                                                           
+PAYMENT_REF                   VARCHAR2                      20                                                          
+VOUCHER_AMOUNT                VARCHAR2                      14                                                          
+GP_VENDOR_CODE                NUMBER                        22                                                          
+PATIENT_ID                    VARCHAR2                      9                                                           
+RECEIPT_NO                    VARCHAR2                      16                                                          
+RECEIPT_DATE                  DATE                          7                                                           
+ADJ_INDICATOR                 VARCHAR2                      2                                                           
+BILL_DATE                     DATE                          7                                                           
+GP_VENDOR_ID                  VARCHAR2                      10                                                          
+
+-----------------------------COUNTRY_TBL-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+COUNTRY                       VARCHAR2                      3                                                           
+DESCR                         VARCHAR2                      30                                                          
+
+-----------------------------CURRENCY_CD_TBL-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+CURRENCY_CD                   VARCHAR2                      3                             Y                             
+DESCR                         VARCHAR2                      30                                                          
+
+-----------------------------DEPT_MIN_TBL-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+BUSINESS_UNIT                 VARCHAR2                      5                             Y                             
+BU_DESCR                      VARCHAR2                      50                                                          
+DEPARTMENT                    VARCHAR2                      10                                                          
+
+-----------------------------EMAIL_GP_TMP-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+VENDOR_ID                     VARCHAR2                      10                                                          
+EMAILID                       VARCHAR2                      80                                                          
+VENDOR_ID_ASST                VARCHAR2                      10                                                          
+ASST_NAME                     VARCHAR2                      33                                                          
+ASST_EMAIL                    VARCHAR2                      80                                                          
+
+-----------------------------FACTORY_COMPANY_TBL-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+FACTORY_CODE                  VARCHAR2                      10                                                          
+FACTORY_NAME                  VARCHAR2                      45                                                          
+
+-----------------------------GST_PERCENTAGE_TBL-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+GST_PERCENTAGE                NUMBER                        22                            Y                             
+DATE_CREATED                  DATE                          7                                                           
+LAST_UPDATED                  DATE                          7                                                           
+STATUS                        CHAR                          2                                                           
+
+-----------------------------INVOICE_AUDIT-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+BUSINESS_UNIT                 VARCHAR2                      5                             Y                             
+INVOICE_ID                    VARCHAR2                      30                            Y                             
+INVOICE_DATE                  DATE                          7                             Y                             
+VENDOR_ID                     VARCHAR2                      10                            Y                             
+INVOICE_STATUS                VARCHAR2                      1                                                           
+LAST_UPDATED_BY               VARCHAR2                      10                            Y                             
+LAST_UPDATED_DATE             DATE                          7                             Y                             
+
+-----------------------------SUB_CLINIC-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+CLINIC_NAME                   VARCHAR2                      181                                                         
+ADDRESS                       VARCHAR2                      367                                                         
+POSTALCODE                    VARCHAR2                      12                                                          
+AREA                          NUMBER                        22                                                          
+
+-----------------------------SURVEY-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+Q1A1                          NUMBER                        22                                                          
+Q1A2                          NUMBER                        22                                                          
+Q1A3                          NUMBER                        22                                                          
+Q1A4                          NUMBER                        22                                                          
+Q1A5                          NUMBER                        22                                                          
+Q2A1                          NUMBER                        22                                                          
+Q2A2                          NUMBER                        22                                                          
+Q2A3                          NUMBER                        22                                                          
+Q2A4                          VARCHAR2                      1000                                                        
+Q2B1                          NUMBER                        22                                                          
+Q2B2                          NUMBER                        22                                                          
+Q2B3                          NUMBER                        22                                                          
+Q2B4                          NUMBER                        22                                                          
+Q2B5                          NUMBER                        22                                                          
+Q2B6                          VARCHAR2                      1000                                                        
+Q2C1                          NUMBER                        22                                                          
+Q2C2                          NUMBER                        22                                                          
+Q2C3                          VARCHAR2                      1000                                                        
+Q2D1                          NUMBER                        22                                                          
+Q2D2                          NUMBER                        22                                                          
+Q2D3                          VARCHAR2                      1000                                                        
+Q3A1                          NUMBER                        22                                                          
+Q3A2                          NUMBER                        22                                                          
+Q3A3                          NUMBER                        22                                                          
+Q3A4                          VARCHAR2                      1000                                                        
+Q4A1                          VARCHAR2                      1000                                                        
+Q4A2                          VARCHAR2                      1000                                                        
+Q4A3                          VARCHAR2                      1000                                                        
+CLINICNAME                    VARCHAR2                      100                                                         
+GP_ID                         VARCHAR2                      6                                                           
+NAME                          VARCHAR2                      50                                                          
+DESIGNATION                   VARCHAR2                      50                                                          
+
+-----------------------------TBADMIN-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+USER_ID                       VARCHAR2                      9                                                           
+PASSWORD                      VARCHAR2                      32                                                          
+SESSION_ID                    NUMBER                        22                                                          
+LAST_ACCESS                   DATE                          7                                                           
+LAST_PASSWORD_CHANGED_DATE    DATE                          7                                                           
+IN_PROCESS_FLG                VARCHAR2                      1                                                           
+IN_PROCESS_DCA_FLG            VARCHAR2                      1                                                           
+IN_PROCESS_INV_FLG            VARCHAR2                      1                                                           
+IN_PROCESS_CERT_FLG           VARCHAR2                      1                                                           
+IN_PROCESS_GPS_FLG            VARCHAR2                      1                                                           
+
+-----------------------------TMPMAPPINGMBS-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+VENDOR_ID                     VARCHAR2                      10                                                          
+UEN_ID                        VARCHAR2                      10                                                          
+
+-----------------------------MOF_ALUMNI_PREF-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+ID                            NUMBER                        22                            Y                             
+USER_ID                       VARCHAR2                      50                                                          
+VALUE                         VARCHAR2                      50                                                          
+
+-----------------------------MOF_ALUMNI_REGUSR-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+ID                            NUMBER                        22                            Y                             
+FIRST_NAME                    VARCHAR2                      100                                                         
+FAMILY_NAME                   VARCHAR2                      100                                                         
+USER_ID                       VARCHAR2                      50                                                          
+SUFFIX                        VARCHAR2                      5                                                           
+IC_NO                         VARCHAR2                      9                                                           
+COMPANY                       VARCHAR2                      200                                                         
+DESIGNATION                   VARCHAR2                      200                                                         
+OFF_ADD                       VARCHAR2                      500                                                         
+OFF_PH_NO                     NUMBER                        22                                                          
+MOBILE_NO                     NUMBER                        22                                                          
+PREF_EMAIL                    VARCHAR2                      100                                                         
+CREATION_DATE                 DATE                          7                                                           
+LAST_MOD_DATE                 DATE                          7                                                           
+YR_LFT                        NUMBER                        22                                                          
+YR_JND                        NUMBER                        22                                                          
+STATUS                        VARCHAR2                      2                                                           
+
+-----------------------------MOF_ALUMNI_USR-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+ID                            NUMBER                        22                            Y                             
+FIRST_NAME                    VARCHAR2                      100                                                         
+FAMILY_NAME                   VARCHAR2                      100                                                         
+USER_ID                       VARCHAR2                      50                                                          
+SUFFIX                        VARCHAR2                      5                                                           
+IC_NO                         VARCHAR2                      9                                                           
+PASSWORD                      VARCHAR2                      15                                                          
+COMPANY                       VARCHAR2                      200                                                         
+DESIGNATION                   VARCHAR2                      200                                                         
+OFF_ADD                       VARCHAR2                      500                                                         
+OFF_PH_NO                     NUMBER                        22                                                          
+MOBILE_NO                     NUMBER                        22                                                          
+PREF_EMAIL                    VARCHAR2                      100                                                         
+VEH_NO_1                      VARCHAR2                      20                                                          
+VEH_NO_2                      VARCHAR2                      20                                                          
+VEH_NO_3                      VARCHAR2                      20                                                          
+DIET_PREF                     VARCHAR2                      500                                                         
+CREATION_DATE                 DATE                          7                                                           
+CREATED_BY                    VARCHAR2                      9                                                           
+LAST_MOD_DATE                 DATE                          7                                                           
+YR_LFT                        NUMBER                        22                                                          
+YR_JND                        NUMBER                        22                                                          
+
+-----------------------------REGISTER_GP-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+REG_SEQ_NO                    NUMBER                        22                            Y                             
+GP_NAME                       VARCHAR2                      40                                                          
+CLINIC_NAME                   VARCHAR2                      80                                                          
+ADDRESS                       VARCHAR2                      100                                                         
+PHONE                         VARCHAR2                      24                                                          
+RECOMMENDED_BY                VARCHAR2                      100                                                         
+ROLE                          VARCHAR2                      1                                                           
+
+-----------------------------BANK_TBL-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+BANK_NO                       VARCHAR2                      10                            Y                             
+BANK_NAME                     VARCHAR2                      50                                                          
+
+-----------------------------BRANCH_BANK_TBL-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+BRANCH_NO                     VARCHAR2                      10                            Y                             
+BRANCH_NAME                   VARCHAR2                      50                                                          
+BANK_NO                       VARCHAR2                      10                            Y                             
+
+-----------------------------BUS_UNIT_TBL_AP-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+DEPARTMENT                    VARCHAR2                      10                            Y                             
+DEPT_DESCR                    VARCHAR2                      30                                                          
+GL_BU                         VARCHAR2                      5                                                           
+GL_BU_DESCR                   VARCHAR2                      30                                                          
+
+-----------------------------BU_DEPT_TBL-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+BUSINESS_UNIT                 VARCHAR2                      5                             Y                             
+BU_DESCR                      VARCHAR2                      30                                                          
+DEPARTMENT                    VARCHAR2                      10                                                          
+DEPT_DESCR                    VARCHAR2                      30                                                          
+
+-----------------------------BU_UNIT_TEST-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+BUSINESS_UNIT                 VARCHAR2                      5                             Y                             
+DESCR                         VARCHAR2                      30                                                          
+GL_BU                         VARCHAR2                      5                                                           
+GL_BU_DESCR                   VARCHAR2                      30                                                          
+DEPARTMENT                    VARCHAR2                      5                                                           
+DEPT_DESCR                    VARCHAR2                      30                                                          
+
+-----------------------------CLAIM_CONSUMED-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+PERNO                         CHAR                          9                             Y                             
+MSO_YEAR                      NUMBER                        22                            Y                             
+MEDICAL_CONSUMED              NUMBER                        22                                                          
+
+-----------------------------CLAIM_CONSUMED_TMP-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+PERNO                         CHAR                          9                             Y                             
+MSO_YEAR                      NUMBER                        22                            Y                             
+MEDICAL_CONSUMED              NUMBER                        22                                                          
+
+-----------------------------CLAIM_DEPENDANT-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+OFFICER_PERNO                 VARCHAR2                      9                             Y                             
+DEPENDANT_ID                  VARCHAR2                      9                             Y                             
+DEPENDANT_NAME                VARCHAR2                      33                                                          
+RELATIONSHIP                  VARCHAR2                      1                                                           
+ELIG_START_DATE               DATE                          7                             Y                             
+ELIG_END_DATE                 DATE                          7                                                           
+LAST_UPD_DATE                 DATE                          7                                                           
+MEDICAL_SCHEME                VARCHAR2                      3                                                           
+SUB_SYSTEM_ID                 VARCHAR2                      4                                                           
+EMAIL_ADDRESS                 VARCHAR2                      80                                                          
+
+-----------------------------CLAIM_GP_LIST-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+STATE                         VARCHAR2                      40                                                          
+GP_IND                        VARCHAR2                      1                                                           
+GP_SEQ_NO                     NUMBER                        22                            Y                             
+LICENCE_NO                    VARCHAR2                      40                                                          
+VENDOR_ID                     VARCHAR2                      10                                                          
+MCR_ID                        VARCHAR2                      6                                                           
+DT_EFFECTIVE                  DATE                          7                                                           
+DT_END                        DATE                          7                                                           
+VENDOR_ID_ASST                VARCHAR2                      10                                                          
+CLINIC_NAME_1                 VARCHAR2                      40                                                          
+CLINIC_NAME_2                 VARCHAR2                      40                                                          
+ASST_NAME                     VARCHAR2                      33                                                          
+ASST_EMAIL                    CHAR                          80                                                          
+IS_NOTIFIED                   VARCHAR2                      3                                                           
+DOCTOR_NAME                   VARCHAR2                      30                                                          
+ADDRESS1                      VARCHAR2                      40                                                          
+ADDRESS2                      VARCHAR2                      40                                                          
+ADDRESS3                      VARCHAR2                      40                                                          
+ADDRESS4                      VARCHAR2                      40                                                          
+CITY                          VARCHAR2                      40                                                          
+COUNTRY                       VARCHAR2                      40                                                          
+POSTAL                        VARCHAR2                      6                                                           
+
+-----------------------------CLAIM_GP_LIST_BACKUP-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+GP_SEQ_NO                     NUMBER                        22                                                          
+LICENCE_NO                    VARCHAR2                      40                                                          
+VENDOR_ID                     VARCHAR2                      10                                                          
+MCR_ID                        VARCHAR2                      6                                                           
+DT_EFFECTIVE                  DATE                          7                                                           
+DT_END                        DATE                          7                                                           
+VENDOR_ID_ASST                VARCHAR2                      10                                                          
+CLINIC_NAME_1                 VARCHAR2                      40                                                          
+CLINIC_NAME_2                 VARCHAR2                      40                                                          
+
+-----------------------------CLAIM_GP_LIST_TMP-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+LICENCE_NO                    VARCHAR2                      40                                                          
+VENDOR_ID                     VARCHAR2                      10                                                          
+MCR_ID                        VARCHAR2                      6                                                           
+DT_EFFECTIVE                  DATE                          7                                                           
+DT_END                        DATE                          7                                                           
+VENDOR_ID_ASST                VARCHAR2                      10                                                          
+CLINIC_NAME_1                 VARCHAR2                      40                                                          
+CLINIC_NAME_2                 VARCHAR2                      40                                                          
+ASST_NAME                     VARCHAR2                      33                                                          
+ASST_EMAIL                    CHAR                          80                                                          
+IS_NOTIFIED                   VARCHAR2                      3                                                           
+
+-----------------------------CLAIM_SETTLEMENT-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+CLAIM_SEQ_NO                  NUMBER                        22                            Y                             
+GP_SEQ_NO                     NUMBER                        22                                                          
+VENDOR_ID                     VARCHAR2                      10                                                          
+MCR_ID                        VARCHAR2                      6                                                           
+LICENCE_NO                    VARCHAR2                      20                                                          
+CLINIC_NAME                   VARCHAR2                      40                                                          
+OFFICER_ID                    VARCHAR2                      9                                                           
+PATIENT_ID                    VARCHAR2                      9                                                           
+PATIENT_NAME                  VARCHAR2                      33                                                          
+MEDICAL_SCHEME                VARCHAR2                      3                                                           
+RELATIONSHIP                  VARCHAR2                      1                                                           
+RECEIPT_NO                    VARCHAR2                      16                                                          
+RECEIPT_DATE                  DATE                          7                                                           
+RECEIPT_AMOUNT                NUMBER                        22                                                          
+PATIENT_COPYMT                NUMBER                        22                                                          
+GOVT_COPYMT                   NUMBER                        22                                                          
+SUB_SYSTEM_ID                 VARCHAR2                      4                                                           
+DT_LAST_UPDATE                DATE                          7                                                           
+STATUS                        VARCHAR2                      1                                                           
+IS_EXTRACTED                  VARCHAR2                      1                                                           
+DT_DOWNLOAD_MBBS              DATE                          7                                                           
+PAYMENT_DATE                  DATE                          7                                                           
+PAYMENT_REF                   VARCHAR2                      20                                                          
+PAYMENT_VOUCHER               VARCHAR2                      8                                                           
+USER_ID                       VARCHAR2                      10                                                          
+SETT_REF_NO                   NUMBER                        22                                                          
+CLINIC_NAME_2                 VARCHAR2                      40                                                          
+MC_NO                         VARCHAR2                      15                                                          
+MC_START_DT                   DATE                          7                                                           
+MC_END_DT                     DATE                          7                                                           
+MC_EXTRACTED                  VARCHAR2                      1                                                           
+
+-----------------------------CLAIM_SETTLEMENT_AUDIT-----------------------------------------------------
+Column Name                   Data Type                     Data Length                   PK                            
+SETT_REF_NO                   NUMBER                        22                                                          
+CLAIM_SEQ_NO                  NUMBER                        22                                                          
+GP_SEQ_NO                     NUMBER                        22                                                          
+VENDOR_ID                     VARCHAR2                      10                                                          
+MCR_ID                        VARCHAR2                      6                                                           
+LICENCE_NO                    VARCHAR2                      20                                                          
+CLINIC_NAME                   VARCHAR2                      40                                                          
+CLINIC_NAME_2                 VARCHAR2                      40                                                          
+OFFICER_ID                    VARCHAR2                      9                                                           
+PATIENT_ID                    VARCHAR2                      9                                                           
+PATIENT_NAME                  VARCHAR2                      33                                                          
+MEDICAL_SCHEME                VARCHAR2                      3                                                           
+RELATIONSHIP                  VARCHAR2                      1                                                           
+RECEIPT_NO                    VARCHAR2                      16                                                          
+RECEIPT_DATE                  DATE                          7                                                           
+RECEIPT_AMOUNT                NUMBER                        22                                                          
+PATIENT_COPYMT                NUMBER                        22                                                          
+GOVT_COPYMT                   NUMBER                        22                                                          
+SUB_SYSTEM_ID                 VARCHAR2                      4                                                           
+DT_LAST_UPDATE                DATE                          7                                                           
+STATUS                        VARCHAR2                      1                                                           
+IS_EXTRACTED                  VARCHAR2                      1                                                           
+DT_DOWNLOAD_MBBS              DATE                          7                                                           
+PAYMENT_DATE                  DATE                          7                                                           
+PAYMENT_REF                   VARCHAR2                      20                                                          
+PAYMENT_VOUCHER               VARCHAR2                      8                                                           
+USER_ID                       VARCHAR2                      10                                                          
+MODIFIED_DATE                 DATE                          7                                                           
+MODIFIED_BY                   VARCHAR2                      10                                                          
+MC_NO                         VARCHAR2                      15                                                          
+MC_START_DT                   DATE                          7                                                           
+MC_END_DT                     DATE                          7                                                           
+MC_EXTRACTED                  VARCHAR2                      1                                                           
+

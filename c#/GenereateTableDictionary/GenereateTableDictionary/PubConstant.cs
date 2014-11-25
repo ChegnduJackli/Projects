@@ -23,5 +23,9 @@ namespace GenereateTableDictionary
         public static readonly string SPFilePath = Path.Combine(FilePath, FileName + "_SP" + fileSuffix);
         public static readonly string SequenceFilePath = Path.Combine(FilePath, FileName + "_Sequence" + fileSuffix);
         public static readonly string DataCountFilePath = Path.Combine(FilePath, FileName + "_DataCount" + fileSuffix);
+
+        public static readonly string txtSuffix = @".txt";
+
+        public static readonly string TableTxtFilePath = Path.Combine(FilePath, FileName + "_Table" + txtSuffix);
     }
 }

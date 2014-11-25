@@ -1,0 +1,4 @@
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\10大基础算法\InsertSort\InsertSort\bin\Debug\InsertSort.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\10大基础算法\InsertSort\InsertSort\bin\Debug\InsertSort.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\10大基础算法\InsertSort\InsertSort\obj\x86\Debug\InsertSort.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\10大基础算法\InsertSort\InsertSort\obj\x86\Debug\InsertSort.pdb

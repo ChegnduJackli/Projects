@@ -1,15 +1,32 @@
-Set scriptsFolder="D:\Test\Scripts\"
-Set SourceCodeFolder="D:\Test\SourceCode\"
-rem Set DataFolder="D:\Test\Data\"
+rem @echo off
+@cls
 
-if not exist %scriptsFolder%
-	mkdir %scriptsFolder%
+Set TargetscriptsFolder=D:\Test\Scripts
+Set TargetCodeFolder=D:\Test\SourceCode
+Set TargetDataFolder=D:\Test\Data
+
+Set SourceScriptFolder=D:\Test\Deployment\Scripts
+Set SourceCodeFolder=D:\Test\Deployment\SourceCode
+Set SourceDataFolder=D:\Test\Deployment\Data
+rem  xcopy D:\Test  D:\Test\Deployment
+rem mkdir needed folder
+if not exist %TargetscriptsFolder% (
+	mkdir %TargetscriptsFolder%
+)
 	
-if not exist %SourceCodeFolder%
-	mkdir %SourceCodeFolder%
+if not exist %TargetCodeFolder% (	
+	mkdir %TargetCodeFolder%
+)
 	
-rem if not exist %DataFolder%
-	rem mkdir %DataFolder%
+if not exist %TargetDataFolder% (
+	mkdir %TargetDataFolder%
+)
+
+rem move source folder to target folder
+rem /F /R /L /E
+xcopy /F /R /L /Y /T /S /E /H /I %SourceScriptFolder% %TargetscriptsFolder%  
+xcopy /F /R /L /Y /T /S /E /H /I %SourceCodeFolder% %TargetCodeFolder%    
+xcopy  /F /R /L /Y /T /S /E /H /I %SourceDataFolder% %TargetDataFolder%   
 	
 
 

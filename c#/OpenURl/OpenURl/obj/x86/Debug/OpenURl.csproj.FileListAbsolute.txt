@@ -1,0 +1,7 @@
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\OpenURl\OpenURl\bin\Debug\OpenURl.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\OpenURl\OpenURl\bin\Debug\OpenURl.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\OpenURl\OpenURl\obj\x86\Debug\OpenURl.Form1.resources
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\OpenURl\OpenURl\obj\x86\Debug\OpenURl.Properties.Resources.resources
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\OpenURl\OpenURl\obj\x86\Debug\OpenURl.csproj.GenerateResource.Cache
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\OpenURl\OpenURl\obj\x86\Debug\OpenURl.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\OpenURl\OpenURl\obj\x86\Debug\OpenURl.pdb

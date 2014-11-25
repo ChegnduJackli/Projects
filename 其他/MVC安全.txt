@@ -1,0 +1,10 @@
+1, try use AntiXSS . to defend the XSS attack. encode include html encode and javascript encode.
+2, use professional logs system. like ELMAH
+3, use HttpOnly to stop te cookie steal. this one can stop mostly cookie issue base on XSS.
+   <httpCookies domain="" httpOnlyCookies="true" requireSSL="false" />
+   
+   download AntiXSS
+   code
+   
+   jacklideng
+   lideng1234!
