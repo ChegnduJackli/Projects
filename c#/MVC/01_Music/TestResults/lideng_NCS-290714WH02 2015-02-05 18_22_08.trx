@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="c1853156-7366-421a-99d1-2d1eac83ac5b" name="lideng@NCS-290714WH02 2015-02-05 18:22:08" runUser="NCS\lideng" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="51da435b-2ef5-41ee-a559-8981d7499133">
+    <Deployment runDeploymentRoot="lideng_NCS-290714WH02 2015-02-05 18_22_08">
+      <DeploymentItem filename="C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\MVC\01_Music\01_Music\bin\01_Music.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-02-05T18:22:08.1826622+08:00" queuing="2015-02-05T18:22:22.0720510+08:00" start="2015-02-05T18:22:22.4440882+08:00" finish="2015-02-05T18:22:28.0906528+08:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="2" executed="2" passed="2" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="About" storage="c:\users\lideng\desktop\github\projects\projects\c#\mvc\01_music\01_music.tests\bin\debug\01_music.tests.dll" id="d2299e5d-55e8-113f-6358-9705de887804">
+      <Execution id="9fba0a66-5c6a-4346-af1e-402058dd9450" />
+      <TestMethod codeBase="C:/Users/lideng/Desktop/GitHub/Projects/Projects/c#/MVC/01_Music/01_Music.Tests/bin/Debug/01_Music.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="_01_Music.Tests.Controllers.HomeControllerTest, 01_Music.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="About" />
+    </UnitTest>
+    <UnitTest name="Index" storage="c:\users\lideng\desktop\github\projects\projects\c#\mvc\01_music\01_music.tests\bin\debug\01_music.tests.dll" id="0a7caa90-483f-c32a-0ef6-14842b16152b">
+      <Execution id="4b28e77d-1f72-40f4-88ee-39a8f37833c6" />
+      <TestMethod codeBase="C:/Users/lideng/Desktop/GitHub/Projects/Projects/c#/MVC/01_Music/01_Music.Tests/bin/Debug/01_Music.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="_01_Music.Tests.Controllers.HomeControllerTest, 01_Music.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Index" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0a7caa90-483f-c32a-0ef6-14842b16152b" executionId="4b28e77d-1f72-40f4-88ee-39a8f37833c6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d2299e5d-55e8-113f-6358-9705de887804" executionId="9fba0a66-5c6a-4346-af1e-402058dd9450" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="4b28e77d-1f72-40f4-88ee-39a8f37833c6" testId="0a7caa90-483f-c32a-0ef6-14842b16152b" testName="Index" computerName="NCS-290714WH02" duration="00:00:02.3245284" startTime="2015-02-05T18:22:22.9301368+08:00" endTime="2015-02-05T18:22:27.8316269+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4b28e77d-1f72-40f4-88ee-39a8f37833c6">
+    </UnitTestResult>
+    <UnitTestResult executionId="9fba0a66-5c6a-4346-af1e-402058dd9450" testId="d2299e5d-55e8-113f-6358-9705de887804" testName="About" computerName="NCS-290714WH02" duration="00:00:00.0218392" startTime="2015-02-05T18:22:27.8586296+08:00" endTime="2015-02-05T18:22:27.8906328+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9fba0a66-5c6a-4346-af1e-402058dd9450">
+    </UnitTestResult>
+  </Results>
+</TestRun>

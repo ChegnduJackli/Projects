@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">     
+      $.ready(function(){
+          var numArray = [1,2,3,4];
+          $.each( numArray, function( index, value ){
+              value = value * 2;
+              console.log( "index is:"+index+" new value is:" + value );
+          });          
+      });
+    </script>
+  </head>
+  <body>  
+  </body>
+</html>
+

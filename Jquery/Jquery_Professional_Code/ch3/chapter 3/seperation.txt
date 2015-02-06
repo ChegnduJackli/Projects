@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css" src="myCss.css"></style>
+    <script>
+ 
+     (function(document){
+          document.onload = function(){
+              content.style.display = "block";
+          }
+ 
+          var listItems = document.getElementsByTagName("li");          
+          for(i = 0; i < listItems.length; i++){
+              listItems[i].onclick = function{
+                  listItems[i].style.backgroundColor = "green";    
+              }                           
+          }          
+      })( document );
+    </script>
+  </head>
+  <body>
+    <ul id="content" class="contentClass">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ul>
+  </body>
+</html>
+
+

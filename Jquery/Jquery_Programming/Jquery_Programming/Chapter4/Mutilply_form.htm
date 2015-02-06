@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+     <script src="http://code.jquery.com/jquery-1.7.1.js">
+    </script>
+ 
+    <script>
+
+        $(function () {
+            var n1 = $("input").length;
+            var n2 = $(":input").length;
+            var n3 = $("form > *").length;
+            var n4 = $(":text").length;
+            var n5 = $("input[type='text']").length;
+            console.log(n1 + "," + n2 + "," + n3 + "," + n4 + "," + n5);
+            $("#msg").html(n1 + "," + n2 + "," + n3 + "," + n4 + "," + n5);
+        });
+ 
+    </script>
+</head>
+<body>
+ <form name="" method="post">
+      <input type="text" />
+      <input type="text" />
+      <input type="text" />      
+    
+    </form>
+     <span id="msg"></span>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.7.1.js">
+    </script>
+ 
+    <script>
+ 
+      $(function(){
+        var n = $(':input').length;
+        console.log(n);
+      });
+ 
+    </script>
+  </head>
+  <body>
+    <form name="" method="post">
+      <input type="text" />
+      <input type="hidden" />
+      <input type="password" />
+      <input type="radio" />
+      <input type="reset" />
+      <input type="submit" />
+      <input type="image" />
+      <input type="file" />
+      <input type="checkbox" />
+      <input type="reset" />
+      <input type="button" value="hit me"/>
+      <button>Hit me too</button>
+      <select>
+        <option>floor 1</option>
+        <option>floor 2</option>
+      </select>
+ 
+      <textarea></textarea>
+      
+    </form>
+  </body>
+</html>
+

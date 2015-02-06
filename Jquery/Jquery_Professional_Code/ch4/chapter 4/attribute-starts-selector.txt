@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.7.1.js">
+    </script>
+    <script>
+ 
+      var userInfo = $("[id^='user']").length;
+      console.log(n);
+ 
+    </script>
+  </head>
+  <body>
+    <form>
+      <input id="userName" type="text" />
+      <input id="userId" type="text" />
+      <input id="userPhone" type="text" />
+    </form>
+  </body>
+</html>
+

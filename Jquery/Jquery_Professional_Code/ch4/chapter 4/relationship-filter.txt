@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.7.1.js">
+    </script>
+ 
+    <script>
+ $(function(){
+       console.log( $("div span:first-child") )    
+//[span#turkey, span#bear, span#martian]
+       console.log( $("div span:last-child")   )   
+//[span#hawk, span#horse, span#martian]
+       console.log( $("div span:only-child")   )  
+//[span#martian]
+       console.log( $("div span:nth-child(2)") )   
+//[span#chicken, span#rabbit]
+       console.log( $("div span:nth-child(2n+1)") ) 
+//[span#turkey, span#parrot, span#hawk, span#bear, span#fox, span#horse, span#martian]
+       console.log( $("div span:nth-child(even)") )
+//[span#chicken, span#pigeon, span#rabbit, span#monkey]
+      });
+    </script>
+  </head>
+  <body>
+    <div>
+      <span id="turkey">Turkey</span>
+      <span id="chicken">Chicken</span>
+      <span id="parrot">Parrot</span> 
+      <span id="pigeon">Pigeon</span>
+      <span id="hawk">Hawk</span>
+    </div>
+    <div>
+      <span id="bear">bear</span>
+      <span id="rabbit">rabbit</span>
+      <span id="fox">fox</span> 
+      <span id="monkey">monkey</span>
+      <span id="horse">horse</span>
+    </div>
+    <div>
+      <span id="martian">martian</span>
+    </div>
+  </body>
+</html>
+

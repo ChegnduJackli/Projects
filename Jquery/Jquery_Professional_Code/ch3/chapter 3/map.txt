@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">     
+      $.ready(function(){
+          var numArray = [ 42,1024,486,109821 ];
+          console.log( numArray );
+           var newArray = $.map(numArray, function(value, index){
+            return Math.sqrt( value ).toFixed(4);
+           });
+          //logs [ "6.4807", "32.0000", "22.0454", "331.3925" ]
+          console.log( newArray );
+      });
+    </script>
+  </head>
+  <body>  
+  </body>
+</html>
+

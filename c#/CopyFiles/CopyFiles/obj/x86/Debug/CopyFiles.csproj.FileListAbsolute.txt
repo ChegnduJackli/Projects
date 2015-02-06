@@ -1,0 +1,7 @@
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\CopyFiles\CopyFiles\bin\Debug\CopyFiles.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\CopyFiles\CopyFiles\bin\Debug\CopyFiles.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\CopyFiles\CopyFiles\obj\x86\Debug\CopyFiles.Form1.resources
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\CopyFiles\CopyFiles\obj\x86\Debug\CopyFiles.Properties.Resources.resources
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\CopyFiles\CopyFiles\obj\x86\Debug\CopyFiles.csproj.GenerateResource.Cache
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\CopyFiles\CopyFiles\obj\x86\Debug\CopyFiles.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\CopyFiles\CopyFiles\obj\x86\Debug\CopyFiles.pdb

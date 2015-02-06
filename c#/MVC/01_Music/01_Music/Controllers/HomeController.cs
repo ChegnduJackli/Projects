@@ -37,5 +37,14 @@ namespace _01_Music.Controllers
             var ablum = db.Albums.OrderBy(a => a.Price).First();
             return PartialView("_DailyDeal",ablum);
         }
+
+        public ActionResult QuickSearch(string q)
+        {
+            if (q == null) q = "";
+           // var artists = db.Artists.Where(a => a.Name.Contains(q)).ToList().Select(a => new { value = a.Name });
+            var artists = db.Artists.ToList();
+            return Json(artists, JsonRequestBehavior.AllowGet);
+            //return View();
+        }
     }
 }

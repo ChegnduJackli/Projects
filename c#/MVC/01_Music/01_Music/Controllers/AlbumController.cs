@@ -24,6 +24,12 @@ namespace _01_Music.Controllers
 
             return View();
         }
+
+        public ActionResult Index1(int id)
+        {
+            ViewBag.Content = "Id is " + id;
+            return View("Browse");
+        }
         public ActionResult List()
         {
             var album = new List<Album>();
@@ -59,6 +65,15 @@ namespace _01_Music.Controllers
 
             return View();
 
+        }
+
+        //public string Entry(DateTime entryDate)
+        //{
+        //    return "You requested the entry from " + entryDate.ToString();
+        //}
+        public string Entry(string entryDate)
+        {
+            return "You requested the entry from " + entryDate.ToString();
         }
     }
 }

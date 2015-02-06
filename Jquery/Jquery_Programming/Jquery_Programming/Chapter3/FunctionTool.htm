@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>工具函数</title>
+    <link rel="Stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.10/themes/redmond/jquery-ui.css" />
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.8.0.js" type="text/javascript"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.22/jquery-ui.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var obj1 = { "1": "Property 1" };
+            var obj2 = { "2": "Property 2" };
+            var obj3 = { "3": "Property 3" };
+            var obj4 = { "4": "Property 4" };
+            //.extend合并两个或者两个以上的对象。
+            var obj = $.extend(obj1, obj2, obj3, obj4);
+            //此时的obj下标是从0开始的。
+            document.writeln("obj[3]:" + obj[3] + "<br />");
+            //isfunction 函数用于检查一个对象是否是一个函数,需要去掉函数的圆括号。
+            document.writeln("$.IsFunction({}):" + $.isFunction({}) + "<br />"); //false
+            document.writeln("$.IsFunction($.IsFunction):" + $.isFunction($.isFunction) + "<br />"); //true
+            document.writeln("$.IsFunction($.IsFunction()):" + $.isFunction($.isFunction()) + "<br />"); //false ,由于圆括号。
+
+            //数组操作。
+            //克隆对象
+            var clonedjq = $.extend(true, {}, $);
+            //return "object"
+            WriteLine($.type(clonedjq));
+
+            //转换为一个JS数组
+            var jqArray = $.makeArray(clonedjq);
+            //return "array"
+            WriteLine($.type(jqArray));
+            WriteLine(jqArray.length + " value: " + jqArray[0]);
+
+            //.merge数组合并 ,将第二个数组中的元素追加到第一个数组的末尾。
+            var spooks = ["one", "two", "thress"];
+            var num = ["1", "2", "3"];
+            var mergeArray = $.merge(spooks, num);
+            WriteLine(mergeArray);
+
+            //.inArray()方法用于检查数组中是否存在某个指定的值。如果找到该值，则返回索引，没有找到，则返回-1。
+            //$.unique()方法的功能是从DOM元素的数组中移除重复的元素。
+
+            var paragraphs = $("p");
+            //return 7
+            WriteLine(paragraphs.length);
+            //转为一个数组。
+            paragraphs = $.makeArray(paragraphs);
+            //获取类名为duplicate 元素 ，并立即转换为一个数组。
+            var dupes = $.makeArray($(".duplicate"));
+
+            //将dupes数组连接到paragraphs数组
+            paragraphs = paragraphs.concat(dupes);
+            //return 10
+            WriteLine(paragraphs.length);
+
+            //去除重复的元素
+            paragraphs = $.unique(paragraphs);
+            //return 7;
+            WriteLine(paragraphs.length);
+            var index = $.inArray("6", paragraphs);
+            //return -1;
+            WriteLine("index :" + index);
+            //add color
+            $('.duplicate').css("color", "red");
+
+            //each function.所以是基于0的
+            //两个参数，第一个是需要遍历的函数，第二个参数是回调函数，回调函数中，第一个是索引，第二个是值
+            var numArray = [1, 2, 3, 4, 5];
+            $.each(numArray, function (index, value) {
+                value = value * 2;
+                WriteLine("index is:" +index + " new value is: " + value);
+            });
+
+            //Jquery队列（先进先出）
+
+        });
+
+        function WriteLine(obj) {
+            document.writeln(obj + "<br />");
+        }
+    </script>
+</head>
+<body>
+<div style="margin:auto">
+    <p>123</p>
+    <p>456</p>
+    <p>333</p>
+    <p class="duplicate">333</p>
+    <p class="duplicate">33</p>
+    <p class="duplicate">3333</p>
+    <p></p>    
+    </div>
+</body>
+</html>

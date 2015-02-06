@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.7.1.js">
+    </script>
+ 
+    <script>
+      $(function(){
+          var listElements = $("li");  
+          var secondEl = listElements.eq(1);  
+          var fourthEl = listElements.eq(3);
+ 
+          console.log(secondEl.html()  + " and " + fourthEl.html());
+      });
+    </script>
+  </head>
+  <body>
+    <ul>
+     <li>eggs</li>
+     <li>bacon</li>
+     <li>ham</li>
+     <li>cheese</li>
+     <li>juice</li>
+     <li>sausage</li>
+    </ul>
+  </body>
+</html>
+

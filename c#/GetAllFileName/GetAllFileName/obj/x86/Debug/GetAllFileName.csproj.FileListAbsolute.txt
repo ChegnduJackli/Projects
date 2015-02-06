@@ -16,4 +16,3 @@ C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\GetAllFileName\GetAllFileNam
 C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\GetAllFileName\GetAllFileName\obj\x86\Debug\GetAllFileName.Form1.resources
 C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\GetAllFileName\GetAllFileName\obj\x86\Debug\GetAllFileName.Properties.Resources.resources
 C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\GetAllFileName\GetAllFileName\obj\x86\Debug\GetAllFileName.csproj.GenerateResource.Cache
-C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\GetAllFileName\GetAllFileName\obj\x86\Debug\GetAllFileName.csprojResolveAssemblyReference.cache

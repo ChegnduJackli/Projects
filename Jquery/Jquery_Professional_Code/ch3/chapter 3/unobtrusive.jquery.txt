@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css" src="myCss.css"></style>
+    <script src="jquery.js"></script>
+    <script>
+      $(document).ready(function(){
+          $( "#content" ).show();
+          $( "li" ).click(function(this){
+              this.css( "backgroundColor","green" );
+          });
+      });
+    </script>
+  </head>
+  <body>
+    <ul id="content" class="contentClass">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ul>
+  </body>
+</html>
+

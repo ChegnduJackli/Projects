@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      .class1 {
+         color: white;
+         background-color: black;
+         width:200px;
+         height:100px; 
+      }
+
+     .class2 {
+         color: yellow;
+         background-color: red;
+         width:100px;
+         height:200px; 
+      }
+    </style>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+      $(function(){
+          $( "#myDiv" )
+           .addClass( "class1" )
+           .find( "p#blah" )
+           .removeClass( "class1" )
+           .addClass( "class1" );
+      });
+    </script>
+  </head>
+  <body>
+    <div id="myDiv">
+      <p id="lorem">Lorem Ipsum</p>
+      <p id="blah">blah blah blah</p>
+    </div>
+  </body>
+</html>
+

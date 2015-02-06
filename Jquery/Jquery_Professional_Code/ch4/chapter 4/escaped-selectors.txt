@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.7.1.js">
+    </script>
+    <script>
+      var n = $("#$specialId").length;
+      console.log(n);
+    </script>
+  </head>
+  <body>
+    <div id="$specialId">T-Rex</div>
+  </body>
+</html>
+

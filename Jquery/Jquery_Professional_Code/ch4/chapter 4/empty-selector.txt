@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.7.1.js">
+    </script>
+ 
+    <script>
+ 
+      $(function(){
+        var nothing = $("p:empty").length;
+        console.log(nothing); //returns 1
+      });
+    </script>
+  </head>
+  <body>
+    <div>
+      <p></p>
+      <p>something here</p>
+    </div>
+  </body>
+</html>
+

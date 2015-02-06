@@ -106,6 +106,10 @@ namespace _01_Music.Controllers
         public ActionResult DeleteConfirmed(int id)
         {            
             Album album = db.Albums.Find(id);
+            if (album == null)
+            {
+                return HttpNotFound();
+            }
             db.Albums.Remove(album);
             db.SaveChanges();
             return RedirectToAction("Index");

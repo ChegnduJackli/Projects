@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type='text/javascript' src='http://code.jquery.com/jquery-1.7.1.js'></script>
+  <style type='text/css'>
+    #animation {
+        width:200px;
+        height:200px;
+        background:#ccc;
+    }
+    </style>
+ 
+    <script type='text/javascript'> 
+      $.ready (function(){
+      $("#animation").show("slow");
+      $("#animation").queue(function () {
+          $(this).animate({width:'+=400'},1000);
+          $(this).dequeue();
+       });
+        }); 
+    </script>
+    </head>
+    <body>
+    <div id="animation" style="display:none"></div>
+  </body>
+</html>
+

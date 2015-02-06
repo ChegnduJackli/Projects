@@ -2,6 +2,14 @@ C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\MVC\01_Music\01_Music\bin\01
 C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\MVC\01_Music\01_Music\bin\01_Music.pdb
 C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\MVC\01_Music\01_Music\bin\EntityFramework.dll
 C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\MVC\01_Music\01_Music\bin\EntityFramework.xml
-C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\MVC\01_Music\01_Music\obj\Debug\01_Music.csprojResolveAssemblyReference.cache
 C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\MVC\01_Music\01_Music\obj\Debug\01_Music.dll
 C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\MVC\01_Music\01_Music\obj\Debug\01_Music.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\MVC\01_Music\01_Music\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\MVC\01_Music\01_Music\bin\Ninject.dll
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\MVC\01_Music\01_Music\bin\Ninject.Web.Common.dll
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\MVC\01_Music\01_Music\bin\Ninject.Web.Mvc.dll
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\MVC\01_Music\01_Music\bin\WebActivator.dll
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\MVC\01_Music\01_Music\bin\WebActivatorEx.dll
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\MVC\01_Music\01_Music\bin\Ninject.xml
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\MVC\01_Music\01_Music\bin\Ninject.Web.Common.xml
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\MVC\01_Music\01_Music\bin\Ninject.Web.Mvc.xml

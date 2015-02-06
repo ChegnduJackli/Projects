@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+        <link rel="Stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.10/themes/redmond/jquery-ui.css" />
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.8.0.js" type="text/javascript"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.22/jquery-ui.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+
+
+            //匹配属性开头
+            //$("[attributeName^='value']");
+            //匹配属性结尾
+            //$("[attributeName$='value']");
+            var userinfo = $("[id^='user']").length;
+            // WriteLine("匹配开头 length: " + userinfo);
+            $("#msg1").html("匹配user开头 length: " + userinfo);
+            var userpwd = $("[id$='pwd']").length;
+
+            // WriteLine("匹配结尾 length:" + userpwd);
+            // $("input[id$='pwd']").val("a letter");
+            $("#msg2").html("匹配pwd结尾 length:" + userpwd);
+
+            //不等于
+            var notqual = $("[id!='userpwd']").length;
+            $("#msg3").html("id不等于userpwd:" + notqual);
+
+            //任意位置包含指定字符串,可以出现ID属性值的开头和结尾
+            var user = $("[id*='pwd']").length;
+            $("#msg4").html("包含指定字符串 pwd:" + user);
+
+            //属性值以空格分开
+            //$("[attriteName~='value']")
+            var space = $("[id~='pwd']").length;
+            $("#msg5").html("包含空格 pwd:" + space);
+
+             userInfo = $("[id~='zombie']").length;
+             $("#msg6").html("包含空格 zombie:" + userInfo);
+        });
+
+        function WriteLine(obj) {
+            document.writeln(obj + "<br />");
+        }
+    </script>
+</head>
+<body>
+<h2>属性选择器</h2>
+<input id="username" type="text" value="username"/>
+<input id="userid" type="text" value="useid"/>
+<input id="userpwd" type="text" value="usepwd"/>
+<input id="txtpwd" type="text" value="txtpwd"/><br />
+<input id="pwdtxt" type="text" value="pwdtxt"/><br />
+<input id="txt pwd" type="text" value="txt pwd"/><br />
+
+  <div id="greenzombie"></div>   
+    <div id="zombie man"></div>   
+    <div id="mad scientist"></div>   
+
+
+<span id="msg1"></span><br />
+<span id="msg2"></span><br />
+<span id="msg3"></span><br />
+<span id="msg4"></span><br />
+<span id="msg5"></span><br />
+<span id="msg6"></span><br />
+</body>
+</html>

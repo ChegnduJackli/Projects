@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.7.1.js">
+    </script>
+ 
+    <script>
+ 
+      var userInfo = $( "[id*='zombie']" ).length;
+      console.log(n);
+ 
+    </script>
+  </head>
+  <body>
+    <div id="greenzombie"></div>   
+    <div id="zombieman"></div>   
+    <div id="madscientist"></div>   
+  </body>
+</html>
+

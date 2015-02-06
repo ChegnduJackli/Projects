@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.7.1.js">
+    </script>
+ 
+    <script>
+ 
+    $(function(){
+       // Define custom filter by extending $.expr[":"]
+       $.expr[":"].greenbg = function(element) {
+         return $(element).css("background-color") === "green";
+       };
+       var n = $(":greenbg").length;
+       console.log("There are " + n + " green divs");
+    });
+    </script>
+  </head>
+  <body>
+    <div style="width:10; height:10; background-color:green;"></div>
+    <div style="width:10; height:10; background-color:black;"></div>
+    <div style="width:10; height:10; background-color:blue;"></div>
+  </body>
+</html>
+

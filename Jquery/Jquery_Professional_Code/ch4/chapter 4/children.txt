@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <script src="http://code.jquery.com/jquery-1.7.1.js">
+    </script>
+ 
+    <script>
+      $(function(){
+          var listElements = $("li");  
+          var firstEl = listElements.first();  
+          var lastEl = listElements.last();
+ 
+          console.log("firstEl value:" + firstEl.html());                   
+          console.log("firstEl length:" + firstEl.length);
+ 
+          console.log("lastEl value:" + lastEl.html());
+          console.log("firstEl length:" + firstEl.length);
+      });
+    </script>
+  </head>
+  <body>
+    <ul>
+     <li>eggs</li>
+     <li>bacon</li>
+     <li>ham</li>
+    </ul>
+  </body>
+</html>
+

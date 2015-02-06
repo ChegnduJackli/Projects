@@ -1,0 +1,4 @@
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\Jquery\Jquery_Programming\Jquery_Programming\bin\Jquery_Programming.dll
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\Jquery\Jquery_Programming\Jquery_Programming\bin\Jquery_Programming.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\Jquery\Jquery_Programming\Jquery_Programming\obj\Debug\Jquery_Programming.dll
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\Jquery\Jquery_Programming\Jquery_Programming\obj\Debug\Jquery_Programming.pdb

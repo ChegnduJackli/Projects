@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.7.1.js">
+    </script>
+ 
+    <script>
+ 
+      $(function(){
+          var wrapper = $("ul");  
+          console.log("selected list count:" + wrapper.length);
+ 
+          var newWrapper = wrapper.find("#techBooks");  
+ 
+          console.log("selected list count:" + newWrapper.length);                   
+      });
+    </script>
+  </head>
+  <body>
+    <ul id="groceries">
+     <li>Eggs</li>
+     <li>Bacon</li>
+     <li>Ham</li>
+    </ul>
+    <ul id="books">
+     <li>
+       <ul id="techBooks">
+         <li>Pro jQuery</li>
+         <li>JavaScript 101</li>
+       </ul>
+       <ul id="mathBooks">
+         <li>Calculus for the Gods</li>
+         <li>Intro to Finite State Machines</li>
+       </ul>
+     </li>
+     <li>How to Win at Jeopardy</li>
+     <li>How To Cook</li>
+    </ul>
+  </body>
+</html>
+

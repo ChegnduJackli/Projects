@@ -8,3 +8,8 @@ C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\MVC\01_Music\01_Music.Tests\
 C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\MVC\01_Music\01_Music.Tests\obj\Debug\01_Music.Tests.pdb
 C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\MVC\01_Music\01_Music.Tests\bin\Debug\EntityFramework.dll
 C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\MVC\01_Music\01_Music.Tests\bin\Debug\EntityFramework.xml
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\MVC\01_Music\01_Music.Tests\bin\Debug\Ninject.Web.Common.dll
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\MVC\01_Music\01_Music.Tests\bin\Debug\Ninject.dll
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\MVC\01_Music\01_Music.Tests\bin\Debug\WebActivatorEx.dll
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\MVC\01_Music\01_Music.Tests\bin\Debug\Ninject.Web.Common.xml
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\MVC\01_Music\01_Music.Tests\bin\Debug\Ninject.xml

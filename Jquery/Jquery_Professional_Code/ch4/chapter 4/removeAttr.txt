@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      .blue {
+        background-color: blue;
+      }
+    </style>
+    <script src="http://code.jquery.com/jquery-1.7.1.js">
+    </script>
+ 
+    <script>
+      $(function(){
+         $("p#i_am_not_blue").removeAttr("class");
+      });    
+    </script>
+  </head>
+  <body>
+    <p id="i_am_not_blue" class="blue" >
+      I am not Blue.
+    </p>
+  </body>
+</html>
+

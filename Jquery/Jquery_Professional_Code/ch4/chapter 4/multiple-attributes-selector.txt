@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.7.1.js">
+    </script>
+ 
+    <script>
+ 
+      $(function(){
+        var n = $("form[name$='Office1']form[name^=admin]").length;
+        console.log(n);
+      });
+ 
+    </script>
+  </head>
+  <body>
+    <form name="adminUserOffice1" method="post" action="sendUserData.php">
+      <input type="text" id="userName">
+      <input type="text" id="employee">
+      <input type="text" id="age">
+    </form>
+    <form name="adminUserOffice2" method="post" action="sendUserData.php">
+      <input type="text" id="userName"></input>
+      <input type="text" id="employeeId"></input>
+      <input type="text" id="age"></input>
+    </form>
+    <form name="regularUserOffice1" method="post" action="sendUserData.php">
+      <input type="text" id="userName"></input>
+      <input type="text" id="employee"d"></input>
+      <input type="text" id="age"></i"p"t>
+    </form>
+    <form name="regularUserOffice2" method="post" action="sendUserData.php">
+      <input type="text" id="userName"></input>
+      <input type="text" id="employee"d"></input>
+      <input type="text" id="age"></i"p"t>
+    </form>   
+  </body>
+</html>
+

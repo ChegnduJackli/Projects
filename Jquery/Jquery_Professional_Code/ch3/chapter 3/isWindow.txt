@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">     
+      $.ready(function(){
+          var inlineFrame = $( "#frame" )[0];          
+          $.isWindow( inlineFrame ); // returns false
+          $.isWindow( window );      // returns true  
+      });
+    </script>
+  </head>
+  <body>
+    <iframe id="frame" src="externalPage.html"></iframe>  
+  </body>
+</html>
+

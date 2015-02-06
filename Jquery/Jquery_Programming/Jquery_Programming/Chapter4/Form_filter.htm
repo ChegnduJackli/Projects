@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+      <link rel="Stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.10/themes/redmond/jquery-ui.css" />
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.8.0.js" type="text/javascript"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.22/jquery-ui.js" type="text/javascript"></script>
+
+    <script>
+
+        $(function () {
+        //input 选择所有的表单元素，包括<select><textarea><button>
+            var n = $(':input').length;
+            $("#msg1").html("input:" + n);
+        });
+ 
+    </script>
+
+</head>
+<body>
+<div>
+
+</div><br />
+    <img src="../Image/basic_filter.jpg" /><br />
+    <img src="../Image/form_selector.jpg" />
+  <input type="text" /><br />
+      <input type="hidden" /><br />
+      <input type="password" /><br />
+      <input type="radio" /><br />
+      <input type="reset" /><br />
+      <input type="submit" /><br />
+      <input type="image" /><br />
+      <input type="file" /><br />
+      <input type="checkbox" /><br />
+      <input type="reset" /><br />
+      <input type="button" value="hit me"/><br />
+      <button>Hit me too</button><br />
+      <select>
+        <option>floor 1</option>
+        <option>floor 2</option>
+      </select><br />
+ 
+      <textarea></textarea><br />
+      <br />
+      <span id="msg1"></span>
+
+</body>
+</html>

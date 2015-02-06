@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.7.1.js">
+    </script>
+ 
+    <script>
+      $(function(){
+          var content = $("div").html();
+          console.log(content);
+          $("div").html("<p style='color:red;'>RED</p>");
+      });
+    </script>
+  </head>
+  <body>
+    <div>
+      <ul>
+      </ul>
+    </div>
+  </body>
+</html>
+
