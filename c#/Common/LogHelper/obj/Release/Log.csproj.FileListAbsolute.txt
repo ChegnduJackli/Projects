@@ -1,0 +1,4 @@
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\Common\LogHelper\bin\Release\LogHelper.dll
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\Common\LogHelper\bin\Release\LogHelper.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\Common\LogHelper\obj\Release\LogHelper.dll
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\Common\LogHelper\obj\Release\LogHelper.pdb

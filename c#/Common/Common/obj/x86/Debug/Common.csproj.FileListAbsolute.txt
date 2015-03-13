@@ -11,3 +11,5 @@ C:\Users\lideng\Desktop\GIT\Project\c#\Common\Common\bin\Debug\ConvertType.dll
 C:\Users\lideng\Desktop\GIT\Project\c#\Common\Common\bin\Debug\ConvertType.pdb
 C:\Users\lideng\Desktop\GIT\Project\c#\Common\Common\bin\Debug\StringExtension.dll
 C:\Users\lideng\Desktop\GIT\Project\c#\Common\Common\bin\Debug\StringExtension.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\Common\Common\obj\x86\Debug\Common.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\Common\Common\obj\x86\Debug\Common.pdb

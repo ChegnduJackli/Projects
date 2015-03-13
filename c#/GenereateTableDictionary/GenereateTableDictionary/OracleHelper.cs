@@ -90,7 +90,7 @@ namespace GenereateTableDictionary
 
             //set the command text (stored procedure name or Oracle statement)
             command.CommandText = commandText;
-
+            command.CommandTimeout = 200000;
             //if we were provided a transaction, assign it.
             if (transaction != null)
             {

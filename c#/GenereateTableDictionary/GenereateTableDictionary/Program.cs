@@ -30,33 +30,33 @@ namespace GenereateTableDictionary
                 dal = new GenerateTable();
                 dal.GenerateExcel();
 
-                show("Generate table index list,Please hold on......");
-                dal = new GenerateIndex();
-                dal.GenerateExcel();
+                //show("Generate table index list,Please hold on......");
+                //dal = new GenerateIndex();
+                //dal.GenerateExcel();
 
-                show("Generate table trigger list,Please hold on......");
-                dal = new GenerateTrigger();
-                dal.GenerateExcel();
+                //show("Generate table trigger list,Please hold on......");
+                //dal = new GenerateTrigger();
+                //dal.GenerateExcel();
 
-                show("Generate table view list,Please hold on......");
-                dal = new GenerateView();
-                dal.GenerateExcel();
+                //show("Generate table view list,Please hold on......");
+                //dal = new GenerateView();
+                //dal.GenerateExcel();
 
-                show("Generate store procedure list,Please hold on......");
-                dal = new GenerateSP();
-                dal.GenerateExcel();
+                //show("Generate store procedure list,Please hold on......");
+                //dal = new GenerateSP();
+                //dal.GenerateExcel();
 
-                show("Generate function list,Please hold on......");
-                dal = new GenerateFunction();
-                dal.GenerateExcel();
+                //show("Generate function list,Please hold on......");
+                //dal = new GenerateFunction();
+                //dal.GenerateExcel();
 
-                show("Generate sequence list,Please hold on......");
-                dal = new GenerateSequence();
-                dal.GenerateExcel();
+                //show("Generate sequence list,Please hold on......");
+                //dal = new GenerateSequence();
+                //dal.GenerateExcel();
 
-                show("Generate table data count,Please hold on......");
-                dal = new GenerateTableDataCount();
-                dal.GenerateExcel();
+                //show("Generate table data count,Please hold on......");
+                //dal = new GenerateTableDataCount();
+                //dal.GenerateExcel();
 
                 Console.WriteLine("Finish all,thanks......");
                 System.Threading.Thread.Sleep(2000);

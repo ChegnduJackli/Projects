@@ -1,0 +1,4 @@
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\Common\FileUtil\bin\Release\FileUtil.dll
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\Common\FileUtil\bin\Release\FileUtil.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\Common\FileUtil\obj\Release\FileUtil.dll
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\Common\FileUtil\obj\Release\FileUtil.pdb

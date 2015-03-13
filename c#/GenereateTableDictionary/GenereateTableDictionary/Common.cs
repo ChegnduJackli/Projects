@@ -8,7 +8,8 @@ namespace GenereateTableDictionary
 {
     public class Common
     {
-        string SQL_GetAllTableName = "select table_name from user_tables";
+        //string SQL_GetAllTableName = "select table_name from user_tables";
+        string SQL_GetAllTableName = "select table_name from all_tables where owner='SYSADM'";
 
         public DataSet GetAllTableName()
         {
