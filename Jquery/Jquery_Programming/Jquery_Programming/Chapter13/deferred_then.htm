@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+ <script src="../Script/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        //现在fib函数将返回一个Deferred.promise对象
+        function fib() {
+            return $.Deferred(function () {
+
+                var int1 = 0,
+            int2 = 1,
+            int3,
+            sequence = "<li>0</li><li>1</li>";
+
+                for (var i = 0; i <= 100; i++) {
+                    int3 = int1 + int2;
+                    int1 = int2;
+                    int2 = int3;
+                    sequence += "<li>" + int3 + "</li>";
+                }
+
+                $("#numbers")
+                .append(sequence)
+                .show(1000, this.resolve);
+            }).promise();
+
+        }
+        function success() {
+            $("h1").text("Fibonacci!");
+        }
+        function failure() {
+            $("h1").text("No numbers ?");
+        }
+
+        //deferred.then 接受两个参数，第一个用于处理resolved promise的情形
+        //第二个参数用户处理rejected promise的情形
+
+        $(function () {
+            $.when(fib()).then(success, failure);
+        });
+    
+    </script>
+</head>
+<body>
+<div id="main">
+<h1></h1>
+<ul id="numbers"></ul>
+</div>
+</body>
+</html>

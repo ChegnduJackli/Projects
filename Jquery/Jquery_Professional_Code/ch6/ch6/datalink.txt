@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.6.1.js"></script>
+    <script src="jquery.datalink.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        var registration = {};
+        $( "form" ).link( registration );
+        
+        // set some default values
+        $( registration ).setField( "name", "New User Registration" );
+        $( registration ).setField( "email", "i_dont_exist@mail.com" );
+ 
+        $( "form" ).change(function(){
+          console.log( registration.name + " " + registration.email );
+        });
+      });
+    </script>
+  </head> 
+  <body>
+    <form method="post">
+      <label for="name">User Name </label>
+      <input type="text" name="name" />
+ 
+      <label for="email">email </label>
+      <input type="email" name="email" />
+ 
+      <input type="submit" value="send it" />
+    </form>
+  </body>
+</html>
+

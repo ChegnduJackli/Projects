@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      img#alien {
+        position: relative;
+        left:0; 
+        background-color:blue;
+      }
+    </style>
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        var winWidth = $( document ).width();
+        var duration = 1000;
+ 
+        $( document ).click( function( event ){
+          $( "#alien" ).animate({
+              opacity: 0,
+              width: 10,
+              height: 10,
+              left: '+=300px'
+          }, duration );
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <img id="alien" src="ufo.png">
+  </body>
+</html>
+

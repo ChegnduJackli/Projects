@@ -1,0 +1,7 @@
+// obj1 and obj2 reference the same object
+var obj1 = obj2= {};
+ 
+// obj1 and obj2 refer to different objects
+var obj1 = {},
+obj2 = {};
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+ <meta charset="utf-8">
+  <head>
+  </head>
+  <body>
+  <div id="main">
+  
+  </div>
+  <script  src="http://code.jquery.com/jquery-1.7.1.js"></script>
+
+  <script >
+/*
+* Here’s the setup function which populates an array with integers
+*/
+var myApp = {
+  init :  function(){
+    //code to intialize your application    
+  },
+  dashboard:  function(){
+    //your dashboard feature goes here
+  },
+  controlPanel:  function() {
+    //control panel code goes here
+  },
+  appSettings:  function(){
+      //code that updates settings goes here
+    }
+    }
+//kick it off with ready()
+$( document ).ready( myApp.init ) 
+
+</script>
+</body>
+</html>

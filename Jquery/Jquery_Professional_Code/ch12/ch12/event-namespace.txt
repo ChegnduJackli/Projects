@@ -1,0 +1,24 @@
+ (function( $ ){
+
+  var methods = {
+    init : function( options ) { 
+      $( window ).bind( 'resize.bestFunctionEver', methods.flop ); 
+    },
+    destroy : function( ) {
+        $( window ).unbind( 'resize.bestFunctionEver' );
+    },
+    flip : function( howMany ) {
+      // flip
+    },
+    flop: function( ) { 
+      // flop
+    },
+    fly  : function(  ) { 
+      // fly 
+    }
+  };
+
+  $.fn.bestPluginEver = function( method ) {
+   // method calling code
+  };
+})( jQuery );

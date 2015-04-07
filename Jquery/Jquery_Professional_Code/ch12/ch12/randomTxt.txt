@@ -1,0 +1,8 @@
+function( $ ) { 
+  $.fn.randomText = function() {
+    return this.each(function() {
+      $( this ).text( Math.random * 1000 ).show()
+    })
+  };
+})( jQuery );
+

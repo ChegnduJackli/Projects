@@ -1,0 +1,3 @@
+jQuery.fn.newStuff = function() {
+  console.log("It's full of (javascript) stars");
+};

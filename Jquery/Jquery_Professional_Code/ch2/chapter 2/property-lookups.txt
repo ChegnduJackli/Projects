@@ -1,0 +1,13 @@
+function where(){ 
+  var v1 = "local scope"; 
+  v2 = "global scope"; 
+} 
+ 
+where(); 
+ 
+console.log( v2 ); 
+console.log( v1 );
+ 
+objectWithProperties['property1']
+objectWithProperties.property1
+

@@ -1,0 +1,11 @@
+var obj = {
+  'property1' : 1,
+  'property2' : 2
+}
+ 
+var i;
+ 
+for( i in obj ){ 
+  console.log( i ); 
+}
+

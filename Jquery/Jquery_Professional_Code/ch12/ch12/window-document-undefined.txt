@@ -1,0 +1,7 @@
+(function( $, window, document, undefined ) {
+    $.fn.newStuff = function() {
+        /* $ is now jQuery, no matter what value 
+         * $ might have in the global namespace 
+         */
+    };
+})( jQuery, window, document );

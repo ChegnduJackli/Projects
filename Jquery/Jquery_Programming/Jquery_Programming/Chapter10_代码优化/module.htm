@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Module设计模式</title>
+    <script src="../Script/jquery-1.11.2.min.js" type="text/javascript"></script>
+      <script type="text/javascript">
+          var blogModule = (function () {
+              var my = {}, privateName = "博客园";
+
+              function privateAddTopic(data) {
+                  // 这里是内部处理代码
+              }
+
+              my.Name = privateName;
+              my.AddTopic = function (data) {
+                  privateAddTopic(data);
+              };
+
+              return my;
+          } ()); //我们可以在最后一个}后面加上一个括号()，来达到自执行的目的，这样该实例在内存中只会存在一份copy
+          //注意，匿名函数后面的括号，这是JavaScript语言所要求的，因为如果你不声明的话，
+          //JavaScript解释器默认是声明一个function函数，有括号，就是创建一个函数表达式，也就是自执行，用的时候不用和上面那样在new了，
+          //当然你也可以这样来声明：
+
+          blogModule.AddTopic('test');
+
+          var jspy = (function () {
+              //首先我们创造一个_count变量，下划线表明它是一个私有变量。在Javascript中下划线并没有什么实际的意义，
+              //但是它是一个用来标明私有变量的普遍用法。现在函数就可以操纵、返回变量了：
+              var _count = 0;
+
+              var incrementCount = function () {
+                  _count++;
+              };
+
+              var getCount = function () {
+                  return _count;
+              };
+
+              return {
+                  Add: incrementCount,
+                  Get: getCount
+              };
+
+
+          })();
+          jspy.Add();
+          alert(jspy.Get())
+
+      //app的名称空间，传入jQuery对象以缩短查找过程
+          var myApp = function ( $ ) {
+              //私有变量和方法，仅在该myApp中可用
+              var message = "not directly accessible from outside the module";
+              function multiplier(x, y) {
+                  return x * y;
+              };
+
+              //返回对象包含了公有属性和公有方法
+              return {
+                  init: function () {
+                      //初始化app
+                      alert("初始化app");
+                  },
+                  prop: "42",
+                  specialNumber: function () {
+                      //访问私有方法
+                      var num = multiplier(7, 6);
+                      return "our special number is definitly " + num;
+                  },
+                  //对私有变量的提供有控制的访问
+                  shareMessage: function (arg) {
+                      if (arg === "open sesame") {
+                          return message + ", unless you know the magic word";
+                      }
+                      else {
+                         return ("You need to know the magic word");
+                      }
+                  }
+
+             };
+          }(jQuery);
+
+          console.log("access message in myApp:" + myApp.message); //undefined
+          console.log("call init in return:" + myApp.init()); //
+         // console.log("call multiplier:" + myApp.multiplier(2, 3)); //throw exception Object doesn't support property or method 'multiplier'
+          console.log("share message in return " + myApp.shareMessage()) //it's ok
+          console.log("share arg message in return " + myApp.shareMessage("open sesame")) //it's ok
+          console.log("show prop in return :" + myApp.prop); //it's work
+          console.log("show specialNumber in return :" + myApp.specialNumber()); //it's work
+      </script>
+</head>
+<body>
+
+</body>
+</html>

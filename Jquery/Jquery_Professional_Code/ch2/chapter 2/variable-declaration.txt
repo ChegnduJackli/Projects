@@ -1,0 +1,4 @@
+i = 0;     // implicit declaration
+var i = 0; // explicit declaration
+var x;     // undefined
+

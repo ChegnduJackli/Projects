@@ -1,0 +1,96 @@
+var loadMap = {
+  init : function() {
+    var GM = google.maps,
+        defaultPosition = new GM.LatLng(42, -71),
+        mapOptions = {
+        zoom: 12,
+        center: defaultPosition,
+        mapTypeId: GM.MapTypeId.ROADMAP
+        },
+        map = new GM.Map( document.getElementById( 'map' ), mapOptions);
+        
+    $( "#map" ).data({ "map" : map, "mapOptions" : mapOptions } );
+    var success = function( data ){
+      var position = new GM.LatLng( 
+            data.coords.latitude,     
+            data.coords.longitude ),
+          niceAddress = "Your location",
+          geocoder = new GM.Geocoder();
+      $( "#map" ).data( "geocoder" , geocoder );
+      geocoder.geocode(
+        { 'latLng': position }, 
+        function( results, status ) {
+          if ( status == GM.GeocoderStatus.OK ) {
+            if (results[0]) {
+              niceAddress = results[0].formatted_address;
+            }
+          } 
+          var infowindow = new GM.InfoWindow({
+            map: map,
+            position: position,
+            content: niceAddress
+          });
+          $( "#map" ).data( "infowindow" , infowindow  )
+        });    
+      map.setCenter( position );
+      $( "#map" ).data( "initialLocation" , position  )
+               
+    },
+    failure = function( error ){
+      var formResponse = function(e){
+                            
+        var geocoder = new GM.Geocoder(),
+            position = defaultPosition,
+            niceAddress = "Sorry We Couldn't Find Your Location";
+        $( "#map" ).data( "geocoder" , geccocoder );
+        geocoder.geocode(
+          { 'address': $("#location").val() }, 
+          function( results, status ) {
+            if ( status == GM.GeocoderStatus.OK ) {
+              //set position                    
+            } 
+            var options = {
+              map: map,
+              position: position,
+              content: niceAddress
+            },
+            infowindow = new google.maps.InfoWindow(options);
+            $( "#map" ).data( "infowindow" , infowindow  )            map.setCenter( options.position );
+            $( "#map" ).data( "initalLocation" , position  )
+            $( "#geocode" ).hide();
+          }
+        )
+      return false;
+    }
+    var $fallback = $( "<from id='geocode'></form>" );
+    if ( error ) {
+      switch( error.code ) {  
+        /* error handling */  
+       }      
+     }
+     fallback.append("<label for='location'>Enter Your Location" 
+       +  "<input type='text' id='location' /></label>"
+       + "<input type='submit' />");
+     fallback.bind("submit",formResponse);
+     $("#main").append( $fallback );
+   };
+  if (navigator.geolocation){
+    navigator.geolocation.getCurrentPosition( 
+      success, 
+      failure,
+     {timeout:5000});            
+  } else {
+    failure();    
+    }     
+  },
+  reset : function(){
+    var map = $( "#map" ).data( "map" ),
+        position = $( "#map" )
+         .data( "initalLocation" ),
+        infowindow = $( "#map" )
+         .data( "infowindow" , infowindow  );
+    infowindow.close()
+    map.setCenter( position );
+  } 
+}
+$( document ).ready( loadMap.init ); 

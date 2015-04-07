@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/ui-lightness/jquery-ui-1.8.13.custom.css" 
+      rel="stylesheet" />
+    <script src="http://code.jquery.com/jquery-1.7.1.js"></script>
+    <script src="js/jquery-ui-1.8.13.custom.min.js"></script>
+    <style type="text/css">
+        .column { 
+          width: 170px; 
+          float: left; 
+          padding-bottom: 100px; 
+        }
+        .portlet { 
+           margin: 0 1em 1em 0; 
+         }
+        .portlet-header { 
+           margin: 0.3em; 
+           padding-bottom: 4px; 
+           padding-left: 0.2em; 
+        }
+        .portlet-header .ui-icon { 
+           float: right; 
+        }
+        .portlet-content { 
+           padding: 0.4em; 
+        }
+        .ui-state-highlight { 
+           height: 1.5em; 
+           line-height: 1.2em; 
+        }
+    </style>
+    <script>
+      $(function(){
+        $( ".portlet" )
+          .addClass( "ui-widget ui-widget-content" 
+            + "ui-helper-clearfix ui-corner-all" )
+          .find( ".portlet-header" )
+          .addClass( "ui-widget-header ui-corner-all" )
+          .prepend( "<span class='ui-icon ui-icon-minusthick'></span>")
+           .end()
+           .find( ".portlet-content" );
+        $('.column').sortable({ placeholder: "ui-state-highlight" });
+      });
+    </script>
+  </head>
+  <body>
+<div class="column">
+    <div class="portlet">
+      <div class="portlet-header">Task 1</div>
+      <div class="portlet-content">...</div>
+    </div>
+    <div class="portlet">
+      <div class="portlet-header">Task 2</div>
+      <div class="portlet-content">...</div>
+    </div>
+    <div class="portlet">
+      <div class="portlet-header">Task 3</div>
+      <div class="portlet-content">...</div>
+    </div>
+    <div class="portlet">
+      <div class="portlet-header">Task 4</div>
+      <div class="portlet-content">...</div>
+    </div>
+</div>
+  </body>
+</html>
+

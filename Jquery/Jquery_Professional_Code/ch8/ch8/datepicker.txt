@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link href="css/ui-lightness/jquery-ui-1.8.13.custom.css"  
+          rel="stylesheet" />
+    <script src="http://code.jquery.com/jquery-1.7.1.js"></script>
+    <script src="js/jquery-ui-1.8.13.custom.min.js">
+    </script>
+    <script>
+      $(function(){
+          $('input#mainField').datepicker({
+             appendText : '(mm/dd/yyyy)',dateFormat : 'dd/mm/yy',
+             closeText : 'X',
+             showOn : 'button'
+             currentText : 'Now',
+             numberOfMonths : [2,2],
+             selectOtherMonths : true,
+             showOtherMonths : true,
+             showWeek : true,
+             weekHeader : 'Week'
+ 
+          });
+      });
+    </script>
+  </head>
+  <body>
+    <input type="text" id="mainField">
+  </body>
+</html>
+

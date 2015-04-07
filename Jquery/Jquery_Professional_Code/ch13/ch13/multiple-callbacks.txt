@@ -1,0 +1,49 @@
+$.when(
+    $.post("/echo/json", 
+        function() {
+            console.log("1")
+        }
+     ), 
+     $.post("/echo/json", 
+         function() {
+             console.log("2")
+         }
+    ), 
+    $.post("/echo/json", 
+        function() {
+            console.log("3")
+         }
+     )
+).then([
+    function() {
+        console.log("4")
+    },
+    function() {
+        console.log("5")
+    },
+    function() {
+        console.log("6")
+    }
+]).then([
+    function() {
+        console.log("7")
+    },
+    function() {
+         console.log("8")
+    },
+    function() {
+        console.log("9")}
+]).then([
+    function() {
+        console.log("10")
+    },
+    function() {
+         console.log("11")
+    },
+    function() {
+        console.log("12")}
+]).done(
+    function() {
+        console.log("Electric Company!")
+    }
+)

@@ -1,0 +1,18 @@
+function Monster( type ){
+  this.type = type;
+}
+ 
+Monster.prototype.getType = function(){
+  return this.type;
+}
+ 
+function Zombie( name ){
+  this.name = name;
+}
+
+Zombie.prototype = new Monster();
+ 
+Zombie.prototype.eatPeople = function(){
+  console.log( 'tastes like chicken' );
+}
+

@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.7.1.js"></script>
+    <script>
+      $(function(){
+        $("#text").mouseover(function(){
+          $(this).css("text-decoration","underline");
+        }).mouseout(function(){
+          $(this).css("text-decoration","none");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <p id="text">I go no where</p>
+  </body>
+</html>
+

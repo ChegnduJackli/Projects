@@ -1,0 +1,10 @@
+(function($) {
+  $.fn.dataCruncher = function(options) {
+    //inaccessible outside the plug-in
+    function privateSort( data ){
+      //private method 
+    }
+    return this.each(function() {
+      var data = privateSort( data );
+    });
+};

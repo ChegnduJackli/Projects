@@ -1,0 +1,14 @@
+(function($){
+// plug-in definition
+  $.fn.pinkify = function() {
+//this refers to jQuery, each() is immediately available 
+    return this.each(function() {
+//inside the loop this refers to the DOM element
+      $( this ).css({
+        "background" : "#fe57a1",
+        "color" : "#fff",
+        "text-shadow" : "none"
+       })
+    });
+  };
+})( jQuery );

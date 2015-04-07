@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<script type='text/javascript' src='http://code.jquery.com/jquery-1.7.1.js'></script>
+	<script type='text/javascript'>
+		$(function(){
+			$.when(
+				$.ajax( "/get/mail/" )
+			).pipe(
+				function( data ) {
+				   if ( data.messages.length > 0 ) {
+					  return data
+				   } else {
+					  return $.Deferred().reject();
+				   }
+				}
+			).done(
+				newMessages, 
+				updateMessageList, 
+				updateUnreadIndicator
+			).fail(
+				noMessages
+			).always(
+				function() {
+					var date = new Date();
+					$("#lastUpdated").html("<strong>Folder Updated</strong>: " 
+						+ date.toDateString() 
+						+ " at " 
+						+ date.toTimeString()
+					)
+				}
+			)
+		});
+	</script>
+</head>
+<body>
+	<header style="display:none"><h1>Header</h1></header>
+	<div id="main" style="display:none">This is our content</div>
+	<footer style="display:none"><p>&copy; today</p></footer>
+</body>
+</html>
+	
+	

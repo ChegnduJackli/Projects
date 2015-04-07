@@ -1,0 +1,4 @@
+>"Test String".indexOf("S");
+5
+>"Test String".charAt("5");
+S

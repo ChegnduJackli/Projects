@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="css/ui-lightness/jquery-ui-1.8.13.custom.css"   
+        rel="stylesheet" />
+  <script src="http://code.jquery.com/jquery-1.7.1.js"></script>
+  <script src="js/jquery-ui-1.8.13.custom.min.js"></script>
+  <script>
+    $(function() {
+      $( "#tabs" )
+        .tabs()
+        .find( ".ui-tabs-nav" )
+        .sortable({ axis: "x" });
+      $( ".tabs-bottom .ui-tabs-nav, .tabs-bottom .ui-tabs-nav > *" )
+        .removeClass( "ui-corner-all ui-corner-top" )
+        .addClass( "ui-corner-bottom" );
+    });
+ 
+  </script>
+  <style type="text/css">
+    #tabs {
+      height: 200px;
+    }
+    .tabs-bottom {
+      position: relative;
+    }
+    .tabs-bottom .ui-tabs-panel {
+      height: 140px;
+      overflow: auto;
+    }
+    .tabs-bottom .ui-tabs-nav {
+       position: absolute !important;
+       left: 0;
+       bottom: 0; 
+       right:0;
+       padding: 0 0.2em 0.2em 0;
+    }
+    .tabs-bottom .ui-tabs-nav li {
+      margin-top: -2px !important;
+      margin-bottom: 1px !important;
+      border-top: none;
+      border-bottom-width: 1px;
+    }
+    .ui-tabs-selected {
+       margin-top: -3px !important;
+    }
+</style>
+ 
+</head>
+<body>
+  <div id="tabs" class="tabs-bottom">
+    <ul>
+      <li><a href="#t1">Tech Notes</a></li>
+      <li><a href="#t2">Startup Ideas</a></li>
+      <li><a href="#t3">JS Notes</a></li>
+    </ul>
+    <div id="t1">
+      <p>Lorum Bacon</p>
+    </div>
+    <div id="t2">
+      <p>Lorum Bacon</p>
+    </div>
+    <div id="t3">
+      <p>Blah blah</p>
+    </div>
+  </div>
+ 
+  </body>
+</html>
+

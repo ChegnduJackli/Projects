@@ -1,0 +1,20 @@
+(function( $ ){
+
+  $.fn.bestPluginEver = function( options ) {  
+
+    var settings = $.extend( {
+       "color" : "blue",
+       "title" : "my dashboard",
+       "width" : "960px"
+    }, options);
+
+    return this.each(function() {        
+
+      // best.plugin.ever
+    });
+  };
+})( jQuery );
+
+$('div').bestPluginEver({
+  'color' : 'AliceBlue'
+});

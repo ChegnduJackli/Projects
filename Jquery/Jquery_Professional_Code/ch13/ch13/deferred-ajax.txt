@@ -1,0 +1,25 @@
+function getStatus() {
+    return $.ajax({
+         url: "/status/json/",
+         dataType: "json" 
+      }
+    )
+}
+
+function updateStatus(data) {
+    
+        var $update = $("<ul />"),
+            $statusbar = $("#statusbar"),
+            html = "",
+            data = data.statusMessages;
+        for (var i = 0, test = statusMessages.length; i < test; i++) {
+            html += "<li>" + statusMessages[i] + "</li>";
+        }
+@@@ same bug as above, don't think data.length is what you want given its binding to data.status. AM@@@
+        $update.append(html);
+        $statusbar.append($update);
+        $statusbar.slideDown(1000);
+
+}
+$.when(getStatus())
+    .done(updateStatus)

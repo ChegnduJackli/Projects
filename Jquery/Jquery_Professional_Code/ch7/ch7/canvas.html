@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      canvas { 
+        width:100px; 
+        height:100px; 
+        top:0; 
+        left:0; 
+        position:absolute;
+      }
+    </style>
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        var rect_ctx = $( "canvas#rect" )[0].getContext( "2d" );
+        rect_ctx.fillRect(0, 0, 50, 50); 
+ 
+        $(document).click(function(){
+          $( "#rect" ).animate({ 
+            left : '+=80px'}, 200 );
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <canvas id="rect"></canvas>
+  </body>
+</html>
+

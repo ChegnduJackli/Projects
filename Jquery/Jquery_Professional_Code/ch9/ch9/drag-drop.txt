@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" 
+      href="css/ui-lightness/jquery-ui-1.8.13.custom.css" rel="stylesheet" />
+        
+    <script src="http://code.jquery.com/jquery-1.7.1.js"></script>
+    <script src="js/jquery-ui-1.8.13.custom.min.js"></script>
+    <style type="text/css">
+      div {
+        width : 150px;
+        margin-bottom : 20px;
+        margin-right : 20px;
+        float: left;
+      }
+  
+      #flow {
+        float: left;
+        height : 400px;
+      }
+ 
+      #task3 {
+        clear: both;
+      }
+ 
+    </style>
+    <script type="text/javascript">
+      $(function(){
+        $( 'div[id^="task"]' ).draggable({
+          snap : 'div', 
+          snapMode : 'both'
+          // snap tolerance
+        });
+ 
+        $( '#flow' ).droppable({
+          drop : function( event, ui ) {
+            $( this ).addClass( "ui-state-highlight" );
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="task1" class="ui-widget-content">
+      <p>Task 1</p>
+    </div>
+    <div id="task2" class="ui-widget-content">
+      <p>Task 2</p>
+    </div>
+    <div id="task3" class="ui-widget-content">
+      <p>Task 3</p>
+    </div>
+    <div id="flow" class="ui-widget-content">
+      <p class="ui-widget-header">In Progress</p>
+    </div>
+    <div id="flow" class="ui-widget-content">
+      <p class="ui-widget-header">Finished</p>
+    </div>
+  </body>
+</html>
+

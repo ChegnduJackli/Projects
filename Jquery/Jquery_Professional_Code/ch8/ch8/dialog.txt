@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="css/ui-lightness/jquery-ui-1.8.13.custom.css"
+      rel="stylesheet" />
+  <script src="http://code.jquery.com/jquery-1.7.1.js"></script>
+  <script src="js/jquery-ui-1.8.13.custom.min.js">
+  </script>
+  <script>
+    $(function() {
+        $( "#dialog" ).dialog({
+            modal: true,
+            buttons: {
+                Ok: function() {
+                    $( this ).dialog( "close" );
+                }
+            }
+        });
+    });
+ 
+</script>
+</head>
+  <body>
+    <div id="dialog" title="A sample dialog">
+        Message Goes here
+    </div>
+  </body>
+</html>
+

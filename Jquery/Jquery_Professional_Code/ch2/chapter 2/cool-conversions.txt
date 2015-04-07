@@ -1,0 +1,3 @@
+parseInt("010", 10); // we know it's base ten and not octal
++ "010" // simple and efficient
+

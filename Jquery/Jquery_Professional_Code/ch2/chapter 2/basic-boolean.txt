@@ -1,0 +1,9 @@
+if(''){
+    console.log('something happens');
+} else {
+    console.log('nothing happens');
+}
+
+/* result */
+nothing happens
+

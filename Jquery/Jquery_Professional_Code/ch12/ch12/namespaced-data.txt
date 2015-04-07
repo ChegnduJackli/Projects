@@ -1,0 +1,8 @@
+var data = this.data('bestPluginEver');
+if (!data) {
+  this.data('bestPluginEver',{
+     "color" : "blue",
+     "title" : "my dashboard",
+     "width" : "960px"
+   });
+}

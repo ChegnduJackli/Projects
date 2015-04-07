@@ -1,0 +1,5 @@
+var list = [1, '2', 'blah', {}];
+delete list[0]
+console.log(list);
+console.log(list.length);
+

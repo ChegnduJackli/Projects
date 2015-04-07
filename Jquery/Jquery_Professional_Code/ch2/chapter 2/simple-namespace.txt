@@ -1,0 +1,7 @@
+ZOMBIE_GENERATOR = {};
+ZOMBIE_GENERATOR.Zombies = {
+  smallZombie : 'Booger',
+  largeZombie : 'Bruce'
+}
+
+

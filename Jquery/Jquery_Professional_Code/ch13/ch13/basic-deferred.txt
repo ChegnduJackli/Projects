@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<script type='text/javascript' src='http://code.jquery.com/jquery-1.7.1.js'></script>
+	<script type='text/javascript'>
+	//live at jsfiddle.net/Ed5S9
+	$(function(){
+		function fib() {
+			var int1 = 0,
+				int2 = 1,
+				int3,
+				sequence = "<li>0</li><li>1</li>";
+			for ( var i = 3; i <= 100; i++ ) {
+				int3 = int1 + int2;
+				int1 = int2;
+				int2 = int3;
+				sequence += "<li>"+int3+"</li>"
+			}
+			$( "#numbers" ).append( sequence ).show( 1000 );
+		}
+		function success() {
+			$( "h1" ).text( "Fibonacci!" );
+		}
+		function failure() {
+			$("h1" ).text( "No numbers?" );
+		}
+		$(function(){
+			$.when( fib() )
+				.done( success )
+				.fail( failure );
+ 		});
+	});
+</script>
+</head>
+<body>
+    <div id="main">
+        <h1></h1>
+        <ul id="numbers" style="display:none">
+        </ul>
+    </div>
+</body>
+</html>

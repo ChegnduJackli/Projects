@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<script type='text/javascript' src='http://code.jquery.com/jquery-1.7.1.js'></script>
+	
+	
+	
+	<script type='text/javascript'>
+	$(function(){
+		var longRunning = function() {
+			return $.Deferred(function(dfd) {
+				dfd.notify( "operation started" )
+				var callback = function() {
+					dfd.notify( "operation finished" );
+					dfd.resolve();
+				}
+				setTimeout( callback, 5000 );
+			}).promise();
+		}
+		longRunning().progress(
+			function( notification ) {
+				$( "#notifier" ).text( notification ).fadeIn( 500 );
+		}).done(function() {
+			$( "#notifier" ).css({
+				"color" : "green",
+				"font-weight" : "bold"
+			})
+		});
+	});
+	
+	</script>
+	</head>
+	<body>
+	<div id="notifier" style="display:none"></div>
+	
+	</body>
+	
+	
+	</html>
+	
+	

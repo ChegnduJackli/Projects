@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.7.1.js"></script>    
+    <script>
+      $(function(){
+        $("body").delegate("p","click",function(){
+          console.log('ouch');
+        }).css("color", "green");
+      });
+    </script>
+  </head>
+  <body>
+    <p>Hit Me!</p>
+  </body>
+</html>
+

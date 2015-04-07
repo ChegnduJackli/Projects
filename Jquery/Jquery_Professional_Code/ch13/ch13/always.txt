@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>- jsFiddle demo</title>
+  <script type='text/javascript' src='http://code.jquery.com/jquery-1.7.1.js'></script>
+  <script type='text/javascript'>
+    $(function(){
+      function newMessages(){};
+      function updateMessageList(){}
+      function updateUnreadIndicator(){}
+      function noMessages(){}
+   /*
+   * this is designed to work on jsfiddle. visist jsfiddle.net/SegWH
+   */
+        $.when(
+        $.ajax({
+          type : "post",
+          url : "/echo/json/",
+          dataType : "json",
+          data: {
+            json: JSON.stringify({
+              "statusMessages" :
+              ["I'm writing about jQuery",
+               "I'm testing some jQuery",
+               "I'm watching a bike race"]
+             })
+           }
+        })
+      ).done(
+        newMessages,
+        updateMessageList,
+        updateUnreadIndicator
+      ).fail(
+        noMessages
+      ).always(
+        function() {
+         var date = new Date();
+         $( "#lastUpdated" ).html( "<strong>Folder Updated</strong>: "
+         + date.toDateString() 
+         + " at "
+         + date.toTimeString()
+      );
+    }
+  )
+});
+</script>
+</head>
+<body>
+<div id="lastUpdated"></div>
+</body>
+</html>

@@ -1,0 +1,4 @@
+/* Try running this from jconsole or rhino */
+>typeof NaN
+Number
+

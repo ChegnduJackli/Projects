@@ -1,0 +1,18 @@
+function myAppInit(){
+  //code to intialize your application    
+}
+
+function myAppDashboard(){
+  //your dashboard feature goes here
+}
+
+function myControlPanel() {
+  //control panel code goes here
+}
+
+function myAppSettings(){
+  //code that updates settings goes here
+}
+
+//kicked off with the ready() function
+$( document ).ready(myAppInit)

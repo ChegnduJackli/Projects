@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.7.1.js"></script>
+    <script>
+      $(function(){
+        var eventType = "click";
+        var useCapturePhase = false;
+        var handler1 = function(event){ alert('good job'); /* handler code here */ };
+        var handler2 = function(event){ alert('bad job'); /* handler code here */ };
+ 
+        $("#element").addEventListener(eventType, handler1, useCapturePhase);
+        $("#element").addEventListener(eventType, handler2, useCapturePhase);      });
+    </script>
+  </head>
+  <body>
+  <div id='element'> click here</div>
+  </body>
+</html>
+

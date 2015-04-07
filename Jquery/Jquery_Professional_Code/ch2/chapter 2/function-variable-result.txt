@@ -1,0 +1,8 @@
+var calc = function( x ){
+  return x * 2;
+}
+ 
+var calcValue = calc( 5 );
+ 
+console.log( calcValue );
+

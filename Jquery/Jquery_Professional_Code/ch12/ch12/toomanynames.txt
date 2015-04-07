@@ -1,0 +1,12 @@
+jQuery.fn.bestPluginEverInit = function() {
+//init
+}; 
+jQuery.fn.bestPluginEverFlip = function() { {
+//flip
+};
+jQuery.fn.bestPluginEverFlop = function() { {
+//flop
+};
+jQuery.fn.bestPluginEverFly = function() { {
+//fly
+};

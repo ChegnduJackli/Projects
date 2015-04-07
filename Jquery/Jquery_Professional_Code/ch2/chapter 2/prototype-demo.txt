@@ -1,0 +1,3 @@
+smallZombie.eatPeople();
+delete Zombie.prototype.eatPeople;
+smallZombie.eatPeople();

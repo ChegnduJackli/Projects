@@ -1,0 +1,5 @@
+function calc( x ){
+  return x*2;
+}
+console.log( calc( 10 ) )
+

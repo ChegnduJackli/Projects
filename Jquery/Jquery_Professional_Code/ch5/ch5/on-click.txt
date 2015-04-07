@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <script src=”http://code.jquery.com/jquery-1.7.1.js”></script>
+    <script>
+      $(function(){
+        $( "#aDiv" ).on('click', function(){
+          console.log( "Handler 1" ); 
+        });
+ 
+        $( "#aDiv" ).on('click', function(){
+          console.log( "Handler 2" ); 
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="aDiv" class="boxDiv">Press Me
+    </div>
+  </body>
+</html>
+

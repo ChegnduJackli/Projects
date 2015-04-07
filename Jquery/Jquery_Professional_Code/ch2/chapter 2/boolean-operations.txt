@@ -1,0 +1,15 @@
+function validate(){
+    var name_input = 'Jimmy'; 
+    var age_input;
+    return name_input && age_input;
+}
+ 
+if(validate()){
+    console.log('pass');
+} else {
+    console.log('fail');
+}
+
+/* result */ 
+Fail
+

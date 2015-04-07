@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="../Script/jquery-ui.min.js" type="text/javascript"></script>
+    <link href="../Script/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+     <script type="text/javascript">
+      $(function(){
+          $('input#mainField').datepicker({
+             appendText : '(mm/dd/yyyy)',dateFormat : 'dd/mm/yy',
+             closeText : 'X',
+             showOn : 'button',
+             currentText : 'Now',
+             numberOfMonths : [2,2],
+             selectOtherMonths : true,
+             showOtherMonths : true,
+             showWeek : true,
+             weekHeader : 'Week'
+ 
+          });
+      });
+    </script>
+  </head>
+  <body>
+    <input type="text" id="mainField" />
+
+
+</body>
+</html>

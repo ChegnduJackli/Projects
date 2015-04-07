@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <scriptsrc="http://code.jquery.com/jquery-1.7.1.js"></script>
+    <script type="text/javascript">
+      $.ajax({
+        url : "/book.html",
+        dataType: "xml",
+        success: function( data ){
+          $( data ).find( "chapter" ).each(function() {
+            $( "document" ).append($( this ).find( "title" ).text());
+          });
+        },
+        error : function(data){
+          console.log( "unable to process request" );
+        }
+     });
+</script>
+</head>
+  <body>
+  </body>
+</html>
+

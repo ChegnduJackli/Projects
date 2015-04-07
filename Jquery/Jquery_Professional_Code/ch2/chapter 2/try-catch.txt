@@ -1,0 +1,6 @@
+try{
+    throw new Error( 'Something really bad happened' );
+} catch(e){
+    console.log( e.name + ": " + e.message );
+}
+

@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+.comic {
+    float:left;
+    width:200px;
+    background:#efefef;
+    padding:10px;
+    min-height:450px;
+}
+.comic img {
+    border:1px solid blue;
+}
+.comic h3 {
+    font-size:24px;
+}
+</style>
+</head>
+<body>
+<div id="main"> </div>
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script> 
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script> 
+<script>
+  $(function(){
+    var comics = [{ 
+      imgSrc : "cover1.jpg",
+      title : "Captain Templates",
+      themes : [ 
+        "code reuse" , 
+        "separation of content and behavior" , 
+        "template tags" 
+      ],
+      year : "2010",
+      number : "1"
+    },                   			  
+    { 
+      imgSrc : "cover2.jpg",
+      title : "Captain Templates",
+      themes : [ 
+        "code reuse" , 
+        "moustaches" , 
+        "templating for fun and profit" 
+      ],
+      year : "2011",
+      number : "2"
+    },                 			  
+    { 
+      imgSrc : "cover3.jpg",
+      title : "Captain Templates",
+      themes : [ "threes" ],
+      year : "2012",
+      number : "3"
+    }];
+    $( "#comicsIndex" ).tmpl( comics ).appendTo( "#main" );	
+
+  }
+);
+</script> 
+<script id="comicsIndex" type="text/x-jquery-tmpl">
+     	<div class="comic"><img src="${imgSrc}" />
+             		<div class="details">
+                   			<div class="title">
+                         				<h3>${title}</h3>
+                   			</div>
+                   			<div class="year">
+                         				<strong>Year:</strong> ${year}
+                   			</div>
+                   			<div class="number">
+                         				<strong>Issue Number:</strong> ${number}
+                   			</div>
+                   			<div class="themes">
+                   			<strong>Themes</strong>
+                         				 {{each themes}}
+                         			<strong>${$index + 1}</strong>. ${$value} 
+                   		{{/each}}
+                   			</div>
+            		</div>
+      	</div>
+</script>
+
+</script> 
+</body>
+</html>

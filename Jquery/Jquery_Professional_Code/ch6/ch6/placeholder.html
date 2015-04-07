@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html> 
+  <head>
+    <script src="http://code.jquery.com/jquery-1.7.1.js"></script>
+    <script src="http://ajax.cdnjs.com/ajax/libs/modernizr/1.7/modernizr-1.7.min.js">
+    </script>
+ 
+    <script type="text/javascript">
+
+       $(function(){ 
+  if( !Modernizr.input.placeholder ){
+    $( 'input[type=text]' ).focus(function(){ 
+      if( $( this ).val() === $( this ).attr( 'placeholder' ) ){
+        $( this ).val('');
+      }
+    });
+    $( 'input[type=text]' ).blur( function(){
+    if( $( this ).val() === ''){
+      $( this ).val($( this ).attr( 'placeholder' ));
+    } 
+    });
+  } 
+}); 
+</script>
+</head>
+  <body>
+    <form>
+      <input type="text" name="userName" placeholder="Enter your Name" />
+      <input type="text" name="address" placeholder="Enter your Address" />
+    </form>
+  </body>
+</html>
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      body {
+        background-color:black;
+      }
+ 
+      h1 {
+        color: yellow;
+      }
+ 
+      img#spaceShip {
+        position: absolute;
+        left:0;
+        top:80%; 
+        background-color:blue;
+      }
+ 
+      img#invader {
+        position: absolute;
+        left:25%;
+        top:10%; 
+      }
+ 
+      div#laser {
+        position: absolute;
+        display: none; 
+        left:0;
+        top:0;
+        width:10px;
+        height:70px;
+        background-color: red; 
+      }
+    </style>
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        var winWidth = $( document ).width();
+        var duration = 1000;
+ 
+        $( document ).keydown( function( event ){
+          var keyCode = event.keyCode || event.which;
+          var keyMap = { left: 37, up: 38, right: 39, down: 40 };
+ 
+          switch ( keyCode ) {
+            case keyMap.left:
+              $( "#spaceShip" ).animate({
+                left: '-=50'
+              }, 200 );
+            break;
+ 
+            case keyMap.up:
+              var ufoLeft = $( "#spaceShip" ).offset().left;
+              var ufoTop = $( "#spaceShip" ).offset().top;
+              $( "#laser" ).offset( {left:ufoLeft+87, top:(ufoTop-30)} );
+              $( "#laser" ).css( "display", "block" )
+                         .animate( {top:10}, 200, function(){
+                            var invaderLeft = $( "#invader" ).offset().left;
+                            var laserLeft = $( "#laser" ).offset().left;
+ 
+                            if( laserLeft >= invaderLeft && 
+                                laserLeft <= invaderLeft + 288){ 
+                              $( "#invader" ).hide();
+                              $( "body" ).html( "<h1>Direct Hit!</h1>" );
+                            } 
+ 
+                            $( "#laser" ).offset( {left:0, top:0} );
+                            $( "#laser" ).css( "display","none" );
+                         });
+            break;
+ 
+            case keyMap.right:
+              $( "#spaceShip" ).animate({
+                left: '+=50'
+              }, 200 );
+            break;
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <img id="spaceShip" src="spaceShip.png">
+    <img id="invader" src="invader.png"> 
+    <div id="laser"></div>
+  </body>
+</html>
+

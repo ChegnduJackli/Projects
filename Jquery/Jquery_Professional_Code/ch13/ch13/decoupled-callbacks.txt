@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<body>
+<div id="main">
+    <div id="statusbar" style="display:none">
+    </div>
+</div>
+
+<script type='text/javascript' src='http://code.jquery.com/jquery-1.7.1.js'></script>
+<script type='text/javascript'>
+$(function(){
+function callback(){
+    console.log("The animation is done. On to the next operation");
+}
+function alternativeCallback(){
+    console.log("The animation is done. Let's follow a different path.");
+}
+function specialCase(){
+  console.log("This is a special case. Let's do a special UI update.");
+} 
+
+$.when( updateStatus() )
+    .done( callback );
+
+//an alternative callback
+
+$.when( updateStatus() )
+    .done( alternativeCallback );
+
+//multiple callbacks 
+
+$.when( updateStatus() )
+    .done( 
+        [ callback, 
+        specialCase ] 
+     );
+
+});	
+	</script>
+</head>
+</body>
+</html>

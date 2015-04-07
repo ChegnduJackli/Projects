@@ -1,0 +1,24 @@
+<script src="http://code.jquery.com/jquery-1.7.1.js"></script>
+  <script src="js/jquery-ui-1.8.13.custom.min.js"></script>
+  <script>
+    $(function() {
+      $( "#bar" ).progressbar( { value: 0 } );
+        setTimeout( updateProgress, 500 );
+      });
+ 
+    function updateProgress() {
+      var progress;
+      progress = $( "#bar" ).progressbar( "option", "value" );
+      if (progress < 100) {
+        $( "#bar" ).progressbar( "option", "value", progress + 1 );
+        setTimeout( updateProgress, 500 );
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="bar">
+  </div>
+</body>
+</html>
+

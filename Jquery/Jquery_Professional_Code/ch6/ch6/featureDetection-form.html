@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <script src="http://code.jquery.com/jquery-1.7.1.js"></script>
+    <script src="http://ajax.cdnjs.com/ajax/libs/modernizr/1.7/modernizr-1.7.min.js">
+    </script>
+ 
+    <script type="text/javascript">
+       $(function(){
+  if( !Modernizr.input.required ){
+    var $msg = $( "<div id='reqMessage'>Required Fields Missing</div>" );
+    $msg.css( "background-color", "yellow" )
+        .hide();
+   
+    $( "body" ).append( $msg );
+ 
+    $( "#fDet" ).on( "submit", function(e){
+      $( "input[required]" ).each(function(){
+        if ( $( this ).val() === "" ) {
+          $( "#reqMessage" ).show();
+          $( this ).css( "border" , "1px solid red" );
+          e.preventDefault();
+        }   
+      }); 
+    });
+  }
+}); 
+</script>
+</head>
+<body>
+<form id="fDet" action="#">
+<input type="text" name="userName" placeholder="enter your Name" required/>
+<input type="password" name="password" required/>
+<input type="submit" value="send it" />
+</form>
+</body>
+</html>

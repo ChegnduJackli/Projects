@@ -1,0 +1,49 @@
+﻿<html>
+<head>
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function () {
+
+        $("#spID" ,".className").click(function () {
+            alert($(this).html());
+        });
+
+        //缓存对象，以便重复使用。
+        var $this = $(this),
+       $active = $(".active");
+        if ($this.hasClass("detail")) {
+            if ($this.hasClass("next")) {
+                $active.toggleClass("hidden")
+                .removeClass("active")
+                .next(".details")
+                .toggleClass("hidden")
+                .addClass("active");
+            }
+            else if ($this.hasClass("prev")) {
+                $active.toggleClass("hidden")
+                    .removeClass("active")
+                    .prev(".details")
+                    .toggleClass("hidden")
+                  .addClass("active");
+            }
+        }
+    });
+
+</script>
+</head>
+<body>
+<div>
+    <img src="../Image/10_cache.png" />
+</div>
+<div class="className">
+Div1
+<span id="Span1">span</span>
+</div>
+<div class="className">
+Div2
+<span id="spID">span</span>
+</div>
+
+</body>
+</html>
+

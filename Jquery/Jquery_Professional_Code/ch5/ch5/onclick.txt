@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <style type="text/css">
+      .clickDiv {
+        width:100px;
+        height:100px;
+        background-color:blue;
+      }
+    </style>
+    <script type="text/javascript">
+      function hitMe(){
+         var txtNode = document.createTextNode(" clicked ");
+         var br = document.createElement("br");
+         document.getElementsByTagName("body")[0].appendChild(txtNode);
+         document.getElementsByTagName("body")[0].appendChild(br);
+      }
+    </script>
+  </head>
+  <body>
+<div class="clickDiv" onclick="hitMe();">
+</div>
+  </body>
+</html>
+

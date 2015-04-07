@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <style type="text/css">
+      .clickDiv {
+        width:100px;
+        height:100px;
+        background-color:blue;
+      }
+    </style>
+    <script type="text/javascript">
+      document.getElementById("clickDiv").onclick = function(event){
+         document.getElementsByTagName("body")[0].appendText("clicked");
+      }
+    </script>
+  </head>
+  <body>
+    <div id="clickDiv" class="clickBox">Click Here</div>
+  </body>
+</html>
+

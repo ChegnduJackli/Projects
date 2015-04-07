@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.7.1.js"></script>
+    <script>
+      $(function(){
+        // element doesn't exist yet, but we can create handler
+        // anyways
+        $("#anchor").bind("click", function(event){
+       alert("I have a handler");
+        });
+ 
+        $('#div1').append("<a id='anchor'> I go no where </a>")
+      });
+    </script>
+  </head>
+  <body>
+  <div id='div1'></div>
+  </body>
+</html>
+

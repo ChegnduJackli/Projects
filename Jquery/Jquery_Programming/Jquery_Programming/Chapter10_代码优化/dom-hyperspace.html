@@ -1,0 +1,15 @@
+//Using detach to pull elements out of the document. 
+var $sideBar = $( "#sidebar" ).detach();
+/*
+Populate the sidebar with menus, ads and other miscellaneous elements
+*/
+$( "#main" ).append( $sideBar )
+
+
+//Crating DOM elements with jQuery to later append to the document 
+var $sideBar = $( "<aside id='sidebar></aside>" ).detach();
+/*
+Populate the sidebar with menus, ads and other miscellaneous elements
+*/
+//insert it into the DOM
+$( "#main" ).append( $sideBar )

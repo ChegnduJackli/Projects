@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+.comic {
+    float:left;
+    width:200px;
+    background:#efefef;
+    padding:10px;
+    min-height:450px;
+}
+.comic img {
+    border:1px solid blue;
+}
+.comic h3 {
+    font-size:24px;
+}
+</style>
+</head>
+<body>
+<div id="main"> </div>
+<script src="_static/js/jquery-1.6.4.min.js"></script> 
+<script src="_static/js/plugins.js"></script> 
+<script>
+  $(document).ready( 
+	function(){
+		var comics = [
+			{ 
+				imgSrc : "cover1.jpg",
+				title : "Captain Templates",
+				themes : [ "code reuse" , "separation of content and behavior" , "template tags" ],
+				year : "2010",
+				number : "1"
+			},			  
+			{ 
+				imgSrc : "cover2.jpg",
+				title : "Captain Templates",
+				themes : [ "code reuse" , "moustaches" , "templating for fun and profit" ],
+				year : "2011",
+				number : "2"
+			},			  
+			{ 
+				imgSrc : "cover3.jpg",
+				title : "Captain Templates",
+				themes : [ "threes" ],
+				year : "2012",
+				number : "3"
+			}	  			  
+		]
+		$("#comicsConcise").tmpl(comics).appendTo("#main");	
+		$("#comicsExtended").tmpl(comics).appendTo("#main");		
+
+	}
+);
+</script> 
+<script id="headerTemplate" type="text/x-jquery-tmpl">
+	<header>
+		<h1>${title}</h1>
+		<img src="${imgSrc}" />
+	</header>
+</script> 
+<script id="comicsConcise" type="text/x-jquery-tmpl">
+	<section class="comic">
+		{{tmpl "#headerTemplate"}}
+		<div class="details">
+			<div class="year">
+				<strong>Year:</strong> ${year}
+			</div>
+			<div class="number">
+				<strong>Issue Number:</strong> ${number}
+			</div>
+		</div>
+	</section>
+</script> 
+<script id="comicsExtended" type="text/x-jquery-tmpl">
+	<section class="comic extended">
+		{{tmpl "#headerTemplate"}}
+		<div class="details">
+			<div class="year">
+				<strong>Year:</strong> ${year}
+			</div>
+			<div class="number">
+				<strong>Issue Number:</strong> ${number}
+			</div>
+			<div class="themes">
+			<strong>Themes</strong>
+			<ul>
+			{{each themes}}
+				<li>${$value}</li>
+			{{/each}}
+			</ul>
+			</div>
+		</div>
+	</section>
+</script>
+</body>
+</html>

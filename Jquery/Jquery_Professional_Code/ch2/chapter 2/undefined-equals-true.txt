@@ -1,0 +1,4 @@
+undefined = true;
+if( undefined ){ 
+    console.log( 'tricked you!' ); 
+}

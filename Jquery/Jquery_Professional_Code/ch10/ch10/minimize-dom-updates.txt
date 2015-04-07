@@ -1,0 +1,10 @@
+for ( var i=0; i < 10000; i++ ){
+    $( "#main table" ).append( "<tr><td>My job is to log table rows, this is row #"+i+"</tr></td>" );
+}
+
+
+var tableRows= "";
+for ( var i=0; i < 10000; i++ ){
+    tableRows += "<tr><td>My job is to log table rows, this is row #"+i+"</tr></td>";
+  }
+$( "#main table" ).append( tableRows );

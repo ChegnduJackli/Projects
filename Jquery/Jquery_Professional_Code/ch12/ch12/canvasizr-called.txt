@@ -1,0 +1,10 @@
+$.fn.canvasizr.options.fillStyle = "#fe57a1";
+$( "#special" ).canvasizr({
+  font : "30px Consolas,'Lucida Console',monospace"
+}); 
+$( "#first, #second, #third" ).canvasizr({
+  textColor : "#ffffff",
+  fillStyle:  "#ff0000",
+  font : "40px sans-serif",
+  border:true
+}); 

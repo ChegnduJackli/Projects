@@ -110,7 +110,82 @@ namespace FileUtil
 
         }
         /// <summary>
-        /// copy file to new path
+        /// get file name without extension
+        /// </summary>
+        /// <param name="fileName"></param>
+        /// <returns></returns>
+        public static string GetFileNameWithOutExtesion(string fileName)
+        {
+            try
+            {
+                return Path.GetFileNameWithoutExtension(fileName);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        /// <summary>
+        /// check the file path is the directory or file
+        /// </summary>
+        /// <param name="fileName"></param>
+        /// <returns></returns>
+        public static bool IsDirectory(string fileName)
+        {
+            try
+            {
+                FileAttributes attr = File.GetAttributes(fileName);
+                if ((attr & FileAttributes.Directory) == FileAttributes.Directory)
+                {
+                    return true;
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        /// <summary>
+        /// get the directory with fileName.
+        /// the fileName maybe a directory or file path
+        /// </summary>
+        /// <param name="fileName"></param>
+        /// <returns></returns>
+        public static string GetDirectoryName(string fileName)
+        {
+            string dirName = string.Empty;
+
+            try
+            {
+                if ((fileName.IndexOf(".") < 0) && IsDirectory(fileName))
+                {
+                    dirName = fileName;
+                    if (!dirName.EndsWith(Path.DirectorySeparatorChar.ToString()))
+                    {
+                        dirName += Path.DirectorySeparatorChar;
+                    }
+                }
+                else
+                {
+                    dirName = Path.GetDirectoryName(fileName);
+                    if (!dirName.EndsWith(Path.DirectorySeparatorChar.ToString()))
+                    {
+                        dirName += Path.DirectorySeparatorChar;
+                    }
+                }
+                return dirName;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        
+
+        /// <summary>
+        /// copy file to new path, 
+        /// if the file exists already, then overwrite the file.
         /// </summary>
         /// <param name="originFile"></param>
         /// <param name="newFile"></param>

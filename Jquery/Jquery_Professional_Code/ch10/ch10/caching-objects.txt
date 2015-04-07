@@ -1,0 +1,19 @@
+var $this = $( this ),
+    $active = $( ".active" );
+if ( $this.hasClass( "detail" ) ){
+  if ( $this.hasClass( "next" ) ){
+    $active
+      .toggleClass( "hidden" )
+      .removeClass( "active" )
+      .next( ".details" )
+      .toggleClass( "hidden" )
+      .addClass( "active" );
+  } else if ( $this.hasClass("prev") ){
+    $active
+      .toggleClass( "hidden" )
+      .removeClass( "active" )
+      .prev( ".details" ) 
+      .toggleClass( "hidden" )
+      .addClass( "active" );
+  }
+} 

@@ -1,0 +1,25 @@
+;(function ( $, window, document, undefined ) {
+
+  $.widget( "best.widget" , {
+    options: {
+      hashtag: "#hotpink"
+    },
+    _create: function () {
+      //create
+    },
+
+    _destroy: function () {
+      //destroy
+    },
+    _setOption: function( key, value ) { 
+      /* In jQuery UI 1.8, you have to manually invoke 
+       * the _setOption method from the base widget
+      */ 
+       $.Widget.prototype._setOption.apply( this, arguments );
+      // In jQuery UI 1.9 and above, you use the _super method instead
+      this._super( "_setOption", key, value );
+    },
+    pluginMethod : function(){
+    //plug-in functionality     }
+  });
+})( jQuery, window, document );

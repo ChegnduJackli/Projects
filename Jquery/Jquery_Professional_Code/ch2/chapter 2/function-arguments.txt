@@ -1,0 +1,15 @@
+function reporter( fn ){
+  console.log( "the return value of your function is "+ fn() );
+} 
+ 
+reporter( function(){} );
+ 
+reporter( function(){ return "a simple string" } );
+
+
+function calc() {
+  return 4 * 2
+}
+ 
+reporter( calc );
+

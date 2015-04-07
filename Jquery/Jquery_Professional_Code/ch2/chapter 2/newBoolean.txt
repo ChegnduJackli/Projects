@@ -1,0 +1,6 @@
+String.method("boolean", function(){
+    return "true" == this; 
+});
+ 
+"true".boolean();
+

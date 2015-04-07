@@ -1,0 +1,53 @@
+// create namespace object
+TIMEMACHINE = {};
+ 
+TIMEMACHINE. createDelorean = (function(){
+ 
+  // private 
+  var destination = '';
+  var model = '';
+  var fuel = '';
+ 
+  // public access methods
+  return {
+    // setters
+    setDestination: function(dest){
+     this.destination = dest;
+    },
+ 
+    setModel: function(model){
+     this.model = model;
+    },
+    setFuel: function(fuel){
+     this.fuel = fuel;
+    },
+ 
+    // getters
+    getDestination: function(){
+      return this.destination;
+    },
+ 
+    getModel: function(){
+     return this.model;
+    },
+ 
+    getFuel: function(){
+     return this.fuel;
+    },
+    // misc members
+    toString : function(){
+      console.log( this.getModel() + ' - Fuel Type: ' + 
+               this.getFuel() + '  -  Headed: ' + this.getDestination());
+    }
+ 
+    // init procedures go here
+    
+  };
+());
+ 
+var myTimeMachine = TIMEMACHINE. createDelorean;
+myTimeMachine.setModel('1985 Delorean');
+myTimeMachine.setFuel('plutonium');
+myTimeMachine.setDestination('October 5, 1955');
+myTimeMachine.toString();
+

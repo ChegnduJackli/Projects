@@ -1,0 +1,8 @@
+var myData = {
+  'root' : {
+    'numbers' : [1, 2, 3],
+    'letters' : ['a', 'b', 'c'],
+    'mirepoix' : ['tomatoes', 'carrots', 'potatoes']
+   }
+}
+

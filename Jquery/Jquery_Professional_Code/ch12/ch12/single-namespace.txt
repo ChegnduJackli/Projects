@@ -1,0 +1,3 @@
+jQuery.fn.bestPluginEver = function() {
+//single namespace
+ }

@@ -1,0 +1,22 @@
+var promise = ajaxPromise() {
+  //XHR request
+  //state is set to fulfilled, unfulfilled, or failed
+  //depending on the result of the request
+  return state 
+};
+
+function unfulfilled(){
+  //handle negative result
+}
+function fulfilled() {
+  //handle successful result
+}
+fucntion failed(){
+  //Error!
+}
+ 
+promise.then( 
+  unfulfilled, 
+  fulfilled, 
+  failed
+);

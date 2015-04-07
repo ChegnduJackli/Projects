@@ -1,0 +1,14 @@
+function TimeMachine( ){
+    // private members
+    var destination = 'October 5, 1955';
+ 
+    // public members
+    this.getDestination= function(){
+        return destination;
+    };
+} 
+ 
+var delorean = new TimeMachine( );
+console.log( delorean.getDestination() );
+console.log( deloreon.destination );
+

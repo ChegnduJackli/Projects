@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="../Script/jquery-ui.min.js" type="text/javascript"></script>
+    <link href="../Script/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+      .ui-resizable-helper { 
+        border: 1px solid red; 
+      }
+ 
+      #resize_me {
+        border: 1px solid black;
+        overflow : hidden;
+      }
+    </style>
+    <script type="text/javascript">
+      $(function(){
+        $('div#resize_me').resizable({
+          animate: true,
+          ghost : true,
+          helper: "ui-resizable-helper",
+          minWidth: 300,
+          minHeight : 300
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="resize_me" class="ui-widget-content">
+      <h2 class="ui-widget-header">Pork and Stuff</h2>
+Bacon ipsum dolor sit amet pastrami flank short ribs tongue, salami ham short loin shank
+Pancetta venison bacon shankle, swine jerky beef cow pork pork loin ham fatback beef rib
+salami ham hock. Salami beef bacon pork brisket, t-bone flank ball tip. Ham hock beef 
+venison, t-bone andouille ribeye sirloin salami pork shankle. Ground round beef ribs 
+tip, sirloin venison rump pork loin shoulder boudin salami flank chuck ham corned beef 
+tenderloin. Tongue pork loin boudin, turkey ribeye salami pig biltong ham ham hock strip
+steak. Beef ribs short ribs turkey, pancetta swine pork meatloaf strip steak ham bacon 
+corned beef short loin salami.
+    </div>
+  </body>
+</html>
+

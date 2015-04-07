@@ -1,0 +1,27 @@
+(function( $ ){
+
+  $.fn.bestPluginEver = function( options ) {  
+
+    var settings = $.extend( {}, $.fn.bestPluginEver.defaults, options );
+    return this.each(function() {        
+
+      // best.plug-in.ever
+    });
+  };
+$.fn.bestPluginEver.defaults = {
+       "color" : "blue",
+       "title" : "my dashboard",
+       "width" : "960px"
+};
+})( jQuery );
+
+
+//set global default by overwriting the prototypal property
+$.fn.bestPluginEver.width = "768px";
+
+/* call the plug-in with an options 
+*  argument to override the new default in a single instance
+*/
+
+$("div").bestPluginEver( {"width" : "960px" }); 
+

@@ -1,0 +1,6 @@
+/* Try running this from jconsole or rhino */
+var thisMoment = new Date();
+console.log(thisMoment);
+thisMoment.getFullYear();
+
+

@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+.comic {
+    float:left;
+    width:200px;
+    background:#efefef;
+    padding:10px;
+    min-height:450px;
+}
+.comic img {
+    border:1px solid blue;
+}
+.comic h3 {
+    font-size:24px;
+}
+</style>
+</head>
+<body>
+<div id="main"> </div>
+<script src="_static/js/jquery-1.6.4.min.js"></script> 
+<script src="_static/js/plugins.js"></script> 
+<script>
+  $(document).ready( 
+	function(){	
+		var populate = function(data){
+			console.log(data.d);
+			$("#comics").tmpl(data.d).appendTo( "#main" );
+		}
+		$.ajax({
+				type: 'get',
+				url: 'data.json',
+				success : populate,
+				dataType: "json"
+		  		}
+			)
+		}
+	);
+</script> 
+<!-- end scripts --> 
+<script id="comics" type="text/x-jquery-tmpl">
+	<div class="comic"><img src="${imgSrc}" />
+		<div class="details">
+			<div class="title">
+				<h3>${title}</h3>
+			</div>
+			<div class="year">
+				<strong>Year:</strong> ${year}
+			</div>
+			<div class="number">
+				<strong>Issue Number:</strong> ${number}
+			</div>
+			<div class="themes">
+			<strong>Themes</strong>
+			<ul>
+{{each themes}}
+				<li>${$value}</li>
+			{{/each}}
+</ul>
+			</div>
+		</div>
+	</div>
+</script>
+</body>
+</html>

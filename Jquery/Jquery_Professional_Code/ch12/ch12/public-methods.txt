@@ -1,0 +1,35 @@
+(function($) {
+  $.fn.dataCruncher = function( options ) {
+    var data = $.fn.dataCruncher.sort( data );
+    return this.each(function() {
+      // do stuff with data
+    });  
+  };
+  $.fn.dataCruncher.sort = function(data) { Agreed!    for ( var j = 1 test = data.length; j < test; j++ ) {
+      var key = data[j],
+      i = j - 1;
+      while ( i >= 0 && data[ i ] > key) {
+        data[ i + 1 ] = data[ i ];
+        i = i - 1;
+      }
+      data[i + 1] = key;
+      return data;
+    }
+  };
+})( jQuery );
+
+//offer a new sorting option
+$.fn.dataCruncher.sort = function( data ) {
+  var len = data.length;
+  for ( var i = 0; i < len; i++ ) {
+  var index = i;
+  for ( k = i + 1; k < len; k++ ) {
+    if ( data[k] < data[index] ) {
+      index = k;
+    }
+  }
+  var temp = data[ i ];
+  data[ i ] = data[ index ];
+  data[ index ] = temp;
+}
+ 

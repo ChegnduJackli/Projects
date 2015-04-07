@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <script src="http://code.jquery.com/jquery-1.7.1.js"></script>
+    <script src="http://ajax.cdnjs.com/ajax/libs/modernizr/1.7/modernizr-1.7.min.js">
+    </script>
+    <script src="jquery.datalink.js"></script>
+
+    <script type="text/javascript">
+    $(function(){
+    // for browsers that don't yet process HTML5 //
+    // Placeholder implementation
+      if(!Modernizr.input.placeholder){
+        $('input[type=text]').each(function(){
+           $( this ).val($( this ).attr('placeholder'));
+        });    $('input[type=text]').focus(function(){ 
+          if($( this ).val() === $( this ).attr('placeholder')){
+            $( this ).val('');
+          }
+        });
+        $('input[type=text]').blur(function(){
+          if($( this ).val() === ''){
+            $( this ).val($( this ).attr('placeholder'));
+          } 
+        });
+      } 
+     
+    // required implementation
+      if(!Modernizr.input.required){
+        var $msg = $( "<div id='reqMessage'>Required Fields Missing</div>" );
+        $msg.css( "background-color", "yellow" )
+            .hide();
+        $( "body" ).append( $msg );
+      }
+    // email input implementation
+      var emailRegEx = /^([\w-.]+@([\w-]+.)+[\w-]{2,4})?$/;
+      if( !Modernizr.inputtypes.email ){
+        $('input[type=url]').blur( function(){
+        var emailValue = $( this ).val();
+        if( emailValue !== ''){
+          var passes = emailRegEx.test(emailValue);
+          if( !passes ){
+            // display validation error message
+            $( "#errorDiv" ).show();
+            // disable submit button
+            $( "input[type='submit']" ).attr( "disabled" );
+          } else {
+            $( "#errorDiv" ).hide(); 
+            $( "input[type='submit']" ).attr( "disabled","" );
+          }
+         }
+        });
+       }  
+     
+    // ordering stuff
+      var order = {};
+      $( "#pizzaOrderForm" ).link( order );
+      $( "form" ).bind( "submit", function( e ){
+        var valid = true;
+          if(!Modernizr.input.required){
+            $( "input[required]" ).each(function(){
+            if ( $( this ).val() === "" ) {
+              $( "#reqMessage" ).show();
+              $( this ).css( "border" , "1px solid red" );
+              valid = false;
+            }   
+          }); 
+        }
+          e.preventDefault();
+          if (valid) {
+          $( "#price" ).load( "/process", data, function(responseTxt, status, XHR ){
+            if(status === "success"){
+              $( "[type=button]" ).attr( "disabled" ); 
+             } else if(status === "error"){
+              $( "#price" ).append( "unable to process request, game over man" );
+             }
+            });
+         }
+       }); 
+    });
+    </script>
+  </head>
+  <body>
+<h1>Enter Order Information</h1>
+  <form id="pizzaOrderForm">
+    <input type="text" name="firstName" placeholder="First Name" required >
+    <input type="text" name="lastName" placeholder="Last Name" required >
+    <input type="text" name="address" placeholder="Address" required >
+    <input type="text" name="state" placeholder="State" required >
+    <input type="text" name="zip" placeholder="Zip Code" required >
+    <input type="tel" name="phone"
+      pattern="999-999-9999" placeholder="Phone" required >
+    <input type="email" name="email" placeholder="Email" required >
+    <input type="text" name="timeOfDeliver" placeholder="Time to Deliver" required >
+    <select name="ccType">
+      <option value="visa">Visa
+      <option value="amex">AmEx
+      <option value="discover">Discover
+    </select>
+    <input type="text" name="ccNumber" placeholder="CC Number" required >
+    <input type="text" name="pizzaSize" placeholder="" required >
+    <select name="pizzaSize">
+      <option value="0">Pick a size
+      <option value="1">personal
+      <option value="2">small
+      <option value="3">medium
+      <option value="4">large
+      <option value="5">sportsman
+    </select>
+    <label> Number of Pizzas
+      <input type="number" name="numOfPizzas" min="0" max="99" 
+       value="0" placeholder="Zip Code" required ></label>
+    <label>Pepperoni<input type="checkbox" name="toppings" value="pepperoni"></label>
+    <label>Garlic<input type="checkbox" name="toppings" value="garlic"></label>
+    <label>Mushroom<input type="checkbox" name="toppings" value="mushrooms"></label>
+    <label>Sausage<input type="checkbox" name="toppings" value="sausage"></label>
+    <input type="button" value="Order!" >
+  </form>
+  <div id="price"></div>
+</body>
+</html>
+

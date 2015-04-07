@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Live 的使用</title>
+    <style type="text/css">
+        div
+        {
+            margin: 10px;
+        }
+        .div1
+        {
+             width:100px;
+             height:100px;
+             background-color:Green;
+        }
+        .div2
+        {
+                width:100px;
+             height:100px;
+             background-color:Red;
+        }
+    </style>
+    <script src="http://code.jquery.com/jquery-1.7.1.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            //虽然元素选择还不存在，但已经可以创建事件处理程序,bind 就不会工作
+                        $("#anchor").live("click", function (event) {
+                            alert('i have a handler');
+                        });
+//            $(document).on("click", "#anchor", function (event) {
+//                alert('i have a handler 1');
+//            });
+            $("#div1").append("<a id='anchor'>I go to where,create a anchor.</a>");
+            //live 链接调用不会工作
+            $("body").delegate("p", "click", function () {
+                console.log('ouch');
+            }).css("color", "green");
+            //只执行一次
+            $(".div1").one("click", function () {
+                $("#desc").append('<p>click div 1</p>');
+            });
+            $(".div2").bind("click", function () {
+                $("#desc").append('<p>click div 2</p>');
+            });
+            $("#mouse").mouseover(function () {
+                $(this).css('text-decoration', 'underline');
+            }).mouseout(function () {
+                $(this).css('text-decoration', 'none');
+            }
+             );
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <img src="../Image/05live.png" />
+    </div>
+    <div id="div1">
+    </div>
+    <div>
+        <img src="../Image/05die.png" />
+    </div>
+    <div>
+        <p>
+            hit me ,链接调用</p>
+    </div>
+    <div>
+        <img src="../Image/05delegate.png" />
+    </div>
+    <div>
+        <div class="div1">
+        </div>
+        <div class="div2">
+        </div>
+        <div id="desc"> </div>
+    </div>
+    <div id="mouse"> mouse over, mouse out</div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+var species = {
+  'mammals' :  {
+    'biped': {
+      'monkey' : 'George' ,
+      'human' : 'Tim'
+    }
+  }
+}
+ 
+console.log(species.mammals.biped.human);
+

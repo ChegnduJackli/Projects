@@ -1,0 +1,4 @@
+var array1 = new Array(); // empty array
+array1[0]  = 1;           // add a number to index 0
+array1[1]  = 'a string';  // add a string to index 1
+

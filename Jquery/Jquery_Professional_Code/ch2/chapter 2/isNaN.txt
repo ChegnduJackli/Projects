@@ -1,0 +1,8 @@
+/* Try this from jconsole or rhino */
+> 10*1+100 - 1 - Nan
+NaN
+ 
+> var x = NaN;
+> isNaN(x);
+true
+

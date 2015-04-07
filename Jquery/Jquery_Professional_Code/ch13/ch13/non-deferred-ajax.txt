@@ -1,0 +1,15 @@
+$.get("/status/json/",
+ 	function( data ) {
+           var $update = $("<ul />"),
+               $statusbar = $("#statusbar"),
+               html = "",
+               statusMessages = data.statusMessages;
+            for (var i = 0, test = statusMessages.length; i < test; i++) {
+               html += "<li>" + statusMessages[i] + "</li>";
+           }
+           $update.append(html);
+           $statusbar.append($update);
+           $statusbar.slideDown(1000);
+
+    }
+)

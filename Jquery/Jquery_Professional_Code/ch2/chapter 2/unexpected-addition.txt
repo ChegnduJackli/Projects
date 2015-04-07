@@ -1,0 +1,4 @@
+/* Try running this from jconsole or rhino */
+> .1 + .2
+0.30000000000000004
+

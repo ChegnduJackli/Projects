@@ -1,0 +1,41 @@
+(function( $ ){
+
+  var methods = {
+    init : function( options ) { 
+      // init 
+    },
+    flip : function( howMany ) {
+      // flip
+    },
+    flop: function( ) { 
+      // flop
+    },
+    fly  : function(  ) { 
+      // fly 
+    }
+  };
+
+
+  $.fn.bestPluginEver = function( method ) {
+  
+    if ( methods[method] ) {
+      return methods[ method ].apply( this, 
+        Array.prototype.slice.call( arguments, 1 ));
+    } else if ( typeof method === 'object' || ! method ) {
+      return methods.init.apply( this, arguments );
+    } else {
+      $.error( 'Method ' 
+        +  method 
+        + ' does not exist in the bestPluginEver' );
+    }    
+  };
+})( jQuery );
+
+// calls the init method
+$( 'div' ).tooltip(); 
+
+// calls the fly method
+$( 'div' ).tooltip('fly');
+
+// calls the flip method with an argument
+$( 'div' ).tooltip('flip' , 'twice');

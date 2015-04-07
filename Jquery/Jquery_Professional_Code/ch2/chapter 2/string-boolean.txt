@@ -1,0 +1,10 @@
+String.prototype.boolean = function() {
+  return 'true' == this; 
+};
+ 
+var t = 'true'.boolean();
+var f = 'false'.boolean();
+ 
+console.log(t);
+console.log(f);
+
