@@ -1,0 +1,3 @@
+#@Flag==Source file == PRD file == back up file. (@Date@ means parameters,with today date)
+
+@Download == D:\Study\c#\Task\*.*

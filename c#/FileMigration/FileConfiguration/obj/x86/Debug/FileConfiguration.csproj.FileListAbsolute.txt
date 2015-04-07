@@ -1,0 +1,8 @@
+C:\Users\lideng\Desktop\AGD\Shine_Decomission_Migration\Tools\FileMigration\FileConfiguration\bin\Debug\FileConfiguration.exe
+C:\Users\lideng\Desktop\AGD\Shine_Decomission_Migration\Tools\FileMigration\FileConfiguration\bin\Debug\FileConfiguration.pdb
+C:\Users\lideng\Desktop\AGD\Shine_Decomission_Migration\Tools\FileMigration\FileConfiguration\obj\x86\Debug\FileConfiguration.Form1.resources
+C:\Users\lideng\Desktop\AGD\Shine_Decomission_Migration\Tools\FileMigration\FileConfiguration\obj\x86\Debug\FileConfiguration.Properties.Resources.resources
+C:\Users\lideng\Desktop\AGD\Shine_Decomission_Migration\Tools\FileMigration\FileConfiguration\obj\x86\Debug\FileConfiguration.csproj.GenerateResource.Cache
+C:\Users\lideng\Desktop\AGD\Shine_Decomission_Migration\Tools\FileMigration\FileConfiguration\obj\x86\Debug\FileConfiguration.exe
+C:\Users\lideng\Desktop\AGD\Shine_Decomission_Migration\Tools\FileMigration\FileConfiguration\obj\x86\Debug\FileConfiguration.pdb
+C:\Users\lideng\Desktop\AGD\Shine_Decomission_Migration\Tools\FileMigration\FileConfiguration\obj\x86\Debug\FileConfiguration.csprojResolveAssemblyReference.cache

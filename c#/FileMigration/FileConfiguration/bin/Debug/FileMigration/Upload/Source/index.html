@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<title>AGD Homepage</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="pragma" content="no-cache"/>
+<meta name="description" content="Accountant-General's Department(AGD) is a department under Ministry of Finance (MOF).Our mission is to support the MOF in advancing the well-being & financial services to the Singapore Public Service."/>
+<link rel="stylesheet" href="styles/main.css" type="text/css" />
+<link rel="stylesheet" href="styles/home.css" type="text/css" />
+<link rel="stylesheet" href="styles/joinus.css" type="text/css" />
+
+<link rel="stylesheet" href="styles/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+<link rel="stylesheet" href="styles/jquery/jquery-ui.css" />
+
+<!--Added by ZHL for Google Search-->
+<script type="text/javascript" src="scripts/default.js?v1.1"></script>
+<script type="text/javascript" src="scripts/jquery.min.js" ></script>
+<script type="text/javascript" src="scripts/jquery.anythingslider.min.js" ></script>
+<script type="text/javascript" src="scripts/jquery.prettyPhoto.js" ></script>
+<script type="text/javascript" src="scripts/googlestats.js?v1.1"></script>
+<script type="text/javascript">
+/**
+ * We use the initCallback callback
+ * to assign functionality to the controls
+ */
+function mycarousel_initCallback(page) {
+    	var selector = page;
+    	switch(selector){
+			case 1:
+				$('#banners-details').html('<div style="display:none;"><h2>Our Role</h2><p>At AGD, we provide a wide range of financial services to the Public Service, from ensuring the integrity of Government&#39;s accounting systems, to reviewing Government&#39;s spending and statutory reporting.</p></div>')
+				$('#banners-details div').show();
+				break;
+			case 2:
+				$('#banners-details').html("<div style='display:none;'><h2>Our Vision</h2><p>To be the choice provider of accounting and financial services to the Public Service.</p></div>")
+				$('#banners-details div').show();
+				break;
+			case 3:
+				$('#banners-details').html('<div style="display:none;"><h2>Our Values</h2><p>The foundation of our success: Our five core values I-CITE (Integrity, Caring, Innovative, Team and Excellence).</p></div>')
+				$('#banners-details div').show();
+				break;
+			case 4:
+				$('#banners-details').html('<div style="display:none;"><h2>Join Us</h2><p>A career at AGD promises to be rewarding and challenging. We offer abundant opportunities to meet your career aspirations, and more importantly, to make a real DIFFERENCE.</p></div>')
+				$('#banners-details div').show();
+				break;
+
+			default:
+				$('#banners-details').html('<div style="display:none;"><h2>Our Role</h2><p>At AGD, we provide a wide range of financial services to the Public Service, from ensuring the integrity of Government&#39;s accounting systems, to reviewing Government&#39;s spending and statutory reporting.</p></div>')
+				$('#banners-details div').show();
+				break;
+    	}
+};
+
+// Ride the carousel...
+jQuery(document).ready(function() {
+    // jQuery("#mycarousel").jcarousel({
+    //     scroll: 1,
+    //     initCallback: mycarousel_initCallback,
+    //     // This tells jCarousel NOT to autobuild prev/next buttons
+    //     buttonNextHTML: null,
+    //     buttonPrevHTML: null
+    // });
+	$('#slider').anythingSlider({
+		expand              : true,
+		resizeContents      : false,
+		delay               : 5000,
+		animationTime       : 1000,
+		autoPlay            : true,
+		onInitialized       : function(e, slider) {mycarousel_initCallback(slider.currentPage);},
+		onSlideComplete: function(slider) { mycarousel_initCallback(slider.currentPage); }
+	});
+   // $("select#cboSearch").uniform();
+    $("a[rel^='prettyPhoto']").prettyPhoto();
+});
+
+</script>
+<script type="text/javascript" src="scripts/flowplayer-3.2.11.min.js"></script>
+<script type="text/javascript">
+	if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/iPad/i))) { }
+</script>
+<script type="text/javascript" src="scripts/flowplayer.ipad-3.2.8.min.js"></script>
+<style type="text/css">
+.anythingSlider {
+    display: block;
+    overflow: hidden !important;
+    position: relative;
+}
+a:link {
+    text-decoration: none;
+}
+
+
+body{ 
+-webkit-filter: grayscale(100%); 
+-moz-filter: grayscale(100%); 
+-ms-filter: grayscale(100%); 
+-o-filter: grayscale(100%); 
+filter: grayscale(100%); 
+filter: gray;  
+} 
+
+
+
+</style>
+
+</head>
+<body>
+	<div id="container" >
+		<div id="subcontainer">
+			<div id="siteoption">
+				<a href="http://www.gov.sg" target="_new"><img src="images/sglionhead.png" alt="Singapore Government"/></a>
+			</div>
+			<!--<div id="downtimedialog" title="AGD Website Broadcast">
+			                    <p align="left" style="font-size:12px">Please note that the AGD Website will not be available on 6 Apr 14 from 12am to 8am due to scheduled system maintenance. We seek your understanding on any inconvenience caused.</p>
+                	</div> -->
+			<div id="branding">
+				<h1><a href="http://www.agd.gov.sg"><img src="images/AGD_logo.png" alt="AGD Website" /></a></h1>
+				<ul id="brandingmenu">
+					<li><a href="home_contactinfo.html">Contact Info</a> |</li>
+					<li><a href="home_feedback.html">Feedback</a> |</li>
+					<li><a href="home_sitemap.html">Sitemap</a></li>
+				</ul>
+
+                <!--Added by ZHL for Google Search-->
+                <script type="text/javascript">
+                    javascript: ShowSearch();
+       			</script>
+			</div>
+			<ul id="menu">
+				<li><a href="index.html" id="home" class="active" ><img src="images/home_icon.png" alt="Home"/></a></li>
+				<li><a href="about_role.html">About AGD</a></li>
+				<li><a href="services_overview.html" >Our Services</a></li>
+				<li><a href="people_agreatdepartment.html">Our People</a></li>
+				<li><a href="events_whatshappening.html">Events &#38; News</a></li>
+				<li><a href="joinus_overview.html">Join Us</a></li>
+			</ul>
+			<div id="sliderblock">
+				<ul id="slider">
+					<li><img src="images/banners/OurRole.jpg" alt="OurRole" /></li>
+					<li><img src="images/banners/OurVision.jpg" alt="OurVision" /></li>
+					<li><img src="images/banners/OurValues.jpg" alt="OurValues" /></li>
+					<li><img src="images/banners/JoinUs.jpg" alt="JoinUs" /></li>
+
+
+			    </ul>
+			    <div id="banners-details">
+					<div>
+						<h2>Electronic Invoicing</h2>
+						<p>
+							Electronic invoicing was introduced in Nov 2008, bringing about quantum leap improvements to the current procurement process. With this, there was no more risk of hardcopy documents being lost in transit. Human error in data entry was reduced and there were also manpower savings, raising productivity for all.
+						</p>
+						<a href="services_financialadmin.html#Electronic" >Read More <span>&raquo;</span></a>
+					</div>
+				</div>
+			</div>
+			<div id="maincontent">
+			    <div>
+					<h2>What's Happening</h2>
+	
+     <img src="images/leekuanyew.png"  alt="" width="770px" />
+                   <!--     <img src="images/facebook.jpg" alt="" />
+         	        <div class="overview"  style="width:720px">
+                    <p>"AGD is the central administrator of the government's financial and accounting systems. Keen to apply my computing knowledge and pick up some accounting skills,
+                     I joined AGD after graduation and am now with their Cash Management & Payments team.</p>
+                    <p>While I may be handling internal customer queries, I am keenly aware that my work affects the public and the importance of doing it well. </p>
+                    <p>I recall this query that I received from an agency about their payment processing to a vendor. The vendor was his family's breadwinner and prompt payment 
+                    was very important to him. We quickly resolved the issue so that payment would not be delayed. </p>
+                    <p>Outside of work, I am one true foodie and love to trawl through the web to discover cheap and good eats around the island!"</p>
+                    <p>- Mr Tee Zi Jiang, Accountant-General's Department</p>-->
+
+                 <div class="overview"  style="width:720px">
+                 <br />
+                 <h3 style="color:Blue; font-weight:bold">Remembering Lee Kuan Yew</h3>
+                 <p style=" Font-family: Arial, Helvetica, sans-serif; webkit-font-smoothing : antialiased;">The public may pay tribute to Mr Lee Kuan Yew as well as learn about this life and contributions to Singapore at the official website.</p>
+                 <p><a href="http://www.rememberingleekuanyew.sg/" target="_blank" >www.rememberingleekuanyew.sg</a></p>
+                        
+		        </div>
+				</div>
+				
+			</div>
+			<div id="right-aside" >
+       			<div id="logo" >
+					<h2>Our Logo Story</h2>
+					<div>
+                     <a href="video/AGD.mov" class="player"  style="display:block;width:210px;height:130px;" id="ourLogoStory"></a>
+					</div>
+				</div>
+				<div style="border-bottom: 4px solid #FBB03E;margin-bottom: 10px; border-top: 4px solid #FBB03E;margin-top: 10px;"><div style="padding:17px 0 15px;">
+                   <a href="http://www.agd.gov.sg/AGD_Corporate_Report_Creating_Classic.pdf" target="_blank" ><img src="images/AGDcreatingaclassic.jpg" alt="AGD Corporate Report" /></a>
+                 </div>
+				</div>
+
+                <div id="careers">
+					<!--<h2>Careers</h2>-->
+					<div>
+							<!--<a href="video/video.mov" class="player" style="display:block;width:210px;height:130px;" id="player"></a>-->
+                       <ul>
+                       <li><a href="http://careers-gov-search.jobstreet.com.sg/VOG/job-opening.php?key=&specialization=&qualification=&organization=1" >Careers@Gov</a></li>
+                       <li><a href="joinus_scholarship.html" >Scholarship</a></li>
+						<li><a href="joinus_internship.html">Internship</a></li>
+					</ul>
+					</div>
+				</div>
+			</div>
+			<div id="footer">
+            <hr />
+				<ul>
+					<li><span class="header">Government Vendors</span></li>
+					<li><a href="https://app.vendors.gov.sg/" >Vendors@Gov</a></li>
+					<li><a href="http://www.mbs.gov.sg/" >MBS@Gov</a></li>
+				</ul>
+				<ul>
+					<li><span class="header">Pensioners Portal</span></li>
+					<li><a href="http://www.pac.gov.sg" >Pensioners</a></li>
+
+				</ul>
+				<ul>
+					<li><span class="header">Statutory Boards</span></li>
+					<li><a href="http://www.assb.gov.sg/index.html" >Accounting Standards for Statutory Boards</a></li>
+					<li><a href="http://www.asc.gov.sg/" >Accounting Standards Council</a></li>
+					<li><a href="http://www.ifrs.org/Home.html">International Financial Reporting Standard</a></li>
+				</ul>
+				<ul id="social">
+					<li><a href="http://www.facebook.com/singaporeagdd"  target="_blank" ><img src="images/fb_icon.png" alt="Facebook"  /></a></li>
+					<!--<li><img src="images/trustsg.jpg" alt="trustsg"  /></li>-->
+				</ul>
+				<div style="clear:both;"><p id="datestamp">Last updated on 24 March 2015 18:00:00</p></div>
+				<div id="lowerfooter">
+					<ul>
+						<li><a href="home_privacystatement.html" >Privacy Statement</a> |</li>
+						<li><a href="home_termsofuse.html">Terms of Use</a> |</li>
+
+						<li><a href="http://www.jusfeedback.asia/Community/se.ashx?s=7FDA9EA723A5704F&Agency=MOF.AGD&Svc=AGD%20Corporate%20Website&eLnk=http://www.agd.gov.sg&Cat=Citizen" target="_blank" >Rate This Website</a></li>
+						<li class="copyright">Copyright © 2014 Government of Singapore. All Rights Reserved</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	 <script type="text/javascript">
+		if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/iPad/i))) {
+	  	 $f("player", "http://releases.flowplayer.org/swf/flowplayer-3.2.9.swf").ipad();
+		 $f("ourLogoStory", "http://releases.flowplayer.org/swf/flowplayer-3.2.9.swf").ipad();
+		}
+		else
+		{
+			/*flowplayer("player", "video/flowplayer-3.2.12.swf", {
+				log: {
+				    level: 'warn',
+					filter: 'any.*'
+				},
+
+				clip: {
+					url: 'video/video.mov',
+					autoPlay: false,
+					autoBuffering: false
+				},
+				plugins: {
+					controls: null
+				},
+				onLoad: function(){
+
+				}
+		});*/
+
+			flowplayer("ourLogoStory", "video/flowplayer-3.2.12.swf", {
+				clip: {
+					url: 'video/AGD.mov',
+					autoPlay: false,
+					autoBuffering: false
+				},
+				plugins: {
+					controls: null
+				},
+				onLoad: function(){
+				}
+		});
+		}
+	</script>
+
+
+  <script src="scripts/jquery-dialog/jquery-1.9.1.js" type="text/javascript"></script>
+
+  <script src="scripts/jquery-dialog/jquery-ui.js" type="text/javascript"></script>
+<script type="text/javascript">
+$.noConflict();
+
+
+//jQuery( document ).ready(function( $ ) {
+// $("#downtimedialog").dialog();
+// $("#downtimedialog").dialog({
+//   position: ['center',20]
+// });
+//});
+
+</script>
+</body>
+</html>

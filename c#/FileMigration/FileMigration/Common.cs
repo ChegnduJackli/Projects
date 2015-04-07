@@ -7,102 +7,86 @@ using System.IO;
 
 namespace FileMigration
 {
-    class Common
+    public static class Common
     {
         public static readonly string SERVER_NAME = ConfigurationManager.AppSettings["ServerName"];
+        public static readonly string ROOT_BIN_PATH = AppDomain.CurrentDomain.BaseDirectory;
 
-        public static readonly string Local_Path_AGDAPP01P = ConfigurationManager.AppSettings["AGDAPP01P_Local_Path"];
-        public static readonly string Local_Path_AGDAPP02P = ConfigurationManager.AppSettings["AGDAPP02P_Local_Path"];
-        public static readonly string Local_Path_AGDAPP03P = ConfigurationManager.AppSettings["AGDAPP03P_Local_Path"];
-        public static readonly string Local_Path_AGDAPP04P = ConfigurationManager.AppSettings["AGDAPP04P_Local_Path"];
+        public static readonly string Indicator_Upload_Flag = "@UPLOAD";
+        public static readonly string Indicator_Download_Flag = "@DOWNLOAD";
 
-        public static readonly string Server_Name_AGDAPP01P = "AGDAPP01P";
-        public static readonly string Server_Name_AGDAPP02P = "AGDAPP02P";
-        public static readonly string Server_Name_AGDAPP03P= "AGDAPP03P";
-        public static readonly string Server_Name_AGDAPP04P = "AGDAPP04P";
+        public static readonly string Mail_Host = ConfigurationManager.AppSettings["Host"];
+        public static readonly string Mail_From = ConfigurationManager.AppSettings["MailFrom"];
+        public static readonly string Mail_Port = ConfigurationManager.AppSettings["Port"];
+        public static readonly string Mail_To = ConfigurationManager.AppSettings["MailTo"];
+        public static readonly string Mail_TimeOut = ConfigurationManager.AppSettings["TimeOut"];
+        public static readonly string Mail_Subject = ConfigurationManager.AppSettings["Subject"];
+        public static readonly string Mail_Body = ConfigurationManager.AppSettings["Body"];
 
-        public static readonly string BackUp_Folder_Name = "backup";
+        public static readonly string Config_FileName = ConfigurationManager.AppSettings["ConfigFile"];
+
+        public static readonly string Upload_Before_Folder = Path.Combine(ROOT_BIN_PATH, @"Upload\Before\");
+        public static readonly string Upload_After_Folder = Path.Combine(ROOT_BIN_PATH, @"Upload\After\");
+        public static readonly string Upload_Source_Folder = Path.Combine(ROOT_BIN_PATH, @"Upload\Source\");
+        public static readonly string Download_Folder = Path.Combine(ROOT_BIN_PATH, @"Download");
+        public static readonly string Log_File = Path.Combine(ROOT_BIN_PATH,@"Logs", DateTime.Now.ToString("yyyyMMdd") + ".log");
+
+        public static readonly string Zip_Upload_Before_FolderName = Path.Combine(ROOT_BIN_PATH, @"Upload\Before.zip");
+        public static readonly string Zip_Upload_After_FolderName = Path.Combine(ROOT_BIN_PATH, @"Upload\After.zip");
+        public static readonly string Zip_Download_FolderName = Path.Combine(ROOT_BIN_PATH, @"Download.zip");
+        public static readonly string Zip_Logs_FolderName = Path.Combine(ROOT_BIN_PATH,@"Logs.zip");
+        public static readonly string Zip_Password = @"password";
 
         public static StringBuilder Migrate_Description = new StringBuilder();
+        public static List<string> Attachment_List = new List<string>();
 
-        public IMigration GetInstance()
+        //clear the folder and files
+        static Common()
         {
-            IMigration migration = null;
+           EmptyFolder(new System.IO.DirectoryInfo(Upload_Before_Folder));
 
-            Common.Migrate_Description.AppendLine("Server Name :" + Common.SERVER_NAME);
+           EmptyFolder(new System.IO.DirectoryInfo(Upload_After_Folder));
 
-            if (Common.SERVER_NAME == Common.Server_Name_AGDAPP01P)
-            {
-                migration = new AGDAPP01PCLS();
-            }
-            else if (Common.SERVER_NAME == Common.Server_Name_AGDAPP02P)
-            {
-                migration = new AGDAPP02PCLS();
-            }
-            else if (Common.SERVER_NAME == Common.Server_Name_AGDAPP03P)
-            {
-                migration = new AGDAPP03PCLS();
-            }
-            else if (Common.SERVER_NAME == Common.Server_Name_AGDAPP04P)
-            {
-                migration = new AGDAPP04PCLS();
-            }
-            return migration;
+           EmptyFolder(new System.IO.DirectoryInfo(Download_Folder));
+
+            FileHelper.DeleteFile(Zip_Upload_Before_FolderName);
+            FileHelper.DeleteFile(Zip_Upload_After_FolderName);
+            FileHelper.DeleteFile(Zip_Download_FolderName);
+            FileHelper.DeleteFile(Zip_Logs_FolderName);
+            
         }
 
-        public string GetDateFormat()
+        /// <summary>
+        /// delete the files in folder,include sub directory.
+        /// </summary>
+        /// <param name="directory"></param>
+        public static void EmptyFolder(this System.IO.DirectoryInfo directory)
         {
-            return DateTime.Now.ToString("ddMMyyyy");
+            foreach (System.IO.FileInfo file in directory.GetFiles()) file.Delete();
+            foreach (System.IO.DirectoryInfo subDirectory in directory.GetDirectories()) subDirectory.Delete(true);
         }
 
-        public void DoFileMigration(string local_FileName, string PRD_FileName, string local_Path)
+        public static List<string> GetEmailRecipient()
         {
+            string[] stringSeparators = new string[] { ";" };
+
+            List<string> emailRecipient = new List<string>();
+            string email = string.Empty;
+
             try
             {
-                //get PRD foder name
-                string PRD_Dir = System.IO.Path.GetDirectoryName(PRD_FileName);
-
-                //to genereate PRD backup folder
-                string PRD_BackUp_Path = System.IO.Path.Combine(PRD_Dir, Common.BackUp_Folder_Name);
-
-                //get the filename
-                string PRD_Properties_File = System.IO.Path.GetFileName(PRD_FileName);
-
-                //to back up PRD file to backup folder
-                BackUp(PRD_BackUp_Path, PRD_Properties_File, PRD_FileName);
-
-                //get local file name
-                string Local_File_FullPath = System.IO.Path.Combine(local_Path, local_FileName);
-
-                //begin to migrate from local to PRD
-                FileHelper.FileCopy(Local_File_FullPath, PRD_FileName);
-
-                Common.Migrate_Description.AppendLine("Copy local file from :" + Local_File_FullPath);
-                Common.Migrate_Description.AppendLine("To PRD file path :" + PRD_FileName);
+                email = Common.Mail_To;
+                string[] emailArray = email.Split(stringSeparators, StringSplitOptions.RemoveEmptyEntries);
+                foreach (string e in emailArray)
+                {
+                    emailRecipient.Add(e);
+                }
+                return emailRecipient;
             }
             catch (Exception ex)
             {
-                LogHelper.WriteLog(ex);
+                throw ex;
             }
-
-        }
-        public void BackUp(string backupFolderName, string fileName,string prdFileName)
-        {
-            Common common = new Common();
-            if (!Directory.Exists(backupFolderName))
-            {
-                Directory.CreateDirectory(backupFolderName);
-            }
-            string fileNameWithoutExt = FileHelper.GetFileNameWithOutExtesion(fileName);
-            string fileExtension = FileHelper.GetFileExtension(fileName);
-            string newFileName = fileNameWithoutExt + "_" + common.GetDateFormat() + fileExtension;
-
-            string backupFilePath = Path.Combine(backupFolderName, newFileName);
-
-            FileHelper.FileCopy(prdFileName, backupFilePath);
-
-            Common.Migrate_Description.AppendLine("Back up PRD File :" + prdFileName);
-            Common.Migrate_Description.AppendLine("To PRD backup folder :" + backupFilePath);
         }
     }
 }

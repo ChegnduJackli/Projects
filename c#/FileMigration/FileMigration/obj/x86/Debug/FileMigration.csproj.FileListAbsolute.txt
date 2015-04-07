@@ -6,3 +6,11 @@ C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\FileMigration\FileMigration\
 C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\FileMigration\FileMigration\obj\x86\Debug\FileMigration.exe
 C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\FileMigration\FileMigration\obj\x86\Debug\FileMigration.pdb
 C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\FileMigration\FileMigration\bin\Debug\FileMigration.exe.config
+C:\Users\lideng\Desktop\AGD\Shine_Decomission_Migration\Tools\FileMigration\FileMigration\bin\Debug\FileMigration.exe.config
+C:\Users\lideng\Desktop\AGD\Shine_Decomission_Migration\Tools\FileMigration\FileMigration\bin\Debug\FileMigration.exe
+C:\Users\lideng\Desktop\AGD\Shine_Decomission_Migration\Tools\FileMigration\FileMigration\bin\Debug\FileMigration.pdb
+C:\Users\lideng\Desktop\AGD\Shine_Decomission_Migration\Tools\FileMigration\FileMigration\obj\x86\Debug\FileMigration.Form1.resources
+C:\Users\lideng\Desktop\AGD\Shine_Decomission_Migration\Tools\FileMigration\FileMigration\obj\x86\Debug\FileMigration.Properties.Resources.resources
+C:\Users\lideng\Desktop\AGD\Shine_Decomission_Migration\Tools\FileMigration\FileMigration\obj\x86\Debug\FileMigration.csproj.GenerateResource.Cache
+C:\Users\lideng\Desktop\AGD\Shine_Decomission_Migration\Tools\FileMigration\FileMigration\obj\x86\Debug\FileMigration.exe
+C:\Users\lideng\Desktop\AGD\Shine_Decomission_Migration\Tools\FileMigration\FileMigration\obj\x86\Debug\FileMigration.pdb

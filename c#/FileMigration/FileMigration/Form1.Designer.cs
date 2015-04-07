@@ -59,7 +59,7 @@
             this.rtbDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbDesc.Location = new System.Drawing.Point(6, 19);
             this.rtbDesc.Name = "rtbDesc";
-            this.rtbDesc.Size = new System.Drawing.Size(421, 209);
+            this.rtbDesc.Size = new System.Drawing.Size(428, 245);
             this.rtbDesc.TabIndex = 0;
             this.rtbDesc.Text = "";
             // 

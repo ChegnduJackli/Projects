@@ -19,32 +19,40 @@ namespace FileMigration
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show("Are you sure to migrate?", "Infomation", MessageBoxButtons.YesNo);
-            if (dialogResult == DialogResult.Yes)
+            try
             {
-                try
-                {
-                    //do something
-                    FileMigration();
+                LogHelper.WriteLog("ServerName:" + Common.SERVER_NAME);
+                this.btnOK.Enabled = false;
+                string fileName = System.IO.Path.Combine(Common.ROOT_BIN_PATH, Common.Config_FileName);
 
-                    LogHelper.WriteLog(Common.Migrate_Description.ToString());
+                Migration migration = new Migration(fileName);
 
-                    MessageBox.Show("Migration done", "Infomation");
-                }
-                catch (Exception ex)
-                {
-                    LogHelper.WriteLog(ex);
-                    MessageBox.Show("Migration failed as get error,please check the log", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                migration.DoMigration();
+
+                SendEmail();
+
+                MessageBox.Show("Migration done", "Infomation");
+                this.btnOK.Enabled = true ;
+                Application.Exit();
+            }
+            catch (Exception ex)
+            {
+                LogHelper.WriteLog(ex);
+                MessageBox.Show("Migration failed as get error,please check the log", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        private void FileMigration()
+        private void SendEmail()
         {
-            Common common = new Common();
+            EmailEntity entity = new EmailEntity();
+            entity.Body = Common.Mail_Body;
+            entity.Subject = Common.Mail_Subject;
+            entity.Email_Recipient = Common.GetEmailRecipient();
+            entity.Email_Attachments = Common.Attachment_List;
+            entity.Host = Common.Mail_Host;
+            entity.Port = Convert.ToInt32(Common.Mail_Port);
+            entity.TimeOut = Convert.ToInt32(Common.Mail_TimeOut);
 
-            IMigration migration = common.GetInstance();
-
-            migration.DoMigration();
+            EmailHelper.Send(entity);
         }
 
         public string GetDesc()
@@ -56,7 +64,11 @@ namespace FileMigration
             sbDesc.AppendLine("");
             sbDesc.AppendLine("The applicaition will do the following things;");
             sbDesc.AppendLine("1,Back up PRD file to PRD backup folder.");
-            sbDesc.AppendLine("2,Copy or replace local file to PRD.");
+            sbDesc.AppendLine("2,copy PRD file to before folder.");
+            sbDesc.AppendLine("3,Copy or replace local file to PRD.");
+            sbDesc.AppendLine("4,Copy PRD file to after folder.");
+            sbDesc.AppendLine("5,zip the before and afte folder send via email.");
+            sbDesc.AppendLine("6,zip the logs send via email.");
             sbDesc.AppendLine("");
             sbDesc.AppendLine("After run this, please check the log.");
             return sbDesc.ToString();

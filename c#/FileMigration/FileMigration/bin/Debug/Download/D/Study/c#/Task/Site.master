@@ -1,0 +1,75 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div style="height: 25px; vertical-align: middle;">
+            Welcome
+            <asp:Label ID="lblUser" runat="server" Text="" Font-Bold="true"></asp:Label>
+            to our System <span id="servertime" style="float: right; margin-right: 10px;"></span>
+        </div>
+        <div class="header">
+            <div class="title">
+                <h1>
+                    Task management
+                </h1>
+            </div>
+            <div class="loginDisplay">
+                <asp:LinkButton ID="linkLogin" runat="server" Text="" OnClick="linkLogin_Click" />
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false"
+                    IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home" />
+                        <asp:MenuItem NavigateUrl="~/AddTask.aspx" Text="Create" />
+<%--                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="About" />--%>
+                        <asp:MenuItem NavigateUrl="~/MyTask.aspx" Text="My Task" />
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        Only for authorize peoplse to use.<br />
+        2014@copyright only register. keep all right.
+    </div>
+    <script type="text/javascript">
+
+        var currenttime = new Date();  //"<%=DateTime.Now%>";
+        var montharray = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+        var serverdate = new Date(currenttime);
+
+        function padlength(what) {
+            var output = (what.toString().length == 1) ? "0" + what : what;
+            return output;
+        }
+
+        function displaytime() {
+            serverdate.setSeconds(serverdate.getSeconds() + 1);
+            var datestring = montharray[serverdate.getMonth()] + " " + padlength(serverdate.getDate()) + ", " + serverdate.getFullYear();
+            var timestring = padlength(serverdate.getHours()) + ":" + padlength(serverdate.getMinutes()) + ":" + padlength(serverdate.getSeconds());
+            document.getElementById("servertime").innerHTML = datestring + " " + timestring;
+        }
+
+        window.onload = function () {
+            setInterval("displaytime()", 1000);
+        }
+
+    </script>
+    </form>
+</body>
+</html>

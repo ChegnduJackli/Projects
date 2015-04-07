@@ -1,0 +1,32 @@
+#@Flag==Source file == PRD file == back up file. (@Date@ means parameters,with today date)
+#@Upload==E\agdhelpdesk\batchjob\agd_helpdesk\common.vbs == E:\agdhelpdesk\batchjob\agd_helpdesk\common.vbs  == E:\agdhelpdesk\batchjob\backup\@Date@\common.vbs
+#@Upload==E\agdvendors\agdhelpdesk\scripts\agd_helpdesk\Web.config == E:\agdhelpdesk\scripts\agd_helpdesk\Web.config == E:\agdhelpdesk\scripts\backup\@Date@\Web.config
+#@Upload==E\agdvendors\script\agd_admin\web.config == E:\agdvendors\script\agd_admin\web.config == E:\agdvendors\script\backup\@Date@\common.vbs
+#@download ==E:\agdvendors\script\agd_admin\web.config 
+#@download ==E:\agdvendors\script\agd_admin\web.config 
+
+
+#@Upload== DataPatchingRequestForm.aspx.cs ==E:\agdhelpdesk\batchjob\agd_helpdesk\DataPatchingRequestForm.aspx.cs ==""
+#@Upload == Upload\source\E\*.* ==E:\agdhelpdesk\batchjob\agd_helpdesk\ == E:\agdhelpdesk\batchjob\backup\@Date@\
+#@Upload == bin\*.* ==E:\agdhelpdesk\batchjob\agd_helpdesk\bin\ == E:\agdhelpdesk\batchjob\backup\@Date@\
+#@Upload == E\agdhelpdesk\scripts\agd_helpdesk\*.* ==E:\agdhelpdesk\scripts\agd_helpdesk\ == E:\agdhelpdesk\backup\@Date@\
+#@#Upload == bin\*.* ==E:\agdreqsys\scripts\agd_reqsys\ncsoss\bin\ == E:\agdreqsys\backup\@Date@\ncsoss\bin\
+#@Upload == FormsModule\*.* ==E:\agdreqsys\scripts\agd_reqsys\ncsoss\FormsModule\ == E:\agdreqsys\backup\@Date@\ncsoss\FormsModule\
+
+@Upload ==index.html== E:\AGDWEBSITE\scripts\AGD_Website\index.html == E:\AGDWEBSITE\scripts\AGD_Website\backup\@Date@\index.html
+@Upload ==OfficerOfWeek.html== E:\AGDWEBSITE\scripts\AGD_Website\OfficerOfWeek.html == E:\AGDWEBSITE\scripts\AGD_Website\backup\@Date@\OfficerOfWeek.html
+@Upload ==events_whatshappening.html== E:\AGDWEBSITE\scripts\AGD_Website\events_whatshappening.html == E:\AGDWEBSITE\scripts\AGD_Website\backup\@Date@\events_whatshappening.html
+#@Upload ==styles\*.*== E:\AGDWEBSITE\scripts\AGD_Website\styles\ == E:\AGDWEBSITE\scripts\AGD_Website\backup\@Date@\
+@Upload ==images\*.*== E:\AGDWEBSITE\scripts\AGD_Website\images\ == E:\AGDWEBSITE\scripts\AGD_Website\backup\@Date@\
+#AGDAPP02P, AGDAPP03P get password related files to prepare deployment of file replacement.
+#@download == E:\agdhelpdesk\scripts\agd_helpdesk\Web.config
+#@download == E:\agdassb\scripts\agd_assb\include\ccdgConstants.inc
+#@download == E:\agdmbs\app\script\vendorpayment\pubpassword.inc
+#@download == E:\agdmbs\app\script\vendorpayment\administrator\pubpassword.inc
+#@download == E:\agdreqsys\scripts\agd_reqsys\Web.config
+#@download == E:\agdreqsys\batchjob\agd_reqsys\srs_common.vbs
+#@download == E:\agdvendors\script\agd_vendors\web.config
+#@download == E:\agdvendors\batchjob\agd_vendors\batchinvoice\ClearBatchInv.vbs
+
+
+		

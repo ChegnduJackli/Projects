@@ -28,6 +28,11 @@ namespace FileMigration
             }
         }
 
+        public static string GetLogFileName()
+        {
+            return _FileName;
+        }
+
         public static void WriteLog(object obj)
         {
             try
