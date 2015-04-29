@@ -1,0 +1,384 @@
+about.html
+am.html
+am_training.html
+ap_purchasing.html
+ap_purchasing_training.html
+ar_billing.html
+ar_billing_training.html
+cc.html
+cc_gl.html
+Certifying_Officers_training.html
+enhancement.html
+events1.html
+events2.html
+events3.html
+events4.html
+events5.html
+FAQ.pdf
+faqs.html
+faqs.html_bk20May2014
+Financialyearend.html
+FormsAndTemplates - Copy.html
+FormsAndTemplates.html
+general.html
+general_training.html
+gl_training.html
+GuideClearCacheInIE.docx
+GuideClearCacheInIE.pdf
+GuideToNFS@Gov.html
+Highlights.html
+home_contactinfo.html
+home_feedback.html
+home_privacystatement.html
+home_privacystatement_Bckup.html
+home_sitemap.html
+home_termsofuse.html
+index.html
+Ministries.html
+newsandevents.html
+newsandevents1.html
+newsandevents_listing.html
+nfsgovupgrade.html
+nfsupgrade2015.sln
+nfsupgrade2015.suo
+Phase2Enhancements.html
+project_costing.html
+project_costing_training.html
+publications.html
+QuickReferenceGuides.html
+ReportsAndQueries.html
+StatutoryBoards.html
+userguides.html
+userguides_bk26jan2015.html
+css\layout - Copy (2).css
+css\layout - Copy.css
+css\layout.css
+css\layout.less
+css\layout_bk1.css
+css\style.css
+css\style.less
+docs\AM Upload_Excel Template.xlsm
+docs\AM01 - Certificate Of Redundancy.doc
+docs\AM01_-_Certificate_Of_Redundancy.doc
+docs\AM02 - Certificate Of Condemnation.doc
+docs\AM02_-_Certificate_Of_Condemnation.doc
+docs\AM_Upload_Excel_Template.xlsm
+docs\AP01 - Application Form for Interbank GIRO.doc
+docs\AP01_-_Application_Form_for_Interbank_GIRO.doc
+docs\AP02 - Consent Form For CreatingUpdating Vendor Records On Cheque Payment Mod.doc
+docs\AP02_-_Consent_Form_For_CreatingUpdating_Vendor_Records_On_Cheque_Payment_Mod.doc
+docs\AP03 - Specimen Signature Notification Form.doc
+docs\AP03_-_Specimen_Signature_Notification_Form.doc
+docs\AP04 - Stop Payment Request Form (Cheque Bank Draft).doc
+docs\AP04_-_Stop_Payment_Request_Form_(Cheque_Bank_Draft).doc
+docs\AR01 - Intermediary Bank Account (IBA) Request Form.doc
+docs\AR01_-_Intermediary_Bank_Account_(IBA)_Request_Form.doc
+docs\Asset_Management_QRG.pdf
+docs\Billing Approving Officer Quick Reference Guide.pdf
+docs\Billing_Approving_Officer_Quick_Reference_Guide.pdf
+docs\BR01 - Bank Reconciliation Request Form.doc
+docs\BR01_-_Bank_Reconciliation_Request_Form.doc
+docs\BR02 - Bank Reconciliation Approval Officer Specimen Signature Form.doc
+docs\BR02_-_Bank_Reconciliation_Approval_Officer_Specimen_Signature_Form.doc
+docs\Certifying_Officer_Quick_Reference_Guide.pdf
+docs\CF01 - New Account  Combo Account Creation Form.xls
+docs\CF01_-_New_Account__Combo_Account_Creation_Form.xls
+docs\CF01_-_New_Account__Combo_Account_Creation_Form.zip
+docs\CF02 - New Revenue Account Form.doc
+docs\CF02_-_New_Revenue_Account_Form.doc
+docs\CF03 - Cost Centre Transfer Form.doc
+docs\CF03_-_Cost_Centre_Transfer_Form.doc
+docs\FAQs_for_FY14_closing.docx
+docs\Fixed Asset Approving Officer Quick Reference Guide.pdf
+docs\Fixed_Asset_Approving_Officer_Quick_Reference_Guide.pdf
+docs\Guide to NFS@Gov.pdf
+docs\Guide_to_NFS@Gov.pdf
+docs\Journal Approving Officer Quick Reference Guide.pdf
+docs\Journal_Approving_Officer_Quick_Reference_Guide.pdf
+docs\MSAO Specimen Signature form.doc
+docs\MSAO_Specimen_Signature_form.doc
+docs\networkaccess.pdf
+docs\NFS@Gov Upgrade Issues _15 Apr 2014.pdf
+docs\NFS@GovGeneralBriefing.pdf
+docs\NFS@Gov_Upgrade_Issues__15_Apr_2014.pdf
+docs\NFSGov User Req form.doc
+docs\NFSGov_User_Req_form.doc
+docs\Non AGD Users - Excel 2003 and Prior.zip
+docs\Non AGD Users - Excel 2007 Onwards.zip
+docs\OTH01 - Sub-BU form.doc
+docs\OTH01_-_Sub-BU_form.doc
+docs\OTH02 - ChargingAllocation Or Budget Copy Migration & Change Request Form.doc
+docs\OTH02_-_ChargingAllocation_Or_Budget_Copy_Migration_&_Change_Request_Form.doc
+docs\Phase2_E-Invoice_Processing.pdf
+docs\Phase2_Unblock_Vendor.pdf
+docs\Phase2_Voucher_Processing.pdf
+docs\Post_Implementation_Issues.pdf
+docs\Procedures_on_Cost_Centre_Creation_and_Transfer.docx
+docs\QRG_for_Budget_Jrnl_Loading_and_Copy_Budget.pdf
+docs\QRG_for_ICG_Journals.pdf
+docs\QRG_for_Write_off.pdf
+docs\Query Quick Reference Guide.pdf
+docs\Query_Quick_Reference_Guide.pdf
+docs\Receipting Approving Officer Quick Reference Guide.pdf
+docs\Receipting_Approving_Officer_Quick_Reference_Guide.pdf
+docs\Revised_Procedures_for_the_Addition_and_Shifting_of_Cost_Centres.docx
+docs\Setup Instruction for Drilldown.zip
+docs\Setup_Instruction_for_Drilldown.zip
+docs\Speadsheet_asset_Upload_Template(Excel_2003_and_below).zip
+docs\Speadsheet_asset_Upload_Template(Excel_2007_and_above).zip
+docs\spreadsheet journal_2003.zip
+docs\spreadsheet journal_2007.zip
+docs\Spreadsheet Virement Upload.xlsm
+docs\spreadsheet_journal_2003.zip
+docs\spreadsheet_journal_2007.zip
+docs\Spreadsheet_Virement_Upload.xlsm
+docs\Tips_for_FY2014_Year-End_closing_(Mar_2015).docx
+docs\Tree_Group_QRG.pdf
+docs\UserTraining_AM.pdf
+docs\UserTraining_APPO.pdf
+docs\UserTraining_AR_EnhancementsOnly.pdf
+docs\UserTraining_AR_NewUsers.pdf
+docs\UserTraining_Billing_EnhancementsOnly.pdf
+docs\UserTraining_Billing_NewUsers.pdf
+docs\UserTraining_CC.pdf
+docs\UserTraining_GL.pdf
+docs\UserTraining_GL.pdf_notuse
+docs\UserTraining_PC.pdf
+docs\Virement Approving Officer Quick Reference Guide.pdf
+docs\Virement_Approving_Officer_Quick_Reference_Guide.pdf
+docs\userguides\AM_Asset_Additions.pdf
+docs\userguides\AM_Asset_Approval.pdf
+docs\userguides\AM_Asset_Maintenance.pdf
+docs\userguides\AM_Inquiries_and_Reports.pdf
+docs\userguides\NFS@Gov_Training_Material_APPOPVoucher.pdf
+docs\userguides\NFS@Gov_Training_Material_APPOPVoucher.pptx
+docs\userguides\NFS@Gov_Training_Material_APPOVendor.pdf
+docs\userguides\NFS@Gov_Training_Material_APPOVendor.pptx
+docs\userguides\NFS@Gov_Training_Material_APPOVoucherApproval.pdf
+docs\userguides\NFS@Gov_Training_Material_APPOVoucherApproval.pptx
+docs\userguides\NFS@Gov_Training_Material_APPO_E-Invoice.pdf
+docs\userguides\NFS@Gov_Training_Material_APPO_E-Invoice.pptx
+docs\userguides\NFS@Gov_Training_Material_CC_Budget_Jrnl_For-Stat Boards-(25_July_2014).pdf
+docs\userguides\NFS@Gov_Training_Material_CC_Budget_Jrnl_For-Stat Boards-25_July-2014.pptx
+docs\userguides\NFS@Gov_Training_Material_GLJournal_Processing_(25_July_2014).pdf
+docs\userguides\NFS@Gov_Training_Material_GLJournal_Processing_25_July_2014.pptx
+docs\userguides\NFS@Gov_Training_Material_GL_Enquiry_&_Reports-(25_July_2014).pdf
+docs\userguides\NFS@Gov_Training_Material_GL_Enquiry_&_Reports-25_July_2014.pptx
+docs\userguides\NFS@Gov_Training_Material_Part_1_AR_Deposits_Creation_v0_1_(25_Apr_2014)....pdf
+docs\userguides\NFS@Gov_Training_Material_Part_1_AR_Payment_Application_v0_1_(24_Apr_201....pdf
+docs\userguides\NFS@Gov_Training_Material_Part_1_AR_Payment_Application_v0_1_(24_Apr_201....pptx
+docs\userguides\NFS@Gov_Training_Material_Part_1_Customer_Record.pdf
+docs\userguides\NFS@Gov_Training_Material_Part_1_Customer_Record_(20_Apr_2014).pdf
+docs\userguides\NFS@Gov_Training_Material_Part_1_Customer_Record_(20_Apr_2014).pptx
+docs\userguides\NFS@Gov_Training_Material_Part_1_Deposit_Record_(Direct_Journal).pdf
+docs\userguides\NFS@Gov_Training_Material_Part_1_Deposit_Record_(Direct_Journal)_(23_Apr_2014).pdf
+docs\userguides\NFS@Gov_Training_Material_Part_1_Deposit_Record_(Direct_Journal)_(23_Apr_2014).pptx
+docs\userguides\NFS@Gov_Training_Material_Part_1_Overview_(12_May_2014).pdf
+docs\userguides\NFS@Gov_Training_Material_Part_1_Overview_(12_May_2014).pptx
+docs\userguides\NFS@Gov_Training_Material_Part_1_Overview_(13_Apr_2014).pdf
+docs\userguides\NFS@Gov_Training_Material_Part_1_Overview_(13_Apr_2014).pptx
+docs\userguides\NFS@Gov_Training_Material_Part_1_Payment_Application.pdf
+docs\userguides\NFS@Gov_Training_Material_Part_2_AR_Item_Creation_v0_1_(25_Apr_2014).pdf
+docs\userguides\NFS@Gov_Training_Material_Part_2_AR_Item_Creation_v0_1_(25_Apr_2014).pptx
+docs\userguides\NFS@Gov_Training_Material_Part_2_Invoice.pdf
+docs\userguides\NFS@Gov_Training_Material_Part_2_Invoice_(24_Apr_2014).pdf
+docs\userguides\NFS@Gov_Training_Material_Part_2_Invoice_(24_Apr_2014).pptx
+docs\userguides\NFS@Gov_Training_Material_Part_2_Online_Items_&_Maintenance_Worksheet.pdf
+docs\userguides\NFS@Gov_Training_Material_Part_2_Reports_and_Queries.pdf
+docs\userguides\NFS@Gov_Training_Material_Part_2_Reports_and_Queries_(23_Apr_2014).pdf
+docs\userguides\NFS@Gov_Training_Material_Part_2_Reports_and_Queries_(23_Apr_2014).pptx
+docs\userguides\NFS@Gov_Training_Material_Part_2_Semi_Manual_Recon_(12_May_2014).pdf
+docs\userguides\NFS@Gov_Training_Material_Part_2_Semi_Manual_Recon_(12_May_2014).pptx
+docs\userguides\NFS@Gov_Training_Material_Part_2_Semi_Manual_Recon_(13_Apr_2014).pdf
+docs\userguides\NFS@Gov_Training_Material_Part_2_Semi_Manual_Recon_(13_Apr_2014).pptx
+docs\userguides\NFS@Gov_Training_Material_Part_3_AR_Reports_v0_1_(25_Apr_2014).pdf
+docs\userguides\NFS@Gov_Training_Material_Part_3_Manual_Reconciliation_(13_Apr_2014).pdf
+docs\userguides\NFS@Gov_Training_Material_Part_3_Manual_Reconciliation_(13_Apr_2014).pptx
+docs\userguides\NFS@Gov_Training_Material_Part_3_Reports_and_Queries.pdf
+docs\userguides\NFS@Gov_Training_Material_Part_3_Reports_and_Queries_(23_Apr_2014).pdf
+docs\userguides\NFS@Gov_Training_Material_Part_3_Reports_and_Queries_(23_Apr_2014).pptx
+docs\userguides\NFS@Gov_Training_Material_Part_3_Reports_v0_1_(24_Apr_2014).pdf
+docs\userguides\NFS@Gov_Training_Material_Part_3_Reports_v0_1_(24_Apr_2014).pptx
+docs\userguides\NFS@Gov_Training_Material_Part_4_Reports_(13_Apr_2014).pdf
+docs\userguides\NFS@Gov_Training_Material_Part_4_Reports_(13_Apr_2014).pptx
+docs\userguides\NFS@Gov_Training_Material_Part_4_Reports_(13_May_2014).pdf
+docs\userguides\NFS@Gov_Training_Material_Part_4_Reports_(13_May_2014).pptx
+docs\userguides\NFS@Gov_Training_Receiving.pdf
+docs\userguides\NFS@Gov_Training_Receiving.pptx
+docs\userguides\RF_COA.xls
+docs\userguides\User Guide - AM Inquiries and Reports.pptx
+docs\userguides\User Guide - AM_Asset Additions.pptx
+docs\userguides\User Guide - AM_Asset Maintenance.pptx
+docs\userguides\User Guide - AM_Asset_Approval.pptx
+docs\userguides\User Guide - Budget Journals For Stat Boards.pptx
+docs\userguides\User Guide - Budget Spreading at Detailed Level.pptx
+docs\userguides\User Guide - Chartfield and Tree Maintenance.pptx
+docs\userguides\User Guide - Extracting Budget Information using Query Tools.pptx
+docs\userguides\User Guide - Extracting GL Information using Query Tools.pptx
+docs\userguides\User Guide - Journal_Processing.pptx
+docs\userguides\User Guide - Month End Closing.pptx
+docs\userguides\User Guide - PC_CloseProject.pptx
+docs\userguides\User Guide - PC_Project&Activity.pptx
+docs\userguides\User Guide - PC_ProjectBudget.pptx
+docs\userguides\User Guide - PC_Reports.pptx
+docs\userguides\User Guide - Virement Processing at Common Level.pptx
+docs\userguides\User_Guide_-_AM_Asset_Additions.pdf
+docs\userguides\User_Guide_-_AM_Asset_Additions.pptx
+docs\userguides\User_Guide_-_AM_Asset_Approval.pdf
+docs\userguides\User_Guide_-_AM_Asset_Approval.pptx
+docs\userguides\User_Guide_-_AM_Asset_Maintenance.pdf
+docs\userguides\User_Guide_-_AM_Asset_Maintenance.pptx
+docs\userguides\User_Guide_-_AM_Inquiries_and_Reports.pdf
+docs\userguides\User_Guide_-_AM_Inquiries_and_Reports.pptx
+docs\userguides\User_Guide_-_Budget_Journals_For_Stat_Boards.pdf
+docs\userguides\User_Guide_-_Budget_Journals_For_Stat_Boards.pptx
+docs\userguides\User_Guide_-_Budget_Spreading_at_Detailed_Level.pdf
+docs\userguides\User_Guide_-_Budget_Spreading_at_Detailed_Level.pptx
+docs\userguides\User_Guide_-_Chartfield_and_Tree_Maintenance.pdf
+docs\userguides\User_Guide_-_Chartfield_and_Tree_Maintenance.pptx
+docs\userguides\User_Guide_-_Extracting_Budget_Information_using_Query_Tools.pdf
+docs\userguides\User_Guide_-_Extracting_Budget_Information_using_Query_Tools.pptx
+docs\userguides\User_Guide_-_Extracting_GL_Information_using_Query_Tools.pdf
+docs\userguides\User_Guide_-_Extracting_GL_Information_using_Query_Tools.pptx
+docs\userguides\User_Guide_-_Journal_Processing.pdf
+docs\userguides\User_Guide_-_Journal_Processing.pptx
+docs\userguides\User_Guide_-_Month_End_Closing.pdf
+docs\userguides\User_Guide_-_Month_End_Closing.pptx
+docs\userguides\User_Guide_-_PC_CloseProject.pdf
+docs\userguides\User_Guide_-_PC_CloseProject.pptx
+docs\userguides\User_Guide_-_PC_Project&Activity.pdf
+docs\userguides\User_Guide_-_PC_Project&Activity.pptx
+docs\userguides\User_Guide_-_PC_ProjectBudget.pdf
+docs\userguides\User_Guide_-_PC_ProjectBudget.pptx
+docs\userguides\User_Guide_-_PC_Reports.pdf
+docs\userguides\User_Guide_-_PC_Reports.pptx
+docs\userguides\User_Guide_-_Virement_Processing_at_Common_Level.pdf
+docs\userguides\User_Guide_-_Virement_Processing_at_Common_Level.pptx
+images\am_process_flow-aa.png
+images\am_process_flow-retire.png
+images\am_process_flow.png
+images\arrow_right.png
+images\arr_down.gif
+images\arr_down.png
+images\arr_down_w.gif
+images\arr_down_w.png
+images\ar_billing_process_flow.png
+images\banner-full.jpg
+images\banner.jpg
+images\banner_original.jpg
+images\billing_process_flow.png
+images\bullet_sitemap.jpg
+images\cc_budget_spread.png
+images\cc_process_flow.png
+images\cc_virement.png
+images\creation_processing_step.png
+images\cube.png
+images\digits.png
+images\Dot.jpg
+images\events4_1.png
+images\events4_2.png
+images\events4_4.png
+images\evolution.png
+images\flow.png
+images\footer_logo01.gif
+images\footer_logo02.gif
+images\footer_logo03.gif
+images\footer_logo04.gif
+images\footer_logo05.gif
+images\footer_logo_iso9000.gif
+images\footer_logo_serviceclass.gif
+images\general_menu.png
+images\general_queryresult.png
+images\general_querytool.png
+images\general_querytoola.png
+images\general_queryviewer.png
+images\general_ui.png
+images\general_ui2.png
+images\general_ui3.png
+images\interfaces.png
+images\journal_creation_process_flow.png
+images\leftmenu_bullet.jpg
+images\leftmenu_bulletselected.jpg
+images\leftmenu_bulletsmall.jpg
+images\leftmenu_bulletsmallselected.jpg
+images\logo.gif
+images\logo_AGD.gif
+images\nfsgovupgrade_banner.png
+images\nfsgovupgrade_banner1.jpg
+images\nfsgov_logo.png
+images\nfsgov_logo_big.png
+images\nfsgov_logo_old.png
+images\pc-closuredtvalidation.png
+images\pic_aboutus.jpg
+images\pic_home1 (3).jpg
+images\pic_home1.JPG
+images\pic_home12.jpg
+images\process_flow.png
+images\slideShow_arr.gif
+images\SpryMenuBarDown.gif
+images\summary_of_enhancement_am.png
+images\summary_of_enhancement_ar_billing.png
+images\summary_of_enhancement_billing.png
+images\summary_of_enhancement_cc.png
+images\summary_of_enhancement_gl.png
+images\timeline.png
+images\demo\event3_3.png
+images\demo\event4_4.png
+images\demo\events2_2.png
+images\demo\events2_3.png
+images\demo\events3.png
+images\demo\events4_3.png
+images\demo\events4_4.JPG
+images\demo\events4_4.png
+images\demo\events4_5.png
+images\demo\events_4.png
+images\demo\Event_2.png
+images\demo\event_3.png
+images\demo\NFS@GovTraining_1.jpg
+images\demo\NFS@GovTraining_2.jpg
+images\demo\NFS@GovTraining_3.jpg
+images\demo\NFS@GovTraining_4.jpg
+images\demo\NFS@GovTraining_5.jpg
+images\demo\pic_news01.jpg
+images\demo\pic_news02.jpg
+images\demo\pic_news03.jpg
+images\events\events1.png
+images\events\events2_1.png
+images\events\events2_2.png
+images\events\events3.png
+images\events\events3_1.png
+images\events\events3_2.png
+images\events\events3_3.png
+images\events\events4_1.png
+images\events\events4_2.png
+images\events\events4_3.png
+images\events\events4_4.png
+images\spotlight\Picture1.jpg
+images\spotlight\Picture2.jpg
+images\spotlight\Picture3.jpg
+images\spotlight\Picture4.jpg
+images\spotlight\Picture4_s.jpg
+images\spotlight\Picture5.jpg
+images\spotlight\Picture6.jpg
+images\spotlight\Picture7.jpg
+images\spotlight\Picture8.jpg
+images\spotlight\Picture8_old.jpg
+images\spotlight\Picture9.jpg
+images\spotlight\thumbs\Picture1_s.jpg
+images\spotlight\thumbs\Picture2_s.jpg
+images\spotlight\thumbs\Picture3_s.jpg
+images\spotlight\thumbs\Picture4_s.jpg
+images\spotlight\thumbs\Picture5_s.jpg
+images\spotlight\thumbs\Picture6_s.jpg
+images\spotlight\thumbs\Picture7_s.jpg
+images\spotlight\thumbs\Picture8_s.jpg
+images\spotlight\thumbs\Picture9_s.jpg
+js\common.js
+js\counter.js
+js\jquery-1.10.2.min.js
+js\jquery-1.10.2.min.map
+js\jquery-1.4.1.js
+js\jquery.lwtCountdown-0.9.5.js
+js\jquery.lwtCountdown-1.0.js
+js\menu.html
+js\misc.js

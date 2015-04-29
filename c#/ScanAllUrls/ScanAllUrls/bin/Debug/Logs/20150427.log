@@ -1,0 +1,5 @@
+[27/04/2015 06:23:35 PM]:System.ArgumentNullException: Value cannot be null.
+Parameter name: address
+   at EmailHelper.EmailHelper.Send(EmailEntity entity)
+   at ScanAllUrls.Program.SendHtml(String tableHtml) in C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\ScanAllUrls\ScanAllUrls\Program.cs:line 53
+   at ScanAllUrls.Program.Main(String[] args) in C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\ScanAllUrls\ScanAllUrls\Program.cs:line 20

@@ -1,0 +1,5 @@
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\JobSample\JobSample\bin\Debug\JobSample.exe.config
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\JobSample\JobSample\bin\Debug\JobSample.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\JobSample\JobSample\bin\Debug\JobSample.pdb
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\JobSample\JobSample\obj\x86\Debug\JobSample.exe
+C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\JobSample\JobSample\obj\x86\Debug\JobSample.pdb

@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+        <script src="../js/common.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="main"></div>
+
+</body>
+<script type="text/javascript">
+    var strHtml = "";
+    var calculator = {
+        operand1: 1,
+        operand2: 2,
+        add: function () {
+            this.result = this.operand1 + this.operand2;
+        }
+    };
+
+    calculator.add();
+    WriteLine(calculator.result);
+
+
+    var o = {
+        m: function () {
+            var self = this;
+            WriteLine(this === o); //true
+            f();
+            function f() {
+               
+                WriteLine("in f,this===o: " + (this === o)); //false
+                WriteLine(self === o);  //true
+            }
+        }
+    };
+
+
+    o.m();
+
+    WriteLine(hypotenuse(3, 4));
+    WriteLine("noreturn: " + noreturn());
+
+    //构造函数调用，凡是没有形参的构造函数都可以省略圆括号
+    var o1 = new Object();
+    var o2 = new Object;
+    //上面两行代码是等价的
+    //8.3.1 可选形参
+    function getPropertyNames(o, /* optional*/ a) {
+        if (a === undefined) a = [];  //如果未定义，则使用新数组
+        //a = a || [];  //这是一种习惯写法
+        for (var pr in o) {
+            a.push(pr);
+        }
+        return a;
+
+    }
+
+    var o3 = [1, 2, 3];
+    var o4 = [6, 7, 8];
+    var a = getPropertyNames(o3); //将o的属性存储到一个新的数组中
+    GetArray(a);
+    var b = getPropertyNames(o3, o4);  //将o3的属性追加到o4中
+    GetArray(b);
+ 
+    var obj = { a: 1, b: 2, c: 3 };
+
+    for (var prop in obj) {
+        WriteLine("o." + prop + " = " + obj[prop]);
+    }
+    //8.3.2，可变长的实参列表：实参对象 ,当实参个数超过函数定义吃参数时
+    function f(x, y, z) {
+        if (arguments.length != 3) {
+            //throw new Error();
+          WriteLine("function f called with:" + arguments.length + "arguments, but is expects 3 arguments");
+        }
+        WriteLine("x: " + x);
+        WriteLine("y: " + y);
+        WriteLine("z: " + z);
+        WriteLine("arguments[0]: " + arguments[0]);
+        WriteLine("arguments[1]: " + arguments[1]);
+        WriteLine("arguments[2]: " + arguments[2]);
+    }
+
+    f(2,3,5);
+    //类似这种函数可以接受任意个数的实参，这种函数也成为“不定实参函数”
+    function max(/*...*/) {
+        var max = Number.NEGATIVE_INFINITY;
+        WriteLine("max in function: " + max);
+
+        for (var i = 0; i < arguments.length; i++) {
+            if (arguments[i] > max) max = arguments[i];
+        }
+
+        return max;
+    }
+
+    WriteLine("the maximum :"+max(34, 56, 78));
+
+    //arguments[0] 和x指代同一个值，修改其中一个会影响另一个
+    function f1(x) {
+        WriteLine("x: " + x);
+        arguments[0] = null;
+        WriteLine("x: " + x);
+    }
+
+    f1(4321);
+
+    //8.4作为值的参数
+    function square(x) {
+        return x * x;
+    }
+    //square仅仅是变量的名字，这个变量指代函数对象，函数还可以赋值给其他的变量，并且仍可以正常工作
+    var s = square;
+    WriteLine(square(4));  //=>16
+    WriteLine(s(4));  //=>16
+    //函数也可以赋值给对象的属性，当函数作为对象的属性调用时，函数就称为方法
+    var o = {
+        square: function (x) { return x * x; }
+    };
+    WriteLine(o.square(16));
+
+    //函数甚至不需要带名字，当把他们赋值给数组元素时：
+    var a = [function (x) { return x * x }, 20];
+    WriteLine(a[0](a[1])); //=>400
+
+    //自定义函数属性
+    uniqueInteger.counter = 0;
+    function uniqueInteger() {
+        return uniqueInteger.counter++;
+    }
+    WriteLine(uniqueInteger());
+    WriteLine(uniqueInteger.counter);
+    WriteLine(uniqueInteger());
+    WriteLine(uniqueInteger.counter);
+
+    function WriteLine(obj) {
+        strHtml += "<p>" + obj + "</p>";
+        document.getElementById("main").innerHTML = strHtml;
+    }
+
+    //返回undefined
+    function noreturn() {
+        console.log('test');
+    }
+    //函数嵌套
+    //直角三角形的斜边
+    function hypotenuse(a, b) {
+
+        function square(x) { return x * x; }
+
+        return Math.sqrt(square(a) + square(b));
+    }
+    
+    //check the common.js
+    var j = operate2("add", "hello", operate2("add", " ", "world"));
+    WriteLine("j: " + j);
+    var k = operate2("pow", 10, 2);
+    WriteLine("k: " + k);
+
+   
+    WriteLine("factorial(10) " + factorial(10));
+
+    function GetArray(arr) {
+        //for (var i = 0; i < arr.length; i++) {   //优化如下：数组的长度应该只查询一次而非每次循环都要查询
+        for (var i = 0, len = arr.length; i < len; i++) {
+            //如果想排除null,undefined和不存在的元素
+            // if (!arr[i]) continue;
+
+            //如果只想跳过不存在的元素仍然要处理存在的undefined元素
+            // if (!(i in arr)) continue;
+
+            //如果只想跳过undefined 和不存在的元素
+            if (arr[i] == undefined) {
+                WriteLine(i + " : " + " no data,undefined");
+            }
+            else {
+               // WriteLine(i + " : " + arr[i]);
+                WriteLine(arr[i]);
+            }
+        }
+    }
+
+</script>
+
+</html>

@@ -1,0 +1,4 @@
+[28/04/2015 09:46:15 AM]:System.FormatException: An invalid character was found in the mail header: ';'.
+   at EmailHelper.EmailHelper.Send(EmailEntity entity)
+   at ScanAllUrls.Program.SendHtml(String tableHtml) in C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\ScanAllUrls\ScanAllUrls\Program.cs:line 55
+   at ScanAllUrls.Program.Main(String[] args) in C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\ScanAllUrls\ScanAllUrls\Program.cs:line 20

@@ -38,7 +38,8 @@
         });
  
         $("input").click(function(){
-          $("div").trigger("mouseover");
+          //$("div").trigger("mouseover");
+		  $("div").mouseover();
         });
       });
     </script>
@@ -53,6 +54,7 @@
     <div class="div3">
       <p>Here</p>
     </div>
+	<br />
     <input type="button" value="run with trigger"></input>
   </body>
 </html>

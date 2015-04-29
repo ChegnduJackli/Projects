@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>数组</title>
+</head>
+<body>
+<div id="main">
+</div>
+
+    <img src="../Images/7_array_length.png" />
+    <br />
+    <img src="../Images/7_delete_Array.png" />
+        <br />
+    <img src="../Images/7_for_in.png" />
+    <br />
+    <img src="../Images/7_matrix.png" />
+    <br />
+    <img src="../Images/7_join_reverse.png" />
+    <br />
+    <img src="../Images/7_sort.png" />
+    <br />
+    <img src="../Images/7_contact_Slice.png" />
+    <br />
+    <img src="../Images/7_push_pop.png" />
+    <br />
+    <img src="../Images/7_map_filter.png" />
+    <br />
+    <img src="../Images/7_every_some.png" />
+</body>
+
+
+<script type="text/javascript">
+
+    var a1 = [, , , ];  //数组是[undefined,undefined,underfined]
+    var a2 = new Array(3); //数组根本没有元素
+    WriteLine("0 in a1:" + (0 in a1));
+    WriteLine("0 in a2:" + (0 in a2));
+
+    var a = [1, 2, 3, 4, 5];
+    a.length = 3;  //a=[1,2,3]
+    WriteLine("after a.length=3");
+    for (var t in a) {
+        WriteLine(t);
+    }
+    a.length = 0; //delete all element,a =[]
+    GetArray(a);
+    a.length = 5; //no element,like new Array(5)
+    GetArray(a);
+
+    //数组元素的添加和删除
+    var a = [];
+    a[0] = "zero";
+    a[1] = "one";
+    GetArray(a);
+    //也可以实用push方法在数组的末尾添加一个或多个元素
+    var b = [];
+    b.push("zero");
+    b.push("one", "two"); //a=["zero","one","two"]
+    GetArray(b);
+
+    var c = [1, 2, 3];
+    delete c[1];  //c在索引1的位置不再有元素
+    1 in c;     //=>false 数组索引1并未在数组中定义
+    WriteLine("c.length:" + c.length); //=>3,delete 操作不影响数组的长度
+    GetArray(c);
+
+    //多维数组
+    var table = new Array(10);
+    for (var i = 0; i < table.length; i++) {
+        table[i] = new Array(10);
+    }
+    for (var row = 0; row < table.length; row++) {
+        for (var col = 0; col < table[row].length; col++) {
+            table[row][col] = row * col;
+           // Write(row * col);
+
+        }
+        WriteLine(table[row].join(" "));
+    }
+
+    //数组的排序
+    var a = new Array(3, 7, 4, 9);
+    a.sort();
+    var s = a.join(", ");
+    WriteLine(s);
+
+    var a = ['ant', 'Bug', 'cat', 'Dog'];
+    a.sort();
+    GetArray(a);
+    //先后顺序，假设第一个参数应该在前，比较函数应该返回一个小于0的数值，
+    //反之，假设第一个参数在后，函数应该返回一个大于0的数值
+    a.sort(function (s, t) {
+        var a = s.toLowerCase();
+        var b = t.toLowerCase();
+        if (a < b) return -1;
+        if (a > b) return 1;
+        return 0;
+    });
+
+    GetArray(a);
+
+    //push and pop 方法允许将数组当做栈来使用，push()方法在数组的尾部添加一个或者多个元素，
+    //，并返回数组新的长度，pop()方法则相反，它删除数组的最后一个元素。减小数组的长度并返回它删除的值
+
+    var stack = [];
+    stack.push(1, 2);
+    WriteLine("stack.pop(): " +stack.pop());
+    WriteLine("stack.push(3): " + stack.push(3));
+    WriteLine("stack.pop(): " + stack.pop());
+    WriteLine("stack.push([4,5]): " + stack.push([4, 5]));
+    WriteLine("stack.pop(): " + stack.pop());
+    WriteLine("stack.pop(): " + stack.pop());
+
+    //forEach()
+    var data = [1, 2, 3, 4, 5];
+    var sum = 0;
+    data.forEach(function (value) { sum += value; });
+    WriteLine("sum: " + sum);
+
+    data.forEach(function (v, i, a) { a[i] = v + 1; });
+    GetArray(data);
+
+    var strHtml = "";
+    function WriteLine(obj) {
+        strHtml += "<p>" + obj + "</p>";
+        document.getElementById("main").innerHTML = strHtml;
+    }
+
+    function Write(obj) {
+        strHtml += obj;
+        document.getElementById("main").innerHTML = strHtml;
+    }
+
+    function GetArray(arr) {
+        //for (var i = 0; i < arr.length; i++) {   //优化如下：数组的长度应该只查询一次而非每次循环都要查询
+        for (var i = 0, len = arr.length; i < len; i++) {
+            //如果想排除null,undefined和不存在的元素
+            // if (!arr[i]) continue;
+
+            //如果只想跳过不存在的元素仍然要处理存在的undefined元素
+            // if (!(i in arr)) continue;
+
+           //如果只想跳过undefined 和不存在的元素
+            if (arr[i] == undefined) {
+                WriteLine(i + " : " + " no data,undefined");
+            }
+            else {
+                WriteLine(i + " : " + arr[i]);
+            }
+        }
+    }
+
+
+</script>
+</html>

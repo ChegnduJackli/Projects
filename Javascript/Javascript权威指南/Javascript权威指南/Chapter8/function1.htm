@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="../js/common.js" type="text/javascript"></script>
+</head>
+<body>
+
+
+<div id="main"></div>
+
+</body>
+<script type="text/javascript">
+    //闭包
+
+    function f1() {
+        var n = 999;
+        function f2() {
+            alert(n); // 999
+        }
+    }
+   // 在上面的代码中，函数f2就被包括在函数f1内部，这时f1内部的所有局部变量，对f2都是可见的。但是反过来就不行，f2内部的局部变量，对f1就是不可见的。
+   //这就是Javascript语言特有的"链式作用域"结构（chain scope），子对象会一级一级地向上寻找所有父对象的变量。
+   //所以，父对象的所有变量，对子对象都是可见的，反之则不成立。
+    //既然f2可以读取f1中的局部变量，那么只要把f2作为返回值，我们不就可以在f1外部读取它的内部变量了吗！
+
+    function f1() {
+        var n = 999;
+        function f2() {
+            return n;
+        }
+        return f2;
+    }
+    var result = f1();
+    result(); // 999
+    WriteLine("result(): " + result());
+
+    /*
+    在这个示例中，我们定义了 makeAdder(x) 函数：带有一个参数 x 并返回一个新的函数。返回的函数带有一个参数 y，并返回 x 和 y 的和。
+
+从本质上讲，makeAdder 是一个函数工厂 — 创建将指定的值和它的参数求和的函数，在上面的示例中，我们使用函数工厂创建了两个新函数 — 一个将其参数和 5 求和，另一个和 10 求和。
+
+add5 和 add10 都是闭包。它们共享相同的函数定义，但是保存了不同的环境。在 add5 的环境中，x 为 5。而在 add10 中，x 则为 10。
+    */
+    function makeAdder(x) {
+        return function (y) {
+            return x + y;
+        };
+    }
+
+    var add5 = makeAdder(5);
+    var add10 = makeAdder(10);
+
+    WriteLine("add5(2):" + add5(2));  // 7
+    WriteLine("add10(2)"+add10(2)); // 12
+
+    var scope = "global scope";
+    function checkscope() {
+        var scope = "local scope";
+        function f() { return scope; } //=>local scope
+        return f();
+    }
+    WriteLine("check scope function called: " + checkscope());
+
+    function checkscope1() {
+        var scope = "local scope";
+        function f() { return scope; }
+        return f;
+    }
+    WriteLine("check scope function called,return function name: " + checkscope1()());
+
+    var uniqueInteger = (function () {
+        var counter = 0;
+        return function () {
+            return counter++;
+        };
+    } ());
+
+    WriteLine("uniqueInteger: " + uniqueInteger());
+    WriteLine("uniqueInteger: " + uniqueInteger());
+    /* 
+    每次调用counter()都会创建一个新的作用域链和一个新的私有变量，
+    因此，如果调用counter(0两次，则会得到两个计数器对象。
+    而且彼此包含不同的私有变量，调用其中一个技术其对象的count() or reset()
+    不会影响到另外一个对象。
+    */
+    function counter() {
+
+        var n = 0;
+        return {
+            count: function () { return n++ },
+            reset: function () { n = 0; }
+        };
+    }
+    var c = counter();
+    var d = counter();
+    WriteLine("c.count: " + c.count()); //=>0 
+    WriteLine("d.count: " + d.count()); //=> 0，互相不干扰
+
+    WriteLine("  c.reset(): " + c.reset());
+    WriteLine("c.count: " + c.count());
+    WriteLine("d.count: " + d.count());
+    WriteLine("d.count: " + d.count());
+    WriteLine("d.count: " + d.count());
+    WriteLine("c.count: " + c.count());
+    
+</script>
+</html>
+

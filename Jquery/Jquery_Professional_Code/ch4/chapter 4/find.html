@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.7.1.js">
+    </script>
+ 
+    <script>
+ 
+      $(function(){
+          var wrapper = $("ul");  
+          console.log("selected list count:" + wrapper.length);
+ 
+          var newWrapper = wrapper.find("#techBooks");  
+ 
+          console.log("selected list count:" + newWrapper.length);   
+                
+			//如果只想在第一层后代元素中搜索，则使用.children()方法	
+			var childWrapper = wrapper.children().find("#techBooks");
+          console.log("selected list count:" + childWrapper.length);
+		  
+		  $('ul.level-2').children("").css('background-color', 'red');
+		  //$('ul.level-2').children(".item-a").css('background-color', 'red');
+      });
+    </script>
+  </head>
+  <body>
+    <ul id="groceries">
+     <li>Eggs</li>
+     <li>Bacon</li>
+     <li>Ham</li>
+    </ul>
+    <ul id="books">
+     <li>
+       <ul id="techBooks">
+         <li>Pro jQuery</li>
+         <li>JavaScript 101</li>
+       </ul>
+       <ul id="mathBooks">
+         <li>Calculus for the Gods</li>
+         <li>Intro to Finite State Machines</li>
+       </ul>
+     </li>
+     <li>How to Win at Jeopardy</li>
+     <li>How To Cook</li>
+    </ul>
+	
+	<ul class="level-1">
+  <li class="item-i">I</li>
+  <li class="item-ii">II
+    <ul class="level-2">
+      <li class="item-a">A</li>
+      <li class="item-b">B
+        <ul class="level-3">
+          <li class="item-1">1</li>
+          <li class="item-2">2</li>
+          <li class="item-3">3</li>
+        </ul>
+      </li>
+      <li class="item-c">C</li>
+    </ul>
+  </li>
+  <li class="item-iii">III</li>
+</ul>
+
+
+  </body>
+</html>
+
