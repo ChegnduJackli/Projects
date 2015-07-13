@@ -58,6 +58,9 @@
     <Content Include="Chapter7\array.htm" />
     <Content Include="Chapter8\function.htm" />
     <Content Include="Chapter8\function1.htm" />
+    <Content Include="chapter9\class.htm" />
+    <Content Include="event.htm" />
+    <Content Include="game.htm" />
     <Content Include="Images\3_object2.png" />
     <Content Include="Images\3_object_compare.png" />
     <Content Include="Images\6_in.png" />
@@ -77,6 +80,9 @@
     <Content Include="Index.htm" />
     <Content Include="Instance.png" />
     <Content Include="js\common.js" />
+    <Content Include="js\game.js" />
+    <Content Include="js\Spiner.js" />
+    <Content Include="QQEditor.htm" />
     <Content Include="typeof.png" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -89,9 +95,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="chapter9\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <ProjectExtensions>
@@ -100,7 +104,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>51508</DevelopmentServerPort>
+          <DevelopmentServerPort>56681</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

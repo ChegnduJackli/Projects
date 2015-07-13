@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+   
+</head>
+<body id="main">
+
+</body>
+
+ <script src="../js/common.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        //这是一个构造函数，用以初始化新创建的“范围对象”
+        //注意，这里并没有创建并返回一个对象，仅仅是初始化
+        function Range(from, to) {
+            this.from = from;
+            this.to = to;
+        }
+        //所有的“范围对象”都继承自这个对象
+        //注意，属性的名字必须是"prototype"， 使用"prototype"属性向对象添加属性
+        //简而言之，prototype就是“一个给类的对象添加方法的方法”，使用prototype属性，可以给类动态地添加方法，以便在JavaScript中实现“继承”的效果。 
+        Range.prototype = {
+             constructor:Range, //显示设置构造函数反向使用
+            includes: function (x) { return this.from <= x && x <= this.to; },
+            foreach: function (f) {
+                for (var x = Math.ceil(this.from); x <= this.to; x++) f(x);
+            },
+            //返回表示范围的字符串
+            toString: function () { return "(" + this.from + "..." + this.to + ")"; }
+        };
+
+        Object.prototype.test = function () { alert("test prototype") };
+
+        //创建的Range的对象同时继承Range.prototype 和 Object.prototype ，原型链
+        var r = new Range(1, 5);
+        WriteLine(r.includes(3));
+        r.foreach(WriteLine);
+        WriteLine(r);
+        WriteLine(r instanceof Range);  //true   
+        //检测对象的原型链上是否存在某个特定的原型对象。
+        WriteLine("isPrototypeOf: " + Range.prototype.isPrototypeOf(r)); //true
+       // r.test();
+
+        //9.2 Constructor属性
+        //每个javascript函数都自动拥有一个prototype属性，这个属性的值是一个对象
+        //这个对象包含唯一一个不可枚举属性constructor. constructor属性的值是一个函数对象。
+        var F = function () { };
+        var p = F.prototype;  //这是与F相关联的原型函数
+        var c = p.constructor; //这是与原型相关联的原型函数
+        WriteLine("c===F: " + (c === F)); //true
+
+        WriteLine(Range);
+    </script>
+</html>

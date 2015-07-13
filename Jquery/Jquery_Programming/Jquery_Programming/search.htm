@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+        <!--<script src="Script/jquery-1.11.2.min.js" type="text/javascript"></script>-->
+    <script src="Script/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <style type="text/css">
+       
+    .highlight {
+    background-color: #fff34d;
+    -moz-border-radius: 5px; /* FF1+ */
+    -webkit-border-radius: 5px; /* Saf3-4 */
+    border-radius: 5px; /* Opera 10.5, IE 9, Saf5, Chrome */
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7); /* FF3.5+ */
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7); /* Saf3.0+, Chrome */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7); /* Opera 10.5+, IE 9.0 */
+}
+
+.highlight {
+    padding:1px 4px;
+    margin:0 -4px;
+}
+            
+        </style>
+        <script type="text/javascript">
+           
+            $(function () {
+                var item = "Update Gov";
+                //$(".faq:contains('" + item + "')").css('background-color', 'yellow');
+                var itemArray = item.split(' ');
+                for (var i = 0; i < itemArray.length; i++) {
+                    var t = itemArray[i];
+                    $(".faq").find(":contains('" + t + "')").css('background-color', 'yellow');
+                }
+
+                $(".faq").click(function () {
+                    alert($(this).val());
+                });
+
+                $('#text-search').bind('keyup change', function (ev) {
+                    // pull in the new value
+                    var searchTerm = $(this).val();
+
+                    // remove any old highlighted terms
+                    $('body').removeHighlight();
+
+                    // disable highlighting if empty
+                    if (searchTerm) {
+                        // highlight the new term
+                        $('body').highlight(searchTerm);
+                        $('body').find(searchTerm).closest().css('color', 'red');
+                    }
+                });
+
+            });
+
+            jQuery.fn.highlight = function (pat) {
+                function innerHighlight(node, pat) {
+                    var skip = 0;
+                    if (node.nodeType == 3) {
+                        var pos = node.data.toUpperCase().indexOf(pat);
+                        if (pos >= 0) {
+                            var spannode = document.createElement('span');
+                            spannode.className = 'highlight';
+                            var middlebit = node.splitText(pos);
+                            var endbit = middlebit.splitText(pat.length);
+                            var middleclone = middlebit.cloneNode(true);
+                            spannode.appendChild(middleclone);
+                            middlebit.parentNode.replaceChild(spannode, middlebit);
+                            skip = 1;
+                        }
+                    }
+                    else if (node.nodeType == 1 && node.childNodes && !/(script|style)/i.test(node.tagName)) {
+                        for (var i = 0; i < node.childNodes.length; ++i) {
+                            i += innerHighlight(node.childNodes[i], pat);
+                        }
+                    }
+                    return skip;
+                }
+                return this.each(function () {
+                    innerHighlight(this, pat.toUpperCase());
+                });
+            };
+
+            jQuery.fn.removeHighlight = function () {
+                function newNormalize(node) {
+                    for (var i = 0, children = node.childNodes, nodeCount = children.length; i < nodeCount; i++) {
+                        var child = children[i];
+                        if (child.nodeType == 1) {
+                            newNormalize(child);
+                            continue;
+                        }
+                        if (child.nodeType != 3) { continue; }
+                        var next = child.nextSibling;
+                        if (next == null || next.nodeType != 3) { continue; }
+                        var combined_text = child.nodeValue + next.nodeValue;
+                        new_node = node.ownerDocument.createTextNode(combined_text);
+                        node.insertBefore(new_node, child);
+                        node.removeChild(child);
+                        node.removeChild(next);
+                        i--;
+                        nodeCount--;
+                    }
+                }
+
+                return this.find("span.highlight").each(function () {
+                    var thisParent = this.parentNode;
+                    thisParent.replaceChild(this.firstChild, this);
+                    newNormalize(thisParent);
+                }).end();
+            };
+
+        </script>
+</head>
+<body>
+<div>This is a test</div>
+<div>Another Div</div>
+Search: <input type="text" id="text-search" />
+
+<p><b>Demo </b> he new edition of KnowlEdge K12 enables your school with flexibility by wholly automating their administrative and academic processes. With IncTech’s solution for K12 schools, you can. We give you an internal infrastructure so you can share school and student information. </p>
+
+
+
+
+    <div id="cont" class="content">
+                <div class="fnc cl" >
+          
+                    <span class="font-s fl" href="#"></span><span class="font-b fl" href="#"></span><span class="fnc-btn fl"
+                        href="javascript:;" style=" cursor:pointer">Expand All</span>
+                </div>
+                <ul class="faq" id="faq_login_vendors">
+                    <li><a href="javascript:;"><i>1</i><span>1.	How do I log into Vendors@Gov?</span><b></b>
+                        <p>
+                            a)	If you are transacting on the behalf of a Singapore registered organization (including sole proprietorship and society), please refer to this guide on how to login using your SingPass.
+                            b)	If you are an individual residing in Singapore, please refer to this guide on how to login using your SingPass.
+                            c)	For all other vendors, please refer to this guide on how to login using an AGD Password.
+
+                        </p>
+                    </a></li>
+                </ul>
+
+                   <ul class="faq" id="faq_update_vendors">
+                    <li><a href="javascript:;"><i>1</i><span>1.	How do update vendors?</span><b></b>
+                        <p>
+                            a)	If you are transacting on the behalf of a Singapore registered organization (including sole proprietorship and society), please refer to this guide on how to login using your SingPass.
+                            b)	If you are an individual residing in Singapore, please refer to this guide on how to login using your SingPass.
+                            c)	For all other vendors, please refer to this guide on how to login using an AGD Password.
+
+                        </p>
+                    </a></li>
+                </ul>
+
+                   <ul class="faq" id="faq_submit_invoice">
+                    <li><a href="javascript:;"><i>1</i><span>1.	How do submit invoice?</span><b></b>
+                        <p>
+                            a)	If you are transacting on the behalf of a Singapore registered organization (including sole proprietorship and society), please refer to this guide on how to login using your SingPass.
+                            b)	If you are an individual residing in Singapore, please refer to this guide on how to login using your SingPass.
+                            c)	For all other vendors, please refer to this guide on how to login using an AGD Password.
+
+                        </p>
+                    </a></li>
+                  
+                </ul>
+
+                    <ul class="faq" id="faq_enquire_einvoice_status">
+                    <li><a href="javascript:;"><i>1</i><span>1.	How do enquire einvoice?</span><b></b>
+                        <p>
+                            a)	If you are transacting on the behalf of a Singapore registered organization (including sole proprietorship and society), please refer to this guide on how to login using your SingPass.
+                            b)	If you are an individual residing in Singapore, please refer to this guide on how to login using your SingPass.
+                            c)	For all other vendors, please refer to this guide on how to login using an AGD Password.
+
+                        </p>
+                    </a></li>
+                </ul>
+
+                
+                    <ul class="faq" id="faq_enquire_payment_status">
+                    <li><a href="javascript:;"><i>1</i><span>1.	How do enquire_payment?</span><b></b>
+                        <p>
+                            a)	If you are transacting on the behalf of a Singapore registered organization (including sole proprietorship and society), please refer to this guide on how to login using your SingPass.
+                            b)	If you are an individual residing in Singapore, please refer to this guide on how to login using your SingPass.
+                            c)	For all other vendors, please refer to this guide on how to login using an AGD Password.
+
+                        </p>
+                    </a></li>
+                </ul>
+
+            </div>
+   
+
+   <p id="p">foobar</p>
+
+  <script type="text/javascript">
+      var p = document.getElementById('p');
+      var textnode = p.firstChild;
+
+      // split between foo and bar
+      var replacementNode = textnode.splitText(3);
+   
+      // creating a span with ' span contents '
+      var span = document.createElement('span');
+      span.className = 'highlight';
+      span.appendChild(document.createTextNode(' span contents '));
+
+      // adding the span before 'bar'
+      p.insertBefore(span, replacementNode);
+
+      // the result is <p id="p">foo<span> span contents </span>bar</p>
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="js/Spiner.js" type="text/javascript"></script>
+
+    <style type="text/css">
+    #div
+    {
+         background-color:Blue;
+    }
+    #span
+    {
+         background-color:Green;
+    }
+    #tag
+    {
+        background-color:Red;
+     }
+    </style>
+  
+</head>
+<body>
+<div id = "div">
+    <span id="span">
+        <a id="aTag">事件测试</a>
+    </span>
+</div>
+  <script type="text/javascript">
+  
+
+
+      document.getElementById("aTag").onclick = aTag;
+      document.getElementById("span").onclick = span;
+      document.getElementById("div").onclick = div;
+      function aTag(e) {
+          if (!e) var e = window.event;
+
+          e.cancelBubble = true;
+
+          if (e.stopPropagation) e.stopPropagation();
+          alert("点击的是a标签");
+      }
+      function span(e) {
+          alert("点击的是span标签");
+      }
+      function div(e) {
+          alert("点击的是div标签");
+      }
+    
+    </script>
+</body>
+</html>

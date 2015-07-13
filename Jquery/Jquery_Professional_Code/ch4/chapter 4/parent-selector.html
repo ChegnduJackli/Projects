@@ -1,0 +1,40 @@
+
+ 
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.7.1.js">
+    </script>
+ 
+    <script>
+
+$(function() {
+    var hasDemo = $("div:has('p')").attr("id");
+    console.log(hasDemo); // returns 'yay'
+});
+ 
+</script>
+  </head>
+  <body>
+<div id="yay">
+  <ul>
+    <li>
+      <p>The glorious paragraph</p>
+      <p>Another, glorious paragraph</p>
+      <p>The best paragraph yet</p>
+   </li>
+  </ul>
+</div>
+<div id="nay">
+  <ul>
+    <li> No paragraphs here. </li>
+  </ul>
+</div>
+  </body>
+
+        <li> Children! </li>
+      </ul>
+   </div>
+  </body>
+</html>
+

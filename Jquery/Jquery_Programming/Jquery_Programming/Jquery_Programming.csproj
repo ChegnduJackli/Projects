@@ -55,6 +55,7 @@
     <Content Include="2.htm" />
     <Content Include="3.htm" />
     <Content Include="4.htm" />
+    <Content Include="AjaxSubmit.htm" />
     <Content Include="Chapter10_代码优化\a-simple-application-framework.html" />
     <Content Include="Chapter10_代码优化\advanced-module.html" />
     <Content Include="Chapter10_代码优化\AdvanceModule.htm" />
@@ -79,6 +80,7 @@
     <Content Include="Chapter13\deferred_then.htm" />
     <Content Include="Chapter13\Proper_Defer.htm" />
     <Content Include="Chapter13\tight_calbacks.htm" />
+    <Content Include="Chapter4\TextVsHtml.htm" />
     <Content Include="Chapter5\betterOnClick.htm" />
     <Content Include="Chapter5\eventHandler.htm" />
     <Content Include="Chapter5\Live.htm" />
@@ -106,6 +108,7 @@
     <Content Include="Chapter9\resizable.html" />
     <Content Include="Chapter9\selectable.html" />
     <Content Include="Chapter9\sortable.html" />
+    <Content Include="first.htm" />
     <Content Include="Image\05delegate.png" />
     <Content Include="Image\05die.png" />
     <Content Include="Image\05live.png" />
@@ -118,6 +121,7 @@
     <Content Include="Image\pig.gif" />
     <Content Include="Image\pig2.gif" />
     <Content Include="Script\external\jquery\jquery.js" />
+    <Content Include="Script\html2canvas.js" />
     <Content Include="Script\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
     <Content Include="Script\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
     <Content Include="Script\images\ui-bg_flat_10_000000_40x100.png" />
@@ -134,6 +138,7 @@
     <Content Include="Script\images\ui-icons_ffffff_256x240.png" />
     <Content Include="Script\index.html" />
     <Content Include="Script\jquery-1.11.2.min.js" />
+    <Content Include="Script\jquery-1.7.1.min.js" />
     <Content Include="Script\jquery-ui.css" />
     <Content Include="Script\jquery-ui.js" />
     <Content Include="Script\jquery-ui.min.css" />
@@ -145,6 +150,12 @@
     <Content Include="Script\jquery.autocomplete.js" />
     <Content Include="Script\Jquery.PluginCanvas.js" />
     <Content Include="Script\Jscript.Method.js" />
+    <Content Include="Script\myid_print.js" />
+    <Content Include="Script\Spiner.js" />
+    <Content Include="search.htm" />
+    <Content Include="SearchDemo.aspx" />
+    <Content Include="Spiner.htm" />
+    <Content Include="TestSpecialCharctor.aspx" />
     <Content Include="themes\black-tie\images\ui-bg_diagonals-thick_8_333333_40x40.png" />
     <Content Include="themes\black-tie\images\ui-bg_flat_65_ffffff_40x100.png" />
     <Content Include="themes\black-tie\images\ui-bg_glass_40_111111_1x400.png" />
@@ -576,6 +587,20 @@
       <DependentUpon>Chapter4_Selector.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchDemo.aspx.cs">
+      <DependentUpon>SearchDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchDemo.aspx.designer.cs">
+      <DependentUpon>SearchDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestSpecialCharctor.aspx.cs">
+      <DependentUpon>TestSpecialCharctor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestSpecialCharctor.aspx.designer.cs">
+      <DependentUpon>TestSpecialCharctor.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

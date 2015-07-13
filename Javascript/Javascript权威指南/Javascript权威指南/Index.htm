@@ -3,27 +3,210 @@
 <head>
     <title></title>
     <link href="Index.css" rel="stylesheet" type="text/css" />
+  
+    <style>
+        body
+        {
+            background: white;
+            color: black;
+            font-size: 20px;
+            font-family: verdana, helvetica, arial, sans-serif;
+            font-weight: 900;
+        }
+        
+        h1, th
+        {
+            font-family: verdana, helvetica, arial, sans-serif;
+        }
+        
+        h1
+        {
+            font-size: 28px;
+        }
+        
+        table
+        {
+            border-collapse: collapse;
+        }
+        
+        th, td
+        {
+            padding: 10px;
+            border: 2px #666 solid;
+            text-align: center;
+            width: 20px;
+        }
+        
+        #free, .pickedBG
+        {
+            background-color: #f66;
+        }
+    </style>
 </head>
 <body>
-<div>
-<div class="head">
-第二章
-</div>
-<div class="content">
-
-asdfasdfafasdffsdasdf
-<div id="t2">asdfasdfasdf</div>
-</div>
-<ul>
-<li>第2章</li>
-<li>第3章</li>
-<li>第4章</li>
-<li>第5章</li>
-<li>第6章</li>
-<li>第7章</li>
-<li>第8章</li>
-<li>第9章</li>
-</ul>
-</div>
+<div id="main"></div>
+    <h1>
+        create your own bingo card!</h1>
+    <table>
+        <tr>
+            <th>
+                B
+            </th>
+            <th>
+                I
+            </th>
+            <th>
+                N
+            </th>
+            <th>
+                G
+            </th>
+            <th>
+                O
+            </th>
+        </tr>
+        <tr>
+            <td id="square0">
+                &nbsp;
+            </td>
+            <td id="square5">
+                &nbsp;
+            </td>
+            <td id="square10">
+                &nbsp;
+            </td>
+            <td id="square14">
+                &nbsp;
+            </td>
+            <td id="square19">
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td id="square1">
+                &nbsp;
+            </td>
+            <td id="square6">
+                &nbsp;
+            </td>
+            <td id="square11">
+                &nbsp;
+            </td>
+            <td id="square15">
+                &nbsp;
+            </td>
+            <td id="square20">
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td id="square2">
+                &nbsp;
+            </td>
+            <td id="square7">
+                &nbsp;
+            </td>
+            <td id="free">
+                &nbsp;
+            </td>
+            <td id="square16">
+                &nbsp;
+            </td>
+            <td id="square21">
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td id="square3">
+                &nbsp;
+            </td>
+            <td id="square8">
+                &nbsp;
+            </td>
+            <td id="square12">
+                &nbsp;
+            </td>
+            <td id="square17">
+                &nbsp;
+            </td>
+            <td id="square22">
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td id="square4">
+                &nbsp;
+            </td>
+            <td id="square9">
+                &nbsp;
+            </td>
+            <td id="square13">
+                &nbsp;
+            </td>
+            <td id="square18">
+                &nbsp;
+            </td>
+            <td id="square23">
+                &nbsp;
+            </td>
+        </tr>
+    </table>
+    <p>
+        <a href="Index.htm" id="reload">Click here</a>to create a new card
+    </p>
 </body>
+
+  <script src="js/common.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+
+        //window.onload = initAll;
+        var usedNums = new Array(76);
+        initAll();
+        function initAll() {
+            if (document.getElementById) {
+                //重新加载这里有问题
+                document.getElementById("reload").onclick = anotherCard;
+                anotherCard();
+                newCard();
+            } else {
+                alert("sorry,浏览器不支持！")
+            }
+        }
+
+        function newCard() {
+            for (var i = 0; i < 24; i++) {
+                setSquare(i);
+            }
+        }
+
+        function setSquare(thisSquare) {
+            var currentSquare = "square" + thisSquare;
+            var colPlace = new Array(0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4);
+            var colBasic = colPlace[thisSquare] * 15;
+            var newNum;
+                        do {
+                            newNum = colBasic + getNum() + 1;
+                        } while (usedNums[newNum]==false);
+
+            //将数组的内容改为存储当前值
+            WriteLine(colBasic + getNum() + 1);
+            WriteLine("arr:" + usedNums[colBasic + getNum() + 1]);
+            WriteLine("Math.random():" +Math.random());
+            usedNums[newNum] = true;
+            document.getElementById(currentSquare).innerHTML = newNum;
+        }
+
+        function getNum() {
+            return Math.floor(Math.random() * 15);
+        }
+
+        function anotherCard() {
+            for (var i = 1; i < usedNums.length; i++) {
+                usedNums[i] = false;
+            }
+            newCard();
+            return false;
+        }
+    </script>
 </html>

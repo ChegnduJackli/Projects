@@ -79,3 +79,18 @@ function factorial(n) {
     
     else return NaN;
 }
+
+function inherit(p) {
+    if (p == null) throw TypeError(); //p是一个对象，但不能是null
+
+    if (Object.create) {
+        return Object.create(p);
+    }
+
+    var t = typeof p;
+    if (t != "object" && t != "function") throw TypeError();
+
+    function f() { };   //定义一个空构造函数
+    f.prototype = p;   //将其原型属性设置为p
+    return new f();   //使用f()创建p的继承对象
+}
