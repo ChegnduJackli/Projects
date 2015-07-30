@@ -12,10 +12,17 @@
         $(document).ready(function () {
             $("#time").val($.now);
             for (i = 0; i < 100; i++) {
-                $("#name").animate({ left: "+=500", right: "+=500" }, "slow")
-                .animate({ top: "500px", right: "+=500" }, "slow")
-                .animate({ left: 0, right: "+=500" }, "slow")
-                .animate({ top: 0, right: 0 }, "slow");
+//                $("#name").animate({ left: "+=500", right: "+=500" }, "slow")
+//                .animate({ top: "500px", right: "+=500" }, "slow")
+//                .animate({ left: 0, right: "+=500" }, "slow")
+                //                .animate({ top: 0, right: 0 }, "slow");
+
+                $('#name').animate({ backgroundColor: 'green' }, 250)
+                       .animate({ backgroundColor: 'white' }, 250)
+                       .animate({ backgroundColor: 'green' }, 250)
+                       .animate({ backgroundColor: 'white' }, 250);
+                       
+
             }
          
         });

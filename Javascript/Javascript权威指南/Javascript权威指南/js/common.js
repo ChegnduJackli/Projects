@@ -94,3 +94,58 @@ function inherit(p) {
     f.prototype = p;   //将其原型属性设置为p
     return new f();   //使用f()创建p的继承对象
 }
+
+
+
+function isValidLen(s, l, k) {
+    var nums = "0123456789";
+    var j = 0;
+    var bReturn = true;
+    for (var i = 0; i < s.length; i++) {
+        // Check that current character is number.
+        if (nums.indexOf(s.charAt(i)) >= 0) {
+            j++;
+        }
+    }
+    if ((j == l) || (j == k))
+        bReturn = true;
+    else
+        bReturn = false;
+
+    if (bReturn) {
+        if (isValidChars(s, "[0-9$-]")) {
+            bReturn = true; 
+        }
+        else {
+            bReturn = false; 
+        }
+    }
+    return bReturn;
+}
+
+//IE 8 not support trim().
+String.prototype.trim = String.prototype.trim || function () {
+    if (!this) return this; //空字符串不做处理
+
+    return this.replace(/^\s+|\s+$/g, "");
+}
+
+
+function trimString(sInString) {
+    if (sInString != null) {
+        sInString = sInString.replace(/^\s+/g, ""); // strip leading
+        return sInString.replace(/\s+$/g, ""); // strip trailing
+    }
+    else
+        return "";
+}
+
+
+function isValidChars(sValue, sRule) {
+    for (var i = 0; i < sValue.length; i++)
+        if (!sValue.charAt(i).match(sRule)) {
+            return false;
+        }
+
+    return true;
+}

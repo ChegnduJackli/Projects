@@ -51,19 +51,28 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="chapter10\Regexp.htm" />
     <Content Include="Chapter3\objectValueVariable.htm" />
     <Content Include="Chapter5\Statetment.htm" />
     <Content Include="Chapter4\Expression.htm" />
+    <Content Include="chapter9\DefineClass.htm" />
     <Content Include="Chapter6\Object.htm" />
+    <Content Include="Chapter6\Prototype.htm" />
+    <Content Include="chapter9\Prototype2.htm" />
     <Content Include="Chapter7\array.htm" />
     <Content Include="Chapter8\function.htm" />
     <Content Include="Chapter8\function1.htm" />
     <Content Include="chapter9\class.htm" />
+    <Content Include="Cookie.htm" />
     <Content Include="event.htm" />
     <Content Include="game.htm" />
     <Content Include="Images\3_object2.png" />
     <Content Include="Images\3_object_compare.png" />
     <Content Include="Images\6_in.png" />
+    <Content Include="Images\6_prototype_2.png" />
+    <Content Include="Images\6_prototype_3.png" />
+    <Content Include="Images\6_prototype_4.png" />
+    <Content Include="Images\6_prototype_5.png" />
     <Content Include="Images\7_array_length.png" />
     <Content Include="Images\7_contact_Slice.png" />
     <Content Include="Images\7_delete_Array.png" />
@@ -75,12 +84,16 @@
     <Content Include="Images\7_push_pop.png" />
     <Content Include="Images\7_sort.png" />
     <Content Include="Images\Instance.png" />
+    <Content Include="Images\6_prototype_1.png" />
     <Content Include="Images\typeof.png" />
+    <Content Include="Index.aspx" />
     <Content Include="Index.css" />
     <Content Include="Index.htm" />
     <Content Include="Instance.png" />
     <Content Include="js\common.js" />
     <Content Include="js\game.js" />
+    <Content Include="js\global.js" />
+    <Content Include="js\prototype.js" />
     <Content Include="js\Spiner.js" />
     <Content Include="QQEditor.htm" />
     <Content Include="typeof.png" />
@@ -93,6 +106,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

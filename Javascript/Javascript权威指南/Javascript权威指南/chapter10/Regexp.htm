@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="../js/common.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="main"></div>
+<script type="text/javascript">
+    //http://www.cnblogs.com/rubylouvre/archive/2010/03/09/1681222.html
+
+    //正则表达式直接量定义包含在一对斜杠（/)之间的字符
+
+    //字符类
+    //匹配所有字母以's'结尾的字符串
+    var pattern = /s$/;
+    //alert(pattern.test('tes')); //true
+    WriteLine("pattern.test('tes'):" + pattern.test('tes'));
+    // /[abc]/就和字母'a','b','c'中的任意一个都匹配
+   // alert(/ruby/.test("ruby")); //true
+   // alert(/[abc]/.test("a")); //true
+   // alert(/[abc]/.test("b")); //true
+    //alert(/[abc]/.test("c")); //true
+
+
+    //负向类
+
+    //也是在那个括号里做文章，前面加个元字符进行取反，表示匹配不能为括号里面的任意字符。
+
+    /*
+    alert(/[^abc]/.test("a"));//false
+    alert(/[^abc]/.test("b"));//false
+    alert(/[^abc]/.test("6"));//true
+    alert(/[^abc]/.test("gg")); //true
+    */
+
+    //匹配拉丁字母表中的小写字母 /[a-z]/
+    pattern =/[a-z]/;
+    WriteLine("pattern.test('ab123'):" + pattern.test('ab123')); //true
+    WriteLine("pattern.test('123'):" + pattern.test('123')); //false
+    //匹配拉丁字母表中的任何字母和数字/[a-zA-Z0-9]/
+    pattern = /[a-zA-Z0-9]/;
+    WriteLine("pattern.test('ab123AAA'):" + pattern.test('ab123AAA')); //true
+    WriteLine("pattern.test('123@#$'):" + pattern.test('123@#$')); //true
+    WriteLine("pattern.test('@#$'):" + pattern.test('@#$')); //false
+     /*
+     字符	等同于	        描述
+    .	    [^\n\r]	        除了换行和回车之外的任意字符
+    \d	    [0-9]	        数字字符
+    \D	    [^0-9]	        非数字字符
+    \s	    [ \t\n\x0B\f\r]	空白字符
+    \S	    [^ \t\n\x0B\f\r]非空白字符
+    \w	    [a-zA-Z_0-9]	单词字符(所有的字母和数字)
+    \W	    [^a-zA-Z_0-9]	非单词字符
+
+
+        代码  	类型  	描述
+    ?	        软性量词	    出现零次或一次
+    *	        软性量词	    出现零次或多次(任意次)
+    +	        软性量词	    出现一次或多次（至道一次）
+    {n}	        硬性量词	    对应零次或者n次
+    {n,m}	    软性量词	    至少出现n次但不超过m次
+    {n,}	    软性量词	    至少出现n次(+的升级版)
+    */
+    pattern = /\d{2,4}/; //匹配2到4个数字。
+    WriteLine("pattern.test('ab123AAA'):" + pattern.test('ab123AAA')); //true
+    WriteLine("ab123AAA.match(/\d{2,4}):" + ('ab123AAA').match(pattern)); //123
+    WriteLine("pattern.test('12345'):" + pattern.test('12345')); //true
+    WriteLine("12345.match(/\d{2,4}):" + ('12345').match(pattern)); //1234
+    WriteLine("pattern.test('abc1'):" + pattern.test('abc1')); //false
+
+    pattern = /\w{3}\d?/; //精确匹配3个单词和一个可选数字
+
+    WriteLine("pattern.test('abc1'):" + pattern.test('abc1')); //true
+    WriteLine("pattern.test('abcd1'):" + pattern.test('abcd1')); //true
+    WriteLine("pattern.test('ab'):" + pattern.test('ab')); //false
+    WriteLine("pattern.test('ab'):" + pattern.test('ab')); //false
+    WriteLine("pattern.test('abc'):" + pattern.test('abc')); //true
+
+    pattern = /\s+java\s+/; //匹配前后各带有一个或者多个空格的字符串'java'
+
+    WriteLine("pattern.test('java'):" + pattern.test('java')); //false
+    WriteLine("pattern.test(' 1java '):" + pattern.test(' 1java ')); //false
+    WriteLine("pattern.test(' java '):" + pattern.test(' java   ')); //true
+
+    pattern = /[^(]+/; //匹配一次或多次非左括号的字符
+    WriteLine("pattern.test(' (java) '):" + pattern.test(' (java)   ')); //true
+    WriteLine("pattern.test('('):" + pattern.test('(')); //false
+    WriteLine("pattern.test('java) '):" + pattern.test('java)')); //true
+
+    pattern = /a+?/;
+    WriteLine("pattern.test('aaa'):" + pattern.test('aaa')); //true
+    WriteLine("aaa.March(" + pattern + "):" + ('aaa').match(pattern)); //a
+
+    WriteLine("pattern.test('a'):" + pattern.test('a')); //true
+    WriteLine("a.March(" + pattern + "):" + ('a').match(pattern)); //a
+
+    WriteLine("pattern.test('abc'):" + pattern.test('abc')); //true
+    WriteLine("abc.March(" + pattern + "):" + ('abc').match(pattern)); //a
+
+    WriteLine("pattern.test('bc'):" + pattern.test('bc')); //false
+    WriteLine("bc.March(" + pattern + "):" + ('bc').match(pattern)); //null
+
+
+    pattern = /a+?b/;
+    WriteLine("pattern.test('aaab'):" + pattern.test('aaab')); //true
+    WriteLine("aaab.March(" + pattern + "):" + ('aaab').match(pattern)); //aaab
+
+    WriteLine("pattern.test('ab'):" + pattern.test('ab')); //true
+    WriteLine("ab.March(" + pattern + "):" + ('ab').match(pattern)); //ab
+
+    WriteLine("pattern.test('abc'):" + pattern.test('abc')); //true
+    WriteLine("abc.March(" + pattern + "):" + ('abc').match(pattern)); //ab
+
+    WriteLine("pattern.test('bc'):" + pattern.test('bc')); //false
+    WriteLine("bc.March(" + pattern + "):" + ('bc').match(pattern)); //null
+
+    pattern = /a+b/;
+    WriteLine("pattern.test('aaab'):" + pattern.test('aaab')); //true
+    WriteLine("aaab.March(" + pattern + "):" + ('aaab').match(pattern)); //aaab
+
+    WriteLine("pattern.test('ab'):" + pattern.test('ab')); //true
+    WriteLine("ab.March(" + pattern + "):" + ('ab').match(pattern)); //ab
+
+    WriteLine("pattern.test('abc'):" + pattern.test('abc')); //true
+    WriteLine("abc.March(" + pattern + "):" + ('abc').match(pattern)); //ab
+
+    WriteLine("pattern.test('bc'):" + pattern.test('bc')); //false
+    WriteLine("bc.March(" + pattern + "):" + ('bc').match(pattern)); //null
+
+    //选择，分组和引用
+    //字符'|'用于分隔供选择的字符
+    pattern = /ab|cd|ef/; //可以匹配'ab',也可以匹配'cd',还可以匹配'ef'
+    WriteLine("pattern.test('ab'):" + pattern.test('ab')); //true
+    WriteLine("pattern.test('cd'):" + pattern.test('cd')); //true
+    WriteLine("pattern.test('ef'):" + pattern.test('ef')); //true
+    WriteLine("pattern.test('cf'):" + pattern.test('cf')); //true
+
+    pattern = /a|ab/; //选择项的尝试匹配次序是从左到右，知道发现了匹配项，如果左边的选择项匹配，就忽略右边的匹配项
+    WriteLine("pattern.test('ab'):" + pattern.test('ab')); //true
+    WriteLine("ab.March("+pattern+"):" + ('ab').match(pattern)); //a
+
+</script>
+
+<div>
+    <img src="../Images/10_1.png" /><br />
+    <img src="../Images/10_2.png" />
+</div>
+</body>
+</html>

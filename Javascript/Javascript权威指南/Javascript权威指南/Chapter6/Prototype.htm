@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>原型</title>
+        <script src="../js/common.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="main"></div>
+    <img src="../Images/6_prototype_1.png" />
+    <p>每一个对象(除了null)都和原型相关联</p>
+    <p>每个函数都有一个属性叫做prototype。</p>
+    <p>这个prototype的属性值是一个对象（属性的集合，再次强调！），默认的只有一个叫做constructor的属性，指向这个函数本身。</p>
+    <img src="../Images/6_prototype_2.png" /><br />
+    <img src="../Images/6_prototype_3.png" />
+    <script type="text/javascript">
+        function Fn() {
+        }
+        Fn.prototype.name = 'Lideng';
+        Fn.prototype.getYear = function () { return 1989; };
+        //Fn是一个函数，fn对象是从Fn函数new出来的，这样fn对象就可以调用Fn.prototype中的属性。
+        var fn = new Fn();
+        WriteLine("fn.Name: " + fn.name);
+        WriteLine("fn.getYear: " + fn.getYear());
+        
+
+    </script>
+</body>
+</html>

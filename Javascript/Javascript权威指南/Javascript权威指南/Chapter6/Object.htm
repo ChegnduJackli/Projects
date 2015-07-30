@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
+        <script src="../js/common.js" type="text/javascript"></script>
 </head>
 <body >
 <div id="main"></div>
@@ -16,32 +17,34 @@
     var q = inherit(p); //q继承p,o 和object.prototype
     q.z = 3;
 
-    Write("继承:" + (q.x + q.y));
+    WriteLine("继承:" + (q.x + q.y));
 
     //检测属性,可以通过 in,hasOwnProperty and propertyIsEnumerable()方法来完成工作
     var o = { x: 1 };
     var O_1 = "x" in o;   //=>true
     var O_2 = "y" in o;   //=>false
     var O_3 = "toString" in o; //=>true
-    Write("O_1:" + O_1);
-    Write("O_2:" + O_2);
-    Write("O_3:" + O_3);
+    WriteLine("O_1:" + O_1);
+    WriteLine("O_2:" + O_2);
+    WriteLine("O_3:" + O_3);
     //对象的hasOwnProperty()方法用来检车给定的名字是否是对象的自有属性。对于继承属性它将返回false.
-    Write("o.hasOwnProperty('x'): " + o.hasOwnProperty('x'));
-    Write("o.hasOwnProperty('y'): " + o.hasOwnProperty('y'));
-    Write("o.hasOwnProperty('toString'): " + o.hasOwnProperty('toString'));
+    WriteLine("o.hasOwnProperty('x'): " + o.hasOwnProperty('x'));
+    WriteLine("o.hasOwnProperty('y'): " + o.hasOwnProperty('y'));
+    WriteLine("o.hasOwnProperty('toString'): " + o.hasOwnProperty('toString'));
 
     //检测一个对象是否是另一个对象的原型（或处于原型链中)。isPrototypeOf()方法
     var p = { x: 1 };
     var o = Object.create(p);
-    Write("p.isPrototypeOf(o): " + p.isPrototypeOf(o)); //=>true
-    Write("Object.prototype.isPrototypeOf(o): " + Object.prototype.isPrototypeOf(o)); //=>true
+    WriteLine("p.isPrototypeOf(o): " + p.isPrototypeOf(o)); //=>true
+    WriteLine("Object.prototype.isPrototypeOf(o): " + Object.prototype.isPrototypeOf(o)); //=>true
    
-    var strHtml ="";
-    function Write(obj) {
-        strHtml += "<p>" + obj + "</p>";
-        document.getElementById("main").innerHTML = strHtml;
-    }
+    var o = { x: 10 };
+    var p = null;
+    WriteLine("o&&o.x: " + o && o.x);
+
+    var re = p && p.x;
+    WriteLine("re :" + re);
+    WriteLine("p :" + p);
 
     function inherit(p) {
         if (p == null) throw TypeError(); //p是一个对象，但不能是null
@@ -51,10 +54,10 @@
         }
 
         var t = typeof p;
-        if(t!="object" && t!="function") throw TypeError();
+        if (t != "object" && t != "function") throw TypeError();
 
-        function f(){};   //定义一个空构造函数
-        f.prototype=p;   //将其原型属性设置为p
+        function f() { };   //定义一个空构造函数
+        f.prototype = p;   //将其原型属性设置为p
         return new f();   //使用f()创建p的继承对象
     }
 </script>
