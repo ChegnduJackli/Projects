@@ -1,0 +1,4 @@
+C:\Users\lideng\Documents\GitHub\Projects\c#\Common\SqlHelper\bin\Release\SqlHelper.dll
+C:\Users\lideng\Documents\GitHub\Projects\c#\Common\SqlHelper\bin\Release\SqlHelper.pdb
+C:\Users\lideng\Documents\GitHub\Projects\c#\Common\SqlHelper\obj\Release\SqlHelper.dll
+C:\Users\lideng\Documents\GitHub\Projects\c#\Common\SqlHelper\obj\Release\SqlHelper.pdb

@@ -1,0 +1,4 @@
+C:\Users\lideng\Documents\GitHub\Projects\c#\Common\ConvertType\bin\Release\ConvertType.dll
+C:\Users\lideng\Documents\GitHub\Projects\c#\Common\ConvertType\bin\Release\ConvertType.pdb
+C:\Users\lideng\Documents\GitHub\Projects\c#\Common\ConvertType\obj\Release\ConvertType.dll
+C:\Users\lideng\Documents\GitHub\Projects\c#\Common\ConvertType\obj\Release\ConvertType.pdb

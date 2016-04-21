@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
+using System.Runtime.CompilerServices;
+using Ionic.Zip;
 
 namespace FileUtil
 {
@@ -14,7 +16,7 @@ namespace FileUtil
         /// </summary>
         /// <param name="fileName"></param>
         /// <param name="message"></param>
-        public static void WriteToFile(string fileName, string message, bool append = true)
+        public static void WriteToFile(string fileName, object message, bool append = true)
         {
             try
             {
@@ -32,16 +34,35 @@ namespace FileUtil
                 throw ex;
             }
         }
+        /// <summary>
+        /// if file not exist, then create file and parent directory.
+        /// </summary>
+        /// <param name="fileName"></param>
+        public static void CreateFile(string fileName)
+        {
+            string directoryName = GetDirectoryName(fileName);
 
+            if (!Directory.Exists(directoryName))
+            {
+                Directory.CreateDirectory(directoryName);
+            }
+            if (!File.Exists(fileName))
+            {
+                File.Create(fileName).Close();
+            }
+        }
         /// <summary>
         /// write message to file by different FileMode
         /// </summary>
         /// <param name="fileName"></param>
         /// <param name="message"></param>
-        public static void WriteToFile(string fileName, string message,FileMode mode)
+        [MethodImpl(MethodImplOptions.Synchronized)]
+        public static void WriteToFile(string fileName, object message, FileMode mode)
         {
             try
             {
+                CreateFile(fileName);
+
                 using (FileStream fs = new FileStream(fileName, mode))
                 {
                     using (StreamWriter sw = new StreamWriter(fs))
@@ -56,8 +77,6 @@ namespace FileUtil
                 throw ex;
             }
         }
-
-
         /// <summary>
         /// read all text from file
         /// </summary>
@@ -181,8 +200,6 @@ namespace FileUtil
                 throw ex;
             }
         }
-        
-
         /// <summary>
         /// copy file to new path, 
         /// if the file exists already, then overwrite the file.
@@ -254,6 +271,67 @@ namespace FileUtil
             if (!File.Exists(fileName))
             {
                 throw new ApplicationException("File does not exist.");
+            }
+        }
+
+        protected virtual bool IsFileLocked(string filePath)
+        {
+            FileStream stream = null;
+            FileInfo file = new FileInfo(filePath);
+
+            try
+            {
+                stream = file.Open(FileMode.Open, FileAccess.ReadWrite, FileShare.None);
+            }
+            catch (IOException)
+            {
+                //the file is unavailable because it is:
+                //still being written to
+                //or being processed by another thread
+                //or does not exist (has already been processed)
+                return true;
+            }
+            finally
+            {
+                if (stream != null)
+                    stream.Close();
+            }
+
+            //file is not locked
+            return false;
+        }
+
+        /// <summary>
+        /// Zip a file to zipPath.
+        /// </summary>
+        /// <param name="fileName"></param>
+        /// <param name="zipPath"></param>
+        public static void ZipFileWithPassword(string fileName, string zipPath,string zipPassword)
+        {
+            if (File.Exists(zipPath)) File.Delete(zipPath);
+
+            using (ZipFile zip = new ZipFile())
+            {
+                zip.Password = zipPassword;
+                zip.AddFile(fileName, "");
+                zip.Save(zipPath);
+            }
+        }
+
+        /// <summary>
+        /// Zip a file to zipPath.
+        /// </summary>
+        /// <param name="fileName"></param>
+        /// <param name="zipPath"></param>
+        public static void ZipFile(string fileName, string zipPath)
+        {
+            if (File.Exists(zipPath)) File.Delete(zipPath);
+
+            using (ZipFile zip = new ZipFile())
+            {
+                //zip.Password = zipPassword;
+                zip.AddFile(fileName, "");
+                zip.Save(zipPath);
             }
         }
     }

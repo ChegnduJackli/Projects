@@ -74,9 +74,9 @@
          //还有一点要说的是，由于它的原型是BaseCalculator的一个实例，所以不管你创建多少个Calculator对象实例，他们的原型指向的都是同一个实例。
 
          var calc = new Calculator();
-         WriteLine("calc.add(10, 1):" + calc.add(10, 1));
+         WriteLine("1,calc.add(10, 1):" + calc.add(10, 1));
          //BaseCalculator 里声明的decimalDigits属性，在 Calculator里是可以访问到的
-         WriteLine("calc.decimalDigits: " + calc.decimalDigits);
+         WriteLine("calc.decimalDigits: " + calc.decimalDigits); 
 
          //上面的代码，运行以后，我们可以看到因为Calculator的原型是指向BaseCalculator的实例上的，所以可以访问他的decimalDigits属性值，
          //那如果我不想让Calculator访问BaseCalculator的构造函数里声明的属性值，那怎么办呢？这么办：
@@ -85,7 +85,7 @@
          //通过将BaseCalculator的原型赋给Calculator的原型，这样你在Calculator的实例上就访问不到那个decimalDigits值了，
          //如果你访问如下代码，那将会提示出错。
          var calc = new Calculator();
-         WriteLine("calc.add(10, 1):" + calc.add(10, 1));
+         WriteLine("2,calc.add(10, 1):" + calc.add(10, 1));
          //BaseCalculator 里声明的decimalDigits属性，在 Calculator里是可以访问到的
          WriteLine("calc.decimalDigits: " + calc.decimalDigits); //show undefined
 

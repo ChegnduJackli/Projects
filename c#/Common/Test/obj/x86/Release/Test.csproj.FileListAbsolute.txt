@@ -1,0 +1,7 @@
+C:\Users\lideng\Documents\GitHub\Projects\c#\Common\Test\bin\Release\Test.exe
+C:\Users\lideng\Documents\GitHub\Projects\c#\Common\Test\bin\Release\Test.pdb
+C:\Users\lideng\Documents\GitHub\Projects\c#\Common\Test\bin\Release\LogHelper.dll
+C:\Users\lideng\Documents\GitHub\Projects\c#\Common\Test\bin\Release\LogHelper.pdb
+C:\Users\lideng\Documents\GitHub\Projects\c#\Common\Test\obj\x86\Release\Test.csprojResolveAssemblyReference.cache
+C:\Users\lideng\Documents\GitHub\Projects\c#\Common\Test\obj\x86\Release\Test.exe
+C:\Users\lideng\Documents\GitHub\Projects\c#\Common\Test\obj\x86\Release\Test.pdb

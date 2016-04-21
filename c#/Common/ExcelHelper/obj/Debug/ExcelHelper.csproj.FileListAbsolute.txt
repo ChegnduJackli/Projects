@@ -1,0 +1,5 @@
+C:\Users\lideng\Documents\GitHub\Projects\c#\Common\ExcelHelper\bin\Debug\ExcelHelper.dll
+C:\Users\lideng\Documents\GitHub\Projects\c#\Common\ExcelHelper\bin\Debug\ExcelHelper.pdb
+C:\Users\lideng\Documents\GitHub\Projects\c#\Common\ExcelHelper\obj\Debug\ExcelHelper.dll
+C:\Users\lideng\Documents\GitHub\Projects\c#\Common\ExcelHelper\obj\Debug\ExcelHelper.pdb
+C:\Users\lideng\Documents\GitHub\Projects\c#\Common\ExcelHelper\obj\Debug\ExcelHelper.csprojResolveAssemblyReference.cache

@@ -1,0 +1,4 @@
+C:\Users\lideng\Documents\GitHub\Projects\c#\Common\EmailHelper\bin\Debug\EmailHelper.dll
+C:\Users\lideng\Documents\GitHub\Projects\c#\Common\EmailHelper\bin\Debug\EmailHelper.pdb
+C:\Users\lideng\Documents\GitHub\Projects\c#\Common\EmailHelper\obj\x86\Debug\EmailHelper.dll
+C:\Users\lideng\Documents\GitHub\Projects\c#\Common\EmailHelper\obj\x86\Debug\EmailHelper.pdb

@@ -63,7 +63,9 @@
     <Content Include="Chapter8\function.htm" />
     <Content Include="Chapter8\function1.htm" />
     <Content Include="chapter9\class.htm" />
+    <Content Include="Convert.aspx" />
     <Content Include="Cookie.htm" />
+    <Content Include="DateTimeTicks.aspx" />
     <Content Include="event.htm" />
     <Content Include="game.htm" />
     <Content Include="Images\3_object2.png" />
@@ -96,6 +98,7 @@
     <Content Include="js\prototype.js" />
     <Content Include="js\Spiner.js" />
     <Content Include="QQEditor.htm" />
+    <Content Include="Split.aspx" />
     <Content Include="typeof.png" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -106,6 +109,20 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Convert.aspx.cs">
+      <DependentUpon>Convert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Convert.aspx.designer.cs">
+      <DependentUpon>Convert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DateTimeTicks.aspx.cs">
+      <DependentUpon>DateTimeTicks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DateTimeTicks.aspx.designer.cs">
+      <DependentUpon>DateTimeTicks.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -114,6 +131,13 @@
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Split.aspx.cs">
+      <DependentUpon>Split.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Split.aspx.designer.cs">
+      <DependentUpon>Split.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

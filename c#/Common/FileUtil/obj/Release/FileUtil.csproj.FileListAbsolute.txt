@@ -2,3 +2,7 @@ C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\Common\FileUtil\bin\Release\
 C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\Common\FileUtil\bin\Release\FileUtil.pdb
 C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\Common\FileUtil\obj\Release\FileUtil.dll
 C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\Common\FileUtil\obj\Release\FileUtil.pdb
+C:\Users\lideng\Documents\GitHub\Projects\c#\Common\FileUtil\bin\Release\FileUtil.dll
+C:\Users\lideng\Documents\GitHub\Projects\c#\Common\FileUtil\bin\Release\FileUtil.pdb
+C:\Users\lideng\Documents\GitHub\Projects\c#\Common\FileUtil\obj\Release\FileUtil.dll
+C:\Users\lideng\Documents\GitHub\Projects\c#\Common\FileUtil\obj\Release\FileUtil.pdb

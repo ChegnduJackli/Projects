@@ -2,3 +2,7 @@ C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\Common\ExcelHelper\bin\Relea
 C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\Common\ExcelHelper\bin\Release\ExcelHelper.pdb
 C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\Common\ExcelHelper\obj\Release\ExcelHelper.dll
 C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\Common\ExcelHelper\obj\Release\ExcelHelper.pdb
+C:\Users\lideng\Documents\GitHub\Projects\c#\Common\ExcelHelper\bin\Release\ExcelHelper.dll
+C:\Users\lideng\Documents\GitHub\Projects\c#\Common\ExcelHelper\bin\Release\ExcelHelper.pdb
+C:\Users\lideng\Documents\GitHub\Projects\c#\Common\ExcelHelper\obj\Release\ExcelHelper.dll
+C:\Users\lideng\Documents\GitHub\Projects\c#\Common\ExcelHelper\obj\Release\ExcelHelper.pdb
