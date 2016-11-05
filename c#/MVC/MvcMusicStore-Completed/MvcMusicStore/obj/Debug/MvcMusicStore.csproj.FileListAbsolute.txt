@@ -26,3 +26,6 @@ C:\Users\lideng\Desktop\GitHub\Projects\MvcMusicStore-v3.0\MvcMusicStore-v3.0\Mv
 C:\Users\lideng\Desktop\GitHub\Projects\MvcMusicStore-v3.0\MvcMusicStore-v3.0\MvcMusicStore-Completed\MvcMusicStore\obj\Debug\MvcMusicStore.csprojResolveAssemblyReference.cache
 C:\Users\lideng\Desktop\GitHub\Projects\MvcMusicStore-v3.0\MvcMusicStore-v3.0\MvcMusicStore-Completed\MvcMusicStore\obj\Debug\MvcMusicStore.dll
 C:\Users\lideng\Desktop\GitHub\Projects\MvcMusicStore-v3.0\MvcMusicStore-v3.0\MvcMusicStore-Completed\MvcMusicStore\obj\Debug\MvcMusicStore.pdb
+E:\GitHub\Projects\Projects\c#\MVC\MvcMusicStore-Completed\MvcMusicStore\obj\Debug\MvcMusicStore.csprojResolveAssemblyReference.cache
+E:\GitHub\Projects\Projects\c#\MVC\MvcMusicStore-Completed\MvcMusicStore\obj\Debug\MvcMusicStore.dll
+E:\GitHub\Projects\Projects\c#\MVC\MvcMusicStore-Completed\MvcMusicStore\obj\Debug\MvcMusicStore.pdb

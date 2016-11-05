@@ -12,3 +12,5 @@ C:\Users\lideng\Desktop\GIT\Project\c#\DesignPattern\PrototypePattern\PrototypeP
 C:\Users\lideng\Desktop\GIT\Project\c#\DesignPattern\PrototypePattern\PrototypePattern\bin\Debug\ColorPrototype.dll
 C:\Users\lideng\Desktop\GIT\Project\c#\DesignPattern\PrototypePattern\PrototypePattern\bin\Debug\ColorPrototype.pdb
 C:\Users\lideng\Desktop\GIT\Project\c#\DesignPattern\PrototypePattern\PrototypePattern\obj\x86\Debug\PrototypePattern.csprojResolveAssemblyReference.cache
+E:\GitHub\Projects\Projects\c#\DesignPattern\PrototypePattern\PrototypePattern\obj\x86\Debug\PrototypePattern.exe
+E:\GitHub\Projects\Projects\c#\DesignPattern\PrototypePattern\PrototypePattern\obj\x86\Debug\PrototypePattern.pdb

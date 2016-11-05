@@ -2,3 +2,7 @@ C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\ProxyPattern\I
 C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\ProxyPattern\IMath\bin\Debug\IMath.pdb
 C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\ProxyPattern\IMath\obj\Debug\IMath.dll
 C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\ProxyPattern\IMath\obj\Debug\IMath.pdb
+E:\GitHub\Projects\Projects\c#\DesignPattern\ProxyPattern\IMath\bin\Debug\IMath.dll
+E:\GitHub\Projects\Projects\c#\DesignPattern\ProxyPattern\IMath\bin\Debug\IMath.pdb
+E:\GitHub\Projects\Projects\c#\DesignPattern\ProxyPattern\IMath\obj\Debug\IMath.dll
+E:\GitHub\Projects\Projects\c#\DesignPattern\ProxyPattern\IMath\obj\Debug\IMath.pdb

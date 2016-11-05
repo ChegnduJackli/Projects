@@ -1,0 +1,5 @@
+E:\GitHub\Projects\Projects\c#\MianShi\MianShi\bin\Debug\MianShi.exe
+E:\GitHub\Projects\Projects\c#\MianShi\MianShi\bin\Debug\MianShi.pdb
+E:\GitHub\Projects\Projects\c#\MianShi\MianShi\obj\x86\Debug\MianShi.exe
+E:\GitHub\Projects\Projects\c#\MianShi\MianShi\obj\x86\Debug\MianShi.pdb
+E:\GitHub\Projects\Projects\c#\MianShi\MianShi\obj\x86\Debug\MianShi.csprojResolveAssemblyReference.cache

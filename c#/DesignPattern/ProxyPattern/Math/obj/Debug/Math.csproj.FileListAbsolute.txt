@@ -5,3 +5,10 @@ C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\ProxyPattern\M
 C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\ProxyPattern\Math\obj\Debug\Math.csprojResolveAssemblyReference.cache
 C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\ProxyPattern\Math\bin\Debug\IMath.dll
 C:\Users\lideng\Desktop\GitHub\Projects\Projects\c#\DesignPattern\ProxyPattern\Math\bin\Debug\IMath.pdb
+E:\GitHub\Projects\Projects\c#\DesignPattern\ProxyPattern\Math\bin\Debug\Math.dll
+E:\GitHub\Projects\Projects\c#\DesignPattern\ProxyPattern\Math\bin\Debug\Math.pdb
+E:\GitHub\Projects\Projects\c#\DesignPattern\ProxyPattern\Math\bin\Debug\IMath.dll
+E:\GitHub\Projects\Projects\c#\DesignPattern\ProxyPattern\Math\bin\Debug\IMath.pdb
+E:\GitHub\Projects\Projects\c#\DesignPattern\ProxyPattern\Math\obj\Debug\Math.csprojResolveAssemblyReference.cache
+E:\GitHub\Projects\Projects\c#\DesignPattern\ProxyPattern\Math\obj\Debug\Math.dll
+E:\GitHub\Projects\Projects\c#\DesignPattern\ProxyPattern\Math\obj\Debug\Math.pdb
