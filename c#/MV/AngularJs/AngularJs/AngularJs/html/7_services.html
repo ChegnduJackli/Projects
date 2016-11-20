@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script src="../scripts/angular.js"></script>
+    <script src="../scripts/namesController.js"></script>
+</head>
+<body>
+    <div ng-app="myApp">
+        <div ng-controller="customersCtrl">
+            <p>当前页面的URL:</p>
+            <h3>{{myUrl}}</h3>
+
+        </div>
+        <div ng-controller="httpServiceCtrl">
+            <p>用$http调用其他页面内容</p>
+            <p>{{myWelcome}}</p>
+
+        </div>
+        <div ng-controller="timeoutServiceCtrl">
+            <p>time out service 调用</p>
+           <p>{{myHeader}}</p>
+
+        </div>
+        <div ng-controller="selfServiceCtrl">
+            <h2>创建自定义服务</h2>
+            <p>255 的16进制是:</p>
+
+            <h1>{{hex}}</h1>
+
+        </div>
+        <div ng-controller="numCtrl">
+            <p>在获取数组 [255, 251, 200] 值时使用过滤器:</p>
+
+            <ul>
+                <li ng-repeat="x in counts">{{x | myFormat}}</li>
+            </ul>
+
+        </div>
+        </div>
+
+</body>
+</html>

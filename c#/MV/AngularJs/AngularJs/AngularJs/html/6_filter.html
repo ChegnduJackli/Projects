@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="../scripts/angular.js"></script>
+    <script src="../scripts/namesController.js"></script>
+</head>
+<body>
+    <div ng-app="myApp">
+        <div ng-controller="personCtrl">
+            过滤器可以通过一个管道字符（|）和一个过滤器添加到表达式中。.<br />
+
+            (（下面的两个实例，我们将使用前面章节中提到的 person 控制器）)<br />
+
+            uppercase 过滤器将字符串格式化为大写：<br />
+
+            <p>姓名为 {{ lastName | uppercase }}</p>
+            uppercase 过滤器将字符串格式化为小写：<br />
+            <p>姓名为 {{ lastName | lowercase  }}</p>
+
+        </div>
+        <div ng-controller="costCtrl">
+            数量: <input type="number" ng-model="quantity">
+            价格: <input type="number" ng-model="price">
+
+            <p>总价 = {{ (quantity * price) | currency }}</p>
+
+        </div>
+
+        <div ng-controller="namesCtrl">
+            过滤器可以通过一个管道字符（|）和一个过滤器添加到指令中。<br />
+
+            orderBy 过滤器根据表达式排列数组：<br />
+
+            <ul>
+                <li ng-repeat="x in names | orderBy:country">
+                    {{ x.name + ', ' + x.country }}
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</body>
+</html>

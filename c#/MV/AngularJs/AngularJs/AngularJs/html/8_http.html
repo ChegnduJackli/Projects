@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="../scripts/angular.js"></script>
+    <script src="../scripts/namesController.js"></script>
+</head>
+<body>
+    <div ng-app="myApp">
+        <div ng-controller="httpCtrl">
+            <ul>
+                <li ng-repeat="x in names">
+                    {{ x.Name + ', ' + x.Country }}
+                </li>
+            </ul>
+        </div>
+        </div>
+</body>
+</html>

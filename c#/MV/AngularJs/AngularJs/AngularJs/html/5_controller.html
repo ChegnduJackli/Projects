@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="../scripts/angular.js"></script>
+    <script src="../scripts/namesController.js"></script>
+</head>
+<body>
+    <div ng-app="myApp">
+        <div ng-controller="personCtrl">
+            AngularJS 控制器<br />
+
+            AngularJS 应用程序被控制器控制。<br />
+
+            ng-controller 指令定义了应用程序控制器。<br />
+
+            控制器是 JavaScript 对象，由标准的 JavaScript 对象的构造函数 创建。<br />
+
+            名: <input type="text" ng-model="firstName"><br>
+            姓: <input type="text" ng-model="lastName"><br>
+            <br>
+            姓名: {{firstName + " " + lastName}}
+
+            <h2>控制器方法</h2>
+
+            上面的实例演示了一个带有 lastName 和 firstName 这两个属性的控制器对象。<br />
+
+            控制器也可以有方法（变量和函数）：<br />
+            姓名(函数): {{fullName()}}<br />
+            {{alertmsg()}}
+        </div>
+        引用外部文件<br />
+        <div ng-controller="namesCtrl">
+
+            <ul>
+                <li ng-repeat="x in names">
+                    {{ x.name + ', ' + x.country }}
+                </li>
+            </ul>
+        </div>
+    
+    </div>
+   
+
+</body>
+</html>

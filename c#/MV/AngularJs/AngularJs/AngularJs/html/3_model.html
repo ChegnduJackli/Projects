@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="../scripts/angular.js"></script>
+    <style>
+        input.ng-invalid {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div ng-app="myApp">
+
+        <h2> ng-model 指令用于绑定应用程序数据到 HTML 控制器(input, select, textarea)的值。</h2>
+
+
+        <div ng-controller="myCtrl">
+            名字: <input ng-model="name">
+        </div>
+        <h2>
+            双向绑定
+        </h2>
+
+        双向绑定，在修改输入域的值时， AngularJS 属性的值也将修改：<br />
+        名字: <input ng-model="name"><br />
+        <h1>你输入了: {{name}}</h1>
+        <h2>
+            验证用户输入
+        </h2>
+        <form name="myForm">
+            Email:
+            <input type="email" name="myAddress" ng-model="text">
+            <span ng-show="myForm.myAddress.$error.email">不是一个合法的邮箱地址</span>
+
+            <h2>
+                CSS 类
+            </h2>
+            ng-model 指令基于它们的状态为 HTML 元素提供了 CSS 类：<br />
+            输入你的名字:
+            <input name="myAddress1" ng-model="text1" required>
+
+        </form>
+        
+  
+       
+
+
+    </div>
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function ($scope) {
+            $scope.name = "John Doev test";
+        });
+    </script>
+</body>
+</html>

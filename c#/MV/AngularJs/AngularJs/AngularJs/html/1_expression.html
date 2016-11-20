@@ -1,0 +1,59 @@
+﻿<!--
+ng-app 指令定义一个 AngularJS 应用程序。
+
+ng-model 指令把元素值（比如输入域的值）绑定到应用程序。
+
+ng-bind 指令把应用程序数据绑定到 HTML 视图。
+ng-app 指令定义一个 AngularJS 应用程序。
+
+ng-model 指令把元素值（比如输入域的值）绑定到应用程序。
+
+ng-bind 指令把应用程序数据绑定到 HTML 视图。
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+  <script src="../scripts/angular.js"></script>
+</head>
+<body>
+
+<div ng-app="">
+   <p>名字 : <input type="text" ng-model="name"></p>
+   <h1>Hello {{name}}</h1>
+   <br>
+   	<p>我的第一个表达式: {{ 5 + 5 }}</p>
+	<br>
+<div ng-init="quantity=21;cost=15">
+<p>总价: {{ quantity * cost }}</p><br>
+<p>总价： <span ng-bind="quantity * cost"></span></p>
+<br>
+</div>
+<div ng-init="firstName='John';lastName='Doe1'">
+
+<p>姓名： {{ firstName + " " + lastName }}</p>
+<p>姓名： <span ng-bind="firstName+' '+lastName"></span>
+
+</div> 
+AngularJS 对象就像 JavaScript 对象：
+<div ng-init="person={firstName:'John',lastName:'Doe'}">
+
+ <p>姓为 {{ person.lastName }}</p>
+ <p>姓为 <span ng-bind="person.lastName"></span></p>
+ </div> 
+ 
+ AngularJS 数组
+ <div ng-init="points=[1,15,19,2,40]">
+
+ <p>第三个值为 {{ points[2] }}</p>
+ <p>第三个值为 <span ng-bind="points[2]"></span></p>
+
+ </div>
+
+</div>
+
+</body>
+</html> 

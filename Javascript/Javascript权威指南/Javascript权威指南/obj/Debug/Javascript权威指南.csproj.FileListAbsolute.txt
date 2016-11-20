@@ -7,3 +7,8 @@ C:\Users\lideng\Documents\GitHub\Projects\Javascript\Javascript权威指南\Java
 C:\Users\lideng\Documents\GitHub\Projects\Javascript\Javascript权威指南\Javascript权威指南\obj\Debug\Javascript权威指南.dll
 C:\Users\lideng\Documents\GitHub\Projects\Javascript\Javascript权威指南\Javascript权威指南\obj\Debug\Javascript权威指南.pdb
 C:\Users\lideng\Documents\GitHub\Projects\Javascript\Javascript权威指南\Javascript权威指南\obj\Debug\Javascript权威指南.csprojResolveAssemblyReference.cache
+E:\GitHub\Projects\Projects\Javascript\Javascript权威指南\Javascript权威指南\bin\Javascript权威指南.dll
+E:\GitHub\Projects\Projects\Javascript\Javascript权威指南\Javascript权威指南\bin\Javascript权威指南.pdb
+E:\GitHub\Projects\Projects\Javascript\Javascript权威指南\Javascript权威指南\obj\Debug\Javascript权威指南.csprojResolveAssemblyReference.cache
+E:\GitHub\Projects\Projects\Javascript\Javascript权威指南\Javascript权威指南\obj\Debug\Javascript权威指南.dll
+E:\GitHub\Projects\Projects\Javascript\Javascript权威指南\Javascript权威指南\obj\Debug\Javascript权威指南.pdb

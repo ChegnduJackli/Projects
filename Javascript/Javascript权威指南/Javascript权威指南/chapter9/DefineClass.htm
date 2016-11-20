@@ -28,7 +28,8 @@ Javascript定义类（class）的三种方法
       cat1.makeSound(); // 喵喵喵
 
       //3.2 继承
-      //让一个类继承另一个类，实现起来很方便。只要在前者的createNew()方法中，调用后者的createNew()方法即可。先定义一个Animal类。
+      //让一个类继承另一个类，实现起来很方便。只要在前者的createNew()方法中，调用后者的createNew()方法即可。
+      //先定义一个Animal类。
       var Animal = {
           createNew: function () {
               var animal = {};
@@ -63,10 +64,11 @@ Javascript定义类（class）的三种方法
       };
       //上例的内部变量sound，外部无法读取，只有通过cat的公有方法makeSound()来读取。
       var cat1 = Cat.createNew();
-     / alert(cat1.sound); // undefined
+     // alert(cat1.sound); // undefined
 
       //3.4 数据共享
-      //有时候，我们需要所有实例对象，能够读写同一项内部数据。这个时候，只要把这个内部数据，封装在类对象的里面、createNew()方法的外面即可。
+      //有时候，我们需要所有实例对象，能够读写同一项内部数据。这个时候，只要把这个内部数据，
+      //封装在类对象的里面、createNew()方法的外面即可。
       var Cat = {
           sound: "喵喵喵 共享",
           createNew: function () {

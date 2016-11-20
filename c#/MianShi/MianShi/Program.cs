@@ -29,7 +29,8 @@ namespace MianShi
            // new Wage().Run();
             //new DeepCopy().Run();
             //new NewB().Test();
-            AdapterTest.Test();
+            //AdapterTest.Test()
+            new staticVar().ouput();
             Console.Read();
         }
        
