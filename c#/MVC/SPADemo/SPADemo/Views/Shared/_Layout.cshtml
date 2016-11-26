@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en" ng-app="app">
+<html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta charset="utf-8" />
@@ -23,7 +23,7 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Index", "Index", "Home", new { area = "" }, null)</li>
-                    <li>@Html.ActionLink("API", "Index", "Help", new { area = "HelpPage" }, null)</li>
+                    @*<li>@Html.ActionLink("API", "Index", "Help", new { area = "HelpPage" }, null)</li>*@
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -40,9 +40,9 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
- 
-    @Scripts.Render("~/bundles/angularjs")
-    @Scripts.Render("~/bundles/appjs")
+   
+  @Scripts.Render("~/bundles/ngjs")
+    @Scripts.Render("~/bundles/approute")
     @RenderSection("Scripts", required: false)
 </body>
 </html>

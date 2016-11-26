@@ -39,6 +39,7 @@ namespace SPADemo.Controllers
         [ResponseType(typeof(void))]
         public IHttpActionResult PutCustomer(int id, Customer customer)
         {
+        
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
@@ -78,7 +79,7 @@ namespace SPADemo.Controllers
             {
                 return BadRequest(ModelState);
             }
-            customer.DateOfBirth = DateTime.Now;
+        
             db.Customers.Add(customer);
             db.SaveChanges();
 

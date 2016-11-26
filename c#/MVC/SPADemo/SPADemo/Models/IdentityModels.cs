@@ -32,6 +32,7 @@ namespace SPADemo.Models
             return new ApplicationDbContext();
         }
         public virtual DbSet<Customer> Customers { get; set; }
+ 
     }
 
 }

@@ -38,10 +38,24 @@ namespace SPADemo
                 "~/Scripts/bootstrap.js",
                 "~/Scripts/respond.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/angularjs").Include(
+
+            bundles.Add(new ScriptBundle("~/bundles/approute").Include(
+"~/Scripts/angular-route.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/ngjs").Include(
            "~/Scripts/angular.js"));
-            bundles.Add(new ScriptBundle("~/bundles/appjs").Include(
-          "~/Scripts/app/customerCtrl.js"));
+
+  
+
+            //add module,service and controller
+            bundles.Add(new ScriptBundle("~/bundles/controllerjs").Include(
+          "~/Scripts/app/customerModule.js",
+          "~/Scripts/app/customerService.js",
+          "~/Scripts/app/createController.js",
+          "~/Scripts/app/detailsController.js",
+          "~/Scripts/app/ListController.js"
+
+         ));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                  "~/Content/bootstrap.css",

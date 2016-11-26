@@ -1,0 +1,113 @@
+﻿<style>
+    input[type='text'],
+    input[type='number'] {
+        width: 400px;
+    }
+
+    table th {
+        width: 100px;
+    }
+
+    .error {
+        color: red;
+    }
+</style>
+
+<div ng-controller="DetailsController">
+
+
+    <form name="editCustomerForm" style="width:600px;margin:0px auto;" role="form">
+        <div class="span12">
+            <p><strong class="error">{{error}}</strong></p>
+        </div>
+        <div class="span12">
+            <h2>Name: {{customer.name}}</h2>
+        </div>
+
+        <table class="table table-bordered table-hover" style="width:800px">
+            <tr>
+                <th>No.:</th>
+                <td>
+                    <p>{{customer.id}}</p>
+
+                </td>
+            </tr>
+            <tr>
+                <th>Name:</th>
+
+                <td>
+                    <p data-ng-hide="customer.editMode">{{ customer.name }}</p>
+                    <input data-ng-show="customer.editMode" name="custname" type="text" maxlength="20" data-ng-model="edit.customer.name" required />
+                    <span style="color:red" ng-show="editCustomerForm.custname.$dirty && editCustomerForm.custname.$invalid">
+                        <span ng-show="editCustomerForm.custname.$error.required">Name is required.</span>
+                    </span>
+
+                </td>
+            </tr>
+
+            <tr>
+                <th>Address:</th>
+                <td>
+                    <p data-ng-hide="customer.editMode">{{ customer.address }}</p>
+                    <input data-ng-show="customer.editMode" name="address" type="text" data-ng-model="edit.customer.address" required />
+                    <span style="color:red" ng-show="editCustomerForm.address.$dirty && editCustomerForm.address.$invalid">
+                        <span ng-show="editCustomerForm.address.$error.required">Address is required.</span>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <th>City:</th>
+                <td>
+                    <p data-ng-hide="customer.editMode">{{ customer.city }}</p>
+                    <input data-ng-show="customer.editMode" name="city" type="text" data-ng-model="edit.customer.city" required />
+                    <span style="color:red" ng-show="editCustomerForm.city.$dirty && editCustomerForm.city.$invalid">
+                        <span ng-show="editCustomerForm.city.$error.required">City is required.</span>
+                    </span>
+
+                </td>
+            </tr>
+            <tr>
+                <th>Country:</th>
+                <td>
+                    <p data-ng-hide="customer.editMode">{{ customer.country }}</p>
+                    <input data-ng-show="customer.editMode" name="country" type="text" data-ng-model="edit.customer.country" required />
+                    <span style="color:red" ng-show="editCustomerForm.country.$dirty && editCustomerForm.country.$invalid">
+                        <span ng-show="editCustomerForm.country.$error.required">Country is required.</span>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <th>Age:</th>
+
+                <td>
+                    <p data-ng-hide="customer.editMode">{{ customer.age }}</p>
+                    <input data-ng-show="customer.editMode" name="age" min="0" max="200" maxlength="3" type="number" data-ng-model="edit.customer.age" required />
+                    <span style="color:red" ng-show="editCustomerForm.age.$dirty && editCustomerForm.age.$invalid">
+                        <!--<span ng-show="editCustomerForm.age.$error.required">Age is required.</span>-->
+                        <span ng-show="editCustomerForm.age.$error.integer">Age must be number.</span>
+                        <span ng-show="editCustomerForm.age.$error.min || editCustomerForm.age.$error.max">
+                            Age must be between 0 and 200
+                        </span>
+                    </span>
+                </td>
+            </tr>
+            <tr data-ng-show="customer.editMode">
+                <th></th>
+                <td>
+                    <p>
+                        <!--data-ng-disabled="!editCustomerForm.$valid"-->
+                        <input type="submit" value="save" data-ng-click="save()" class="btn btn-primary" />
+                        <input type="button" value="Cancel" data-ng-click="cancel()" class="btn btn-primary" />
+                    </p>
+                    <!--<p> <a data-ng-click="save()" data-ng-disabled="!editCustomer.$valid" href="javascript:;">Save</a> |<a data-ng-show="customer.editMode" data-ng-click="cancel()" href="javascript:;">Cancel</a></p>-->
+                </td>
+
+            </tr>
+        </table>
+
+        <p data-ng-hide="customer.editMode"> <a href="#/list">Back To List</a>  | <a data-ng-click="edit()" href="javascript:;">Edit</a></p>
+
+    </form>
+
+
+</div>
