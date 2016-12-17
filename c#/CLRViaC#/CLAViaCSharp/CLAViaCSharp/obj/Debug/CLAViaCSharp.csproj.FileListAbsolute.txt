@@ -1,6 +1,0 @@
-C:\Users\lideng\Desktop\github\CLRViaC#\CLAViaCSharp\CLAViaCSharp\bin\Debug\CLAViaCSharp.exe.config
-C:\Users\lideng\Desktop\github\CLRViaC#\CLAViaCSharp\CLAViaCSharp\bin\Debug\CLAViaCSharp.exe
-C:\Users\lideng\Desktop\github\CLRViaC#\CLAViaCSharp\CLAViaCSharp\bin\Debug\CLAViaCSharp.pdb
-C:\Users\lideng\Desktop\github\CLRViaC#\CLAViaCSharp\CLAViaCSharp\obj\Debug\CLAViaCSharp.csprojResolveAssemblyReference.cache
-C:\Users\lideng\Desktop\github\CLRViaC#\CLAViaCSharp\CLAViaCSharp\obj\Debug\CLAViaCSharp.exe
-C:\Users\lideng\Desktop\github\CLRViaC#\CLAViaCSharp\CLAViaCSharp\obj\Debug\CLAViaCSharp.pdb
