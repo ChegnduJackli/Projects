@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+   
+</head>
+<body>
+<div id="main"></div>
+<div>
+    <img src="../Images/typeof.png" />
+</div>
+</body>
+
+ <script type="text/javascript">
+    // (function () {
+     //如果var语句出现在函数体内，那么他定义的是一个局部变量，其作用域就是这个函数，
+    //如果在顶层代码中使用var 语句，它声明的则是全局变量，在整个javascript程序中都是可见的。
+         var strHtml = "";
+         var i;   //变量的初始值 undefined.
+         var f1 = function (x) {   //将表达式赋值给一个变量
+             return x + 1;
+         }
+
+         function f2(x) {
+             return x * x;
+         }
+
+
+         Write(f1(3));
+         Write(f2(3));
+         Write(i); // undefined
+
+         //switch ,可以用return代替break语句
+         //case 匹配的操作符实际上是"===" 而不是"==",因此表达式和case的匹配不会做任何类型的转换
+         function convert(x) {
+             switch (typeof x) {
+                 case 'number':
+                     return x.toString();
+                 case 'string':
+                     return '"' + x + '"';
+                 default:
+                     return String(x);
+             }
+         }
+
+         var arr = ['a', 'b', 'c'];
+         Write(arr[3]); //undefined
+         Write("undefined == null: " + (undefined == null));
+         Write("undefined === null: " + (undefined === null));
+         function Write(obj) {
+
+             strHtml += "<p>" + obj + "</p>";
+             document.getElementById("main").innerHTML = strHtml;
+         }
+
+    // })();
+    </script>
+</html>
+
+

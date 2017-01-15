@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+ <meta charset="utf-8">
+  <head>
+  </head>
+  <body>
+  <div id="main">
+  
+  </div>
+  <script  src="http://code.jquery.com/jquery-1.7.1.js"></script>
+
+  <script >
+/*
+* Here’s the setup function which populates an array with integers
+*/
+
+var numbers = [],
+    fives = [];
+for ( var i=0; i<1000000; i++ ){
+  numbers.push( Math.round( Math.random()*i ) );        
+}
+
+/*
+* First we use a traditional for loop,
+* caching the length
+*/
+
+var test = numbers.length;
+for (var j = 0; j < test; j++) {
+    if ((numbers[j] % 5) === 0 && numbers[j] !== 0) {
+        fives.push(numbers[j]);
+    }
+}
+alert(fives.length);
+
+/*
+* Now we use the ES5 forEach method. 
+* This is actually what jQuery falls back on if it’s available
+*/
+
+numbers.forEach(
+  function (e, I) {
+      if ((e % 5) === 0 && e !== 0) {
+          fives.push(e);
+      }
+  }
+)
+  alert(fives.length);
+   
+/*
+* Finally we use the $.each, convenience method. 
+*/
+
+  $.each(numbers,
+  function (i, e) {
+      if ((e % 5) === 0 && e !== 0) {
+          fives.push(e);
+      }
+  }
+)
+
+  alert(fives.length);
+</script>
+</body>
+</html>

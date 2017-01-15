@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+     <script src="http://code.jquery.com/jquery-1.7.1.js">
+    </script>
+ 
+    <script>
+
+        //:hidden 选择所有隐藏的元素
+        //:visible 选择所有显示的元素
+        $(function () {
+//            var numInv = $(":text:hidden").length;
+            //            var numVis = $(":text:visible").length;
+            //same result
+            var numInv = $("input:hidden").length;
+            var numVis = $("input:visible").length;
+            console.log(numInv);
+            console.log(numVis);
+            $("#msg1").html("hidden length:" + numInv);
+            $("#msg2").html("show length:" + numVis);
+        });
+ 
+    </script>
+</head>
+<body>
+  <form name="" method="post">
+      <input type="text" name="text1" style="display:none"/>
+      <input type="text" name="text2" style="display:none"/>
+      <input type="text" name="text3" style="display:block"/>
+
+    </form>
+    <span id="msg1"></span><br />
+    <span id="msg2"></span>
+</body>
+</html>

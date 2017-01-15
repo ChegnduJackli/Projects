@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="../Script/jquery-1.7.1.min.js"></script>
+    <script>
+  $(function(){
+      console.log("1: " + $("div").html());
+  // [ div ]
+      console.log("2: " + $("div").find("p").text());
+  // [ p ,p, p ]
+      console.log("3: "+$("div").find("p").andSelf().text());
+  // [ div, p, p, p ]
+  });
+    </script>
+</head>
+<body>
+    <div>
+        <p>Paragraph</p>
+        <p>Paragraph</p>
+        <p>Paragraph</p>
+    </div>
+</body>
+</html>

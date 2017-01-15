@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="http://code.jquery.com/jquery-1.7.1.js">
+    </script>
+    <style type="text/css">
+        titleText
+        {
+            color: Green;
+            font-family: Arial;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            var listElements = $("li");
+            var firstEl = listElements.first();
+            var lastEl = listElements.last();
+
+            console.log("firstEl value:" + firstEl.html());
+            console.log("firstEl length:" + firstEl.length);
+
+            console.log("lastEl value:" + lastEl.html());
+            console.log("lastEl length:" + lastEl.length);
+
+            var item2 = document.getElementById("item2");
+            console.log("item2: " + $("li").index(item2));
+
+            $("div#testHTML").html(function () {
+                var content = "";
+                for (i = 1; i <= 5; i++) {
+                    content += "testing " + i + "....<br />";
+                }
+                return content;
+            });
+
+            //            $("p#i_am_blue").attr("class", "blue");
+            //            var attribute = $("p#i_am_blue").attr();
+            //            console.log("the attribute " + attribute);
+            //            $("#msg").html("the attribute " + attribute);
+
+
+            $("<h1>Have A Nice Day</h1>").appendTo("#msg").attr("class", "titleText");
+        });
+    </script>
+</head>
+<body>
+    <ul>
+        <li>eggs</li>
+        <li>bacon</li>
+        <li>ham</li>
+    </ul>
+    <ul>
+        <li id="item0">eggs</li>
+        <li id="item1">bacon</li>
+        <li id="item2">ham</li>
+        <li id="item3">cheese</li>
+        <li id="item4">juice</li>
+        <li id="item5">sausage</li>
+    </ul>
+    <div id="testHTML">
+    </div>
+    <p id="i_am_blue">
+        I am Blue.
+    </p>
+    <span id="msg"></span>
+</body>
+</html>

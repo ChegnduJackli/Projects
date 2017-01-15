@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>表达式和运算符</title>
+   
+</head>
+<body>
+<div id="main"></div>
+<div>
+    <img src="../Images/Instance.png" /><br />
+    <img src="../Images/typeof.png" /><br />
+
+
+</div>
+</body>
+
+ <script type="text/javascript">
+     // (function () {
+     //如果var语句出现在函数体内，那么他定义的是一个局部变量，其作用域就是这个函数，
+     //如果在顶层代码中使用var 语句，它声明的则是全局变量，在整个javascript程序中都是可见的。
+     var strHtml = "";
+     var i;   //变量的初始值 undefined.
+     Write(i); // undefined
+
+     var f1 = function (x) {   //将表达式赋值给一个变量
+         return x + 1;
+     }
+
+     function f2(x) {
+         return x * x;
+     }
+
+     Write("call function f1: " + f1(3));
+     Write("call fucntion f2: " + f2(3));
+
+     function getType(i) {
+         return typeof (i);
+     }
+
+     Write("undefined return type: " + getType(undefined));
+     Write("null return type : " + getType(null));
+     Write("true or false return type : " + getType(true));
+     Write("number 123 return type : " + getType(123));
+     Write("string lideng return type : " + getType("lideng"));
+     Write("function f2 return type : " + getType(f2));
+
+     //条件运算符 ? ,javascript唯一的一个
+     var username;
+     var greeting = "hello " + (username ? username : "jack");
+     Write("条件运算符? " + greeting);
+
+
+     //instanceof 使用,左操作数的是右边类的实例，则返回true.
+     var d = new Date();
+     Write("d is instance of date: " + (d instanceof (Date)));
+     Write("d is instance of object: " + (d instanceof (Object)));
+     Write("d is instance of number: " + (d instanceof (Number)));
+
+     //运算符顺序
+     1 + 2 + " blind mice"; //=>"3 blind mice"
+     1 + (2 + " blind mice");//=>"12 blind mice"
+
+     //对象和数组的初始化
+     //数组用方括号
+     var array = ['a', '1', 'c', '4'];
+     var matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+
+     //对象用花括号{}，并且每个字表达式都包含一个属性名和一个冒号作为前缀
+     var objectP = { "key1": "link1",
+         "key2": "link2",
+         "key3": "link3"
+     };
+     //对象直接量也可以嵌套
+     var rectangle = { upperLeft: { x: 2, y: 3 }, lowerRight: { x: 4, y: 5} };
+
+
+     //delete运算符 删除对象属性或者数组元素
+     var O = { x: 1, y: 2 };
+
+     Write("O.x " + O.x + " O.y " + O.y);
+
+     delete O.x; //删除一个属性
+
+     //if ("x" in O) {
+         Write("x" in O);  //=> false,这个属性将不再存在
+         //}
+     //当删除一个属性时，这个属性将不再存在，读取一个不存在的属性会返回undefined.
+
+     function Write(obj) {
+
+         strHtml += "<p>" + obj + "</p>";
+         document.getElementById("main").innerHTML = strHtml;
+     }
+
+     // })();
+    </script>
+</html>
+
+

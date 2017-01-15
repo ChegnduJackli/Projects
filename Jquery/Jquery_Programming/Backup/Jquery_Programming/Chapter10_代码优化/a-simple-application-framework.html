@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+ <meta charset="utf-8">
+  <head>
+  </head>
+  <body>
+  <div id="main">
+  
+  </div>
+  <script  src="http://code.jquery.com/jquery-1.7.1.js"></script>
+
+  <script >
+var myApp = {
+//a common object holds code common to all application sections
+  common : {
+    init :  function(){
+      //common code to intialize your application    
+    }
+  }    
+};
+myApp.dashboard = {
+//your dashboard feature has an init function as well. 
+  init : function(){
+    //init code
+  },
+  update : function(){
+    //code to update the dashboard
+  },
+  render :  function(){
+    //code to render the dashboard
+  }
+};
+
+myApp.controlPanel = {
+//your control panel feature has an init function as well. 
+  init : function(){
+    //init code
+  },
+  settings : function(){
+    //code for controle panel settings
+  }
+};
+myApp.settings = {
+//your settings page has an init as well
+  init : function(){
+       //init code
+  },
+  update : function(){
+    //code to update site settings 
+  }
+}
+
+</script>
+</body>
+</html>

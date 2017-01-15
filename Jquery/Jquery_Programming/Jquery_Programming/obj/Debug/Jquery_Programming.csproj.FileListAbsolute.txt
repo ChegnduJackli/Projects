@@ -3,3 +3,9 @@ C:\Users\lideng\Desktop\GitHub\Projects\Projects\Jquery\Jquery_Programming\Jquer
 C:\Users\lideng\Desktop\GitHub\Projects\Projects\Jquery\Jquery_Programming\Jquery_Programming\obj\Debug\Jquery_Programming.dll
 C:\Users\lideng\Desktop\GitHub\Projects\Projects\Jquery\Jquery_Programming\Jquery_Programming\obj\Debug\Jquery_Programming.pdb
 C:\Users\lideng\Desktop\GitHub\Projects\Projects\Jquery\Jquery_Programming\Jquery_Programming\obj\Debug\Jquery_Programming.csprojResolveAssemblyReference.cache
+C:\Users\lideng\Documents\GitHub\Projects\Jquery\Jquery_Programming\Jquery_Programming\bin\Jquery_Programming.dll.config
+C:\Users\lideng\Documents\GitHub\Projects\Jquery\Jquery_Programming\Jquery_Programming\bin\Jquery_Programming.dll
+C:\Users\lideng\Documents\GitHub\Projects\Jquery\Jquery_Programming\Jquery_Programming\bin\Jquery_Programming.pdb
+C:\Users\lideng\Documents\GitHub\Projects\Jquery\Jquery_Programming\Jquery_Programming\obj\Debug\Jquery_Programming.csprojResolveAssemblyReference.cache
+C:\Users\lideng\Documents\GitHub\Projects\Jquery\Jquery_Programming\Jquery_Programming\obj\Debug\Jquery_Programming.dll
+C:\Users\lideng\Documents\GitHub\Projects\Jquery\Jquery_Programming\Jquery_Programming\obj\Debug\Jquery_Programming.pdb

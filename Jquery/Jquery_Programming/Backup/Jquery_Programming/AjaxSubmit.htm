@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>submit</title>
+    <script src="Script/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#btnSubmit").click(function () {
+                var t = $("#input1").val();
+                alert(t);
+            });
+
+//            var module = TimeCompare();
+//            alert(module.IsHidden());
+//            
+
+        
+        
+        });
+
+
+
+        var DateCompare = {
+            targetStartDate: parseInt("201506210000"),
+            targetEndDate: parseInt("201506210800"),
+
+            Parse: function (datePar) {
+                if (datePar.length < 2) {
+                    datePar = "0" + datePar;
+                }
+                return datePar;
+            },
+
+            getCurrentDate: function () {
+                var date = new Date();
+
+                var currentYear = date.getFullYear().toString();
+                var currentMonth = this.Parse((date.getMonth() + 1).toString());
+                var currentDate = this.Parse(date.getDate().toString());
+                var currentHour = this.Parse(date.getHours().toString());
+                var currentMin = this.Parse(date.getMinutes().toString());
+
+                var current = parseInt(currentYear + currentMonth + currentDate + currentHour + currentMin);
+                return current;
+            },
+
+            IsHidden: function () {
+                if (this.getCurrentDate() > this.targetStartDate && this.getCurrentDate() < this.targetEndDate) {
+                    return true;
+                }
+                return false;
+            }
+        }
+
+        alert(TimeCompare.IsHidden());
+        
+        
+
+    </script>
+</head>
+<body>
+    <table width="600px">
+        <tr>
+            <td>
+                Thank you for using our Helpdesk services. To help us improve your customer experience,
+                we would appreciate your assistance to answer a few short questions which should
+                take you less than 1 minute. Simply click here. Your input is very important to
+                us and will be kept strictly confidential.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                How satisfied were you with the time it took for AGD to resolve the issue?
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" value="Very satisfied" id="check1" name="radAnswer1" /><label>Very
+                    satisfied</label><br />
+                <input type="radio" value="Satisfied" id="check2" name="radAnswer1" /><label>Satisfied</label><br />
+                <input type="radio" value="Dissatisfied" id="check3" name="radAnswer1" /><label>Dissatisfied</label><br />
+                <input type="radio" value="Very Dissatisfied" id="check4" name="radAnswer1" /><label>Very
+                    Dissatisfied</label><br />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                How satisfied were you with the answer you received?
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" value="Very satisfied" id="Radio1" name="radAnswer" /><label>Very
+                    satisfied</label><br />
+                <input type="radio" value="Satisfied" id="Radio2" name="radAnswer" /><label>Satisfied</label><br />
+                <input type="radio" value="Dissatisfied" id="Radio3" name="radAnswer" /><label>Dissatisfied</label><br />
+                <input type="radio" value="Very Dissatisfied" id="Radio4" name="radAnswer" /><label>Very
+                    Dissatisfied</label><br />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="submit" id="btnSubmit" />
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

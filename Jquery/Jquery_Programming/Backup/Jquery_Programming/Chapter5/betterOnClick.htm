@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+      <style type="text/css">
+      .clickDiv {
+        width:100px;
+        height:100px;
+        background-color:blue;
+      }
+    </style>
+    <script type="text/javascript">
+        var evt = (window.event ? window.event : event);
+        alert(evt);
+        document.getElementById("clickDiv").onclick = function (event) {
+            document.getElementsByTagName("body")[0].appendText("clicked");
+        }
+    </script>
+</head>
+<body>
+  <div id="clickDiv" class="clickBox">Click Here</div>
+</body>
+</html>

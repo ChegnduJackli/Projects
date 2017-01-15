@@ -5,7 +5,11 @@
       $(function(){
         // element doesn't exist yet, but we can create handler
         // anyways
-        $("#anchor").bind("click", function(event){
+      /* $("#anchor").bind("click", function(event){
+       alert("I have a handler");
+        });*/
+		
+		   $("#anchor").live("click", function(event){
        alert("I have a handler");
         });
  

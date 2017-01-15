@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="Stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.10/themes/redmond/jquery-ui.css" />
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.8.0.js" type="text/javascript"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.22/jquery-ui.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var addMove = function () {
+                $("#msg1").animate({ left: "+=500", right: "+=500" }, "slow")
+                .animate({ top: "500px", right: "+=500" }, "slow")
+                .animate({ left: 0, right: "+=500" }, "slow")
+                .animate({ top: 0, right: 0 }, "slow");
+
+                $("#msg2").animate({ left: "+=100" }, "slow")
+             .animate({ top: 0, right: 0 }, "slow");
+            };
+            var myVar = setInterval(addMove, 100);
+
+            $("#msg2").click(function () {
+                var $this = $(this);
+                $this.animate({ width: "0" }, 1000, function () {
+                    $this
+          .hide()
+          .text("run,run,run,")
+          .show()
+          .animate({ width: "100" }, 1000);
+                });
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <img src="Image/pig.gif" /><br />
+        <br />
+        <span id="msg1">zhen zhen</span>
+    </div>
+    <div>
+        <img src="Image/pig2.gif" />
+        <span id="msg2">zhen zhen</span>
+    </div>
+</body>
+</html>

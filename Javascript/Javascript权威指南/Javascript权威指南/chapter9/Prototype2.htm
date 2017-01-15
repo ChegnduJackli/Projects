@@ -64,6 +64,10 @@
              },
              subtract: function (x, y) {
                  return x - y;
+             },
+             multiple: function (x, y)
+             {
+                 return x * y;
              }
          };
 
@@ -91,9 +95,10 @@
          //通过将BaseCalculator的原型赋给Calculator的原型，这样你在Calculator的实例上就访问不到那个decimalDigits值了，
          //如果你访问如下代码，那将会提示出错。
          var calc = new Calculator();
-         WriteLine("2,calc.add(10, 1):" + calc.add(10, 1));
+         WriteLine("2, calc.add(10, 1):" + calc.add(10, 1));//11
          //BaseCalculator 里声明的decimalDigits属性，在 Calculator里是可以访问到的
-         WriteLine("calc.decimalDigits: " + calc.decimalDigits); //show undefined
+         WriteLine("2, calc.decimalDigits: " + calc.decimalDigits); //show undefined
+         WriteLine("2, calc.multiple: " + calc.multiple(10,2)); //20
 
          //重写原型：
          //在使用第三方JS类库的时候，往往有时候他们定义的原型方法是不能满足我们的需要，但是又离不开这个类库，

@@ -1,0 +1,29 @@
+<html>
+<head>
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+//            for (var i = 0; i < 1000; i++) {
+//                $("#main table").append("<tr><td>My job is to log table rows, this is row #" + i + "</tr></td>");
+//            }
+
+
+            var tableRows = "";
+            for (var i = 0; i < 1000; i++) {
+                tableRows += "<tr><td>My job is to log table rows, this is row #" + i + "</tr></td>";
+            }
+            $("#main table").append(tableRows);
+        });
+    </script>
+</head>
+<body>
+<div id="main">
+<table>
+</table>
+</div>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+  <title></title>
+  </head>
+  <body>
+
+  <script  src="http://code.jquery.com/jquery-1.7.1.js" type="text/javascript"></script>
+
+  <script type="text/javascript">
+    //Our app namespace. We pass in the jQuery object to shorten lookups
+      var myApp = function ($) {   //立即执行函数 
+          // private variables and methods, only available within this myApp  //私有变量和方法
+          var message = "not directly accessible from outside the module";
+          function multiplier(x, y) {
+              return x * y
+          };
+          //the return object contains the public   函数的返回对象
+          //properties and public methods 
+          return {
+              init: function () {
+                  //intialize the app
+                  alert("return init");
+              },
+              prop: "42",
+              specialNumber: function () {
+                  //access to our private method  访问私有方法
+                  var num = multiplier(7, 6);
+                  return "Our special number is definitely " + num;
+              },
+              //we provide controlled access to private variables
+              shareMessage: function (arg) {
+                  if (arg === "open sesame") {
+                      return message + ",unless you know the magic word";
+                  } else {
+                      throw new Error("You need to know the magic word");
+
+                  }
+              }
+          };
+      } (jQuery);
+
+      myApp.dashboard = function ($) {
+          // private variables and methods
+          var config = {
+              "color": "blue",
+              "title": "my dashboard",
+              "width": "960px"
+          };
+          return {
+              init: function () {
+                  //intialize the dashboard
+              },
+              //updateConfig allows for monitored configuration 
+              //of the private config object
+              updateConfig: function (obj) {
+
+                  if ($.inArray(obj.color, ["red", "blue", "green", "purple"] !== -1)) {
+                      config.color = obj.color;
+                  }
+                  config.title = obj.title || config.title;
+                  config.width = obj.width || config.width;
+
+              },
+              render: function () {
+                  //renders the dashboard
+                  var $dashboard = $("<div/>").html("<h1/>")
+                  $dashboard.text(config.title)
+	       .css(
+	         { "width": config.width,
+	             "color": config.color
+	         }
+	       );
+                  $("#main").append($dashboard);
+              }
+          };
+      } (jQuery);
+
+
+  console.log("message:" + myApp.message )　　//undefined
+  
+  console.log("multiplier" +  myApp.multiplier() )
+ 
+  console.log("shareMessage :"+ myApp.shareMessage( "please?" ) )
+  
+  console.log( myApp.shareMessage( "open sesame" ) )
+
+  console.log( myApp.prop );
+  
+  console.log( myApp.specialNumber() );
+  
+</script>
+</body>
+</html>
+

@@ -1,0 +1,8 @@
+function ourHandler(){
+  $( this ).addClass( "active" );
+  $.get( "/my/app/service/", function( data ){
+    $( "#dialog" ).text( data.status ).dialog( "open" )
+  }
+}
+
+$( "#baz" ).click( ourHandler );

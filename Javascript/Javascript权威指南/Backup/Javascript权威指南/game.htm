@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+</head>
+<body>
+<div id="main"></div>
+<div id="board-overlay"></div>
+<div>
+<input  type="button" value="close" id="close-overlay"/>
+</div>
+ <script src="js/common.js" type="text/javascript"></script>
+     <script src="js/game.js" type="text/javascript"></script>
+   
+    <script type="text/javascript">
+        //声明对象。
+        var kPrizes = {
+            BRONZE: { level: 1, name: 'Bronze', css_class: 's1' },
+            SILVER: { level: 2, name: 'Silver', css_class: 's2' },
+            GOLD: { level: 3, name: 'Gold', css_class: 's3' },
+            PLATINUM: { level: 4, name: 'Platinum', css_class: 's4' }
+        };
+
+        WriteLine(kPrizes.BRONZE);
+        WriteLine(kPrizes.BRONZE.level);
+        WriteLine(kPrizes.BRONZE.name);
+        WriteLine(kPrizes.BRONZE.css_class);
+
+        var kPrizeIndex = ['BRONZE', 'SILVER', 'GOLD', 'PLATINUM'];
+
+        var prizecolors = {
+            'cash': {
+                '1': '#00E61F',
+                '2': '#E6DA00',
+                '5': '#E6DA00',
+                '10': '#E66700',
+                '20': '#E66700',
+                '50': '#ED1212',
+                '200': '#FF0000',
+                 '100':'#000'
+            },
+
+            'points': {
+                '50': '#00AAFF',
+                '100': '#00AAFF',
+                '200': '#00AAFF',
+                '500': '#00AAFF'
+            }
+        };
+
+        WriteLine(prizecolors.cash);
+        WriteLine(prizecolors.cash[1]);
+        WriteLine(prizecolors.cash[100]);
+        make_prize_title('test');
+        WriteLine(update_timestamp("timestamp: "));
+        var d = new Date().addMinutes(0.1);
+        var s = relative_timestamp( d,new Date());
+        WriteLine("s:" + s + " ago");
+
+        var err_title = errormessages['0'][0];
+        var err_body = errormessages['0'][1];
+        WriteLine("err_title: " + err_title);
+        WriteLine("err_body: " + err_body);
+
+        //移除css，移除click事件，通常和on结合使用
+        //$('#spin1').addClass('disabled').off('click');
+        //链式调用
+       // $('#spinner_button').removeClass('disabled').click(function () { move(1, 1); });
+       //在填充元素后，然后清空。重新填充新的元素。
+       /*
+        var blob = '';
+        blob += '<div class="btn-group">';
+        blob += '<button id="close-overlay" class="btn green-flat">Ok</button>';
+        blob += '</div>';
+        $('#board-overlay').append(blob);
+
+        $('#close-overlay').on('click', function () {
+            $('.overlay').fadeOut();
+            $('#board-overlay').empty(); //清空元素。
+        });
+        */
+
+    </script>
+
+   
+</body>
+
+</html>

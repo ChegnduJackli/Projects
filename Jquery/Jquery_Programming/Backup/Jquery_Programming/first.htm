@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="http://code.jquery.com/jquery-1.7.1.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("ul li:first").css('color', 'red'); //只匹配第一次，
+            $("ul li:first-child").css('color', 'blue'); //匹配每个符合要求的对象  
+            var t = $('span').html(); //<p>Hello</p> .取得第一个匹配元素的html内容。这个函数不能用于XML文档。但可以用于XHTML文档
+            var m = $('span').text(); //hello.结果是由所有匹配元素包含的文本内容组合起来的文本。这个方法对HTML和XML文档都有效
+            // alert("t:" + t);
+            //alert("m: " + m);
+            console.log(".html() " + t);
+            console.log(".text() " + m);
+            var x = $('p').remove(); //清空匹配元素中的内空，以及自身,得到的结果是<span></span>
+            var y = $('p').empty()  //得到的结果是<span><p></p></span> 
+            //alert(x.toString());
+            //alert(y);
+        }); 
+    </script>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>list item 1</li>
+            <li>list item 2
+                <ul>
+                    <li>list item 2-a</li>
+                    <li>list item 2-b</li>
+                </ul>
+            </li>
+            <li>list item 3</li>
+            <li>list item 4</li>
+        </ul>
+
+         <span><p>Hello</p>
+         <p>world</p>
+         <div> kitty</div>
+         </span>
+         
+    </div>
+</body>
+</html>

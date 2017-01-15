@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>User Registration and Validation</title>
+    <script src="http://code.jquery.com/jquery-1.7.1.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            $('input[name="validate"]').click(function () {
+                //clear msg value
+                $("#msg").html("");
+                //get all input value
+                var userName = $('input[name="userName"]').val();
+                var email = $('input[name="email"]').val();
+                var pass1 = $('input[name="password"]').val();
+                var pass2 = $('input[name="chkPassword"]').val();
+                //not allow empty
+                var hasvalue = userName && email && pass1 && pass2;
+                if (!hasvalue) {
+                    $("#msg").append("All fields are required.").css("color", "red");
+                    return false;
+                }
+                //检查两次密码是否相同
+                var passwordMarch = false;
+                if (pass1 === pass2) {
+                    passwordMarch = true;
+                }
+                if (!passwordMarch) {
+                    $("#msg").append("<p>Passwords don't match.</p>").css("color", "red");
+                    return false;
+                }
+            });
+
+            $("input[name='addLocation']").click(function () {
+                $("#location").append("<select name='stateCombo'><option>"
+                                + "Select State</option></select>");
+
+                // disable add location button so that we don't get
+                // more than one drop-down
+                $(this).attr("disabled", "disabled");
+
+                //添加几个州名作为案子
+                var states = ["California", "Florida", "New York"];
+                $.each(states, function (index, value) {
+                    $("[name='stateCombo']").append("<option value ='" + index + "'>" + value + "</option>")
+                });
+                //添加一个空的<select>元素，用于选择城市
+                // add another empty select list
+                $("#location").append("<select name='cityCombo'>"
+                             + "<option>Select City</option></select>");
+            });
+
+            // use .live() since states select box doesn't exist yet
+            $("[name='stateCombo']").live("change", function (event) {
+          //  $(document).on("change", "[name='stateCombo']", function (event) {
+                // get name of state and fill with some data
+                var selectedState = $(this).val();
+
+                var CA_Cities = ["San Francisco", "Los Angeles", "Mountain View"];
+                var FL_Cities = ["Fort Lauderdale", "Miami", "Orlando"];
+                var NY_Cities = ["New York", "Buffalo", "Ithica"];
+                var cities = [];
+
+                if (selectedState == 0) {
+                    cities = $.extend([], CA_Cities);
+                } else if (selectedState == 1) {
+                    cities = $.extend([], FL_Cities);
+                } else if (selectedState == 2) {
+                    cities = $.extend([], NY_Cities);
+                }
+
+                // clear cityCombo of any previous values
+                $("[name='cityCombo']").empty();
+                $.each(cities, function (index, value) {
+                    $("[name='cityCombo']").append("<option value='"
+                                               + index
+                                               + "'>"
+                                               + value
+                                               + "</option>");
+                });
+            });
+
+        });
+    </script>
+</head>
+<body>
+<div id="msg"></div>
+    <form name="userRegistrationForm">
+      <label for="userName">User</label>
+      <input type="text" name="userName" /><br/>
+      <label for="email">Email</label>
+      <input type="text" name="email" /><br/>
+      <label for="password">Password</label>
+      <input type="password" name="password" /><br/>
+      <label for="chkPassword">Re-enter Password</label>
+      <input type="text" name="chkPassword" /><br/>
+      <input type="button" name="validate" value="Validate Inputs" />
+    </form>
+    <input type="button" name="addLocation" value="Add Location" />
+    <div id="location"></div>
+</body>
+</html>

@@ -49,6 +49,34 @@
         var c = p.constructor; //这是与原型相关联的原型函数
         WriteLine("c===F: " + (c === F)); //true
 
+
         WriteLine(Range);
+
+        Number.prototype.times = function (f, context)
+        {
+            var n = Number(this);
+            for (var i = 0; i < n; i++)
+            {
+                f.call(context, i);
+            }
+        }
+        var n = 3;
+        n.times(function (n) {
+            WriteLine(n + " hello");
+        });
+       
+        Function.prototype.getName = function ()
+        {
+            if ("name" in this) return this.name;
+            return this.name = this.toString().match(/function\s*([^(]*)\(/)[1];
+        }
+
+        WriteLine("NaN===NaN : " + NaN === NaN); //true 
+        WriteLine("NaN!==NaN : " + NaN !== NaN); //false
+        WriteLine("typeof(function) : " + typeof (F)); //function
+        WriteLine("typeof(r) : " + typeof (r)); //object
+        WriteLine("typeof(F.constructor) : " + typeof (F.constructor) + " .  f.constructor.getName(): " + F.constructor.getName()); //function,Function
+        WriteLine("r.constructor.getName(): " + r.constructor.getName()); //Range
+        WriteLine("typeof(r.constructor): " + typeof(r.constructor)); //function
     </script>
 </html>

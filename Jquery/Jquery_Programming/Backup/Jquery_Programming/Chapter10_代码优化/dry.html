@@ -1,0 +1,6 @@
+$( "#baz, #bar, #foo" ).click(
+    $( this ).addClass( "active" );
+    $.get( "/my/app/service/", function( data ){
+        $( "#dialog" ).text( data.status ).dialog( "open" );
+    }
+);

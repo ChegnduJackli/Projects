@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Funny</title>
+    <link rel="Stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.10/themes/redmond/jquery-ui.css" />
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.8.0.js" type="text/javascript"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.22/jquery-ui.js" type="text/javascript"></script>
+    <style>
+        body
+        {
+            font-family: "Times New Roman" , Times, serif;
+        }
+    </style>
+    <script type="text/javascript">
+      
+        var item = 0;
+        var addData = function () {
+            item++;
+            $(".divdata1").append('<br><span>xuzhen小样</span>' + item).show('slow');
+            $(".divdata2").append('<br><span>xuzhen傻样</span>' + item).show('slow');
+            $("#counter").html(item);
+        };
+        var myVar = setInterval(addData, 100);
+
+        function myStopFunction() {
+            clearInterval(myVar);
+            //alert('xuzhen 小样啊！！');
+            var msg = prompt("xuzhen is a 小样, yes or no?", "yes");
+            while (msg != "yes") {
+                var msg = prompt("xuzhen is a 小样, yes or no?, 根本停不下来", "yes");
+            }
+            alert("Thanks for your cooperation! 小样");
+          
+        }
+        function startFunction() {
+            myVar = setInterval(addData, 100);
+        }
+
+    </script>
+</head>
+<body>
+
+
+    <table width="80%" style="margin: auto">
+        <tr>
+            <td>
+                <button onclick="myStopFunction()">
+                    Stop</button>
+            </td>
+            <td>
+                傻<span id="counter" style="color: Blue"></span>得根本停不下来
+            </td>
+            <td>
+                <button onclick="startFunction()">
+                    start</button>
+            </td>
+        </tr>
+        <tr>
+            <td class="divdata1">
+            </td>
+            <td class="divdata1">
+            </td>
+            <td class="divdata2">
+            </td>
+            <td class="divdata2">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

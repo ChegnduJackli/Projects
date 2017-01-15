@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title><title></title>
+    <script src="../Script/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            var obj = { "color": "red", "title": "good job", "width": "900px" };
+            myApp.dashboard.updateConfig(obj);
+            myApp.dashboard.render();
+
+            alert(feature.publicThing); // "not secret"
+
+            // Logs "secret" and changes the value of privateThing
+            console.log(feature.sayPrivateThing());
+            
+
+        });
+            var myApp = {
+                //a common object holds code common to all application sections
+                common: {
+                    init: function () {
+                        //common code to intialize your application    
+                        alert("myApp common init");
+                    }
+                }
+            };
+
+
+            myApp.dashboard = function ($) {
+                //private variable and method
+                var config = {
+                    "color": "blue",
+                    "title": "my dashboard",
+                    "width": "960px"
+                };
+
+                return {
+                    init: function () {
+                        alert("dashboard init dashboard");
+                    },
+                    updateConfig: function (obj) {
+                        if ($.inArray(obj.color, ["red", "blue", "green", "purple"] !== -1)) {
+                            config.color = obj.color;
+                        }
+                        config.title = obj.title || config.title;
+                        config.width = obj.width || config.width;
+                    },
+                    render: function () {
+                        //呈现dashboard
+                        //alert("call render method");
+                        var $dashboard = $("<div>");
+                        $dashboard.html(config.title).css(
+                      {
+                          "width": config.width,
+                          "color": config.color
+                      });
+                        $("#main").append($dashboard);
+                        //$("#main").append("<h1>test<h2 />");
+                    }
+                };
+            } (jQuery);
+
+            //console.log(myApp.common.init());
+            //console.log(myApp.dashboard.init());
+
+
+            // The module pattern
+            var feature = (function () {
+
+                // Private variables and functions
+                var privateThing = "secret";
+                var publicThing = "not secret";
+
+                var changePrivateThing = function () {
+                    privateThing = "super secret";
+                };
+
+                var sayPrivateThing = function () {
+                    console.log(privateThing);
+                    changePrivateThing();
+                    console.log(privateThing);
+                };
+
+                // Public API
+                return {
+                    publicThing: publicThing,
+                    sayPrivateThing: sayPrivateThing
+                };
+            })();
+
+         
+
+
+    </script>
+</head>
+<body>
+    <div id="main">
+        ttesfadf</div>
+</body>
+</html>

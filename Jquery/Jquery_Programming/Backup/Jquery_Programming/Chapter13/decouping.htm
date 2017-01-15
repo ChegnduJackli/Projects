@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+       <script src="../Script/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function updateStatus() {
+            return $.Deferred(function () {
+
+                var $update = $("<ul />"),
+            $statusbar = $("#statusbar"),
+            html = []; //缓存文本
+
+                for (var i = 0, text = 20; i < text; i++) {
+                    html.push("<li>status update</li>");
+                }
+                html = html.join("\n"); //将缓存文本转换为字符串
+
+                $update.append(html);
+                $statusbar.append($update);
+                $statusbar.slideDown(5000, this.resolve);
+               
+            }).promise();
+        }
+
+        function callback() {
+            console.log("the animation is done. On to the next operation");
+        }
+        function alternativeCallback() {
+            console.log("the animation is done. Let's follow a different path.");
+        }
+        function specialCase() {
+            console.log("This is a special case. Let's do a special UI update");
+        }
+        $(function () {
+            // updateStatus();
+            $.when(updateStatus())
+           .done(callback);
+
+            //另外一个回调函数
+            $.when(updateStatus())
+           .done(alternativeCallback);
+
+            //多个回调函数
+            $.when(updateStatus())
+           .done(
+           [callback, specialCase]
+           );
+        });
+    
+     </script>
+</head>
+<body>
+<div id="main">
+<div id="statusbar" style="display:none"></div>
+</div>
+</body>
+</html>

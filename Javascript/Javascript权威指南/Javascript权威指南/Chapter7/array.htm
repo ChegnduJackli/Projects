@@ -152,6 +152,16 @@
             }
         }
     }
+    Array.join = Array.join || function (arr, sep) {
+        return Array.prototype.join.call(arr, sep);
+    }
+    var a = { "0": "a", "1": "b", "2": "c", length: 3 };
+    WriteLine("a.join: " + Array.prototype.join.call(a, "+"));
+    
+    var b = [1, 23, 4];
+    WriteLine("b.join： " + b.join("+"));
+
+    WriteLine("Array.join: " + Array.join(a, "*"));
 
 
 </script>

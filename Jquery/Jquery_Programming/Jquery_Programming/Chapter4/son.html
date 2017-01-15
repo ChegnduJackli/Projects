@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="../Script/jquery-1.7.1.min.js"></script>
+    <script>
+        $(function () { 
+        var plen=$("p").length;
+        console.log("p.length:" + plen);
+
+        var divP = $("#div1 p").length;  //div1下面的所有子代
+        console.log("#div1 p.length:" + divP); //6
+
+        var divP1 = $("#div1> p").length;  //只有第一代,
+        console.log("#div1 > p.length:" + divP1);//3
+
+        console.log("#div1 > p text:" + $("#div1 > p").text()); //获取匹配第一代所有的文本内容
+        console.log("#div1 > p html:" + $("#div1 > p").html()); //获取匹配的第一个元素的文本内容
+        });
+
+    </script>
+</head>
+<body>
+    <div id="div1">
+        <p>P1</p>
+        <p>P2</p>
+        <p>P3</p>
+        <div id="div2"><p>P_son_1</p></div>
+        <div><p>P_son_2</p></div>
+        <div>
+            <p>P_son_3</p>
+        <div><p>grandson</p></div>
+        </div>
+    </div>
+</body>
+</html>

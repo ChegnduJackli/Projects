@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+        <script src="../js/common.js" type="text/javascript"></script>
+</head>
+<body >
+<div id="main"></div>
+    <img src="../Images/6_in.png" />
+</body>
+<script type="text/javascript">
+
+    var o = {};  //o从object.prototype继承对象的方法
+    o.x = 1;     //给o定义一个属性x
+    var p = inherit(o); //p继承o 和object.prototype
+    p.y = 2;   //给p定义一个属性y
+    var q = inherit(p); //q继承p,o 和object.prototype
+    q.z = 3;
+
+    WriteLine("继承:" + (q.x + q.y));
+
+    //检测属性,可以通过 in,hasOwnProperty and propertyIsEnumerable()方法来完成工作
+    var o = { x: 1 };
+    var O_1 = "x" in o;   //=>true
+    var O_2 = "y" in o;   //=>false
+    var O_3 = "toString" in o; //=>true
+    WriteLine("O_1:" + O_1);
+    WriteLine("O_2:" + O_2);
+    WriteLine("O_3:" + O_3);
+    //对象的hasOwnProperty()方法用来检车给定的名字是否是对象的自有属性。对于继承属性它将返回false.
+    WriteLine("o.hasOwnProperty('x'): " + o.hasOwnProperty('x'));
+    WriteLine("o.hasOwnProperty('y'): " + o.hasOwnProperty('y'));
+    WriteLine("o.hasOwnProperty('toString'): " + o.hasOwnProperty('toString'));
+
+    //检测一个对象是否是另一个对象的原型（或处于原型链中)。isPrototypeOf()方法
+    var p = { x: 1 };
+    var o = Object.create(p);
+    WriteLine("p.isPrototypeOf(o): " + p.isPrototypeOf(o)); //=>true
+    WriteLine("Object.prototype.isPrototypeOf(o): " + Object.prototype.isPrototypeOf(o)); //=>true
+   
+    var o = { x: 10 };
+    var p = null;
+    WriteLine("o&&o.x: " + o && o.x);
+
+    var re = p && p.x;
+    WriteLine("re :" + re);
+    WriteLine("p :" + p);
+
+    function inherit(p) {
+        if (p == null) throw TypeError(); //p是一个对象，但不能是null
+
+        if (Object.create) {
+            return Object.create(p);
+        }
+
+        var t = typeof p;
+        if (t != "object" && t != "function") throw TypeError();
+
+        function f() { };   //定义一个空构造函数
+        f.prototype = p;   //将其原型属性设置为p
+        return new f();   //使用f()创建p的继承对象
+    }
+</script>
+</html>
