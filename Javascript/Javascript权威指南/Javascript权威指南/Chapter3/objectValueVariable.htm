@@ -21,6 +21,9 @@
         Write("typeof(i): " + typeof (i));
         Write("typeof(j): " + typeof (j));
 
+        Write("typeof(null): " + typeof (null)); //object
+        Write("typeof(undefined): " + typeof (undefined)); //undefined
+
         var s = "test";
         s.len = 4;
         var t = s.len;
@@ -42,6 +45,8 @@
         //数组比较相等
 
         var a = [];  //定义一个引用空数组的变量a
+        var b = [];
+        Write("a===b :" + (a === b)); //false
         var b = a;  //定义b引用同一个数组
         b[0] = 1;    
         a[0];  //=> 1; 变量a 也会更改
@@ -49,7 +54,10 @@
 
         Write("a[0] :" + a[0]);
         Write("b[0] :" + b[0]);
-        Write("a===b :" + (a === b));
+        Write("a===b :" + (a === b)); //true
+       
+        var o = { x: 1 }, p = { x: 1 };
+        Write("o===p :" + (o === p));//false
 
         var numb = "3";
         Write("Number(numb): " + Number(numb));
@@ -79,7 +87,7 @@
         function f() {
             Write("global scope in function: " + scope); //=>undefined
             var scope = "local";
-            Write("scope in function: " + scope); //=>local
+            Write("scope in function: " + scope); //=>local 
         }
         /*你可能会误以为函数的第一行会输出"global",因为代码还没有执行到var 语句声明
         局部变量的地方。其实不然，由于函数作用于的特殊性，局部变量在整个函数体内始终是有定义的。
